@@ -1,4 +1,4 @@
-# Tim Mouskhelichvili Personal Website
+# Tim Mouskhelichvili's Personal Website
 
 Here is the full source code of the [Tim Mouskhelichvili](https://timmouskhelichvili.com) website.
 
