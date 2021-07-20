@@ -5,12 +5,17 @@ const path = require('path');
  * Returns the Markdown pages.
  */
 const getMarkdownPages = () => {
-	const articles = getFiles(path.join(__dirname, '../../public/static/markdown/blog'), {}, 'blog/');
-	const pages = getFiles(path.join(__dirname, '../../public/static/markdown/pages'));
+	let articles = {};
+	let pages = {};
+
+	try {
+		articles = getFiles(path.join(__dirname, '../../public/static/markdown/blog'), {}, 'blog/');
+		pages = getFiles(path.join(__dirname, '../../public/static/markdown/pages'));
+	} catch { }
 
 	return {
 		articles,
-		pages,
+		pages
 	};
 };
 

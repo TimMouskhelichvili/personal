@@ -19,25 +19,8 @@ const darkTheme = {
         darkModeSwitch: {
             background: darken(.1, '#fafafa')
         },
-        footer: {
-            background: lighten(.05, colors.background),
-            icon: {
-                background: colors.background,
-                color: 'white'
-            },
-            menuColor: lighten(.8, colors.background)
-        },
         header: {
             iconColor: lighten(.6, colors.background),
-            logo: {
-                background: lighten(.2, colors.background),
-                landingSmallBackground: lighten(.1, colors.background),
-                language: {
-                    background: lighten(.3, colors.background),
-                    backgroundHover: lighten(.4, colors.background),
-                    color: colors.color
-                }
-            },
             options: {
                 languages: {
                     activeColor: colors.color,
@@ -55,31 +38,6 @@ const darkTheme = {
         },
         primaryColors: {
             color: '#fafafa'
-        }
-    },
-    pages: {
-        home: {
-            description: {
-                background: lighten(.05, colors.background),
-                icon: {
-                    background: colors.background,
-                    color: 'white'
-                }
-            },
-            expertises: {
-                cardBackground: lighten(.05, colors.background)
-            },
-            images: {
-                background: lighten(.15, colors.background)
-            },
-            quotes: {
-                background: lighten(.2, colors.background)
-            }
-        },
-        porfolio: {
-            image: {
-                background: lighten(.05, colors.background)
-            }
         }
     }
 };

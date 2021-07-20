@@ -2,6 +2,14 @@
 
 Here is the full source code of the [Tim Mouskhelichvili](https://timmouskhelichvili.com) website.
 
+
+## Technologies
+
+1. NextJS
+2. Redux
+3. Styled Components
+4. TypeScript
+
 #### How to serve thought docker.
 ```console
 docker build -t timmouskhelichvili .

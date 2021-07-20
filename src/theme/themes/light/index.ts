@@ -20,25 +20,8 @@ const lightTheme: typeof darkTheme = {
         darkModeSwitch: {
             background: darken(.15, colors.background)
         },
-        footer: {
-            background: darken(.05, colors.background),
-            icon: {
-                background: colors.color,
-                color: 'white'
-            },
-            menuColor: darken(.6, colors.background)
-        },
         header: {
             iconColor: darken(.5, colors.background),
-            logo: {
-                background: darken(.1, colors.background),
-                landingSmallBackground: lighten(.1, colors.color),
-                language: {
-                    background: darken(.05, colors.background),
-                    backgroundHover: darken(.08, colors.background),
-                    color: lighten(.2, colors.color)
-                }
-            },
             options: {
                 languages: {
                     activeColor: colors.background,
@@ -56,31 +39,6 @@ const lightTheme: typeof darkTheme = {
         },
         primaryColors: {
             color: '#fafafa'
-        }
-    },
-    pages: {
-        home: {
-            description: {
-                background: darken(.05, colors.background),
-                icon: {
-                    background: darken(.15, colors.background),
-                    color: colors.color
-                }
-            },
-            expertises: {
-                cardBackground: darken(.05, colors.background)
-            },
-            images: {
-                background: darken(.05, colors.background)
-            },
-            quotes: {
-                background: lighten(.75, colors.color)
-            }
-        },
-        porfolio: {
-            image: {
-                background: darken(.05, colors.background)
-            }
         }
     }
 };
