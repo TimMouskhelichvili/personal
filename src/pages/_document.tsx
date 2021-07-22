@@ -25,7 +25,8 @@ class MyDocument extends Document<IMyDocumentProps> {
             sheet.collectStyles(<App {...props} />)
         );
 		
-        const removeScripts = process.env.NODE_ENV !== 'development';
+        const removeScripts = ctx.pathname.indexOf('/landing/') !== -1 
+						   && process.env.NODE_ENV !== 'development';
 
         const styleTag = sheet.getStyleElement();
         // @ts-ignore
