@@ -1,4 +1,5 @@
 import React, { ReactElement } from 'react';
+import { FirstSection } from 'src/componentsByPage/home/firstSection';
 import { Container } from 'src/components/global/container';
 import { Seo } from 'src/components/global/seo';
 import { useLocale } from 'src/localizations';
@@ -12,7 +13,7 @@ const Home = (): ReactElement => {
     return (
         <Container>
             <Seo {...locale.sitemap.home} />
-            <h1>First</h1>
+            <FirstSection />
         </Container>
     );
 };

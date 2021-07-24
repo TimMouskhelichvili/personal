@@ -16,7 +16,7 @@
 	"author": "Tim Mouskhelichvili",
 	"license": "ISC",
 	"dependencies": {
-		"@commitlint/config-conventional": "^12.1.4",
+		"@commitlint/config-conventional": "^13.1.0",
 		"@fortawesome/free-solid-svg-icons": "^5.15.3",
 		"dayjs": "^1.10.4",
 		"next": "^11.0.0",
@@ -31,19 +31,19 @@
 		"xmldom": "^0.6.0"
 	},
 	"devDependencies": {
-		"@types/node": "^16.4.0",
-		"@types/react": "^17.0.4",
+		"@types/node": "^16.4.1",
+		"@types/react": "^17.0.15",
 		"@types/react-dom": "^17.0.3",
 		"@types/react-redux": "^7.1.18",
 		"@types/styled-components": "^5.1.9",
 		"@typescript-eslint/eslint-plugin": "^4.18.0",
 		"@typescript-eslint/parser": "^4.18.0",
-		"commitlint": "^12.1.1",
+		"commitlint": "^13.1.0",
 		"eslint": "^7.23.0",
 		"eslint-config-next": "^11.0.0",
 		"eslint-import-resolver-typescript": "2.4.0",
 		"eslint-plugin-import": "^2.23.4",
-		"eslint-plugin-jsdoc": "^35.5.0",
+		"eslint-plugin-jsdoc": "^35.5.1",
 		"eslint-plugin-react": "^7.23.0",
 		"raw-loader": "^4.0.2",
 		"typescript": "^4.2.4"
