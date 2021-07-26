@@ -8,7 +8,7 @@ const configuration = {
         triggerTAWK: 'triggerTAWK'
     },
     defaults: {
-        primary: primaryColors[0],
+        primary: primaryColors[1],
         themeName: 'light'
     },
     env: {
