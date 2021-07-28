@@ -7,8 +7,11 @@ const enGlobalLocale = {
         copyright: 'All rights reserved. © {0}',
         menu: enMenuFooter
     },
+    goBack: 'Go Back',
     hrefs: {
-        options: 'Open options menu'
+        logo: 'Go to main page',
+        options: 'Open options menu',
+        sideMenu: 'Open side menu'
     },
     options: {
         color: 'Colors',

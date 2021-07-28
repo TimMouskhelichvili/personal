@@ -32,6 +32,14 @@ const getStructuredData = (): string => JSON.stringify({
 });
 
 /**
+ * Returns if page is landing page.
+ * @param {NextRouter} router - The router. 
+ */
+const isLandingPage = (router: NextRouter): boolean => {
+	return router.route.indexOf('/landing/') !== -1;
+}
+
+/**
  * Returns the phone link.
  */
 const getPhoneLink = (): string => {
@@ -86,6 +94,7 @@ const getAuthor = (author?: string) => author || 'admin';
 export {
 	getStructuredData,
 	isProduction,
+	isLandingPage,
 	getPhoneLink,
 	redirectToLanguage,
 	hasOnlyOneLanguage,

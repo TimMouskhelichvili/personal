@@ -7,8 +7,11 @@ const frGlobalLocale = {
         copyright: 'Tous droits réservés. © {0}',
         menu: frMenuFooter
     },
+    goBack: 'Retourner',
     hrefs: {
-        options: 'Ouvrir le menu d\'options'
+        logo: 'Aller à la page principale',
+        options: 'Ouvrir le menu d\'options',
+        sideMenu: 'Ouvrir le menu'
     },
     options: {
         color: 'Couleurs',

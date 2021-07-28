@@ -1,4 +1,4 @@
-type HeaderType = 'options';
+type HeaderType = 'sideMenu' | 'options';
 
 export type {
     HeaderType

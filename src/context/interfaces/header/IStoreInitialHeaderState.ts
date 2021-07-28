@@ -1,4 +1,5 @@
 interface IStoreInitialHeaderState {
+	sideMenu: boolean;
 	options: boolean;
 }
 

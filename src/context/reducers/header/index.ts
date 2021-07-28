@@ -4,7 +4,8 @@ import { HeaderAction } from 'src/context/enums/header';
 import { context } from 'src/context';
 
 const initialState: IStoreInitialHeaderState = {
-    options: false
+    options: false,
+    sideMenu: false
 };
 	
 /**

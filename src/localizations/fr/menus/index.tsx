@@ -1,9 +1,15 @@
+import { IMenuItem } from 'src/interfaces/IMenuItem';
 import { frSitemap } from 'config/sitemap/fr';
+
+const frMenuTop: IMenuItem[] = [ 
+
+];
 
 const frMenuFooter = [
     frSitemap.sitemap
 ];
 
 export {
-    frMenuFooter
+    frMenuFooter,
+    frMenuTop
 };
