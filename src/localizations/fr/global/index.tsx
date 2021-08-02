@@ -19,7 +19,7 @@ const frGlobalLocale = {
         languages: 'Langues',
         title: 'Options'
     },
-    tawkTo: 'https://embed.tawk.to/6063ba9c067c2605c0bdd9d5/1f22p1sqj',
+    tawkTo: 'https://embed.tawk.to/61087adad6e7610a49ae4288/1fc4hvp3j',
     underConstruction: 'Cette page est en cours de construction.'
 };
 

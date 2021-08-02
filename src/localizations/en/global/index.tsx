@@ -19,7 +19,7 @@ const enGlobalLocale = {
         languages: 'Languages',
         title: 'Options'
     },
-    tawkTo: 'https://embed.tawk.to/601b625fa9a34e36b973a092/1etlfghc8',
+    tawkTo: 'https://embed.tawk.to/61087bf0649e0a0a5ccf30c9/1fc4i8980',
     underConstruction: 'This page is under construction.'
 };
 
