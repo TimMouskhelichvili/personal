@@ -17,7 +17,7 @@ const configuration = {
     general: {
         baseUrl: 'https://aftrconsulting.com',
         clutch: '',
-        company: 'AftrConsulting',
+        company: 'Tim Mouskhelichvili',
         email: 'info@aftrconsulting.com',
         facebook: 'https://www.facebook.com/aftrconsulting/',
         github: 'https://github.com/AftrConsulting',

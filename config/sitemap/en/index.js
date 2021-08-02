@@ -4,7 +4,7 @@ const enSitemap = {
         title: 'Home',
         exclude: true,
         home: true,
-        seoTitle: 'Best Web Development Services - {COMPANY}',
+        seoTitle: '{COMPANY} - Software Engineer & Consultant',
         description: `Very Fast Web Development. React, PHP, Node.js. Consultations. 
 					  Affordable Pricing. Top Results. On-Time Delivery.`
     },

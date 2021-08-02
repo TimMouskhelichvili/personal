@@ -5,24 +5,22 @@ import {
 } from './style';
 import { CustomImage } from 'src/components/elements/customImage';
 import { Icon } from 'src/components/elements/icon';
+import { useLocale } from 'src/localizations';
 
 /**
  * The FirstSection component.
  */
 const FirstSection = (): ReactElement => {
+    const locale = useLocale();
+	
     return (
         <StyledSection>
             <StyledRow>
                 <div>
-                    <StyledSubH1>Software Engineer & Consultant</StyledSubH1>
-                    <StyledH1>Tim Mouskhelichvili</StyledH1>
-                    {getPerks([
-                        'Full-Stack Web Developer \u00A0💪',
-                        'JavaScript Expert (React, TypeScript, Vanilla.js)\u00A0🏆',
-                        'On-Time Delivery\u00A0⌛',
-                        'Delivers Top Results\u00A0🏆'
-                    ])}
-                    <StyledUnderStars>I guarantee TOP RESULTS on all my projects.</StyledUnderStars>
+                    <StyledSubH1>{locale.pages.home.first.subHeading}</StyledSubH1>
+                    <StyledH1>{locale.pages.home.first.heading}</StyledH1>
+                    {getPerks(locale.pages.home.first.perks)}
+                    <StyledUnderStars>{locale.pages.home.first.text2}</StyledUnderStars>
                     <StyledButton withIcon={true} />
                 </div>
                 <StyleImgContainer>
@@ -30,7 +28,7 @@ const FirstSection = (): ReactElement => {
                         <CustomImage 
                             height={'400px'}
                             width={'450px'}
-                            src={'/static/images/home/timmouskhelichvili.jpg'} />
+                            src={'/static/images/home/timMouskhelichvili.jpg'} />
                     </div>
                 </StyleImgContainer>
             </StyledRow>
