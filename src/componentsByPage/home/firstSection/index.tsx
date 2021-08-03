@@ -12,15 +12,16 @@ import { useLocale } from 'src/localizations';
  */
 const FirstSection = (): ReactElement => {
     const locale = useLocale();
-	
+    const { subHeading, heading, perks, text2 } = locale.pages.home.first;
+
     return (
         <StyledSection>
             <StyledRow>
                 <div>
-                    <StyledSubH1>{locale.pages.home.first.subHeading}</StyledSubH1>
-                    <StyledH1>{locale.pages.home.first.heading}</StyledH1>
-                    {getPerks(locale.pages.home.first.perks)}
-                    <StyledUnderStars>{locale.pages.home.first.text2}</StyledUnderStars>
+                    <StyledSubH1>{subHeading}</StyledSubH1>
+                    <StyledH1>{heading}</StyledH1>
+                    {getPerks(perks)}
+                    <StyledUnderStars>{text2}</StyledUnderStars>
                     <StyledButton withIcon={true} />
                 </div>
                 <StyleImgContainer>
@@ -29,6 +30,7 @@ const FirstSection = (): ReactElement => {
                             loading={'lazy'} 
                             height={'400px'}
                             width={'450px'}
+                            alt={text2}
                             src={'/static/images/home/timMouskhelichvili.jpg'} />
                     </div>
                 </StyleImgContainer>
