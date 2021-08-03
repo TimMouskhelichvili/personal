@@ -4,8 +4,8 @@ const frSitemap = {
         title: 'Home',
         exclude: true,
         home: true,
-        seoTitle: 'Les Meilleurs Services de Développement Web - {COMPANY}',
-        description: `Développement Web Très Rapide. React, PHP, Node.js. Consultations. 
+        seoTitle: '{COMPANY} - Développeur Web & Consultant',
+        description: `Tim Mouskhelichvili Consultant (React, PHP, Node.js). Consultations. 
 		              Prix Compétitifs. Meilleurs Résultats. Délais Respectés.`
     },
     blog: { 

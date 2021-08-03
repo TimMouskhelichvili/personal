@@ -18,7 +18,7 @@ const configuration = {
         baseUrl: 'https://aftrconsulting.com',
         clutch: '',
         company: 'Tim Mouskhelichvili',
-        email: 'info@aftrconsulting.com',
+        email: 't.mouskhelichvili@protonmail.com',
         facebook: 'https://www.facebook.com/aftrconsulting/',
         github: 'https://github.com/AftrConsulting',
         google: {
@@ -32,10 +32,7 @@ const configuration = {
             openGraphImage: '/static/images/openGraphImage.png'
         },
         linkedIn: 'https://www.linkedin.com/in/tim-mouskhelichvili/',
-        phone: '+1 (438) 994-2296',
-        twitter: {
-            account: '@aftrconsulting'
-        }
+        phone: '+1 (438) 994-2296'
     },
     localStorage: {
         primary: 'primary',

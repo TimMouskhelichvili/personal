@@ -50,8 +50,7 @@ const Seo = (props: ISeoProps): ReactElement => {
                 { name: 'twitter:card', content: 'summary_large_image' },
                 { name: 'twitter:title', content: title },
                 { name: 'twitter:description', content: description },
-                { name: 'twitter:image', content: image },
-                { name: 'twitter:site', content: configuration.general.twitter.account }
+                { name: 'twitter:image', content: image }
             ]}
         />
     );
