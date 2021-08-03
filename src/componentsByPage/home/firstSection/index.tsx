@@ -25,7 +25,8 @@ const FirstSection = (): ReactElement => {
                 </div>
                 <StyleImgContainer>
                     <div>
-                        <CustomImage 
+                        <CustomImage
+                            loading={'lazy'} 
                             height={'400px'}
                             width={'450px'}
                             src={'/static/images/home/timMouskhelichvili.jpg'} />
