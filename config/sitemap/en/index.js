@@ -20,7 +20,7 @@ const enSitemap = {
         title: 'Sitemap',
         exclude: true,
         seoTitle: 'Sitemap - {COMPANY}',
-        description: 'Sitemap of AftrConsulting.'
+        description: 'Sitemap of Tim Mouskhelichvili.'
     }
 };
 

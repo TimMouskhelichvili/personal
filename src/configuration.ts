@@ -15,7 +15,7 @@ const configuration = {
         name: process.env.NODE_ENV
     },
     general: {
-        baseUrl: 'https://aftrconsulting.com',
+        baseUrl: 'https://timmouskhelichvili.com',
         clutch: '',
         company: 'Tim Mouskhelichvili',
         email: 't.mouskhelichvili@protonmail.com',
