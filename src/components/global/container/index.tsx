@@ -5,7 +5,6 @@ import { Analytics } from 'src/components/global/container/components/analytics'
 import { Chat } from 'src/components/global/container/components/chat';
 import { Header } from 'src/components/global/header';
 import { Footer } from 'src/components/global/footer';
-import { configuration } from 'src/configuration';
 import { isProduction } from 'src/utils';
 
 interface IContainerProps {
@@ -23,9 +22,7 @@ const Container = (props: IContainerProps): ReactElement => {
 	
     useEffect(() => {
         const handleRouteChange = (url: string): void => {
-            window['gtag']?.('config', configuration.general.google.universal, {
-                page_path: url
-            });
+            window['ga']?.('send', 'pageview', url);
         };
 
         router.events.on('routeChangeComplete', handleRouteChange);
