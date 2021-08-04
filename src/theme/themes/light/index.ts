@@ -49,6 +49,16 @@ const lightTheme: typeof darkTheme = {
         primaryColors: {
             color: '#fafafa'
         }
+    },
+    pages: {
+        home: {
+            description: {
+                background: darken(.05, colors.background)
+            },
+            services: {
+                cardBackground: darken(.05, colors.background)
+            }
+        }
     }
 };
 

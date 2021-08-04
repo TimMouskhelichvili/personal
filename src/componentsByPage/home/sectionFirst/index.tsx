@@ -8,9 +8,9 @@ import { Icon } from 'src/components/elements/icon';
 import { useLocale } from 'src/localizations';
 
 /**
- * The FirstSection component.
+ * The SectionFirst component.
  */
-const FirstSection = (): ReactElement => {
+const SectionFirst = (): ReactElement => {
     const locale = useLocale();
     const { subHeading, heading, perks, text2 } = locale.pages.home.first;
 
@@ -54,5 +54,5 @@ const getPerks = (perks: string[]): ReactElement => (
 );
 
 export {
-    FirstSection
+    SectionFirst
 };

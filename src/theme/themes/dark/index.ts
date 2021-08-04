@@ -48,6 +48,16 @@ const darkTheme = {
         primaryColors: {
             color: '#fafafa'
         }
+    },
+    pages: {
+        home: {
+            description: {
+                background: lighten(.05, colors.background)
+            },
+            services: {
+                cardBackground: lighten(.05, colors.background)
+            }
+        }
     }
 };
 

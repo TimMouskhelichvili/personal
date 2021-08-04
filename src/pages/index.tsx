@@ -1,5 +1,7 @@
 import React, { ReactElement } from 'react';
-import { FirstSection } from 'src/componentsByPage/home/firstSection';
+import { SectionDescription } from 'src/componentsByPage/home/sectionDescription';
+import { SectionServices } from 'src/componentsByPage/home/sectionServices';
+import { SectionFirst } from 'src/componentsByPage/home/sectionFirst';
 import { Container } from 'src/components/global/container';
 import { Seo } from 'src/components/global/seo';
 import { useLocale } from 'src/localizations';
@@ -13,7 +15,9 @@ const Home = (): ReactElement => {
     return (
         <Container>
             <Seo {...locale.sitemap.home} />
-            <FirstSection />
+            <SectionFirst />
+            <SectionDescription />
+            <SectionServices />
         </Container>
     );
 };
