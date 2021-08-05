@@ -5,12 +5,17 @@ const frGlobalLocale = {
     consultation: 'https://calendly.com/aftrconsulting/consultation-30mins-gratuit',
     footer: {
         copyright: 'Tous droits réservés. © {0}',
-        menu: frMenuFooter
+        menu: frMenuFooter,
+        quote: 'Tim Mouskhelichvili - Développeur Web & Consultant'
     },
     goBack: 'Retourner',
     hrefs: {
+        email: 'Envoyez-nous un e-mail',
+        github: 'Aller à Github',
+        linkedIn: 'Aller à LinkedIn',
         logo: 'Aller à la page principale',
         options: 'Ouvrir le menu d\'options',
+        phone: 'Nous appeler',
         sideMenu: 'Ouvrir le menu'
     },
     options: {

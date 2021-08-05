@@ -20,6 +20,14 @@ const lightTheme: typeof darkTheme = {
         darkModeSwitch: {
             background: darken(.15, colors.background)
         },
+        footer: {
+            background: darken(.05, colors.background),
+            icon: {
+                background: colors.color,
+                color: 'white'
+            },
+            menuColor: darken(.6, colors.background)
+        },
         header: {
             iconColor: darken(.5, colors.background),
             logo: {

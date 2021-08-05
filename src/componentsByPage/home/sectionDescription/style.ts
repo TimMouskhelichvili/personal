@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { Section } from 'src/components/elements/section';
 import { getThemeVariable } from 'src/theme/utils';
+import { devices } from 'src/theme';
 
 const StyledSection = styled(Section)`
 	background: ${getThemeVariable('pages.home.description.background')};
@@ -11,6 +12,21 @@ const StyleImgContainer = styled.div`
 		display: inline-block;
 		object-fit: cover;
 		border-radius: ${getThemeVariable('global.borderRadius')};
+	}
+
+	@media screen and (max-width: ${devices.smallTablet}) {
+		text-align: center;
+	
+		img {
+			margin-bottom: 30px;
+		}
+	}
+
+	@media screen and (max-width: ${devices.smallMobile}) {
+		img {
+			width: 100%;
+			height: auto;
+		}
 	}
 `;
 

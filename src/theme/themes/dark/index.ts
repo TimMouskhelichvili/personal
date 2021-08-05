@@ -19,6 +19,14 @@ const darkTheme = {
         darkModeSwitch: {
             background: darken(.1, '#fafafa')
         },
+        footer: {
+            background: lighten(.05, colors.background),
+            icon: {
+                background: colors.background,
+                color: 'white'
+            },
+            menuColor: lighten(.8, colors.background)
+        },
         header: {
             iconColor: lighten(.6, colors.background),
             logo: {

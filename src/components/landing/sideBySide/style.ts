@@ -23,8 +23,6 @@ const StyledSideBySide = styled(Row)`
 				padding-left: 20px;
 			}
 		}
-
-		flex: 1;
 	}
 
 	@media screen and (max-width: ${devices.smallTablet}) {
