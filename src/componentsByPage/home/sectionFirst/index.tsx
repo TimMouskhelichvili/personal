@@ -30,7 +30,7 @@ const SectionFirst = (): ReactElement => {
                             loading={'lazy'} 
                             height={'400px'}
                             width={'450px'}
-                            alt={text2}
+                            alt={heading}
                             src={'/static/images/home/timMouskhelichvili.jpg'} />
                     </div>
                 </StyleImgContainer>

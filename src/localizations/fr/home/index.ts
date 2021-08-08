@@ -27,63 +27,63 @@ const frHomeLocale = {
     },
     services: {
         bookConsultation: {
-            description: `Prenez un appel gratuit pour discuter de ce que nous pouvons faire pour votre projet.
-						  Nous pourrons répondre à toutes vos questions et vous fournir un prix adapté à votre budget.`,
-            title: 'AFTRConsulting délivre toujours.\u00A0🤝'
+            description: `Prenez un appel gratuit avec moi pour discuter de votre projet.
+			              Je répondrai à toutes vos questions et vous fournirai un prix adapté à votre budget.`,
+            title: 'Ensemble, construisons le projet de vos rêves.\u00A0🤝'
         },
         list: [
             {
-                description: 'Nous développerons une excellente application web moderne pour votre entreprise.',
+                description: 'Je vais développer une excellente application web moderne pour votre entreprise.',
                 title: 'Développement Web'
             },
             {
-                description: 'Quelques outils que nous utilisons: React, TypeScript, Webpack, JavaScript, GraphQL.',
+                description: 'Quelques outils que j\'utilise: React, TypeScript, Webpack, JavaScript, GraphQL.',
                 title: 'Développement Front-End'
             },
             {
-                description: 'Quelques outils et langages que nous utilisons: PHP, Node.js, Nginx, Docker, Kubernetes.',
+                description: 'Quelques outils et langages que j\'utilise: PHP, Node.js, Nginx, Docker, Kubernetes.',
                 title: 'Développement Back-End'
             },
             {
-                description: 'Nous optimiserons votre site sur PageSpeed Insights à 100%.',
+                description: 'Je vais optimiser votre site sur PageSpeed Insights à 100%.',
                 title: 'Performances & Optimisation'
             },
             {
-                description: 'Nous vous aiderons à générer plus de profits et de clients à partir de votre site.',
+                description: 'Je vais vous aider à générer plus de profits et de clients à partir de votre site.',
                 title: 'Optimisation Taux de Conversion'
             },
             {
-                description: 'Nous vous aiderons à améliorer la quantité et la qualité du trafic sur votre site à partir de Google.',
+                description: 'Je vais vous aider à améliorer la quantité et la qualité du trafic sur votre site à partir de Google.',
                 title: 'Search Engine Optimization'
             },
             {
-                description: 'Nous allons créer une landing page optimisée qui générera plus de profits.',
-                title: 'Création De Landing Page'
+                description: 'Je vais créer une landing page optimisée qui générera plus de profits.',
+                title: 'Création de Landing Page'
             },
             {
-                description: 'Nous vous aiderons à développer, améliorer et maintenir un site web WordPress.',
+                description: 'Je vais vous aider à développer, améliorer et maintenir un site web WordPress.',
                 title: 'WordPress'
             },
             {
-                description: 'Avez-vous un bogue que vous ne pouvez pas corriger? Nous vous aiderons à le résoudre.',
+                description: 'Avez-vous un bogue que vous ne pouvez pas corriger? Je vais vous aider à le résoudre.',
                 title: 'Débogage'
             },
             {
-                description: 'Nous vous aiderons à améliorer la qualité de votre code en implémentant des standards.',
+                description: 'Je vais vous aider à améliorer la qualité de votre code en implémentant des standards.',
                 title: 'Standards de Code'
             },
             {
-                description: 'Le code spaghetti est difficile à lire et à maintenir. Nous vous aiderons à le nettoyer.',
+                description: 'Le code spaghetti est difficile à lire et à maintenir. Je vais vous aider à le nettoyer.',
                 title: 'Refactoring de Code'
             },
             {
-                description: 'Nous vous aiderons à trouver les bogues plus tôt en implémentant des tests unitaires.',
+                description: 'Je vais vous aider à trouver les bogues plus tôt en implémentant des tests unitaires.',
                 title: 'Tests Unitaires'
             }
         ],
-        ps: 'Cette liste n\'est pas exhaustive, contactez-nous si vous avez besoin de quelque chose de spécial. Nous vous aiderons.',
+        ps: 'Cette liste n\'est pas exhaustive, contactez-moi si vous avez besoin de quelque chose de spécial et je vous aiderai.',
         subTitle: 'Mes Services',
-        title: 'Nous avons toutes les compétences nécessaires pour créer de superbes applications et sites web modernes.\u00A0🙏'
+        title: 'Je possède toutes les compétences pour créer votre prochain projet web.\u00A0🙏'
     }
 };
 
