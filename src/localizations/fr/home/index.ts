@@ -27,63 +27,63 @@ const frHomeLocale = {
     },
     services: {
         bookConsultation: {
-            description: `Schedule a free call to discuss what we can do for your project.
-						  We'll be able to share ideas, answer your questions and provide you a quote adjusted to your budget.`,
-            title: 'AFTRConsulting makes it happen.\u00A0🤝'
+            description: `Prenez un appel gratuit pour discuter de ce que nous pouvons faire pour votre projet.
+						  Nous pourrons répondre à toutes vos questions et vous fournir un prix adapté à votre budget.`,
+            title: 'AFTRConsulting délivre toujours.\u00A0🤝'
         },
         list: [
             {
-                description: 'We\'ll develop a great modern web application for your business.',
-                title: 'Web Development'
+                description: 'Nous développerons une excellente application web moderne pour votre entreprise.',
+                title: 'Développement Web'
             },
             {
-                description: 'We\'ll optimize your site to 100% in PageSpeed Insights and fix other performance issues.',
-                title: 'Web Performance & Optimization'
+                description: 'Quelques outils que nous utilisons: React, TypeScript, Webpack, JavaScript, GraphQL.',
+                title: 'Développement Front-End'
             },
             {
-                description: 'We\'ll help you generate more leads and customers from your website.',
-                title: 'Conversion Rate Optimization'
+                description: 'Quelques outils et langages que nous utilisons: PHP, Node.js, Nginx, Docker, Kubernetes.',
+                title: 'Développement Back-End'
             },
             {
-                description: 'We\'ll help you improve the quantity and quality of your website traffic from Google.',
+                description: 'Nous optimiserons votre site sur PageSpeed Insights à 100%.',
+                title: 'Performances & Optimisation'
+            },
+            {
+                description: 'Nous vous aiderons à générer plus de profits et de clients à partir de votre site.',
+                title: 'Optimisation Taux de Conversion'
+            },
+            {
+                description: 'Nous vous aiderons à améliorer la quantité et la qualité du trafic sur votre site à partir de Google.',
                 title: 'Search Engine Optimization'
             },
             {
-                description: 'Do you have a nasty bug that you cannot fix? We\'ll help you find the cause and solve it.',
-                title: 'Debugging'
+                description: 'Nous allons créer une landing page optimisée qui générera plus de profits.',
+                title: 'Création De Landing Page'
             },
             {
-                description: 'We\'ll create an optimized landing page that will generate more leads/profits.',
-                title: 'Landing Page Creation'
-            },
-            {
-                description: 'We\'ll help you improve your code quality by implementing various tools and standards.',
-                title: 'Code Standards'
-            },
-            {
-                description: 'Spaghetti code is hard to read and hard to maintain. We\'ll help you clean it up.',
-                title: 'Code Refactoring'
-            },
-            {
-                description: 'We\'ll help you find bugs earlier and save time and money by implementing unit tests.',
-                title: 'Unit Tests'
-            },
-            {
-                description: 'We\'ll help develop, improve and maintain a WordPress website.',
+                description: 'Nous vous aiderons à développer, améliorer et maintenir un site web WordPress.',
                 title: 'WordPress'
             },
             {
-                description: 'Some tools that we use: React, TypeScript, Webpack, JavaScript, GraphQL.',
-                title: 'Front-End Development'
+                description: 'Avez-vous un bogue que vous ne pouvez pas corriger? Nous vous aiderons à le résoudre.',
+                title: 'Débogage'
             },
             {
-                description: 'Some tools and languages that we use: PHP, Node.js, Nginx, Docker, Kubernetes.',
-                title: 'Back-End Development'
+                description: 'Nous vous aiderons à améliorer la qualité de votre code en implémentant des standards.',
+                title: 'Standards de Code'
+            },
+            {
+                description: 'Le code spaghetti est difficile à lire et à maintenir. Nous vous aiderons à le nettoyer.',
+                title: 'Refactoring de Code'
+            },
+            {
+                description: 'Nous vous aiderons à trouver les bogues plus tôt en implémentant des tests unitaires.',
+                title: 'Tests Unitaires'
             }
         ],
-        ps: 'This list is not exhaustive, contact us if you need something special. We\'ll help you.',
-        subTitle: 'Our Services',
-        title: 'We have all the skills for building great modern web apps and sites.\u00A0🙏'
+        ps: 'Cette liste n\'est pas exhaustive, contactez-nous si vous avez besoin de quelque chose de spécial. Nous vous aiderons.',
+        subTitle: 'Mes Services',
+        title: 'Nous avons toutes les compétences nécessaires pour créer de superbes applications et sites web modernes.\u00A0🙏'
     }
 };
 

@@ -25,7 +25,6 @@ const getStructuredData = (): string => JSON.stringify({
 	'name': configuration.general.company,
 	'sameAs': [
 		configuration.general.github,
-		configuration.general.facebook,
 		configuration.general.linkedIn
 	],
 	'url': configuration.general.baseUrl
