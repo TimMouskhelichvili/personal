@@ -1,6 +1,6 @@
 const frHomeLocale = {
     description: {
-        alt: 'lorem ipsum',
+        alt: 'Développeur Web, Tim Mouskhelichvili',
         description1: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer finibus, metus eu 
 		              efficitur rutrum, eros eros sagittis est, sed malesuada justo velit eu leo. Mauris convallis orci 
 					  nec arcu mattis aliquam. Quisque quam neque, ornare quis leo at, ultrices sagittis mauris. 
@@ -11,10 +11,12 @@ const frHomeLocale = {
 					  dictum mollis. Duis a sem vehicula, imperdiet turpis vitae, sollicitudin leo. Integer at mauris nec ipsum maximus 
 					  iaculis. Maecenas commodo, velit sed ornare vestibulum, justo felis elementum nisl, ullamcorper interdum ex erat 
 					  non mauris. Donec venenatis lacus ac iaculis scelerisque. Maecenas sagittis in massa sed consequat.`,
-        subTitle: 'lorem ipsum',
-        title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+        subTitle: 'qui suis je?',
+        title: 'Un développeur web en qui vous pouvez avoir confiance.'
     },
     first: {
+        alt: 'Développeur Web, Tim Mouskhelichvili',
+        googleReview: 'avis Google',
         heading: 'Tim Mouskhelichvili',
         perks: [
             'Développeur Web Full-Stack \u00A0💪',

@@ -119,7 +119,21 @@ const StyledRow = styled(Row)`
 	}
 `;
 
+const StyledSealsContainer = styled.div`
+	margin-top: 15px;
+
+	> div {
+		vertical-align: middle;
+		margin-top: 10px;
+
+		&:first-of-type {
+			margin-right: 20px;
+		}
+	}
+`;
+
 export {
+    StyledSealsContainer,
     StyledButton,
     StyledSection,
     StyleImgContainer,

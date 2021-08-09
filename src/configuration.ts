@@ -23,6 +23,7 @@ const configuration = {
         google: {
             // eslint-disable-next-line max-len
             maps: 'https://www.google.com/maps/place/AftrConsulting+-+Web+Development+Services/@62.3853314,-96.8177377,3z/data=!4m5!3m4!1s0x0:0xdf4a57832b5c7165!8m2!3d62.3853314!4d-96.8177377',
+            reviews: 3,
             universal: 'UA-192636657-2'
         },
         imgs: {

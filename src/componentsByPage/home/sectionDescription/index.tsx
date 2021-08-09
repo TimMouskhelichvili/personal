@@ -13,29 +13,31 @@ import { useLocale } from 'src/localizations';
  */
 const SectionDescription = (): ReactElement => {
     const locale = useLocale();
-
+    const { subTitle, title, alt, description1, description2 } = locale.pages.home.description;
+	
     return (
         <StyledSection>
             <SideBySide>
                 <div>
-                    <SubTitle>{locale.pages.home.description.subTitle}</SubTitle>
-                    <Title>{locale.pages.home.description.title}</Title>
+                    <SubTitle>{subTitle}</SubTitle>
+                    <Title>{title}</Title>
                     <StyleImgContainer>
                         <CustomImage
                             loading={'lazy'} 
                             height={'400px'}
                             width={'450px'}
-                            alt={locale.pages.home.description.alt}
+                            alt={alt}
+                            title={alt}
                             src={'/static/images/home/timMouskhelichvili3.jpg'} />
                     </StyleImgContainer>
                 </div>
                 <Paragraph>
                     <div>
-                        <SpanText html={locale.pages.home.description.description1} />
+                        <SpanText html={description1} />
                     </div>
                     <StyledSeparator />
                     <StyledItalic>
-                        <SpanText html={locale.pages.home.description.description2} />
+                        <SpanText html={description2} />
                     </StyledItalic>
                 </Paragraph>
             </SideBySide>
