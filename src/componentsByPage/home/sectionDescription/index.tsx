@@ -6,6 +6,7 @@ import { Paragraph } from 'src/components/elements/paragraph';
 import { SpanText } from 'src/components/elements/spanText';
 import { SubTitle } from 'src/components/landing/subTitle';
 import { Title } from 'src/components/landing/title';
+import { Icons } from 'src/components/global/icons';
 import { useLocale } from 'src/localizations';
 
 /**
@@ -39,6 +40,9 @@ const SectionDescription = (): ReactElement => {
                     <StyledItalic>
                         <SpanText html={description2} />
                     </StyledItalic>
+                    <div>
+                        <Icons />
+                    </div>
                 </Paragraph>
             </SideBySide>
         </StyledSection>

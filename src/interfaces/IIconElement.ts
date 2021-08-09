@@ -1,11 +1,11 @@
 import { IIconDefinition } from 'src/components/elements/icon/interfaces/IIconDefinition';
 
-interface IFooterIcon { 
+interface IIconElement { 
 	icon: IIconDefinition; 
 	href: string;
 	title: string; 
 }
 
 export type {
-    IFooterIcon
+    IIconElement
 };

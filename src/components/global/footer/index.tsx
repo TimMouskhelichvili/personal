@@ -2,15 +2,12 @@ import React, { ReactElement } from 'react';
 import { useAmp } from 'next/amp';
 import { useRouter } from 'next/router';
 import { faEnvelope, faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
-import { StyledSection, StyledCopyright, StyledName, StyledMailLink, StyledMenu, StyledIcons, StyledQuote, StyledPhoneLink } from './style';
-import { IFooterIcon } from 'src/components/global/footer/interfaces/IFooterIcon';
-import { iconLinkedIn } from 'src/componentsByPage/home/images/footerLinkedIn';
-import { iconGithub } from 'src/componentsByPage/home/images/footerGithub';
+import { StyledSection, StyledCopyright, StyledName, StyledMailLink, StyledMenu, StyledQuote, StyledPhoneLink } from './style';
 import { CustomImage } from 'src/components/elements/customImage';
-import { OutsideLink } from 'src/components/elements/outsideLink';
 import { IMenuLinkItem } from 'src/interfaces/IMenuLinkItem';
 import { getPhoneLink, isLandingPage } from 'src/utils';
 import { MyLink } from 'src/components/elements/link';
+import { Icons } from 'src/components/global/icons';
 import { Icon } from 'src/components/elements/icon';
 import { Row } from 'src/components/elements/row';
 import { configuration } from 'src/configuration';
@@ -37,10 +34,7 @@ const Footer = (): ReactElement => {
                     <>
                         {!amp && getMenu(locale.global.footer.menu)}
                         {getContactInfo(locale)}
-                        {!amp && getIcons([
-                            { href: configuration.general.github, icon: iconGithub, title: locale.global.hrefs.github },
-                            { href: configuration.general.linkedIn, icon: iconLinkedIn, title: locale.global.hrefs.linkedIn }
-                        ])}
+                        {!amp && <Icons />}
                     </>
                 </Row>
             </StyledSection>
@@ -80,22 +74,6 @@ const getContactInfo = (locale: typeof enLocale): ReactElement => (
             </StyledPhoneLink>
         </div>
     </div>
-);
-
-/**
- * Returns the icons.
- * @param {IFooterIcon[]} icons - The icons. 
- */
-const getIcons = (icons: IFooterIcon[]): ReactElement => (
-    <StyledIcons>
-        {icons.map((x, key): ReactElement => (
-            <OutsideLink href={x.href} key={key} title={x.title}>
-                <div>
-                    <Icon icon={x.icon} />
-                </div>
-            </OutsideLink>
-        ))}
-    </StyledIcons>
 );
 
 /**
