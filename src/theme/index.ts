@@ -33,8 +33,8 @@ const devices = {
  * All primary colors.
  */
 const primaryColors = [ 
-    '#50CB93',
     '#BD4B4B',
+    '#50CB93',
     '#FFAA4C',
     '#5089C6'
 ];
