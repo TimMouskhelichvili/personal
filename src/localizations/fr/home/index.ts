@@ -1,16 +1,15 @@
 const frHomeLocale = {
     description: {
         alt: 'Développeur Web, Tim Mouskhelichvili',
-        description1: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer finibus, metus eu 
-		              efficitur rutrum, eros eros sagittis est, sed malesuada justo velit eu leo. Mauris convallis orci 
-					  nec arcu mattis aliquam. Quisque quam neque, ornare quis leo at, ultrices sagittis mauris. 
-					  Nullam in nibh purus. Nulla eros lectus, lobortis interdum odio vitae, rhoncus scelerisque nulla. 
-					  Donec euismod a diam id bibendum. Suspendisse tristique a leo id blandit. Morbi facilisis lorem 
-					  facilisis est laoreet, sit amet fermentum metus fermentum.`,
-        description2: `Phasellus nec elementum nulla. Suspendisse sodales ipsum sit amet pulvinar eleifend. Morbi congue lectus id felis 
-					  dictum mollis. Duis a sem vehicula, imperdiet turpis vitae, sollicitudin leo. Integer at mauris nec ipsum maximus 
-					  iaculis. Maecenas commodo, velit sed ornare vestibulum, justo felis elementum nisl, ullamcorper interdum ex erat 
-					  non mauris. Donec venenatis lacus ac iaculis scelerisque. Maecenas sagittis in massa sed consequat.`,
+        description1: `Bonjour 👋! Je suis Tim Mouskhelichvili, un Développeur Web Full-Stack avec 
+					  une passion pour aider mes clients à <span class="italic">transformer leurs entreprises en leur créant des
+					 projets web incroyables.</span> J'offre une vaste gamme de services, du développement web aux consultations 
+					 et au coaching. Étant dans l'industrie du développement Web depuis plus de 5 ans et ayant complété 
+					 une multitude de projets web, je vous fournirai d'excellents services et vous donnerai des conseils 
+					 qui vous feront économiser beaucoup de temps et d'argent\u00A0💸. Je vous fournirai les meilleurs résultats 
+					 en respectant vos délais, et ce pour <span class="underline">un prix très abordable.</span>`,
+        description2: `<span class="italic">"Tim est un développeur web très fiable et vous pouvez TOUJOURS compter sur lui."</span>
+					   <br />Georges M. (Psyhelp)`,
         subTitle: 'qui suis je?',
         title: 'Un développeur web en qui vous pouvez avoir confiance.'
     },
@@ -19,7 +18,7 @@ const frHomeLocale = {
         googleReview: 'avis Google',
         heading: 'Tim Mouskhelichvili',
         perks: [
-            'Développeur Web Full-Stack \u00A0💪',
+            'Développeur Web Full-Stack\u00A0💪',
             'Expert en JavaScript (React, TypeScript, Vanilla.js)\u00A0😎',
             'Meilleurs Résultats en Respectant les Délais\u00A0🏆',
             'Prix Compétitifs\u00A0💸'
