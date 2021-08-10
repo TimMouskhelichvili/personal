@@ -3,6 +3,7 @@ import { useAmp } from 'next/amp';
 
 interface ICustomImageProps {
 	src: string;
+	srcset?: string;
 	height?: string;
 	heights?: string;
 	layout?: string;
@@ -10,6 +11,10 @@ interface ICustomImageProps {
 	alt?: string;
 	loading?: 'eager' | 'lazy';
 	title?: string;
+	media?: {
+		media: string;
+		src: string;	
+	}[];
 }
 
 /**
@@ -17,13 +22,12 @@ interface ICustomImageProps {
  * @param {ICustomImageProps} props - The props.
  */
 const CustomImage = (props: ICustomImageProps): ReactElement => {
-    const webpSrc = `${props.src.substr(0, props.src.lastIndexOf('.')) }.webp`;
     const isAmp = useAmp();
 
     if (isAmp) {
         return (
             <amp-img 
-                src={webpSrc}
+                src={getWebP(props.src)}
                 layout={props.layout}
                 height={props.height} 
                 width={props.width} 
@@ -43,9 +47,24 @@ const CustomImage = (props: ICustomImageProps): ReactElement => {
         );
     }
 
+    return getPicture(props);
+};
+
+/**
+ * Returns the picture.
+ * @param {ICustomImageProps} props - The props.
+ */
+const getPicture = (props: ICustomImageProps): ReactElement => {
     return (
         <picture>
-            <source srcSet={webpSrc} type={'image/webp'} />
+            <source src={getWebP(props.src)} type={'image/webp'} />
+            {props.media && (
+                <>
+                    {props.media.map((x, key) => (
+                        <source key={key} media={x.media} srcSet={getWebP(x.src)} type={'image/webp'} />
+                    ))}
+                </>
+            )}
             <img 
                 src={props.src}
                 height={props.height} 
@@ -55,6 +74,15 @@ const CustomImage = (props: ICustomImageProps): ReactElement => {
                 loading={props.loading} />
         </picture>
     );
+};
+
+/**
+ * Returns the webP.
+ * @param {string} src - The src. 
+ */
+const getWebP = (src: string): string => {
+    //return src;
+    return `${src.substr(0, src.lastIndexOf('.')) }.webp`;
 };
 
 export {

@@ -29,6 +29,10 @@ const SectionDescription = (): ReactElement => {
                             width={'450px'}
                             alt={alt}
                             title={alt}
+                            media={[
+                                { media: '(max-width: 999px)', src: '/static/images/home/timMouskhelichvili.jpg' },
+                                { media: '(min-width: 1000px)', src: '/static/images/home/timMouskhelichvili3.jpg' }
+                            ]}
                             src={'/static/images/home/timMouskhelichvili3.jpg'} />
                     </StyleImgContainer>
                 </div>
