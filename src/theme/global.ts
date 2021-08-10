@@ -63,6 +63,10 @@ const globalStyles = `
 		text-decoration: underline;
 	}
 
+	.italic {
+		font-style: italic;
+	}
+
 	.bold {
 		font-weight: bold;
 	}

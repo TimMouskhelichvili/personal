@@ -1,16 +1,15 @@
 const enHomeLocale = {
     description: {
         alt: 'Web Software Engineer, Tim Mouskhelichvili',
-        description1: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer finibus, metus eu 
-		              efficitur rutrum, eros eros sagittis est, sed malesuada justo velit eu leo. Mauris convallis orci 
-					  nec arcu mattis aliquam. Quisque quam neque, ornare quis leo at, ultrices sagittis mauris. 
-					  Nullam in nibh purus. Nulla eros lectus, lobortis interdum odio vitae, rhoncus scelerisque nulla. 
-					  Donec euismod a diam id bibendum. Suspendisse tristique a leo id blandit. Morbi facilisis lorem 
-					  facilisis est laoreet, sit amet fermentum metus fermentum.`,
-        description2: `Phasellus nec elementum nulla. Suspendisse sodales ipsum sit amet pulvinar eleifend. Morbi congue lectus id felis 
-					  dictum mollis. Duis a sem vehicula, imperdiet turpis vitae, sollicitudin leo. Integer at mauris nec ipsum maximus 
-					  iaculis. Maecenas commodo, velit sed ornare vestibulum, justo felis elementum nisl, ullamcorper interdum ex erat 
-					  non mauris. Donec venenatis lacus ac iaculis scelerisque. Maecenas sagittis in massa sed consequat.`,
+        description1: `Hello 👋! I am Tim Mouskhelichvili, a Full-Stack Web Developer & Consultant with a passion for helping 
+		               my clients <span class="italic">transform their businesses by building them amazing web projects</span>. 
+					   I offer a vast collection of services, from web development to consulting on an existing project and 
+					   coach an existing team. Having been in the Web Development industry for over 5 years and successfully 
+					   completed a multitude of web projects, I will provide you top-notch services and give you advices that 
+					   will save you a lot of time and money. I will deliver you top results on time at the 
+					   <span class="underline">most affordable price</span> compared to the competition.`,
+        description2: `<span class="italic">"Tim is a very reliable software engineer and you can ALWAYS count on him."</span>
+					   <br />Georges M. (Psyhelp)`,
         subTitle: 'who am I?',
         title: 'A software engineer you can trust.'
     },

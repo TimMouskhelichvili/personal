@@ -12,6 +12,10 @@ const StyledIcons = styled.div`
 		margin: 0px 7.5px;
 		border-radius: ${getThemeVariable('global.borderRadius')};
 
+		&:hover {
+			background: ${getThemeVariable('colors.primary')};
+		}
+
 		div {
 			display: flex;
 			align-items: center;

@@ -39,13 +39,13 @@ const StyledSeparator = styled.div`
 	border-radius: 10px;
 `;
 
-const StyledItalic = styled.div`
-	font-style: italic;
+const StyledQuote = styled.div`
+	text-align: center;
 `;
 
 export {
     StyledSeparator,
     StyledSection,
     StyleImgContainer,
-    StyledItalic
+    StyledQuote
 };

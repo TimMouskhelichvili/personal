@@ -1,5 +1,5 @@
 import React, { ReactElement } from 'react';
-import { StyledSection, StyledSeparator, StyleImgContainer, StyledItalic } from './style';
+import { StyledSection, StyledSeparator, StyleImgContainer, StyledQuote } from './style';
 import { CustomImage } from 'src/components/elements/customImage';
 import { SideBySide } from 'src/components/landing/sideBySide';
 import { Paragraph } from 'src/components/elements/paragraph';
@@ -37,9 +37,9 @@ const SectionDescription = (): ReactElement => {
                         <SpanText html={description1} />
                     </div>
                     <StyledSeparator />
-                    <StyledItalic>
+                    <StyledQuote>
                         <SpanText html={description2} />
-                    </StyledItalic>
+                    </StyledQuote>
                     <div>
                         <Icons />
                     </div>
