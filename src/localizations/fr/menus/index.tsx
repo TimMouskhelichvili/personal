@@ -6,6 +6,8 @@ const frMenuTop: IMenuItem[] = [
 ];
 
 const frMenuFooter = [
+    frSitemap.privacyPolicy,
+    frSitemap.termsOfUse,
     frSitemap.sitemap
 ];
 
