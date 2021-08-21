@@ -16,6 +16,7 @@ const frSitemap = {
 		              Je fournis du développement et des consultations en React, TypeScript, PHP, Node.js.`
     },
     privacyPolicy: {
+        exclude: true,
         href: '/privacy-policy',
         title: 'Politique de confidentialité'
     },
@@ -27,6 +28,7 @@ const frSitemap = {
         description: 'Sitemap de Tim Mouskhelichvili.'
     },
     termsOfUse: {
+        exclude: true,
         href: '/terms-of-use',
         title: 'Conditions d’utilisation'
     }

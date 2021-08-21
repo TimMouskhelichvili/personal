@@ -16,6 +16,7 @@ const enSitemap = {
 					  Tim Mouskhelichvili Consultant. I provide React, TypeScript, PHP, Node.js development and consultations.`
     },
     privacyPolicy: {
+        exclude: true,
         href: '/privacy-policy',
         title: 'Privacy Policy'
     },
@@ -27,6 +28,7 @@ const enSitemap = {
         description: 'Sitemap of Tim Mouskhelichvili.'
     },
     termsOfUse: {
+        exclude: true,
         href: '/terms-of-use',
         title: 'Terms of Use'
     }
