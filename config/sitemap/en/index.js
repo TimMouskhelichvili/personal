@@ -5,15 +5,19 @@ const enSitemap = {
         exclude: true,
         home: true,
         seoTitle: '{COMPANY} - Software Engineer & Consultant',
-        description: `Tim Mouskhelichvili Consultant(React, PHP, Node.js). Consultations. 
+        description: `Tim Mouskhelichvili Consultant (React, PHP, Node.js). Consultations. 
 					  Affordable Pricing. Top Results. On-Time Delivery.`
     },
     blog: { 
         href: '/blog',
         title: 'Blog',
         seoTitle: 'Our Blog - {COMPANY}',
-        description: `The blog page where we share articles on web development themes.
-					  We are AftrConsulting. We provide React, TypeScript, PHP, Node.js development and consultations.`
+        description: `The blog page where I share articles on web development themes.
+					  Tim Mouskhelichvili Consultant. I provide React, TypeScript, PHP, Node.js development and consultations.`
+    },
+    privacyPolicy: {
+        href: '/privacy-policy',
+        title: 'Privacy Policy'
     },
     sitemap: {
         href: '/sitemap',
@@ -21,6 +25,10 @@ const enSitemap = {
         exclude: true,
         seoTitle: 'Sitemap - {COMPANY}',
         description: 'Sitemap of Tim Mouskhelichvili.'
+    },
+    termsOfUse: {
+        href: '/terms-of-use',
+        title: 'Terms of Use'
     }
 };
 

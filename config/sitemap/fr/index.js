@@ -12,8 +12,12 @@ const frSitemap = {
         href: '/blog',
         title: 'Blog',
         seoTitle: 'Notre Blog - {COMPANY}',
-        description: `La page blog où nous partageons des articles sur le développement web. Nous sommes AftrConsulting.
-		              Nous fournissons du développement et des consultations en React, TypeScript, PHP, Node.js.`
+        description: `La page blog où je partage des articles sur le développement web. Tim Mouskhelichvili Consultant.
+		              Je fournis du développement et des consultations en React, TypeScript, PHP, Node.js.`
+    },
+    privacyPolicy: {
+        href: '/privacy-policy',
+        title: 'Politique de confidentialité'
     },
     sitemap: {
         href: '/sitemap',
@@ -21,6 +25,10 @@ const frSitemap = {
         exclude: true,
         seoTitle: 'Sitemap - {COMPANY}',
         description: 'Sitemap de Tim Mouskhelichvili.'
+    },
+    termsOfUse: {
+        href: '/terms-of-use',
+        title: 'Conditions d’utilisation'
     }
 };
 

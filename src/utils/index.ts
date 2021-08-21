@@ -88,7 +88,7 @@ const getDate = (date?: string, language?: string): string => {
  * Returns the author.
  * @param {string} author - The author. 
  */
-const getAuthor = (author?: string) => author || 'admin';
+const getAuthor = (author?: string) => author || configuration.general.author;
 
 export {
 	getStructuredData,

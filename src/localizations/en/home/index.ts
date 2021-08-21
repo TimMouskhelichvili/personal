@@ -6,7 +6,7 @@ const enHomeLocale = {
 					   I offer a vast collection of services, from web development to consulting on an existing project and 
 					   coaching an existing team. Having been in the Web Development industry for over 5 years and successfully 
 					   completed a multitude of web projects, I will provide you top-notch services and give you advices that 
-					   will save you a lot of time and money. I will deliver you top results on time at the 
+					   will save you a lot of time and money. I will deliver you top results on time and at the 
 					   <span class="underline">most affordable price</span>\u00A0💸 compared to the competition.`,
         description2: `<span class="italic">"Tim is a very reliable software engineer and you can ALWAYS count on him."</span>
 					   <br />Georges M. (Psyhelp)`,

@@ -15,6 +15,7 @@ const configuration = {
         name: process.env.NODE_ENV
     },
     general: {
+        author: 'Tim Mouskhelichvili',
         baseUrl: 'https://timmouskhelichvili.com',
         clutch: '',
         company: 'Tim Mouskhelichvili',
