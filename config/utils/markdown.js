@@ -10,6 +10,9 @@ const getMarkdownPages = () => {
 
 	try {
 		articles = getFiles(path.join(__dirname, '../../public/static/markdown/blog'), {}, 'blog/');
+	} catch { }
+
+	try {
 		pages = getFiles(path.join(__dirname, '../../public/static/markdown/pages'));
 	} catch { }
 
