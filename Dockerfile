@@ -1,4 +1,4 @@
-FROM node:16-alpine
+FROM node:16.7-alpine3.14
 
 RUN apk add libwebp libwebp-tools
 
