@@ -119,4 +119,4 @@ La société est située à l'adresse indiquée à la section 10.8. Si vous rés
 
 Adresse: 455 Rue Saint-Antoine Ouest Montréal
 
-Courriel: [info@Tim Mouskhelichvili's Consulting.com](mailto:info@Tim Mouskhelichvili's Consulting.com)
+Courriel: [t.mouskhelichvili@protonmail.com](mailto:t.mouskhelichvili@protonmail.com)

@@ -119,4 +119,4 @@ Company is located at the address in Section 10.8. If you are a California resid
 
 Address: 455 Rue Saint-Antoine Ouest Montreal
 
-Email: [info@Tim Mouskhelichvili's Consulting.com](mailto:info@Tim Mouskhelichvili's Consulting.com)
+Email: [t.mouskhelichvili@protonmail.com](mailto:t.mouskhelichvili@protonmail.com)
