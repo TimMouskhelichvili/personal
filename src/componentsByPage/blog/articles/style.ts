@@ -21,7 +21,12 @@ const StyledMetaData = styled.div`
 	color: ${getThemeVariable('global.markdown.metaDataColor')};
 `;
 
+const StyledEmpty = styled.div`
+	margin: 20px 0px;
+`;
+
 export {
     StyledMetaData,
-    StyledTitle
+    StyledTitle,
+    StyledEmpty
 };

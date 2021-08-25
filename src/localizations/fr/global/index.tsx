@@ -1,4 +1,4 @@
-import { frMenuFooter } from 'src/localizations/fr/menus';
+import { frMenuFooter, frMenuTop, frSideMenu } from 'src/localizations/fr/menus';
 
 const frGlobalLocale = {
     bookConsultation: 'Prendre un rendez-vous',
@@ -9,6 +9,10 @@ const frGlobalLocale = {
         quote: 'Tim Mouskhelichvili - Développeur Web & Consultant'
     },
     goBack: 'Retourner',
+    header: {
+        menu: frMenuTop,
+        sideMenu: frSideMenu
+    },
     hrefs: {
         email: 'Envoyez-nous un e-mail',
         github: 'Aller à Github',

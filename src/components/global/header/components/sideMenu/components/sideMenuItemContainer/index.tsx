@@ -41,7 +41,7 @@ const SideMenuItemContainer = (): ReactElement => {
 
     return (
         <StyledSideMenuItemContainer>
-            {locale.menu.map((x, key) => (
+            {locale.global.header.sideMenu.map((x, key) => (
                 <SideMenuItem key={key} element={x} setItems={setItems} />
             ))}
         </StyledSideMenuItemContainer>

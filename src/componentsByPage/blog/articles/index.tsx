@@ -1,9 +1,10 @@
 import React, { ReactElement } from 'react';
 import { useRouter } from 'next/router';
-import { StyledMetaData, StyledTitle } from './style';
+import { StyledMetaData, StyledTitle, StyledEmpty } from './style';
 import { IMarkdownArticleProps } from 'src/interfaces/IMarkdownArticleProps';
 import { MyLink } from 'src/components/elements/link';
 import { getAuthor, getDate } from 'src/utils';
+import { useLocale } from 'src/localizations';
 
 interface IArticlesProps {
 	articles: IMarkdownArticleProps[];
@@ -14,8 +15,13 @@ interface IArticlesProps {
  * @param {IArticlesProps} props - The props.
  */
 const Articles = (props: IArticlesProps): ReactElement => {
+    const locale = useLocale();
     const router = useRouter();
 	
+    if (!props.articles.length) {
+        return <StyledEmpty>{locale.pages.blog.empty}</StyledEmpty>;
+    }
+
     return (
         <>
             {props.articles.map((x, key) => (

@@ -24,7 +24,7 @@ const SubHeader = (): ReactElement => {
         <>
             <Logo hideLanguage={amp} isLanding={isLanding} />
             {!amp && <StyledSubHeaderContainer>
-                {locale.menu.map((x, key) => (
+                {locale.global.header.menu.map((x, key) => (
                     <SubHeaderItem key={key} element={x} />
                 ))}
             </StyledSubHeaderContainer>}

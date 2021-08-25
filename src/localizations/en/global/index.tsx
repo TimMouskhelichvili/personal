@@ -1,4 +1,4 @@
-import { enMenuFooter } from 'src/localizations/en/menus';
+import { enMenuFooter, enMenuTop, enSideMenu } from 'src/localizations/en/menus';
 
 const enGlobalLocale = {
     bookConsultation: 'Book a Free Call',
@@ -9,6 +9,10 @@ const enGlobalLocale = {
         quote: 'Tim Mouskhelichvili - Software Engineer & Consultant'
     },
     goBack: 'Go Back',
+    header: {
+        menu: enMenuTop,
+        sideMenu: enSideMenu
+    },
     hrefs: {
         email: 'Send us an email',
         github: 'Go to Github',

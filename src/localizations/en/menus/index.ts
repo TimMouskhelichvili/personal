@@ -1,11 +1,14 @@
 import { IMenuItem } from 'src/interfaces/IMenuItem';
 import { enSitemap } from 'config/sitemap/en';
 
-const enMenuTop: IMenuItem[] = [ 
+const enMenuTop: IMenuItem[] = [];
 
+const enSideMenu = [ 
+    enSitemap.blog
 ];
 
 const enMenuFooter = [
+    enSitemap.blog,
     enSitemap.privacyPolicy,
     enSitemap.termsOfUse,
     enSitemap.sitemap
@@ -13,5 +16,6 @@ const enMenuFooter = [
 
 export {
     enMenuFooter,
-    enMenuTop
+    enMenuTop,
+    enSideMenu
 };
