@@ -63,6 +63,9 @@ const lightTheme: typeof darkTheme = {
             description: {
                 background: darken(.05, colors.background)
             },
+            quotes: {
+                background: lighten(.75, colors.color)
+            },
             services: {
                 cardBackground: darken(.05, colors.background)
             }

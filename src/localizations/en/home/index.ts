@@ -26,6 +26,86 @@ const enHomeLocale = {
         subHeading: 'Software Engineer & Consultant',
         text2: 'I guarantee 100% satisfaction to my clients.'
     },
+    languages: {
+        alt: 'React, NodeJS, Typescript, Tim Mouskhelichvili',
+        list: [ 
+            {
+                subList: [
+                    'JavaScript',
+                    'TypeScript',
+                    'React',
+                    'npm',
+                    'Webpack',
+                    'ESLint',
+                    'Jest',
+                    'HTML/CSS',
+                    'Sass',
+                    'GraphQL',
+                    'Babel',
+                    'Redux',
+                    'styled-components',
+                    'Cypress'
+                ],
+                title: 'Front-End Development'
+            },
+            {
+                subList: [
+                    'Node.js',
+                    'PHP',
+                    'Next.js',
+                    'Redis',
+                    'WordPress'
+                ],
+                title: 'Back-End Development'
+            },
+            {
+                subList: [
+                    'Docker',
+                    'Kubernetes',
+                    'nginx',
+                    'MySQL',
+                    'CI/CD'
+                ],
+                title: 'Server'
+            } 
+        ],
+        subTitle: 'technologies',
+        title: 'Here are some technologies that I will use to create your web project.\u00A0😎'
+    },
+    quotes: {
+        reviews: [
+            {
+                company: 'Les Finances',
+                description: `We hired Tim to redesign the back-end of our site,
+							  and we literally couldn't be happier with the results! 
+							  He is open to feedback, patient, communicative, and can adhere to a tight timeline. 
+							  We will definitely continue working with him in the future!`,
+                href: 'https://www.lesfinances.ca/',
+                img: 'matt.jpg',
+                name: 'Matt M.'
+            },            
+            {
+                company: 'Psyhelp',
+                description: `When we started working with Tim we never expected such great results. 
+							  He provides top-notch services and if we had a problem he was there to fix it quickly. 
+							  We recommend him to everyone that is looking for great web development services.`,
+                href: 'https://www.psyhelp.ca',
+                img: 'georges.jpg',
+                name: 'Georges M.'
+            },
+            {
+                company: 'GoldenMTL',
+                description: `Thank you Tim! Very good web development services! He helped me build a modern 
+							  website for my business that increased my visibility in Google, helped me attract new customers, 
+							  and increase my profits. I recommend him to everybody.`,
+                href: '',
+                img: 'jacky.jpg',
+                name: 'Jacky T.'
+            }
+        ],
+        subTitle: 'what my clients are saying',
+        title: 'I guarantee 100% satisfaction to my clients.\u00A0🤩'
+    },
     services: {
         bookConsultation: {
             description: `Schedule a free call with me to discuss your project.
@@ -85,6 +165,13 @@ const enHomeLocale = {
         ps: 'This list is not exhaustive, send me a message if you need something special and I will help you.',
         subTitle: 'My Services',
         title: 'I possess all the skills for building your next web project.\u00A0😁'
+    },
+    talkExpert: {
+        button: 'Get A Free Quote Now',
+        description: `We will provide you with all of the information, answer all your questions, 
+					  and even get you a free quote directly through our chat.`,
+        subTitle: 'Talk to us',
+        title: 'Shy? 🙈 Talk with an expert online.'
     }
 };
 

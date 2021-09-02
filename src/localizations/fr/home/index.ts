@@ -26,6 +26,88 @@ const frHomeLocale = {
         subHeading: 'Développeur Web & Consultant',
         text2: 'Je garantis une satisfaction de 100% à mes clients.'
     },
+    languages: {
+        alt: 'React, NodeJS, Typescript, Tim Mouskhelichvili',
+        list: [ 
+            {
+                subList: [
+                    'JavaScript',
+                    'TypeScript',
+                    'React',
+                    'npm',
+                    'Webpack',
+                    'ESLint',
+                    'Jest',
+                    'HTML/CSS',
+                    'Sass',
+                    'GraphQL',
+                    'Babel',
+                    'Redux',
+                    'styled-components',
+                    'Cypress'
+                ],
+                title: 'Développement Front-End'
+            },
+            {
+                subList: [
+                    'Node.js',
+                    'PHP',
+                    'Next.js',
+                    'Redis',
+                    'WordPress'
+                ],
+                title: 'Développement Back-End'
+            },
+            {
+                subList: [
+                    'Docker',
+                    'Kubernetes',
+                    'nginx',
+                    'MySQL',
+                    'CI/CD'
+                ],
+                title: 'Serveur'
+            } 
+        ],
+        subTitle: 'technologies',
+        title: 'Voici quelques technologies que je vais utiliser pour créer votre projet web.\u00A0😎'
+    },
+    quotes: {
+        reviews: [
+            {
+                company: 'Les Finances',
+                description: `Nous avons embauché AFTRConsulting pour refaire le back-end de notre site, et nous ne pourrions
+							  pas être plus satisfaits des résultats! Ils sont ouverts aux commentaires, patients, 
+							  communicatifs et peuvent adhérer à un calendrier serré. Nous continuerons certainement 
+							  à travailler avec eux à l'avenir!`,
+                href: 'https://www.lesfinances.ca/',
+                img: 'matt.jpg',
+                name: 'Matt M.'
+            },            
+            {
+                company: 'Psyhelp',
+                description: `Lorsque nous avons commencé à travailler avec AFTRConsulting, nous ne nous attendions jamais à 
+							  d'aussi bons résultats. Leur service client est très bon et si nous avions un problème, 
+							  ils étaient là pour le résoudre rapidement. Nous les recommandons à tous ceux qui recherchent 
+							  d'excellents services de développement web.`,
+                href: 'https://www.psyhelp.ca',
+                img: 'georges.jpg',
+                name: 'Georges M.'
+            },
+            {
+                company: 'GoldenMTL',
+                description: `Merci AFTRConsulting! Très bons services de développement web! Ils m'ont aidé à créer 
+							  un site web moderne pour mon entreprise qui a augmenté ma visibilité sur Google, m'a aidé 
+							  à attirer de nouveaux clients et à augmenter mes bénéfices. Je les recommande à tout le monde 
+							  et je retravaillerai avec eux.`,
+                href: '',
+                img: 'jacky.jpg',
+                name: 'Jacky T.'
+            }
+        ],
+        subTitle: 'ce que mes clients disent',
+        title: 'Je garantis une satisfaction de 100% à mes clients.\u00A0🤩'
+    },
     services: {
         bookConsultation: {
             description: `Prenez un appel gratuit avec moi pour discuter de votre projet.
@@ -85,6 +167,13 @@ const frHomeLocale = {
         ps: 'Cette liste n\'est pas exhaustive, contactez-moi si vous avez besoin de quelque chose de spécial et je vous aiderai.',
         subTitle: 'Mes Services',
         title: 'Je possède toutes les compétences pour créer votre prochain projet web.\u00A0🙏'
+    },
+    talkExpert: {
+        button: 'Obtenir Une Estimation de Prix',
+        description: `Je vais fournir toutes les informations, répondre à toutes vos questions et 
+		              vous donner une estimation du prix gratuitement directement via le chat.`,
+        subTitle: 'Contactez-nous',
+        title: 'Timide? 🙈 Parlez avec moi en ligne.'
     }
 };
 

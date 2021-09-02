@@ -62,6 +62,9 @@ const darkTheme = {
             description: {
                 background: lighten(.05, colors.background)
             },
+            quotes: {
+                background: lighten(.2, colors.background)
+            },
             services: {
                 cardBackground: lighten(.05, colors.background)
             }
