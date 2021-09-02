@@ -78,7 +78,7 @@ const enHomeLocale = {
                 company: 'Les Finances',
                 description: `We hired Tim to redesign the back-end of our site,
 							  and we literally couldn't be happier with the results! 
-							  He is open to feedback, patient, communicative, and can adhere to a tight timeline. 
+							  He is open to feedback, communicative, and can adhere to a tight timeline. 
 							  We will definitely continue working with him in the future!`,
                 href: 'https://www.lesfinances.ca/',
                 img: 'matt.jpg',

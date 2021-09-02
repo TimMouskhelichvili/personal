@@ -87,9 +87,8 @@ const frHomeLocale = {
             {
                 company: 'Psyhelp',
                 description: `Lorsque nous avons commencé à travailler avec Tim, nous ne nous attendions jamais à 
-							  d'aussi bons résultats. Il offre de très bons services et si nous avions un problème, 
-							  il était là pour le résoudre rapidement. Nous le recommandons à tous ceux qui recherchent 
-							  d'excellents services de développement web.`,
+							  d'aussi bons résultats. Si nous avions un problème, il était toujours là pour le résoudre rapidement. 
+							  Nous le recommandons à tous ceux qui recherchent d'excellents services de développement web.`,
                 href: 'https://www.psyhelp.ca',
                 img: 'georges.jpg',
                 name: 'Georges M.'
