@@ -76,19 +76,19 @@ const frHomeLocale = {
         reviews: [
             {
                 company: 'Les Finances',
-                description: `Nous avons embauché AFTRConsulting pour refaire le back-end de notre site, et nous ne pourrions
-							  pas être plus satisfaits des résultats! Ils sont ouverts aux commentaires, patients, 
-							  communicatifs et peuvent adhérer à un calendrier serré. Nous continuerons certainement 
-							  à travailler avec eux à l'avenir!`,
+                description: `Nous avons embauché Tim pour refaire le back-end de notre site, et nous ne pourrions
+							  pas être plus satisfaits des résultats! Il est ouvert aux commentaires, patient, 
+							  communicatif et peut adhérer à un calendrier serré. Nous continuerons certainement 
+							  à travailler avec lui à l'avenir!`,
                 href: 'https://www.lesfinances.ca/',
                 img: 'matt.jpg',
                 name: 'Matt M.'
             },            
             {
                 company: 'Psyhelp',
-                description: `Lorsque nous avons commencé à travailler avec AFTRConsulting, nous ne nous attendions jamais à 
-							  d'aussi bons résultats. Leur service client est très bon et si nous avions un problème, 
-							  ils étaient là pour le résoudre rapidement. Nous les recommandons à tous ceux qui recherchent 
+                description: `Lorsque nous avons commencé à travailler avec Tim, nous ne nous attendions jamais à 
+							  d'aussi bons résultats. Il offre de très bons services et si nous avions un problème, 
+							  il était là pour le résoudre rapidement. Nous le recommandons à tous ceux qui recherchent 
 							  d'excellents services de développement web.`,
                 href: 'https://www.psyhelp.ca',
                 img: 'georges.jpg',
@@ -96,10 +96,10 @@ const frHomeLocale = {
             },
             {
                 company: 'GoldenMTL',
-                description: `Merci AFTRConsulting! Très bons services de développement web! Ils m'ont aidé à créer 
+                description: `Merci Tim! Très bons services de développement web! Il m'a aidé à créer 
 							  un site web moderne pour mon entreprise qui a augmenté ma visibilité sur Google, m'a aidé 
-							  à attirer de nouveaux clients et à augmenter mes bénéfices. Je les recommande à tout le monde 
-							  et je retravaillerai avec eux.`,
+							  à attirer de nouveaux clients et à augmenter mes bénéfices. Je le recommande à tout le monde 
+							  et je retravaillerai avec lui.`,
                 href: '',
                 img: 'jacky.jpg',
                 name: 'Jacky T.'

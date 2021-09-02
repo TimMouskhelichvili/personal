@@ -168,10 +168,10 @@ const enHomeLocale = {
     },
     talkExpert: {
         button: 'Get A Free Quote Now',
-        description: `We will provide you with all of the information, answer all your questions, 
-					  and even get you a free quote directly through our chat.`,
+        description: `I will provide you with all of the information, answer all your questions, 
+					  and even get you a free quote directly through the chat.`,
         subTitle: 'Talk to us',
-        title: 'Shy? 🙈 Talk with an expert online.'
+        title: 'Shy? 🙈 Talk with me online.'
     }
 };
 
