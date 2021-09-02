@@ -56,10 +56,18 @@ const Logo = (props: ILogoProps): ReactElement => {
                 </StyledName>
             </MyLink>
             {!props.hideLanguage && <StyledLanguage onClick={toggleLanguage}>
-                {language}
+                {getOtherLanguage(language)}
             </StyledLanguage>}
         </StyledLogoContainer>
     );
+};
+
+/**
+ * Returns the other language.
+ * @param {string} language - The language. 
+ */
+const getOtherLanguage = (language: string): string => {
+    return language === 'en' ? 'fr' : 'en';
 };
 
 export {
