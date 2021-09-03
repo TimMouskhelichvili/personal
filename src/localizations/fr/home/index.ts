@@ -3,10 +3,16 @@ const frHomeLocale = {
         alt: 'Développeur Web, Tim Mouskhelichvili',
         description1: `Bonjour 👋! Je suis Tim Mouskhelichvili, un Développeur Web Full-Stack avec 
 					  une passion pour aider mes clients à <span class="italic">transformer leurs entreprises en leur créant des
-					 projets web incroyables.</span> J'offre une vaste gamme de services, du développement web aux consultations 
-					 et au coaching. Étant dans l'industrie du développement Web depuis plus de 5 ans et ayant complété 
+					 projets web incroyables.</span>
+					 <div class='space'></div>
+					 J'offre une vaste gamme de services, du développement web aux consultations 
+					 et au coaching.
+					 <div class='space'></div>
+					 Étant dans l'industrie du développement Web depuis plus de 5 ans et ayant complété 
 					 une multitude de projets web, je vous fournirai d'excellents services et vous donnerai des conseils 
-					 qui vous feront économiser beaucoup de temps et d'argent\u00A0💸. Je vous fournirai les meilleurs résultats 
+					 qui vous feront économiser beaucoup de temps et d'argent\u00A0💸.
+					 <div class='space'></div>
+					 Je vous fournirai les meilleurs résultats 
 					 en respectant vos délais, et ce pour <span class="underline">un prix très abordable.</span>`,
         description2: `<span class="italic">"Tim est un développeur web très fiable et vous pouvez TOUJOURS compter sur lui."</span>
 					   <br />Georges M. (Psyhelp)`,

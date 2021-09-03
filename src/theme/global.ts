@@ -67,6 +67,10 @@ const globalStyles = `
 		font-style: italic;
 	}
 
+	.space {
+		margin-top: 15px;
+	}
+
 	.bold {
 		font-weight: bold;
 	}
