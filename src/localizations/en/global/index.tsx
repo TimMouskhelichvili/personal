@@ -1,7 +1,7 @@
 import { enMenuFooter, enMenuTop, enSideMenu } from 'src/localizations/en/menus';
 
 const enGlobalLocale = {
-    bookConsultation: 'Book a Free Call',
+    bookConsultation: 'Book Your Free Call',
     consultation: 'https://calendly.com/aftrconsulting/30min-free-consultation',
     footer: {
         copyright: 'All rights reserved. © {0}',

@@ -42,6 +42,13 @@ const StyledSubH1 = styled.div`
 	text-transform: uppercase;
 	font-weight: 300;
     font-size: 1.1em;
+	margin-top: 15px;
+`;
+
+const StyledSubPerk = styled.div`
+	font-weight: bold;
+    font-size: 1.1em;
+	margin-top: 15px;
 `;
 
 const StyledH1 = styled.h1`
@@ -63,7 +70,7 @@ const StyledH1 = styled.h1`
 const StyledPerksContainer = styled.ul`
 	list-style: none;
 	margin-top: 15px;
-	margin-bottom: 15px;
+	margin-bottom: 0px;
 	padding: 0px;
 	
 	li {
@@ -75,9 +82,10 @@ const StyledPerksContainer = styled.ul`
 	}
 `;
 
-const StyledUnderStars = styled.div`
+const StyledSatisfaction = styled.div`
 	font-style: italic;
-	font-size: 1.1em;
+	font-size: 1em;
+	margin-top: 15px;
 `;
 
 const StyledButton = styled(CTA)`
@@ -140,6 +148,7 @@ export {
     StyledSubH1,
     StyledH1,
     StyledPerksContainer,
-    StyledUnderStars,
-    StyledRow
+    StyledSatisfaction,
+    StyledRow,
+    StyledSubPerk
 };

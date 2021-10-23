@@ -1,31 +1,32 @@
 import React, { ReactElement } from 'react';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import { 
-    StyleImgContainer, StyledSection, StyledSubH1, StyledH1, StyledPerksContainer, 
-    StyledUnderStars, StyledButton, StyledRow, StyledSealsContainer
+    StyleImgContainer, StyledSection, StyledH1, StyledPerksContainer, 
+    StyledSatisfaction, StyledButton, StyledRow, StyledSealsContainer, StyledSubH1, StyledSubPerk
 } from './style';
 import { CustomImage } from 'src/components/elements/customImage';
 import { Google } from 'src/components/seals/google';
 import { Icon } from 'src/components/elements/icon';
 import { useLocale } from 'src/localizations';
+import { SpanText } from 'src/components/elements/spanText';
 
 /**
  * The SectionFirst component.
  */
 const SectionFirst = (): ReactElement => {
     const locale = useLocale();
-    const { subHeading, heading, perks, text2, alt } = locale.pages.home.first;
+    const { heading, perks, text2, alt, subHeading } = locale.pages.home.first;
 
     return (
         <StyledSection>
             <StyledRow>
                 <div>
+                    <StyledH1><SpanText html={heading} /></StyledH1>
                     <StyledSubH1>{subHeading}</StyledSubH1>
-                    <StyledH1>{heading}</StyledH1>
                     {getPerks(perks)}
-                    <StyledUnderStars>{text2}</StyledUnderStars>
+                    <StyledSubPerk>{'Then, I\'m definitely your guy!'}</StyledSubPerk>
                     <StyledButton withIcon={true} />
-                    {getSeals()}
+                    <StyledSatisfaction>{text2}</StyledSatisfaction>
                 </div>
                 <StyleImgContainer>
                     <div>

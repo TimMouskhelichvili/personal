@@ -16,20 +16,19 @@ const enHomeLocale = {
         description2: `<span class="italic">"Tim is a very reliable software engineer and you can ALWAYS count on him."</span>
 					   <br />Georges M. (Psyhelp)`,
         subTitle: 'who am I?',
-        title: 'A software engineer you can trust.'
+        title: 'A freelance developer you can trust.'
     },
     first: {
         alt: 'Web Software Engineer, Tim Mouskhelichvili',
         googleReview: 'Google review',
-        heading: 'Tim Mouskhelichvili',
+        heading: '👉 I Help Business by <span class="underline">Building Modern Web Applications</span>.',
         perks: [
-            'Full-Stack Web Developer\u00A0💪',
-            'JavaScript Expert (React, TypeScript, Vanilla.js)\u00A0😎',
-            'Delivers Top Results On-Time\u00A0🏆',
-            'Affordable Pricing\u00A0💸'
+            'Want To Reduce Your Developing Costs\u00A0💸',
+            'Want Your App Developed Very Fast\u00A0💨',
+            'And, Only Want Top Results\u00A0🏆'
         ],
-        subHeading: 'Software Engineer & Consultant',
-        text2: 'I guarantee 100% satisfaction to my clients.'
+        subHeading: 'Do you have an amazing idea for a Web Application but:',
+        text2: 'P.S. I guarantee 100% satisfaction to my clients.'
     },
     languages: {
         alt: 'React, NodeJS, Typescript, Tim Mouskhelichvili',
