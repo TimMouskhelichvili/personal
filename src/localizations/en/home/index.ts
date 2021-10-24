@@ -1,18 +1,14 @@
 const enHomeLocale = {
     description: {
         alt: 'Web Software Engineer, Tim Mouskhelichvili',
-        description1: `Hello 👋! I am Tim Mouskhelichvili, a Full-Stack Web Developer with a passion for helping 
-		               my clients <span class="italic">transform their businesses by building them amazing web projects</span>. 
+        description1: `Hello 👋! I am Tim Mouskhelichvili, a Freelance Developer & Consultant from Montreal, Canada.
 					   <div class='space'></div>
-					   I offer a vast collection of services, from web development to consulting on an existing project and 
-					   coaching an existing team.
+					   I specialize in React & Node.js development.
 					   <div class='space'></div>
-					   Having been in the Web Development industry for over 5 years and successfully 
-					   completed a multitude of web projects, I will provide you top-notch services and give you advices that 
-					   will save you a lot of time and money.
+					   I have over 6 years of experience in application development.
 					   <div class='space'></div>
-					   I will deliver you top results on time and at the 
-					   <span class="underline">most affordable price</span>\u00A0💸 compared to the competition.`,
+		               I am on mission to help my clients 
+					   <span class="italic">transform their businesses by building them amazing applications</span>.`,
         description2: `<span class="italic">"Tim is a very reliable software engineer and you can ALWAYS count on him."</span>
 					   <br />Georges M. (Psyhelp)`,
         subTitle: 'who am I?',
@@ -21,11 +17,11 @@ const enHomeLocale = {
     first: {
         alt: 'Web Software Engineer, Tim Mouskhelichvili',
         googleReview: 'Google review',
-        heading: '👉 I Help Business by <span class="underline">Building Modern Web Applications</span>.',
+        heading: '👉 I Help Business by Building <span class="underline">Modern Web Applications</span> using React & Node.js',
         perks: [
             'Want To Reduce Your Developing Costs\u00A0💸',
             'Want Your App Developed Very Fast\u00A0💨',
-            'And, Only Want Top Results\u00A0🏆'
+            'Only Want Top Results\u00A0🏆'
         ],
         subHeading: 'Do you have an amazing idea for a Web Application but:',
         text2: 'P.S. I guarantee 100% satisfaction to my clients.'
