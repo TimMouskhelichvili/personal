@@ -1,6 +1,6 @@
 const enHomeLocale = {
     description: {
-        alt: 'Web Software Engineer, Tim Mouskhelichvili',
+        alt: 'Freelance Web Developer, Tim Mouskhelichvili',
         description1: `Hello 👋! 
 		               <div class='space'></div>
 					   I am Tim Mouskhelichvili, a Freelance Developer & Consultant from Montreal, Canada\u00A0🇨🇦
@@ -14,17 +14,17 @@ const enHomeLocale = {
 					   <div class='space'></div>
 					   I have over 6 years of experience in application development.
 					   <div class='space'></div>
-		               I am on mission to help my clients
+		               I am on a mission to help my clients
 					   <span class="italic">transform their businesses</span> by building amazing applications.
 					   <div class='space'></div>
-					   I will help you.`,
-        description2: `<span class="italic">"Tim is a very reliable software engineer and you can ALWAYS count on him."</span>
+					   I will help you transform yours.`,
+        description2: `<span class="italic">"Tim is a very reliable developer and you can ALWAYS count on him."</span>
 					   <br />Georges M. (Psyhelp)`,
         subTitle: 'who am I?',
         title: 'A freelance developer you can trust.'
     },
     first: {
-        alt: 'Web Software Engineer, Tim Mouskhelichvili',
+        alt: 'Freelance Web Developer, Tim Mouskhelichvili',
         googleReview: 'Google review',
         heading: '👉 I Help Business by Building <span class="underline">Modern Web Applications</span> using React & Node.js',
         perks: [
@@ -60,10 +60,8 @@ const enHomeLocale = {
             {
                 subList: [
                     'Node.js',
-                    'PHP',
                     'Next.js',
-                    'Redis',
-                    'WordPress'
+                    'Redis'
                 ],
                 title: 'Back-End Development'
             },
@@ -73,13 +71,14 @@ const enHomeLocale = {
                     'Kubernetes',
                     'nginx',
                     'MySQL',
+                    'MongoDB',
                     'CI/CD'
                 ],
                 title: 'Server'
             } 
         ],
-        subTitle: 'technologies',
-        title: 'Here are some technologies that I will use to create your web project.\u00A0😎'
+        subTitle: 'What other technologies will I use?',
+        title: 'I will use some of those libraries & technologies to create your application.\u00A0😎'
     },
     quotes: {
         reviews: [
@@ -118,68 +117,35 @@ const enHomeLocale = {
     services: {
         bookConsultation: {
             description: `Schedule a free call with me to discuss your project.
-						  I will answer all of your questions and concerns and provide you a quote adjusted to your budget.`,
+						  I will answer all of your questions and concerns and provide you with a quote adjusted to your budget.`,
             title: 'Let\'s build your dream project together.\u00A0🤝'
         },
         list: [
             {
-                description: 'I will develop an amazing modern web application for your business.',
-                title: 'Web Development'
+                description: `React is the most popular front-end framework, is very fast and robust. 
+				              It is the perfect choice for building web applications.`,
+                title: 'React Development'
             },
             {
-                description: 'Some tools that I use: React, TypeScript, Webpack, JavaScript, GraphQL.',
-                title: 'Front-End Development'
+                description: `Choosing Node.js means having JavaScript on both front-end and back-end, 
+							  which means easier to develop.`,
+                title: 'Node.js Development'
             },
             {
-                description: 'Some tools and languages that I use: PHP, Node.js, Nginx, Docker, Kubernetes.',
-                title: 'Back-End Development'
-            },
-            {
-                description: 'I will optimize your site to 100% in PageSpeed Insights and fix other performance issues.',
-                title: 'Web Performance & Optimization'
-            },
-            {
-                description: 'I will help you generate more leads and customers from your website.',
-                title: 'Conversion Rate Optimization'
-            },
-            {
-                description: 'I will help you improve the quantity and quality of your website traffic from Google.',
-                title: 'Search Engine Optimization'
-            },
-            {
-                description: 'I will create an optimized landing page that will generate more leads/profits.',
-                title: 'Landing Page Creation'
-            },
-            {
-                description: 'I will help develop, improve and maintain a WordPress website.',
-                title: 'WordPress'
-            },
-            {
-                description: 'Do you have a nasty bug that you cannot fix? I will help you find the cause and solve it.',
-                title: 'Debugging'
-            },
-            {
-                description: 'I will help you improve your code quality by implementing various tools and standards.',
-                title: 'Code Standards'
-            },
-            {
-                description: 'Spaghetti code is hard to read and hard to maintain. I will help you clean it up.',
-                title: 'Code Refactoring'
-            },
-            {
-                description: 'I will help you find bugs earlier and save time and money by implementing unit tests.',
-                title: 'Unit Tests'
+                description: `TypeScript is much more reliable than vanilla JavaScript, which means 
+				              better, more explicit code with fewer bugs.`,
+                title: 'TypeScript Development'
             }
         ],
-        ps: 'This list is not exhaustive, send me a message if you need something special and I will help you.',
-        subTitle: 'My Services',
-        title: 'I possess all the skills for building your next web project.\u00A0😁'
+        ps: 'This list is not exhaustive, send me a message if you need something special.',
+        subTitle: 'How will I build your application?',
+        title: 'I will use React, Node.js & TypeScript to build your next web application.'
     },
     talkExpert: {
         button: 'Get A Free Quote Now',
         description: `I will provide you with all of the information, answer all your questions, 
 					  and even get you a free quote directly through the chat.`,
-        subTitle: 'Talk to us',
+        subTitle: 'How to contact me?',
         title: 'Shy? 🙈 Talk with me online.'
     }
 };

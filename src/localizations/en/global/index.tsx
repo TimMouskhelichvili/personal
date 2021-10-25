@@ -6,7 +6,7 @@ const enGlobalLocale = {
     footer: {
         copyright: 'All rights reserved. © {0}',
         menu: enMenuFooter,
-        quote: 'Tim Mouskhelichvili - Software Engineer & Consultant'
+        quote: 'Tim Mouskhelichvili - Freelance Developer & Consultant'
     },
     goBack: 'Go Back',
     header: {
