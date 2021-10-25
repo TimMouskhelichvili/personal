@@ -1,14 +1,23 @@
 const enHomeLocale = {
     description: {
         alt: 'Web Software Engineer, Tim Mouskhelichvili',
-        description1: `Hello 👋! I am Tim Mouskhelichvili, a Freelance Developer & Consultant from Montreal, Canada.
+        description1: `Hello 👋! 
+		               <div class='space'></div>
+					   I am Tim Mouskhelichvili, a Freelance Developer & Consultant from Montreal, Canada\u00A0🇨🇦
 					   <div class='space'></div>
-					   I specialize in React & Node.js development.
+					   I specialize in <span class="underline">React, Node.js & TypeScript</span> application development.
+					   <div class="img-group">
+						<img src="/static/images/home/tech/react.svg" loading='lazy' />
+						<img src="/static/images/home/tech/nodejs.svg" loading='lazy' />
+						<img src="/static/images/home/tech/typescript.svg" loading='lazy' />
+					   </div> 
 					   <div class='space'></div>
 					   I have over 6 years of experience in application development.
 					   <div class='space'></div>
-		               I am on mission to help my clients 
-					   <span class="italic">transform their businesses by building them amazing applications</span>.`,
+		               I am on mission to help my clients
+					   <span class="italic">transform their businesses</span> by building amazing applications.
+					   <div class='space'></div>
+					   I will help you.`,
         description2: `<span class="italic">"Tim is a very reliable software engineer and you can ALWAYS count on him."</span>
 					   <br />Georges M. (Psyhelp)`,
         subTitle: 'who am I?',

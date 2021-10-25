@@ -43,7 +43,20 @@ const StyledQuote = styled.div`
 	text-align: center;
 `;
 
+const StyledDescription = styled.div`
+	.img-group {
+		margin-top: 5px;
+		display: flex;
+	}
+
+	.img-group img {
+		height: 20px;
+		margin-right: 5px;
+	}
+`;
+
 export {
+    StyledDescription,
     StyledSeparator,
     StyledSection,
     StyleImgContainer,

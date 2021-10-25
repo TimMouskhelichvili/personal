@@ -1,5 +1,5 @@
 import React, { ReactElement } from 'react';
-import { StyledSection, StyledSeparator, StyleImgContainer, StyledQuote } from './style';
+import { StyledSection, StyledSeparator, StyleImgContainer, StyledQuote, StyledDescription } from './style';
 import { CustomImage } from 'src/components/elements/customImage';
 import { SideBySide } from 'src/components/landing/sideBySide';
 import { Paragraph } from 'src/components/elements/paragraph';
@@ -15,31 +15,20 @@ import { useLocale } from 'src/localizations';
 const SectionDescription = (): ReactElement => {
     const locale = useLocale();
     const { subTitle, title, alt, description1, description2 } = locale.pages.home.description;
-	
+    const imgEl = getCustomImg(alt);
+
     return (
         <StyledSection>
             <SideBySide>
                 <div>
                     <SubTitle>{subTitle}</SubTitle>
                     <Title>{title}</Title>
-                    <StyleImgContainer>
-                        <CustomImage
-                            loading={'lazy'} 
-                            height={'400px'}
-                            width={'450px'}
-                            alt={alt}
-                            title={alt}
-                            media={[
-                                { media: '(max-width: 999px)', src: '/static/images/home/timMouskhelichvili.jpg' },
-                                { media: '(min-width: 1000px)', src: '/static/images/home/timMouskhelichvili3.jpg' }
-                            ]}
-                            src={'/static/images/home/timMouskhelichvili3.jpg'} />
-                    </StyleImgContainer>
+                    {imgEl}
                 </div>
                 <Paragraph>
-                    <div>
+                    <StyledDescription>
                         <SpanText html={description1} />
-                    </div>
+                    </StyledDescription>
                     <StyledSeparator />
                     <StyledQuote>
                         <SpanText html={description2} />
@@ -52,6 +41,26 @@ const SectionDescription = (): ReactElement => {
         </StyledSection>
     );
 };
+
+/**
+ * Returns the custom img.
+ * @param {string} alt - The alt.
+ */
+const getCustomImg = (alt: string): ReactElement => (
+    <StyleImgContainer>
+        <CustomImage
+            loading={'lazy'} 
+            height={'400px'}
+            width={'450px'}
+            alt={alt}
+            title={alt}
+            media={[
+                { media: '(max-width: 999px)', src: '/static/images/home/timMouskhelichvili.jpg' },
+                { media: '(min-width: 1000px)', src: '/static/images/home/timMouskhelichvili3.jpg' }
+            ]}
+            src={'/static/images/home/timMouskhelichvili3.jpg'} />
+    </StyleImgContainer>
+);
 
 export {
     SectionDescription

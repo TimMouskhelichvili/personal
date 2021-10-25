@@ -4,8 +4,8 @@ const enSitemap = {
         title: 'Home',
         exclude: true,
         home: true,
-        seoTitle: '{COMPANY} - Software Engineer & Consultant',
-        description: `Tim Mouskhelichvili Consultant (React, PHP, Node.js). Consultations. 
+        seoTitle: '{COMPANY} - Freelance Developer & React & Node.js Consultant',
+        description: `I Help Business by Building Modern Web Applications using React & Node.js
 					  Affordable Pricing. Top Results. On-Time Delivery.`
     },
     blog: { 
