@@ -22,15 +22,15 @@ const frHomeLocale = {
     first: {
         alt: 'Développeur Web, Tim Mouskhelichvili',
         googleReview: 'avis Google',
-        heading: 'Tim Mouskhelichvili',
+        heading: '👉 Je Crée Des <span class="underline">Applications Web Modernes</span> Pour Des Entreprises Avec React & Node.js',
         perks: [
-            'Développeur Web Full-Stack\u00A0💪',
-            'Expert en JavaScript (React, TypeScript, Vanilla.js)\u00A0😎',
-            'Meilleurs Résultats en Respectant les Délais\u00A0🏆',
-            'Prix Compétitifs\u00A0💸'
+            'Vous Voulez Réduire Vos Coûts De Développement\u00A0💸',
+            'Vous Voulez Que Votre Application Soit Développée Très Rapidement\u00A0💨',
+            'Vous N\'Acceptez Que Les Meilleurs Résultats\u00A0🏆'
         ],
-        subHeading: 'Développeur Web & Consultant',
-        text2: 'Je garantis une satisfaction de 100% à mes clients.'
+        subHeading: 'avez-vous une idée géniale pour une application Web? Mais...',
+        subSubHeading: 'Vous pouvez arrêter vos recherche!',
+        text2: 'P.S. Je garantis une satisfaction de 100% à mes clients.'
     },
     languages: {
         alt: 'React, NodeJS, Typescript, Tim Mouskhelichvili',
@@ -121,52 +121,22 @@ const frHomeLocale = {
         },
         list: [
             {
-                description: 'Je vais développer une excellente application web moderne pour votre entreprise.',
-                title: 'Développement Web'
+                description: `React is the most popular front-end framework, is very fast and robust. 
+				              It is the perfect choice for building web applications.`,
+                logo: 'react',
+                title: 'Développement React'
             },
             {
-                description: 'Quelques outils que j\'utilise: React, TypeScript, Webpack, JavaScript, GraphQL.',
-                title: 'Développement Front-End'
+                description: `Choosing Node.js means having JavaScript on both front-end and back-end, 
+							  which means easier to develop.`,
+                logo: 'nodejs',
+                title: 'Développement Node.js'
             },
             {
-                description: 'Quelques outils et langages que j\'utilise: PHP, Node.js, Nginx, Docker, Kubernetes.',
-                title: 'Développement Back-End'
-            },
-            {
-                description: 'Je vais optimiser votre site sur PageSpeed Insights à 100%.',
-                title: 'Performances & Optimisation'
-            },
-            {
-                description: 'Je vais vous aider à générer plus de profits et de clients à partir de votre site.',
-                title: 'Optimisation Taux de Conversion'
-            },
-            {
-                description: 'Je vais vous aider à améliorer la quantité et la qualité du trafic sur votre site à partir de Google.',
-                title: 'Search Engine Optimization'
-            },
-            {
-                description: 'Je vais créer une landing page optimisée qui générera plus de profits.',
-                title: 'Création de Landing Page'
-            },
-            {
-                description: 'Je vais vous aider à développer, améliorer et maintenir un site web WordPress.',
-                title: 'WordPress'
-            },
-            {
-                description: 'Avez-vous un bogue que vous ne pouvez pas corriger? Je vais vous aider à le résoudre.',
-                title: 'Débogage'
-            },
-            {
-                description: 'Je vais vous aider à améliorer la qualité de votre code en implémentant des standards.',
-                title: 'Standards de Code'
-            },
-            {
-                description: 'Le code spaghetti est difficile à lire et à maintenir. Je vais vous aider à le nettoyer.',
-                title: 'Refactoring de Code'
-            },
-            {
-                description: 'Je vais vous aider à trouver les bogues plus tôt en implémentant des tests unitaires.',
-                title: 'Tests Unitaires'
+                description: `TypeScript is much more reliable than vanilla JavaScript, which means 
+				              better, more explicit code with fewer bugs.`,
+                logo: 'typescript',
+                title: 'Développement TypeScript'
             }
         ],
         ps: 'Cette liste n\'est pas exhaustive, contactez-moi si vous avez besoin de quelque chose de spécial et je vous aiderai.',

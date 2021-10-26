@@ -15,7 +15,7 @@ import { SpanText } from 'src/components/elements/spanText';
  */
 const SectionFirst = (): ReactElement => {
     const locale = useLocale();
-    const { heading, perks, text2, alt, subHeading } = locale.pages.home.first;
+    const { heading, perks, text2, alt, subHeading, subSubHeading } = locale.pages.home.first;
 
     return (
         <StyledSection>
@@ -24,7 +24,7 @@ const SectionFirst = (): ReactElement => {
                     <StyledH1><SpanText html={heading} /></StyledH1>
                     <StyledSubH1>{subHeading}</StyledSubH1>
                     {getPerks(perks)}
-                    <StyledSubPerk>{'Then, I\'m definitely your guy!'}</StyledSubPerk>
+                    <StyledSubPerk>{subSubHeading}</StyledSubPerk>
                     <StyledButton withIcon={true} />
                     <StyledSatisfaction>{text2}</StyledSatisfaction>
                 </div>
