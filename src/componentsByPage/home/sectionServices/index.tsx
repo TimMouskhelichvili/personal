@@ -1,5 +1,5 @@
 import React, { ReactElement } from 'react';
-import { StyledSection, StyledExpertiseContainer, StyledTitle, StyledParagraph, StyledSeparator, StyledPS } from './style';
+import { StyledSection, StyledExpertiseContainer, StyledTitle, StyledParagraph, StyledSeparator, StyledPS, StyledImg } from './style';
 import { SectionBookConsultation } from 'src/componentsByPage/home/sectionBookConsultation';
 import { SubTitle } from 'src/components/landing/subTitle';
 import { Title } from 'src/components/landing/title';
@@ -20,6 +20,7 @@ const SectionServices = (): ReactElement => {
                 <StyledExpertiseContainer>
                     {locale.pages.home.services.list.map((x, key) => (
                         <div key={key}>
+                            <StyledImg src={`/static/images/home/services/${x.logo}.svg`} alt={x.logo} loading={'lazy'} />
                             <StyledTitle>{x.title}</StyledTitle>
                             <StyledParagraph>{x.description}</StyledParagraph>
                         </div>

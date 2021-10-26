@@ -1,5 +1,5 @@
 import React, { ReactElement } from 'react';
-import { StyledSection, StyledSeparator, StyleImgContainer, StyledQuote, StyledDescription } from './style';
+import { StyledSection, StyledSeparator, StyleImgContainer, StyledQuote, StyledDescription, StyledContainer } from './style';
 import { CustomImage } from 'src/components/elements/customImage';
 import { SideBySide } from 'src/components/landing/sideBySide';
 import { Paragraph } from 'src/components/elements/paragraph';
@@ -20,11 +20,11 @@ const SectionDescription = (): ReactElement => {
     return (
         <StyledSection>
             <SideBySide>
-                <div>
+                <StyledContainer>
                     <SubTitle>{subTitle}</SubTitle>
                     <Title>{title}</Title>
                     {imgEl}
-                </div>
+                </StyledContainer>
                 <Paragraph>
                     <StyledDescription>
                         <SpanText html={description1} />

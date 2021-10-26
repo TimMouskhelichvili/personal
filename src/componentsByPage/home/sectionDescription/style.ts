@@ -3,6 +3,10 @@ import { Section } from 'src/components/elements/section';
 import { getThemeVariable } from 'src/theme/utils';
 import { devices } from 'src/theme';
 
+const StyledContainer = styled.div`
+	flex: 1;
+`;
+
 const StyledSection = styled(Section)`
 	background: ${getThemeVariable('pages.home.description.background')};
 `;
@@ -56,6 +60,7 @@ const StyledDescription = styled.div`
 `;
 
 export {
+    StyledContainer,
     StyledDescription,
     StyledSeparator,
     StyledSection,

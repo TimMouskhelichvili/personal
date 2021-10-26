@@ -63,11 +63,19 @@ const StyledPS = styled.div`
 	text-align: center;
 `;
 
+const StyledImg = styled.img`
+	height: 60px;
+	display: block;
+	margin: auto;
+	margin-bottom: 10px;
+`;
+
 export {
     StyledExpertiseContainer,
     StyledParagraph,
     StyledSeparator,
     StyledSection,
     StyledTitle,
-    StyledPS
+    StyledPS,
+    StyledImg
 };

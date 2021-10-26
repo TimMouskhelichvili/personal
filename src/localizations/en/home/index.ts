@@ -29,7 +29,7 @@ const enHomeLocale = {
         heading: '👉 I Help Business by Building <span class="underline">Modern Web Applications</span> using React & Node.js',
         perks: [
             'Want To Reduce Your Developing Costs\u00A0💸',
-            'Want Your App Developed Very Fast\u00A0💨',
+            'Want Your App Developed Super Fast\u00A0💨',
             'Only Want Top Results\u00A0🏆'
         ],
         subHeading: 'Do you have an amazing idea for a Web Application but:',
@@ -124,16 +124,19 @@ const enHomeLocale = {
             {
                 description: `React is the most popular front-end framework, is very fast and robust. 
 				              It is the perfect choice for building web applications.`,
+                logo: 'react',
                 title: 'React Development'
             },
             {
                 description: `Choosing Node.js means having JavaScript on both front-end and back-end, 
 							  which means easier to develop.`,
+                logo: 'nodejs',
                 title: 'Node.js Development'
             },
             {
                 description: `TypeScript is much more reliable than vanilla JavaScript, which means 
 				              better, more explicit code with fewer bugs.`,
+                logo: 'typescript',
                 title: 'TypeScript Development'
             }
         ],

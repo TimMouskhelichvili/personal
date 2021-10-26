@@ -2,16 +2,16 @@ import styled from 'styled-components';
 import { Row } from 'src/components/elements/row';
 import { devices } from 'src/theme';
 
-const StyledSideBySide = styled(Row)`
+const StyledSideBySide = styled(Row)<{ customMargin?: string }>`
 	display: flex;
 
 	> div {
 		&:first-of-type {
-			padding-right: 40px;
+			padding-right: ${(p): string => p.customMargin || '40px'};
 		}
 
 		&:last-of-type {
-			padding-left: 40px;
+			padding-left: ${(p): string => p.customMargin || '40px'};
 		}
 
 		@media screen and (max-width: ${devices.tablet}) {
