@@ -106,6 +106,36 @@ const enHomeLocale = {
 					  and even get you a free quote directly through the chat.`,
         subTitle: 'How to contact me?',
         title: 'Shy? 🙈 Talk with me online.'
+    },
+    whyMe: {
+        list: [
+            {
+                description: 'I have over 6 years of experience in application development.',
+                title: 'An Experienced Developer'
+            },
+            {
+                description: 'My expertise will save you a lot of time and money.',
+                title: 'Save Your Time And Money'
+            },
+            {
+                description: 'You will get your quote & prototype in 24h or less.',
+                title: 'Your Quote in 24h'
+            },
+            {
+                description: 'Your app will be written using the latest technologies.',
+                title: 'Latest Technologies'
+            },
+            {
+                description: 'After the deployment, I offer 2 weeks of free support to fix bugs.',
+                title: '2 weeks of FREE support'
+            },
+            {
+                description: 'I guarantee the delivery date to which we agreed.',
+                title: 'On-Time Delivery'
+            }
+        ],
+        subTitle: 'Why me?',
+        title: 'I possess all the skills for building your next web application.\u00A0😁'
     }
 };
 

@@ -4,16 +4,16 @@ const enSitemap = {
         title: 'Home',
         exclude: true,
         home: true,
-        seoTitle: '{COMPANY} - Freelance Developer & React & Node.js Consultant',
+        seoTitle: '{COMPANY} - Freelance Developer & Consultant in React, Node.js',
         description: `I Help Business by Building Modern Web Applications using React & Node.js
-					  Affordable Pricing. Top Results. On-Time Delivery.`
+		              Save Your Time And Money. Top Results. On-Time Delivery.`
     },
     blog: { 
         href: '/blog',
         title: 'Blog',
         seoTitle: 'Our Blog - {COMPANY}',
         description: `The blog page where I share articles on web development themes.
-					  Tim Mouskhelichvili Consultant. I provide React, TypeScript, PHP, Node.js development and consultations.`
+					  Tim Mouskhelichvili Consultant. I provide React, TypeScript, Node.js development and consultations.`
     },
     privacyPolicy: {
         exclude: true,
