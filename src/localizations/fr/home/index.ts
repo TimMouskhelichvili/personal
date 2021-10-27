@@ -33,7 +33,7 @@ const frHomeLocale = {
             'Vous N\'Acceptez Que Les Meilleurs Résultats\u00A0🏆'
         ],
         subHeading: 'avez-vous une idée géniale pour une application Web? Mais...',
-        subSubHeading: 'Vous pouvez arrêter vos recherche!',
+        subSubHeading: 'Vous pouvez arrêter vos recherches!',
         text2: 'P.S. Je garantis une satisfaction de 100% à mes clients.'
     },
     quotes: {
@@ -123,7 +123,7 @@ const frHomeLocale = {
                 title: 'Une Estimation En 24h'
             },
             {
-                description: 'Votre application sera écrite avec les dernières technologies.',
+                description: 'Votre application sera écrite en utilisant les dernières technologies.',
                 title: 'Dernières Technologies'
             },
             {
@@ -132,7 +132,7 @@ const frHomeLocale = {
             },
             {
                 description: 'Je garantis la date de livraison que nous avons convenue.',
-                title: 'Délais Respecté'
+                title: 'Délais Respectés'
             }
         ],
         subTitle: 'Pourquoi moi?',
