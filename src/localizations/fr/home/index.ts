@@ -1,19 +1,23 @@
 const frHomeLocale = {
     description: {
-        alt: 'Développeur Web, Tim Mouskhelichvili',
-        description1: `Bonjour 👋! Je suis Tim Mouskhelichvili, un Développeur Web Full-Stack avec 
-					  une passion pour aider mes clients à <span class="italic">transformer leurs entreprises en leur créant des
-					 projets web incroyables.</span>
-					 <div class='space'></div>
-					 J'offre une vaste gamme de services, du développement web aux consultations 
-					 et au coaching.
-					 <div class='space'></div>
-					 Étant dans l'industrie du développement Web depuis plus de 5 ans et ayant complété 
-					 une multitude de projets web, je vous fournirai d'excellents services et vous donnerai des conseils 
-					 qui vous feront économiser beaucoup de temps et d'argent\u00A0💸.
-					 <div class='space'></div>
-					 Je vous fournirai les meilleurs résultats 
-					 en respectant vos délais, et ce pour <span class="underline">un prix très abordable.</span>`,
+        alt: 'Développeur Web Freelance, Tim Mouskhelichvili',
+        description1: `Bonjour 👋! 
+						<div class='space'></div>
+						Je suis Tim Mouskhelichvili, Développeur Web et Consultant de Montréal, Canada\u00A0🇨🇦
+						<div class='space'></div>
+						Je me spécialise dans le développement d'applications <span class="underline">React, Node.js et TypeScript</span>.
+						<div class="img-group">
+						<img src="/static/images/home/tech/react.svg" loading='lazy' />
+						<img src="/static/images/home/tech/nodejs.svg" loading='lazy' />
+						<img src="/static/images/home/tech/typescript.svg" loading='lazy' />
+						</div> 
+						<div class='space'></div>
+						J'ai plus de 6 ans d'expérience dans le domaine du développement d'applications.
+						<div class='space'></div>
+						Je suis en mission afin d'aider mes clients à 
+						<span class="italic">transformer leur entreprise</span> en créant des applications web modernes.
+						<div class='space'></div>
+						Je vais vous aider à transformer la vôtre;)`,
         description2: `<span class="italic">"Tim est un développeur web très fiable et vous pouvez TOUJOURS compter sur lui."</span>
 					   <br />Georges M. (Psyhelp)`,
         subTitle: 'qui suis je?',
@@ -93,8 +97,8 @@ const frHomeLocale = {
                 title: 'Développement TypeScript'
             }
         ],
-        ps: 'Cette liste n\'est pas exhaustive, contactez-moi si vous avez besoin de quelque chose de spécial et je vous aiderai.',
-        subTitle: 'Mes Services',
+        ps: 'Cette liste n\'est pas exhaustive, contactez-moi si vous avez besoin de quelque chose de spécial.',
+        subTitle: 'Quelle est mon tech stack?',
         title: 'Je vais utiliser React, Node.js et TypeScript pour créer votre application web.'
     },
     talkExpert: {

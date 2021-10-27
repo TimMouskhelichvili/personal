@@ -17,7 +17,7 @@ const enHomeLocale = {
 		               I am on a mission to help my clients
 					   <span class="italic">transform their businesses</span> by building amazing applications.
 					   <div class='space'></div>
-					   I will help you transform yours.`,
+					   I will help you transform yours;)`,
         description2: `<span class="italic">"Tim is a very reliable developer and you can ALWAYS count on him."</span>
 					   <br />Georges M. (Psyhelp)`,
         subTitle: 'who am I?',
