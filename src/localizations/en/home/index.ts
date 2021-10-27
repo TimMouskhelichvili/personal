@@ -36,51 +36,6 @@ const enHomeLocale = {
         subSubHeading: 'Then, I\'m definitely your guy!',
         text2: 'P.S. I guarantee 100% satisfaction to my clients.'
     },
-    languages: {
-        alt: 'React, NodeJS, Typescript, Tim Mouskhelichvili',
-        list: [ 
-            {
-                subList: [
-                    'JavaScript',
-                    'TypeScript',
-                    'React',
-                    'npm',
-                    'Webpack',
-                    'ESLint',
-                    'Jest',
-                    'HTML/CSS',
-                    'Sass',
-                    'GraphQL',
-                    'Babel',
-                    'Redux',
-                    'styled-components',
-                    'Cypress'
-                ],
-                title: 'Front-End Development'
-            },
-            {
-                subList: [
-                    'Node.js',
-                    'Next.js',
-                    'Redis'
-                ],
-                title: 'Back-End Development'
-            },
-            {
-                subList: [
-                    'Docker',
-                    'Kubernetes',
-                    'nginx',
-                    'MySQL',
-                    'MongoDB',
-                    'CI/CD'
-                ],
-                title: 'Server'
-            } 
-        ],
-        subTitle: 'What other technologies will I use?',
-        title: 'I will use some of those libraries & technologies to create your application.\u00A0😎'
-    },
     quotes: {
         reviews: [
             {

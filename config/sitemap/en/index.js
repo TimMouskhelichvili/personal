@@ -31,6 +31,13 @@ const enSitemap = {
         exclude: true,
         href: '/terms-of-use',
         title: 'Terms of Use'
+    },
+    resume: {
+        href: '/resume',
+        title: 'My Resume',
+        exclude: true,
+        seoTitle: 'Resume - {COMPANY}',
+        description: 'Resume of Tim Mouskhelichvili.'
     }
 };
 

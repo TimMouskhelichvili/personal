@@ -32,52 +32,6 @@ const frHomeLocale = {
         subSubHeading: 'Vous pouvez arrêter vos recherche!',
         text2: 'P.S. Je garantis une satisfaction de 100% à mes clients.'
     },
-    languages: {
-        alt: 'React, NodeJS, Typescript, Tim Mouskhelichvili',
-        list: [ 
-            {
-                subList: [
-                    'JavaScript',
-                    'TypeScript',
-                    'React',
-                    'npm',
-                    'Webpack',
-                    'ESLint',
-                    'Jest',
-                    'HTML/CSS',
-                    'Sass',
-                    'GraphQL',
-                    'Babel',
-                    'Redux',
-                    'styled-components',
-                    'Cypress'
-                ],
-                title: 'Développement Front-End'
-            },
-            {
-                subList: [
-                    'Node.js',
-                    'PHP',
-                    'Next.js',
-                    'Redis',
-                    'WordPress'
-                ],
-                title: 'Développement Back-End'
-            },
-            {
-                subList: [
-                    'Docker',
-                    'Kubernetes',
-                    'nginx',
-                    'MySQL',
-                    'CI/CD'
-                ],
-                title: 'Serveur'
-            } 
-        ],
-        subTitle: 'technologies',
-        title: 'Voici quelques technologies que je vais utiliser pour créer votre projet web.\u00A0😎'
-    },
     quotes: {
         reviews: [
             {

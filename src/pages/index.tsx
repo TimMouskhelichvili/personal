@@ -1,7 +1,6 @@
 import React, { ReactElement } from 'react';
 import { SectionDescription } from 'src/componentsByPage/home/sectionDescription';
 import { SectionTalkExpert } from 'src/componentsByPage/home/sectionTalkExpert';
-import { SectionLanguages } from 'src/componentsByPage/home/sectionLanguages';
 import { SectionServices } from 'src/componentsByPage/home/sectionServices';
 import { SectionQuotes } from 'src/componentsByPage/home/sectionQuotes';
 import { SectionFirst } from 'src/componentsByPage/home/sectionFirst';
@@ -21,7 +20,6 @@ const Home = (): ReactElement => {
             <SectionFirst />
             <SectionDescription />
             <SectionServices />
-            <SectionLanguages />
             <SectionQuotes />
             <SectionTalkExpert />
         </Container>

@@ -4,7 +4,8 @@ import { enSitemap } from 'config/sitemap/en';
 const enMenuTop: IMenuItem[] = [];
 
 const enSideMenu = [ 
-    enSitemap.blog
+    enSitemap.blog,
+    enSitemap.resume
 ];
 
 const enMenuFooter = [

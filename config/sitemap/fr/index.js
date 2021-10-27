@@ -31,6 +31,13 @@ const frSitemap = {
         exclude: true,
         href: '/terms-of-use',
         title: 'Conditions d’utilisation'
+    },
+    resume: {
+        href: '/resume',
+        title: 'Mon CV',
+        exclude: true,
+        seoTitle: 'CV - {COMPANY}',
+        description: 'CV de Tim Mouskhelichvili.'
     }
 };
 

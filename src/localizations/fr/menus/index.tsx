@@ -4,7 +4,8 @@ import { frSitemap } from 'config/sitemap/fr';
 const frMenuTop: IMenuItem[] = [];
 
 const frSideMenu = [ 
-    frSitemap.blog
+    frSitemap.blog,
+    frSitemap.resume
 ];
 
 const frMenuFooter = [

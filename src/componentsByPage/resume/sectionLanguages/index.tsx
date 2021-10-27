@@ -12,7 +12,7 @@ import { useLocale } from 'src/localizations';
  */
 const SectionLanguages = (): ReactElement => {
     const locale = useLocale();
-    const { subTitle, title, list, alt } = locale.pages.home.languages;
+    const { subTitle, title, list, alt } = locale.pages.resume.languages;
 	
     return (
         <StyledSection>
