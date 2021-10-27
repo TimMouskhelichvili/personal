@@ -85,7 +85,7 @@ const enHomeLocale = {
             },
             {
                 description: `Choosing Node.js means having JavaScript on both front-end and back-end, 
-							  which means easier to develop.`,
+							  which means easier development.`,
                 logo: 'nodejs',
                 title: 'Node.js Development'
             },
@@ -97,7 +97,7 @@ const enHomeLocale = {
             }
         ],
         ps: 'This list is not exhaustive, send me a message if you need something special.',
-        subTitle: 'How will I build your application?',
+        subTitle: 'What is my tech stack?',
         title: 'I will use React, Node.js & TypeScript to build your next web application.'
     },
     talkExpert: {
@@ -114,7 +114,7 @@ const enHomeLocale = {
                 title: 'An Experienced Developer'
             },
             {
-                description: 'My expertise will save you a lot of time and money.',
+                description: 'My previous expertise will save you a lot of time and money.',
                 title: 'Save Your Time And Money'
             },
             {
@@ -135,7 +135,7 @@ const enHomeLocale = {
             }
         ],
         subTitle: 'Why me?',
-        title: 'I possess all the skills for building your next web application.\u00A0😁'
+        title: 'I possess all the skills for building your next web application.\u00A0🙏'
     }
 };
 

@@ -95,7 +95,7 @@ const frHomeLocale = {
         ],
         ps: 'Cette liste n\'est pas exhaustive, contactez-moi si vous avez besoin de quelque chose de spécial et je vous aiderai.',
         subTitle: 'Mes Services',
-        title: 'Je possède toutes les compétences pour créer votre prochain projet web.\u00A0🙏'
+        title: 'Je vais utiliser React, Node.js et TypeScript pour créer votre application web.'
     },
     talkExpert: {
         button: 'Obtenir Une Estimation de Prix',
@@ -103,6 +103,36 @@ const frHomeLocale = {
 		              vous donner une estimation du prix gratuitement directement via le chat.`,
         subTitle: 'Contactez-nous',
         title: 'Timide? 🙈 Parlez avec moi en ligne.'
+    },
+    whyMe: {
+        list: [
+            {
+                description: 'I have over 6 years of experience in application development.',
+                title: 'An Experienced Developer'
+            },
+            {
+                description: 'My previous expertise will save you a lot of time and money.',
+                title: 'Save Your Time And Money'
+            },
+            {
+                description: 'You will get your quote & prototype in 24h or less.',
+                title: 'Your Quote in 24h'
+            },
+            {
+                description: 'Your app will be written using the latest technologies.',
+                title: 'Latest Technologies'
+            },
+            {
+                description: 'After the deployment, I offer 2 weeks of free support to fix bugs.',
+                title: '2 weeks of FREE support'
+            },
+            {
+                description: 'I guarantee the delivery date to which we agreed.',
+                title: 'On-Time Delivery'
+            }
+        ],
+        subTitle: 'Pourquoi moi?',
+        title: 'Je possède toutes les compétences pour créer votre application web.\u00A0🙏'
     }
 };
 
