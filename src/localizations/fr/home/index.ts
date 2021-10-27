@@ -111,28 +111,28 @@ const frHomeLocale = {
     whyMe: {
         list: [
             {
-                description: 'I have over 6 years of experience in application development.',
-                title: 'An Experienced Developer'
+                description: 'J\'ai plus de 6 ans d\'expérience dans le domaine du développement d\'applications web.',
+                title: 'Un Développeur Expérimenté'
             },
             {
-                description: 'My previous expertise will save you a lot of time and money.',
-                title: 'Save Your Time And Money'
+                description: 'Mon expérience vous fera économiser beaucoup de temps et d\'argent.',
+                title: 'Une Économie D\'Argent'
             },
             {
-                description: 'You will get your quote & prototype in 24h or less.',
-                title: 'Your Quote in 24h'
+                description: 'Vous obtiendrez une estimation de prix et un prototype en 24h ou moins.',
+                title: 'Une Estimation En 24h'
             },
             {
-                description: 'Your app will be written using the latest technologies.',
-                title: 'Latest Technologies'
+                description: 'Votre application sera écrite avec les dernières technologies.',
+                title: 'Dernières Technologies'
             },
             {
-                description: 'After the deployment, I offer 2 weeks of free support to fix bugs.',
-                title: '2 weeks of FREE support'
+                description: 'Après le déploiement, j\'offre 2 semaines de support gratuit pour corriger les bugs.',
+                title: '2 Semaines De Support Gratuit'
             },
             {
-                description: 'I guarantee the delivery date to which we agreed.',
-                title: 'On-Time Delivery'
+                description: 'Je garantis la date de livraison que nous avons convenue.',
+                title: 'Délais Respecté'
             }
         ],
         subTitle: 'Pourquoi moi?',
