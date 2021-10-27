@@ -79,26 +79,26 @@ const frHomeLocale = {
         },
         list: [
             {
-                description: `React is the most popular front-end framework, is very fast and robust. 
-				              It is the perfect choice for building web applications.`,
+                description: `React est le framework front-end le plus populaire, il est très rapide et robuste. 
+				              C'est le choix parfait pour créer des applications web.`,
                 logo: 'react',
                 title: 'Développement React'
             },
             {
-                description: `Choosing Node.js means having JavaScript on both front-end and back-end, 
-							  which means easier to develop.`,
+                description: `Choisir Node.js, c'est avoir JavaScript à la fois sur le front-end et le back-end,
+				              ce qui signifie un développement plus facile.`,
                 logo: 'nodejs',
                 title: 'Développement Node.js'
             },
             {
-                description: `TypeScript is much more reliable than vanilla JavaScript, which means 
-				              better, more explicit code with fewer bugs.`,
+                description: `TypeScript est beaucoup plus fiable que JavaScript...
+				              Il permet d'avoir un code meilleur, plus explicite et avec moins de bogues.`,
                 logo: 'typescript',
                 title: 'Développement TypeScript'
             }
         ],
         ps: 'Cette liste n\'est pas exhaustive, contactez-moi si vous avez besoin de quelque chose de spécial.',
-        subTitle: 'Quelle est mon tech stack?',
+        subTitle: 'Quelle est mon stack technologique?',
         title: 'Je vais utiliser React, Node.js et TypeScript pour créer votre application web.'
     },
     talkExpert: {
