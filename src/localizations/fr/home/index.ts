@@ -2,21 +2,23 @@ const frHomeLocale = {
     description: {
         alt: 'Développeur Web Freelance, Tim Mouskhelichvili',
         description1: `Bonjour 👋! 
-						<div class='space'></div>
+						<br><div class='space'></div>
 						Je suis Tim Mouskhelichvili, Développeur Web et Consultant de Montréal, Canada\u00A0🇨🇦
-						<div class='space'></div>
+						<br><div class='space'></div>
 						Je me spécialise dans le développement d'applications <span class="underline">React, Node.js et TypeScript</span>.
-						<div class="img-group">
+						<br><div class="img-group">
 						<img src="/static/images/home/tech/react.svg" loading='lazy' />
 						<img src="/static/images/home/tech/nodejs.svg" loading='lazy' />
 						<img src="/static/images/home/tech/typescript.svg" loading='lazy' />
 						</div> 
 						<div class='space'></div>
 						J'ai plus de 6 ans d'expérience dans le domaine du développement d'applications.
-						<div class='space'></div>
+						<br><div class='space'></div>
+						Mon expérience vous fera <span class="underline">économiser beaucoup de temps et d'argent</span> 💸
+						<br><div class='space'></div>
 						Je suis en mission afin d'aider mes clients à 
 						<span class="italic">transformer leur entreprise</span> en créant des applications web modernes.
-						<div class='space'></div>
+						<br><div class='space'></div>
 						Je vais vous aider à transformer la vôtre;)`,
         description2: `<span class="italic">"Tim est un développeur web très fiable et vous pouvez TOUJOURS compter sur lui."</span>
 					   <br />Georges M. (Psyhelp)`,
