@@ -7,9 +7,9 @@ const frHomeLocale = {
 						<br><div class='space'></div>
 						Je me spécialise dans le développement d'applications <span class="underline">React, Node.js et TypeScript</span>.
 						<br><div class="img-group">
-						<img src="/static/images/home/tech/react.svg" loading='lazy' />
-						<img src="/static/images/home/tech/nodejs.svg" loading='lazy' />
-						<img src="/static/images/home/tech/typescript.svg" loading='lazy' />
+							<img src="/static/images/home/tech/react.svg" loading='lazy' alt='react' />
+							<img src="/static/images/home/tech/nodejs.svg" loading='lazy' alt='nodejs' />
+							<img src="/static/images/home/tech/typescript.svg" loading='lazy' alt='typescript' />
 						</div> 
 						<div class='space'></div>
 						J'ai plus de 6 ans d'expérience dans le domaine du développement d'applications.

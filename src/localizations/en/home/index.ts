@@ -7,9 +7,9 @@ const enHomeLocale = {
 					   <br><div class='space'></div>
 					   I specialize in <span class="underline">React, Node.js & TypeScript</span> application development.
 					   <br><div class="img-group">
-						<img src="/static/images/home/tech/react.svg" loading='lazy' />
-						<img src="/static/images/home/tech/nodejs.svg" loading='lazy' />
-						<img src="/static/images/home/tech/typescript.svg" loading='lazy' />
+						<img src="/static/images/home/tech/react.svg" loading='lazy' alt='react' />
+						<img src="/static/images/home/tech/nodejs.svg" loading='lazy' alt='nodejs' />
+						<img src="/static/images/home/tech/typescript.svg" loading='lazy' alt='typescript' />
 					   </div> 
 					   <div class='space'></div>
 					   I have over 6 years of experience in application development. 
