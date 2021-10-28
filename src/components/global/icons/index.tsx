@@ -1,4 +1,5 @@
 import React, { ReactElement } from 'react';
+import { useRouter } from 'next/router';
 import { StyledIcons } from './style';
 import { iconLinkedIn } from 'src/componentsByPage/home/images/footerLinkedIn';
 import { iconGithub } from 'src/componentsByPage/home/images/footerGithub';
@@ -7,12 +8,16 @@ import { IIconElement } from 'src/interfaces/IIconElement';
 import { Icon } from 'src/components/elements/icon';
 import { configuration } from 'src/configuration';
 import { useLocale } from 'src/localizations';
+import { isLandingPage } from 'src/utils';
 
 /**
  * The Icons component.
  */
-const Icons = (): ReactElement => {
+const Icons = (): ReactElement | null => {
     const locale = useLocale();
+    const router = useRouter();
+
+    if (isLandingPage(router)) return null;
 	
     return (
         <>
