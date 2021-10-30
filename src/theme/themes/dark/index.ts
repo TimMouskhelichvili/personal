@@ -68,6 +68,11 @@ const darkTheme = {
             services: {
                 cardBackground: lighten(.05, colors.background)
             }
+        },
+        portfolio: {
+            image: {
+                background: lighten(.05, colors.background)
+            }
         }
     }
 };

@@ -1,10 +1,11 @@
 import React, { ReactElement } from 'react';
-import { SectionProjects } from 'src/componentsByPage/portfolio/sectionProjects';
+import { StyledParagraph } from 'src/componentsByPage/portfolio/style';
+import { Projects } from 'src/componentsByPage/portfolio/projects';
 import { Container } from 'src/components/global/container';
+import { Title } from 'src/components/global/title';
 import { Row } from 'src/components/elements/row';
 import { Seo } from 'src/components/global/seo';
 import { useLocale } from 'src/localizations';
-import { Title } from 'src/components/global/title';
 
 /**
  * The Portfolio component. 
@@ -17,7 +18,8 @@ const Portfolio = (): ReactElement => {
             <Row>
                 <Seo {...locale.sitemap.portfolio} />
                 <Title title={locale.pages.portfolio.title} />
-                <SectionProjects />
+                <StyledParagraph>{locale.pages.portfolio.body}</StyledParagraph>
+                <Projects />
             </Row>
         </Container>
     );

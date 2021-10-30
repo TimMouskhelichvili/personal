@@ -69,6 +69,11 @@ const lightTheme: typeof darkTheme = {
             services: {
                 cardBackground: darken(.05, colors.background)
             }
+        },
+        portfolio: {
+            image: {
+                background: darken(.05, colors.background)
+            }
         }
     }
 };

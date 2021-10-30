@@ -35,9 +35,14 @@ const frSitemap = {
     resume: {
         href: '/resume',
         title: 'Mon CV',
-        exclude: true,
         seoTitle: 'CV - {COMPANY}',
         description: 'CV de Tim Mouskhelichvili.'
+    },
+    portfolio: {
+        href: '/portfolio',
+        title: 'Mon Portfolio',
+        seoTitle: 'Portfolio - {COMPANY}',
+        description: 'Portfolio de Tim Mouskhelichvili.'
     }
 };
 

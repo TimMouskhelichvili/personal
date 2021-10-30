@@ -35,9 +35,14 @@ const enSitemap = {
     resume: {
         href: '/resume',
         title: 'My Resume',
-        exclude: true,
         seoTitle: 'Resume - {COMPANY}',
         description: 'Resume of Tim Mouskhelichvili.'
+    },
+    portfolio: {
+        href: '/portfolio',
+        title: 'My Portfolio',
+        seoTitle: 'Portfolio - {COMPANY}',
+        description: 'Portfolio of Tim Mouskhelichvili.'
     }
 };
 

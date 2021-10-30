@@ -1,3 +1,4 @@
+import { enPortfolioLocale } from 'src/localizations/en/portfolio';
 import { enNotFoundLocale } from 'src/localizations/en/notFound';
 import { enSitemapLocale } from 'src/localizations/en/sitemap';
 import { enGlobalLocale } from 'src/localizations/en/global';
@@ -12,6 +13,7 @@ const enLocale = {
         blog: enBlogLocale,
         home: enHomeLocale,
         notFound: enNotFoundLocale,
+        portfolio: enPortfolioLocale,
         resume: enResumeLocale,
         sitemap: enSitemapLocale
     },

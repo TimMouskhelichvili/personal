@@ -1,3 +1,4 @@
+import { frPortfolioLocale } from 'src/localizations/fr/portfolio';
 import { frNotFoundLocale } from 'src/localizations/fr/notFound';
 import { frSitemapLocale } from 'src/localizations/fr/sitemap';
 import { frGlobalLocale } from 'src/localizations/fr/global';
@@ -13,6 +14,7 @@ const frLocale: typeof enLocale = {
         blog: frBlogLocale,
         home: frHomeLocale,
         notFound: frNotFoundLocale,
+        portfolio: frPortfolioLocale,
         resume: frResumeLocale,
         sitemap: frSitemapLocale
     },

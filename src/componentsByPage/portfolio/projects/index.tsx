@@ -1,6 +1,6 @@
 import React, { ReactElement } from 'react';
 import { StyledImgContainer, StyledSideBySide, StyledSubTitle, StyledOutsideLink } from './style';
-import { IProject } from 'src/componentsByPage/porfolio/projects/interfaces/IProject';
+import { IProject } from 'src/componentsByPage/portfolio/projects/interfaces/IProject';
 import { CustomImage } from 'src/components/elements/customImage';
 import { Paragraph } from 'src/components/elements/paragraph';
 import { Title } from 'src/components/landing/title';

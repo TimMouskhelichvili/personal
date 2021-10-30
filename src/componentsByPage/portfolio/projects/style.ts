@@ -38,14 +38,14 @@ const StyledSideBySide = styled(SideBySide)`
 `;
 
 const StyledImgContainer = styled.div`
-	background: ${getThemeVariable('pages.porfolio.image.background')};
+	background: ${getThemeVariable('pages.portfolio.image.background')};
 	border-radius: ${getThemeVariable('global.borderRadius')};
 	position: relative;
 	padding-top: 62%;
 
 	img {
 		border-radius: ${getThemeVariable('global.borderRadius')};
-		border: 1px solid ${getThemeVariable('pages.porfolio.image.background')};
+		border: 1px solid ${getThemeVariable('pages.portfolio.image.background')};
 		position: absolute;
 		left: 0;
 		top: 0;
