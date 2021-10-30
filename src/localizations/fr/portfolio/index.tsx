@@ -3,30 +3,31 @@ const frPortfolioLocale = {
     link: '[Voir Site Web]',
     projects: [
         {
-            description: `Nous avons créé un excellent site Web multilingue avec des belles landing pages 
-			              qui ont augmenté le taux de conversion des utilisateurs de 300%. Nous avons également quadruplé leur 
+            description: `I've built a beautiful one-page web application to find and rate influencers. The application
+			              supports multi-languages, dark mode, multiple themes, and many more features.`,
+            project: 'rateaninfluencer',
+            subTitle: 'Développement & Design',
+            tags: [ 'Node.js', 'TypeScript', 'React', 'Express.js', 'Redux' ],
+            title: 'Rate An Influencer'
+        },
+        {
+            description: `I created AftrConsulting's one-page application website using the same engine as my own website. 
+						  It works and feels great and has a lot of cool features (like dark mode).`,
+            href: 'https://aftrconsulting.com/',
+            project: 'aftrconsulting',
+            subTitle: 'Développement & Design',
+            tags: [ 'Next.js', 'TypeScript', 'React', 'Redux' ],
+            title: 'AftrConsulting'
+        },
+        {
+            description: `J'ai créé un excellent site Web multilingue avec des belles landing pages 
+			              qui ont augmenté le taux de conversion des utilisateurs de 300%. J'ai également aidé à quadruplé leur 
 						  trafic provenant des moteurs de recherche.`,
             href: 'https://www.psyhelp.ca',
             project: 'psyhelp',
             subTitle: 'Conception, Création et Maintenance',
+            tags: [ 'Wordpress', 'TypeScript', 'SASS' ],
             title: 'Centre de services psychologiques'
-        },
-        {
-            description: `Nous avons optimisé les performances de leurs pages web, ce qui a considérablement amélioré 
-						  l'expérience utilisateur et le score PageSpeed Insights. Nous avons également fourni des conseils 
-						  généraux qui ont contribué à l'augmentation de la rétention des utilisateurs sur leur site web.`,
-            href: 'https://lesfinances.ca/',
-            project: 'lesfinances',
-            subTitle: 'Consultation & Optimisations',
-            title: 'Les Finances.'
-        },
-        {
-            description: `Nous avons créé le site de Tim en utilisant le même moteur que notre propre site Web. 
-			              Il fonctionne bien et possède de nombreuses fonctionnalités intéressantes (comme le mode sombre).`,
-            href: 'https://timmouskhelichvili.com/',
-            project: 'timmouskhelichvili',
-            subTitle: 'Website Design, Creation & Maintenance',
-            title: 'Le Site de Tim Mouskhelichvili'
         }
     ],
     title: 'Mon Portfolio'

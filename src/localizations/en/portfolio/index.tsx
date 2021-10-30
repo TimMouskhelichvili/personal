@@ -1,31 +1,33 @@
 const enPortfolioLocale = {
-    body: 'Here, I have selected some of my projects for you to enjoy.',
+    body: `I am Tim, a Freelance Developer & Consultant and I build modern web applications using React, Node.js & TypeScript 
+	       for my clients. Thank you 🙏 for checking out my portfolio. Send me a message if you have a request.`,
     link: '[View Website]',
     projects: [
         {
-            description: `We've created a great multi-language website with high converting landing pages that boosted 
-			              user conversion by up to 300%. We've also quadrupled their search engine traffic.`,
+            description: `I've built a beautiful one-page web application to find and rate influencers. The application
+			              supports multi-languages, dark mode, multiple themes, and many more features.`,
+            project: 'rateaninfluencer',
+            subTitle: 'Website Development & Design',
+            tags: [ 'Node.js', 'TypeScript', 'React', 'Express.js', 'Redux' ],
+            title: 'Rate An Influencer'
+        },
+        {
+            description: `I created AftrConsulting's one-page application website using the same engine as my own website. 
+						  It works and feels great and has a lot of cool features (like dark mode).`,
+            href: 'https://aftrconsulting.com/',
+            project: 'aftrconsulting',
+            subTitle: 'Website Development & Design',
+            tags: [ 'Next.js', 'TypeScript', 'React', 'Redux' ],
+            title: 'AftrConsulting'
+        }, 
+        {
+            description: `I've created a great multi-language website with high converting landing pages that boosted 
+			              user conversion by up to 300%. I also helped quadruple their search engine traffic.`,
             href: 'https://www.psyhelp.ca',
             project: 'psyhelp',
-            subTitle: 'Website Design, Creation & Maintenance',
-            tags: [ 'Wordpress' ],
+            subTitle: 'Website Development & Design',
+            tags: [ 'Wordpress', 'TypeScript', 'SASS' ],
             title: 'Centre de services psychologiques'
-        },
-        {
-            description: `We've optimized the performance of their pages which greatly improved user experience and PageSpeed Insights 
-						  score. We also provided some general consulting that helped with user retention.`,
-            href: 'https://lesfinances.ca/',
-            project: 'lesfinances',
-            subTitle: 'Consulting & Optimizations',
-            title: 'Les Finances.'
-        },
-        {
-            description: `We've created Tim's one-page application website using the same engine as our own website. 
-						  It works and feels great and has a lot of cool features (like dark mode).`,
-            href: 'https://timmouskhelichvili.com/',
-            project: 'lesfinances',
-            subTitle: 'Website Design, Creation & Maintenance',
-            title: 'Tim Mouskhelichvili\'s Website'
         }
     ],
     title: 'My Portfolio'
