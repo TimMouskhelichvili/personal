@@ -1,5 +1,5 @@
 const frPortfolioLocale = {
-    body: 'Voici quelques-uns de mes projets sélectionnés. Bonne découverte!\u00A0😎',
+    body: 'Voici quelques-uns de mes projets sélectionnés. Bonne découverte!',
     link: '[Voir Site Web]',
     projects: [
         {

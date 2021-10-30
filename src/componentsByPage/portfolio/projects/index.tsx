@@ -1,5 +1,5 @@
 import React, { ReactElement } from 'react';
-import { StyledImgContainer, StyledSideBySide, StyledSubTitle, StyledOutsideLink } from './style';
+import { StyledImgContainer, StyledSideBySide, StyledSubTitle, StyledOutsideLink, StyledTagsContainer } from './style';
 import { IProject } from 'src/componentsByPage/portfolio/projects/interfaces/IProject';
 import { CustomImage } from 'src/components/elements/customImage';
 import { Paragraph } from 'src/components/elements/paragraph';
@@ -48,6 +48,13 @@ const getProject = (project: IProject, link: string): ReactElement => (
             <StyledSubTitle>{project.subTitle}</StyledSubTitle>
             <Title marginBottom={'20px'}>{project.title}</Title>
             <Paragraph>{project.description}</Paragraph>
+            {project.tags && (
+                <StyledTagsContainer>
+                    {project.tags.map((tag) => (
+                        <div key={tag}>{tag}</div>
+                    ))}
+                </StyledTagsContainer>
+            )}
             {project.href && 
 				<StyledOutsideLink href={project.href} >{link}</StyledOutsideLink>}
         </div>

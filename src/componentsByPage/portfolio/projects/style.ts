@@ -10,6 +10,17 @@ const StyledSideBySide = styled(SideBySide)`
 	padding-right: 0px;
 	margin-bottom: 50px;
 
+	> div {
+		flex: 1 1 0%;
+	}
+	
+	@media screen and (max-width: ${devices.smallTablet}) {
+		&:not(:last-of-type) {
+			padding-bottom: 50px;
+			border-bottom: 1px solid ${getThemeVariable('global.borderColor')};
+		}
+	}
+
 	&:nth-child(even) {
 		flex-direction: row-reverse;
 
@@ -65,6 +76,20 @@ const StyledImgContainer = styled.div`
 	}
 `;
 
+const StyledTagsContainer = styled.div`
+	margin-top: 10px;
+
+	> div {
+		border-radius: ${getThemeVariable('global.borderRadius')};
+		background: ${getThemeVariable('pages.portfolio.cardBackground')};
+		padding: 10px;
+		text-align: center;
+		display: inline-block;
+		margin-bottom: 10px;
+		margin-right: 10px;
+	}
+`;
+
 const StyledSubTitle = styled(SubTitle)`
 	@media screen and (max-width: ${devices.smallTablet}) {
 		margin-top: 30px;
@@ -78,6 +103,7 @@ const StyledOutsideLink = styled(OutsideLink)`
 `;
 
 export {
+    StyledTagsContainer,
     StyledImgContainer,
     StyledSideBySide,
     StyledSubTitle,

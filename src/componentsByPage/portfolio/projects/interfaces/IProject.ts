@@ -4,6 +4,7 @@ interface IProject {
 	subTitle: string;
 	title: string;
 	href?: string;
+	tags?: string[];
 }
 
 export type {

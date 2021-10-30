@@ -71,6 +71,7 @@ const lightTheme: typeof darkTheme = {
             }
         },
         portfolio: {
+            cardBackground: darken(.08, colors.background),
             image: {
                 background: darken(.05, colors.background)
             }

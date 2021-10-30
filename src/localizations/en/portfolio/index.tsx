@@ -1,5 +1,5 @@
 const enPortfolioLocale = {
-    body: 'Here, I have selected some of my projects for you to see.\u00A0😎',
+    body: 'Here, I have selected some of my projects for you to enjoy.',
     link: '[View Website]',
     projects: [
         {
@@ -8,6 +8,7 @@ const enPortfolioLocale = {
             href: 'https://www.psyhelp.ca',
             project: 'psyhelp',
             subTitle: 'Website Design, Creation & Maintenance',
+            tags: [ 'Wordpress' ],
             title: 'Centre de services psychologiques'
         },
         {

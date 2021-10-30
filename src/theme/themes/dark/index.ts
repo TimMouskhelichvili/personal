@@ -70,6 +70,7 @@ const darkTheme = {
             }
         },
         portfolio: {
+            cardBackground: lighten(.08, colors.background),
             image: {
                 background: lighten(.05, colors.background)
             }
