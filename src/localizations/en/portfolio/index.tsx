@@ -1,6 +1,6 @@
 const enPortfolioLocale = {
     body: `I am Tim, a Freelance Developer & Consultant and I build modern web applications using React, Node.js & TypeScript 
-	       for my clients. Thank you 🙏 for checking out my portfolio. Send me a message if you have a request.`,
+	       for my clients. Thank you 🙏 for checking out my portfolio. Send me a message if you like something or have a request.`,
     link: '[View Website]',
     projects: [
         {

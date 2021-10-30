@@ -1,5 +1,7 @@
 const frPortfolioLocale = {
-    body: 'Voici quelques-uns de mes projets sélectionnés. Bonne découverte!',
+    body: `Je suis Tim, développeur freelance et consultant indépendant et je crée des applications web modernes avec
+	       React, Node.js et TypeScript. Merci 🙏 d'avoir consulté mon portfolio. 
+		   Envoyez-moi un message si vous aimez quelque chose ou avez une demande.`,
     link: '[Voir Site Web]',
     projects: [
         {
