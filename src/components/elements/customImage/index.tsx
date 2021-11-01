@@ -57,7 +57,7 @@ const CustomImage = (props: ICustomImageProps): ReactElement => {
 const getPicture = (props: ICustomImageProps): ReactElement => {
     return (
         <picture>
-            <source src={getWebP(props.src)} type={'image/webp'} />
+            <source srcSet={getWebP(props.src)} type={'image/webp'} />
             {props.media && (
                 <>
                     {props.media.map((x, key) => (
