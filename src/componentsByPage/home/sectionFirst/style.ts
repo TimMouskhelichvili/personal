@@ -121,6 +121,19 @@ const StyledSealsContainer = styled.div`
 	}
 `;
 
+const StyledImgContainer = styled.div`
+	display: flex;
+	margin-top: 20px;
+
+	svg {
+		height: 50px;
+		margin-right: 20px;
+
+		--grayed-out-svg: ${getThemeVariable('pages.home.first.techIconBackground')};
+		--svg-background-color: ${getThemeVariable('global.background')};
+	}
+`;
+
 export {
     StyledSealsContainer,
     StyledButton,
@@ -128,5 +141,6 @@ export {
     StyleImgContainer,
     StyledH1,
     StyledPerksContainer,
-    StyledRow
+    StyledRow,
+    StyledImgContainer
 };

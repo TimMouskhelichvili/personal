@@ -62,6 +62,9 @@ const darkTheme = {
             description: {
                 background: lighten(.05, colors.background)
             },
+            first: {
+                techIconBackground: lighten(.15, colors.background)
+            },
             quotes: {
                 background: lighten(.2, colors.background)
             },

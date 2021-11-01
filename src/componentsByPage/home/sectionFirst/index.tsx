@@ -1,10 +1,11 @@
 import React, { ReactElement } from 'react';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
-import { StyleImgContainer, StyledSection, StyledH1, StyledPerksContainer, StyledButton, StyledRow } from './style';
+import { StyleImgContainer, StyledSection, StyledH1, StyledPerksContainer, StyledButton, StyledRow, StyledImgContainer } from './style';
 import { CustomImage } from 'src/components/elements/customImage';
+import { TechIcon } from 'src/componentsByPage/home/techLogo';
+import { SpanText } from 'src/components/elements/spanText';
 import { Icon } from 'src/components/elements/icon';
 import { useLocale } from 'src/localizations';
-import { SpanText } from 'src/components/elements/spanText';
 
 /**
  * The SectionFirst component.
@@ -20,6 +21,7 @@ const SectionFirst = (): ReactElement => {
                     <StyledH1><SpanText html={heading} /></StyledH1>
                     {getPerks(perks)}
                     <StyledButton withIcon={true} />
+                    {getTechIcons()}
                 </div>
                 <StyleImgContainer>
                     <div>
@@ -51,6 +53,16 @@ const getPerks = (perks: string[]): ReactElement => (
     </StyledPerksContainer>
 );
 
+/**
+ * Returns the tech icons.
+ */
+const getTechIcons = (): ReactElement => (
+    <StyledImgContainer>
+        <TechIcon icon={'react'} />
+        <TechIcon icon={'nodejs'} />
+        <TechIcon icon={'typescript'} />
+    </StyledImgContainer>
+);
 export {
     SectionFirst
 };

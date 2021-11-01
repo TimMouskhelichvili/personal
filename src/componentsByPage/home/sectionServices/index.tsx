@@ -1,10 +1,11 @@
 import React, { ReactElement } from 'react';
-import { StyledSection, StyledExpertiseContainer, StyledTitle, StyledParagraph, StyledSeparator, StyledPS, StyledImg } from './style';
+import { StyledSection, StyledExpertiseContainer, StyledTitle, StyledParagraph, StyledSeparator, StyledPS, StyledTechIcon } from './style';
 import { SectionBookConsultation } from 'src/componentsByPage/home/sectionBookConsultation';
 import { SubTitle } from 'src/components/landing/subTitle';
 import { Title } from 'src/components/landing/title';
 import { Row } from 'src/components/elements/row';
 import { useLocale } from 'src/localizations';
+import { TechLogo } from 'src/types/techLogo';
 
 /**
  * The SectionServices component.
@@ -20,7 +21,7 @@ const SectionServices = (): ReactElement => {
                 <StyledExpertiseContainer>
                     {locale.pages.home.services.list.map((x, key) => (
                         <div key={key}>
-                            <StyledImg src={`/static/images/home/services/${x.logo}.svg`} alt={x.logo} loading={'lazy'} />
+                            <StyledTechIcon icon={x.logo as TechLogo} />
                             <StyledTitle>{x.title}</StyledTitle>
                             <StyledParagraph>{x.description}</StyledParagraph>
                         </div>

@@ -5,7 +5,6 @@ import { OutsideLink } from 'src/components/elements/outsideLink';
 import { SVGImage } from 'src/components/elements/svgImage';
 import { Icon } from 'src/components/elements/icon';
 import { configuration } from 'src/configuration';
-import { useLocale } from 'src/localizations';
 
 interface IGoogleProps {
 	disabled?: boolean;
@@ -16,8 +15,6 @@ interface IGoogleProps {
  * @param {IGoogleProps} props - The props.
  */
 const Google = (props: IGoogleProps): ReactElement => {
-    const locale = useLocale();
-	
     return (
         <StyledContainer>
             <OutsideLink href={configuration.general.google.maps} disabled={props.disabled}>
@@ -30,7 +27,7 @@ const Google = (props: IGoogleProps): ReactElement => {
                     <Icon icon={faStarHalfAlt} />
                 </StyledReviewsContainer>
                 <StyledTitle>
-                    <StyledBold>{configuration.general.google.reviews}</StyledBold> {locale.pages.home.first.googleReview}
+                    <StyledBold>{configuration.general.google.reviews}</StyledBold>
                 </StyledTitle>
             </OutsideLink>
         </StyledContainer>

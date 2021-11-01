@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Paragraph } from 'src/components/elements/paragraph';
+import { TechIcon } from 'src/componentsByPage/home/techLogo';
 import { Section } from 'src/components/elements/section';
 import { getThemeVariable } from 'src/theme/utils';
 import { devices } from 'src/theme';
@@ -63,7 +64,8 @@ const StyledPS = styled.div`
 	text-align: center;
 `;
 
-const StyledImg = styled.img`
+
+const StyledTechIcon = styled(TechIcon)`
 	height: 60px;
 	display: block;
 	margin: auto;
@@ -76,6 +78,6 @@ export {
     StyledSeparator,
     StyledSection,
     StyledTitle,
-    StyledPS,
-    StyledImg
+    StyledTechIcon,
+    StyledPS 
 };
