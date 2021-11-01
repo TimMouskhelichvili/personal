@@ -1,6 +1,7 @@
 const enPortfolioLocale = {
-    body: `I am Tim, a Freelance Developer & Consultant and I build modern web applications using React, Node.js & TypeScript 
-	       for my clients. Thank you 🙏 for checking out my portfolio. Send me a message if you like something or have a request.`,
+    body: `I am Tim Mouskhelichvili, a Freelance Developer & Consultant from Montreal, Canada 🇨🇦.
+	       I build modern web applications using React, Node.js & TypeScript for my clients. 
+		   Thank you 🙏 for checking out my portfolio. Send me a message if you like something or have a request.`,
     github: '[View Github]',
     link: '[View Website]',
     projects: [
@@ -28,7 +29,7 @@ const enPortfolioLocale = {
             href: 'https://www.psyhelp.ca',
             project: 'psyhelp',
             subTitle: 'Website Development & Design',
-            tags: [ 'Wordpress', 'TypeScript', 'SASS' ],
+            tags: [ 'WordPress', 'TypeScript', 'SASS' ],
             title: 'Centre de services psychologiques'
         }
     ],
