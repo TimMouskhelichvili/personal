@@ -14,7 +14,7 @@ const frPortfolioLocale = {
             title: 'Rate An Influencer'
         },
         {
-            description: `J'ai créé le site de AftrConsulting en utilisant le même moteur que mon propre site Web. 
+            description: `J'ai créé le site de AftrConsulting en utilisant le même moteur que ce site web. 
 			             Il fonctionne bien et possède de nombreuses fonctionnalités intéressantes (comme le mode sombre).`,
             github: 'https://github.com/AftrConsulting/website',
             href: 'https://aftrconsulting.com/',

@@ -14,7 +14,7 @@ const enPortfolioLocale = {
             title: 'Rate An Influencer'
         },
         {
-            description: `I created AftrConsulting's one-page application website using the same engine as my own website. 
+            description: `I created AftrConsulting's one-page application website using the same engine as this website. 
 						  It works and feels great and has a lot of cool features (like dark mode).`,
             github: 'https://github.com/AftrConsulting/website',
             href: 'https://aftrconsulting.com/',

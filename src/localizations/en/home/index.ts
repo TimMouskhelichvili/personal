@@ -38,6 +38,10 @@ const enHomeLocale = {
         subSubHeading: 'Then, I\'m definitely your guy!',
         text2: 'P.S. I guarantee 100% satisfaction to my clients.'
     },
+    portfolio: {
+        subTitle: 'why me?',
+        title: 'I am someone that has done it many times. Here are my latest projects.\u00A0😎'
+    },
     quotes: {
         reviews: [
             {
@@ -69,7 +73,7 @@ const enHomeLocale = {
                 name: 'Jacky T.'
             }
         ],
-        subTitle: 'what my clients are saying',
+        subTitle: 'why me?',
         title: 'I guarantee 100% satisfaction to my clients.\u00A0🤩'
     },
     services: {

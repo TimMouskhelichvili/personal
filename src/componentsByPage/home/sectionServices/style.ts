@@ -20,7 +20,7 @@ const StyledExpertiseContainer = styled.div`
 	}
 
 	@media screen and (max-width: ${devices.smallTablet}) {
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 1fr;
 	}
 
 	@media screen and (max-width: ${devices.mobile}) {

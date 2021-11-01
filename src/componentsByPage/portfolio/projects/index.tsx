@@ -9,6 +9,7 @@ import { Locale } from 'src/types/locale';
 
 interface IProjectsProps {
 	max?: number;
+	noLinks?: boolean;
 }
 
 /**
@@ -23,7 +24,7 @@ const Projects = (props: IProjectsProps): ReactElement => {
 
     return (
         <>
-            {projects.map((project, key) => getProject(project, locale, key === 0))}
+            {projects.map((project, key) => getProject(project, locale, key === 0, props.noLinks))}
         </>
     );
 };
@@ -33,8 +34,9 @@ const Projects = (props: IProjectsProps): ReactElement => {
  * @param {IProject} project - The project.
  * @param {Locale} locale - The locale.
  * @param {boolean} isFirst - If is first.
+ * @param {boolean} noLinks - If no links.
  */
-const getProject = (project: IProject, locale: Locale, isFirst: boolean): ReactElement => (
+const getProject = (project: IProject, locale: Locale, isFirst: boolean, noLinks?: boolean): ReactElement => (
     <StyledSideBySide key={project.title} isFirst={isFirst}>
         <div>
             <StyledImgContainer>
@@ -57,10 +59,14 @@ const getProject = (project: IProject, locale: Locale, isFirst: boolean): ReactE
                     ))}
                 </StyledTagsContainer>
             )}
-            {project.href && 
-				<StyledOutsideLink href={project.href}>{locale.pages.portfolio.link}</StyledOutsideLink>}
-            {project.github && 
-				<StyledOutsideLink href={project.github}>{locale.pages.portfolio.github}</StyledOutsideLink>}
+            {!noLinks && (
+                <>
+                    {project.href && 
+						<StyledOutsideLink href={project.href}>{locale.pages.portfolio.link}</StyledOutsideLink>}
+                    {project.github && 
+						<StyledOutsideLink href={project.github}>{locale.pages.portfolio.github}</StyledOutsideLink>}
+                </>
+            )}
         </div>
     </StyledSideBySide>
 );
