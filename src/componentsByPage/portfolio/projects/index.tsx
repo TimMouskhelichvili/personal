@@ -5,6 +5,7 @@ import { CustomImage } from 'src/components/elements/customImage';
 import { Paragraph } from 'src/components/elements/paragraph';
 import { Title } from 'src/components/landing/title';
 import { useLocale } from 'src/localizations';
+import { Locale } from 'src/types/locale';
 
 interface IProjectsProps {
 	max?: number;
@@ -22,7 +23,7 @@ const Projects = (props: IProjectsProps): ReactElement => {
 
     return (
         <>
-            {projects.map(project => getProject(project, portfolio.link))}
+            {projects.map(project => getProject(project, locale))}
         </>
     );
 };
@@ -30,9 +31,9 @@ const Projects = (props: IProjectsProps): ReactElement => {
 /**
  * Returns the project.
  * @param {IProject} project - The project.
- * @param {string} link - The link.
+ * @param {Locale} locale - The locale.
  */
-const getProject = (project: IProject, link: string): ReactElement => (
+const getProject = (project: IProject, locale: Locale): ReactElement => (
     <StyledSideBySide key={project.title}>
         <div>
             <StyledImgContainer>
@@ -56,7 +57,9 @@ const getProject = (project: IProject, link: string): ReactElement => (
                 </StyledTagsContainer>
             )}
             {project.href && 
-				<StyledOutsideLink href={project.href} >{link}</StyledOutsideLink>}
+				<StyledOutsideLink href={project.href}>{locale.pages.portfolio.link}</StyledOutsideLink>}
+            {project.github && 
+				<StyledOutsideLink href={project.github}>{locale.pages.portfolio.github}</StyledOutsideLink>}
         </div>
     </StyledSideBySide>
 );

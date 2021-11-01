@@ -1,6 +1,7 @@
 const enPortfolioLocale = {
     body: `I am Tim, a Freelance Developer & Consultant and I build modern web applications using React, Node.js & TypeScript 
 	       for my clients. Thank you 🙏 for checking out my portfolio. Send me a message if you like something or have a request.`,
+    github: '[View Github]',
     link: '[View Website]',
     projects: [
         {
@@ -14,6 +15,7 @@ const enPortfolioLocale = {
         {
             description: `I created AftrConsulting's one-page application website using the same engine as my own website. 
 						  It works and feels great and has a lot of cool features (like dark mode).`,
+            github: 'https://github.com/AftrConsulting/website',
             href: 'https://aftrconsulting.com/',
             project: 'aftrconsulting',
             subTitle: 'Website Development & Design',

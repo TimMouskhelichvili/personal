@@ -2,6 +2,7 @@ const frPortfolioLocale = {
     body: `Je suis Tim, développeur freelance et consultant indépendant et je crée des applications web modernes avec
 	       React, Node.js et TypeScript. Merci 🙏 d'avoir consulté mon portfolio. 
 		   Envoyez-moi un message si vous aimez quelque chose ou avez une demande.`,
+    github: '[Voir Github]',
     link: '[Voir Site Web]',
     projects: [
         {
@@ -15,6 +16,7 @@ const frPortfolioLocale = {
         {
             description: `I created AftrConsulting's one-page application website using the same engine as my own website. 
 						  It works and feels great and has a lot of cool features (like dark mode).`,
+            github: 'https://github.com/AftrConsulting/website',
             href: 'https://aftrconsulting.com/',
             project: 'aftrconsulting',
             subTitle: 'Développement & Design',

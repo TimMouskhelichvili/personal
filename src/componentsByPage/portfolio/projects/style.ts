@@ -13,12 +13,11 @@ const StyledSideBySide = styled(SideBySide)`
 	> div {
 		flex: 1 1 0%;
 	}
-	
+
 	@media screen and (max-width: ${devices.smallTablet}) {
-		&:not(:last-of-type) {
-			padding-bottom: 50px;
-			border-bottom: 1px solid ${getThemeVariable('global.borderColor')};
-		}
+		margin-bottom: 30px;
+		border-top: 1px solid ${getThemeVariable('global.borderColor')};
+		padding-top: 40px;
 	}
 
 	&:nth-child(even) {
@@ -99,6 +98,8 @@ const StyledSubTitle = styled(SubTitle)`
 const StyledOutsideLink = styled(OutsideLink)`
 	color: ${getThemeVariable('colors.primary')};
 	margin-top: 20px;
+	margin-bottom: 10px;
+	margin-right: 10px;
 	display: inline-block;
 `;
 

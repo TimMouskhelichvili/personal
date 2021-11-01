@@ -5,10 +5,10 @@ import { frGlobalLocale } from 'src/localizations/fr/global';
 import { frResumeLocale } from 'src/localizations/fr/resume';
 import { frHomeLocale } from 'src/localizations/fr/home';
 import { frBlogLocale } from 'src/localizations/fr/blog';
-import { enLocale } from 'src/localizations/en';
 import { frSitemap } from 'config/sitemap/fr';
+import { Locale } from 'src/types/locale';
 
-const frLocale: typeof enLocale = {
+const frLocale: Locale = {
     global: frGlobalLocale,
     pages: {
         blog: frBlogLocale,

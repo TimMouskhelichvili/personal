@@ -11,8 +11,8 @@ import { Icons } from 'src/components/global/icons';
 import { Icon } from 'src/components/elements/icon';
 import { Row } from 'src/components/elements/row';
 import { configuration } from 'src/configuration';
-import { enLocale } from 'src/localizations/en';
 import { useLocale } from 'src/localizations';
+import { Locale } from 'src/types/locale';
 
 /**
  * The Footer component.
@@ -45,9 +45,9 @@ const Footer = (): ReactElement => {
 
 /**
  * Returns the copyright.
- * @param {typeof enLocale} locale - The locale. 
+ * @param {Locale} locale - The locale. 
  */
-const getCopyright = (locale: typeof enLocale): ReactElement => {
+const getCopyright = (locale: Locale): ReactElement => {
     const year = String(new Date().getFullYear());
 
     return (
@@ -59,9 +59,9 @@ const getCopyright = (locale: typeof enLocale): ReactElement => {
 
 /**
  * Returns the contact info.
- * @param {typeof enLocale} locale - The locale. 
+ * @param {Locale} locale - The locale. 
  */
-const getContactInfo = (locale: typeof enLocale): ReactElement => (
+const getContactInfo = (locale: Locale): ReactElement => (
     <div>
         <StyledMailLink href={`mailto:${configuration.general.email}`} title={locale.global.hrefs.email}>
             <Icon icon={faEnvelope} />
