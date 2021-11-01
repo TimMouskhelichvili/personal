@@ -23,7 +23,7 @@ const Projects = (props: IProjectsProps): ReactElement => {
 
     return (
         <>
-            {projects.map(project => getProject(project, locale))}
+            {projects.map((project, key) => getProject(project, locale, key === 0))}
         </>
     );
 };
@@ -32,9 +32,10 @@ const Projects = (props: IProjectsProps): ReactElement => {
  * Returns the project.
  * @param {IProject} project - The project.
  * @param {Locale} locale - The locale.
+ * @param {boolean} isFirst - If is first.
  */
-const getProject = (project: IProject, locale: Locale): ReactElement => (
-    <StyledSideBySide key={project.title}>
+const getProject = (project: IProject, locale: Locale, isFirst: boolean): ReactElement => (
+    <StyledSideBySide key={project.title} isFirst={isFirst}>
         <div>
             <StyledImgContainer>
                 <CustomImage

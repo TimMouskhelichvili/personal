@@ -5,7 +5,7 @@ import { SubTitle } from 'src/components/landing/subTitle';
 import { getThemeVariable } from 'src/theme/utils';
 import { devices } from 'src/theme';
 
-const StyledSideBySide = styled(SideBySide)`
+const StyledSideBySide = styled(SideBySide)<{ isFirst: boolean }>`
 	padding-left: 0px;
 	padding-right: 0px;
 	margin-bottom: 50px;
@@ -16,8 +16,12 @@ const StyledSideBySide = styled(SideBySide)`
 
 	@media screen and (max-width: ${devices.smallTablet}) {
 		margin-bottom: 30px;
+		${(p): string => p.isFirst ? 
+        'padding-top: 10px;' :
+        `
 		border-top: 1px solid ${getThemeVariable('global.borderColor')};
 		padding-top: 40px;
+		`}
 	}
 
 	&:nth-child(even) {
