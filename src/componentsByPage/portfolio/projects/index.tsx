@@ -43,6 +43,7 @@ const getProject = (project: IProject, locale: Locale, isFirst: boolean, noLinks
                 <CustomImage
                     height={'100%'}
                     width={'100%'}
+                    loading={'lazy'}
                     alt={project.title}
                     title={project.title}
                     src={`/static/images/portfolio/${project.project}.png`} />
