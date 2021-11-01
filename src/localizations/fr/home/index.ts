@@ -27,16 +27,13 @@ const frHomeLocale = {
     },
     first: {
         alt: 'Développeur Web, Tim Mouskhelichvili',
-        googleReview: 'avis Google',
         heading: '👉 Je Crée Des <span class="underline">Applications Web Modernes</span> Pour Des Entreprises Avec React & Node.js',
         perks: [
-            'Vous Voulez Réduire Vos Coûts De Développement\u00A0💸',
-            'Vous Voulez Que Votre Application Soit Développée Très Rapidement\u00A0💨',
-            'Vous N\'Acceptez Que Les Meilleurs Résultats\u00A0🏆'
-        ],
-        subHeading: 'avez-vous une idée géniale pour une application Web? Mais...',
-        subSubHeading: 'Vous pouvez arrêter vos recherches!',
-        text2: 'P.S. Je garantis une satisfaction de 100% à mes clients.'
+            'Développement D\'Applications Très Rapide\u00A0💪',
+            'Économisé Beaucoup De Temps Et D\'Argent\u00A0💸',
+            'Satisfaction De 100% Garantie\u00A0😁',
+            'Meilleurs Résultats Avec Délais Respectés\u00A0⌛'
+        ]
     },
     portfolio: {
         subTitle: 'Pourquoi moi?',

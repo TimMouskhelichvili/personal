@@ -38,19 +38,6 @@ const StyleImgContainer = styled.div`
 	}
 `;
 
-const StyledSubH1 = styled.div`
-	text-transform: uppercase;
-	font-weight: 300;
-    font-size: 1.1em;
-	margin-top: 15px;
-`;
-
-const StyledSubPerk = styled.div`
-	font-weight: bold;
-    font-size: 1.1em;
-	margin-top: 15px;
-`;
-
 const StyledH1 = styled.h1`
 	font-size: 2.2em;
 	margin: 0px;
@@ -80,12 +67,6 @@ const StyledPerksContainer = styled.ul`
 			margin-right: 7.5px;
 		}
 	}
-`;
-
-const StyledSatisfaction = styled.div`
-	font-style: italic;
-	font-size: 1em;
-	margin-top: 15px;
 `;
 
 const StyledButton = styled(CTA)`
@@ -145,10 +126,7 @@ export {
     StyledButton,
     StyledSection,
     StyleImgContainer,
-    StyledSubH1,
     StyledH1,
     StyledPerksContainer,
-    StyledSatisfaction,
-    StyledRow,
-    StyledSubPerk
+    StyledRow
 };

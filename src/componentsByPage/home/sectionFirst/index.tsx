@@ -1,11 +1,7 @@
 import React, { ReactElement } from 'react';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
-import { 
-    StyleImgContainer, StyledSection, StyledH1, StyledPerksContainer, 
-    StyledSatisfaction, StyledButton, StyledRow, StyledSealsContainer, StyledSubH1, StyledSubPerk
-} from './style';
+import { StyleImgContainer, StyledSection, StyledH1, StyledPerksContainer, StyledButton, StyledRow } from './style';
 import { CustomImage } from 'src/components/elements/customImage';
-import { Google } from 'src/components/seals/google';
 import { Icon } from 'src/components/elements/icon';
 import { useLocale } from 'src/localizations';
 import { SpanText } from 'src/components/elements/spanText';
@@ -15,18 +11,15 @@ import { SpanText } from 'src/components/elements/spanText';
  */
 const SectionFirst = (): ReactElement => {
     const locale = useLocale();
-    const { heading, perks, text2, alt, subHeading, subSubHeading } = locale.pages.home.first;
+    const { heading, perks, alt } = locale.pages.home.first;
 
     return (
         <StyledSection>
             <StyledRow>
                 <div>
                     <StyledH1><SpanText html={heading} /></StyledH1>
-                    <StyledSubH1>{subHeading}</StyledSubH1>
                     {getPerks(perks)}
-                    <StyledSubPerk>{subSubHeading}</StyledSubPerk>
                     <StyledButton withIcon={true} />
-                    <StyledSatisfaction>{text2}</StyledSatisfaction>
                 </div>
                 <StyleImgContainer>
                     <div>
@@ -56,15 +49,6 @@ const getPerks = (perks: string[]): ReactElement => (
             </li>
         ))}
     </StyledPerksContainer>
-);
-
-/**
- * Returns the seals.
- */
-const getSeals = (): ReactElement => (
-    <StyledSealsContainer>
-        <Google disabled={true} />
-    </StyledSealsContainer>
 );
 
 export {

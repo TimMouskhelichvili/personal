@@ -27,16 +27,13 @@ const enHomeLocale = {
     },
     first: {
         alt: 'Freelance Web Developer, Tim Mouskhelichvili',
-        googleReview: 'Google review',
         heading: '👉 I Help Business by Building <span class="underline">Modern Web Applications</span> using React & Node.js',
         perks: [
-            'You Want To Reduce Your Developing Costs\u00A0💸',
-            'You Want Your App Developed Super Fast\u00A0💨',
-            'You Only Accept Top Results\u00A0🏆'
-        ],
-        subHeading: 'Do you have an amazing idea for a Web Application? But...',
-        subSubHeading: 'Then, I\'m definitely your guy!',
-        text2: 'P.S. I guarantee 100% satisfaction to my clients.'
+            'Very Fast Application Development\u00A0💪',
+            'Save Your Time And Money\u00A0💸',
+            '100% Satisfaction Guaranteed\u00A0😁',
+            'Top Results On-Time\u00A0⌛'
+        ]
     },
     portfolio: {
         subTitle: 'why me?',
