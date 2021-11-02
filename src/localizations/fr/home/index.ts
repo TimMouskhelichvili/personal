@@ -37,7 +37,7 @@ const frHomeLocale = {
     },
     portfolio: {
         subTitle: 'Pourquoi moi?',
-        title: 'Je suis quelqu\'un qui l\'a fait plusieurs fois. Voici mes derniers projets.\u00A0😎'
+        title: 'Je l\'ai déjà fait plusieurs fois. Voici mes derniers projets.\u00A0😎'
     },
     quotes: {
         reviews: [

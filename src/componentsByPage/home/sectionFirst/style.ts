@@ -129,6 +129,10 @@ const StyledImgContainer = styled.div`
 		height: 50px;
 		margin-right: 20px;
 
+		&:first-of-type {
+			margin-right: 15px;
+		}
+
 		--grayed-out-svg: ${getThemeVariable('pages.home.first.techIconBackground')};
 		--svg-background-color: ${getThemeVariable('global.background')};
 	}
