@@ -3,13 +3,14 @@ import { frSitemap } from 'config/sitemap/fr';
 
 const frMenuTop: IMenuItem[] = [
     frSitemap.resume,
-    frSitemap.portfolio
+    frSitemap.portfolio,
+    frSitemap.blog
 ];
 
 const frSideMenu = [ 
-    frSitemap.blog,
     frSitemap.resume,
-    frSitemap.portfolio
+    frSitemap.portfolio,
+    frSitemap.blog
 ];
 
 const frMenuFooter = [

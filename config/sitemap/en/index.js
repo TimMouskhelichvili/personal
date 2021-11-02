@@ -10,10 +10,10 @@ const enSitemap = {
     },
     blog: { 
         href: '/blog',
-        title: 'Blog',
-        seoTitle: 'Our Blog - {COMPANY}',
-        description: `The blog page where I share articles on web development themes.
-					  Tim Mouskhelichvili Consultant. I provide React, TypeScript, Node.js development and consultations.`
+        title: 'My Blog',
+        seoTitle: 'Blog - {COMPANY}',
+        description: `The blog page where I share articles on web development themes and about 
+		              React, TypeScript, Node.js development.`
     },
     privacyPolicy: {
         exclude: true,

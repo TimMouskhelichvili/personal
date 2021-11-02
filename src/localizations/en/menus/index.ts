@@ -3,13 +3,14 @@ import { enSitemap } from 'config/sitemap/en';
 
 const enMenuTop: IMenuItem[] = [
     enSitemap.resume,
-    enSitemap.portfolio
+    enSitemap.portfolio,
+    enSitemap.blog
 ];
 
 const enSideMenu = [ 
-    enSitemap.blog,
     enSitemap.resume,
-    enSitemap.portfolio
+    enSitemap.portfolio,
+    enSitemap.blog
 ];
 
 const enMenuFooter = [
