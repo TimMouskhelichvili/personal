@@ -27,7 +27,8 @@ const frHomeLocale = {
     },
     first: {
         alt: 'Développeur Web, Tim Mouskhelichvili',
-        heading: '👉 Je Crée Des <span class="underline">Applications Web Modernes</span> Pour Des Entreprises Avec React & Node.js',
+        heading: `👉 Je Suis Un Développeur Web Spécialiste  Dans La Création 
+		         <span class="underline">D'Applications Web Modernes</span> Avec React & Node.js`,
         perks: [
             'Développement D\'Applications Très Rapide\u00A0💪',
             'Économisé Beaucoup De Temps Et D\'Argent\u00A0💸',

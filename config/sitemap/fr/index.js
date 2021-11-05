@@ -4,9 +4,9 @@ const frSitemap = {
         title: 'Home',
         exclude: true,
         home: true,
-        seoTitle: '{COMPANY} - Développeur Web & Consultant',
-        description: `Tim Mouskhelichvili Consultant (React, PHP, Node.js). Consultations. 
-		              Prix Compétitifs. Meilleurs Résultats. Délais Respectés.`
+        seoTitle: '{COMPANY} - Développeur Web & Consultant en React et Node.js',
+        description: `Je Suis Un Développeur Web Spécialiste Dans La Création D'Applications Web Modernes Avec React & Node.js. 
+		              Sauver Votre Argent Et Votre Temps. Meilleurs Résultats. Délais Respectés.`
     },
     blog: { 
         href: '/blog',
