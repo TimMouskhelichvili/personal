@@ -5,7 +5,7 @@ const enSitemap = {
         exclude: true,
         home: true,
         seoTitle: '{COMPANY} - Freelance Developer & Consultant in React, Node.js',
-        description: `I Help Business by Building Modern Web Applications using React & Node.js
+        description: `I Am A Freelance Developer Specialized In Development Of Modern Web Applications using React & Node.js
 		              Save Your Time And Money. Top Results. On-Time Delivery.`
     },
     blog: { 

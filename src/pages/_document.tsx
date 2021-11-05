@@ -1,8 +1,10 @@
+// eslint-disable-next-line max-classes-per-file
 import React, { ReactElement } from 'react';
-import Document, { Html, Head, Main, NextScript, DocumentContext, DocumentInitialProps } from 'next/document';
+import Document, { Html, Main, NextScript, DocumentContext, DocumentInitialProps } from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
 import { AMPAnalyticsScript } from 'src/componentsByPage/document/ampAnalyticsScript';
 import { AdditionalScripts } from 'src/componentsByPage/document/additionalScripts';
+import { NoPreloadHead } from 'src/components/global/noPreloadHead';
 import { configuration } from 'src/configuration';
 import { globalStyles } from 'src/theme/global';
 import { getStructuredData } from 'src/utils';
@@ -44,7 +46,9 @@ class MyDocument extends Document<IMyDocumentProps> {
      */
     public render = (): ReactElement => (
         <Html data-theme={configuration.defaults.themeName} data-primary={configuration.defaults.primary}>
-            <Head>
+            <NoPreloadHead 
+			    // @ts-ignore
+                removeScripts={this.props.removeScripts}>
                 <AdditionalScripts />
                 <style amp-custom={''} dangerouslySetInnerHTML={{ __html: this.props.styleHTML }} />
                 <link rel={'shortcut icon'} href={configuration.general.imgs.logo} />
@@ -59,11 +63,10 @@ class MyDocument extends Document<IMyDocumentProps> {
                 <meta name={'ahrefs-site-verification'} content={'afdd80cb0d012aad985a24b79cdd977ac16b2871756d10d4c0ca207bd0df4b9d'} />
                 <script type={'application/ld+json'} dangerouslySetInnerHTML={{ __html: getStructuredData() }} />
                 <AMPAnalyticsScript />
-            </Head>
+            </NoPreloadHead>
             <body>
                 <Main />
-                {!this.props.removeScripts 
-					&& <NextScript />}
+                <NextScript />
             </body>
         </Html>
     );

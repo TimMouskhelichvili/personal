@@ -27,7 +27,8 @@ const enHomeLocale = {
     },
     first: {
         alt: 'Freelance Web Developer, Tim Mouskhelichvili',
-        heading: '👉 I Help Business by Building <span class="underline">Modern Web Applications</span> using React & Node.js',
+        heading: `👉 I Am A Freelance Developer Specialized In The Development Of 
+		          <span class="underline">Modern Web Applications</span> using React & Node.js`,
         perks: [
             'Very Fast Application Development\u00A0💪',
             'Save Your Time And Money\u00A0💸',
