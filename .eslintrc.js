@@ -39,6 +39,7 @@ module.exports = {
         '@typescript-eslint/no-shadow': [
             'error'
         ],
+        '@typescript-eslint/no-var-requires': 0,
         '@typescript-eslint/space-before-function-paren': 2,
         '@typescript-eslint/type-annotation-spacing': 2,
         'array-bracket-spacing': [

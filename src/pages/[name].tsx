@@ -5,6 +5,7 @@ import { MarkdownContainer } from 'src/components/global/markdownContainer';
 import { Container } from 'src/components/global/container';
 import { IStaticProps } from 'src/interfaces/IStaticProps';
 import { Row } from 'src/components/elements/row';
+import { IPages } from 'src/interfaces/IPages';
 
 interface IArticleProps {
 	pages: {
@@ -48,7 +49,8 @@ export const getStaticPaths = (): {} => {
  * @param {IStaticProps} context - The context. 
  */
 export const getStaticProps = async (context: IStaticProps): Promise<{}> => {
-    const pages = process.env.markdown.pages.pages[context.params.name];
+    const { getPages } = require('../../config/utils/markdown');
+    const pages = (getPages() as IPages).pages[context.params.name];
 	
     if (!pages?.[context.locale]) {
         return {

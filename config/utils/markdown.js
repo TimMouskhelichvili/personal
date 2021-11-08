@@ -2,18 +2,34 @@ const { readdirSync, readFileSync } = require('fs');
 const path = require('path');
 
 /**
+ * Returns the pages.
+ */
+ const getPages = () => {
+	if (process.env.NODE_ENV === 'production') {
+		return process.env.markdown.pages.articles;
+	}
+
+	return getMarkdownPages();
+}
+
+/**
  * Returns the Markdown pages.
  */
 const getMarkdownPages = () => {
+	let dirName = process.env.markdown?.dirName;
+	if (!dirName) {
+		dirName = path.join(__dirname, '../../');
+	}
+
 	let articles = {};
 	let pages = {};
 
 	try {
-		articles = getFiles(path.join(__dirname, '../../public/static/markdown/blog'), {}, 'blog/');
+		articles = getFiles(path.join(dirName, 'public/static/markdown/blog'), {}, 'blog/');
 	} catch { }
 
 	try {
-		pages = getFiles(path.join(__dirname, '../../public/static/markdown/pages'));
+		pages = getFiles(path.join(dirName, 'public/static/markdown/pages'));
 	} catch { }
 
 	return {
@@ -130,6 +146,7 @@ const getAttributes = (source) => {
 
 
 module.exports = {
+	getPages,
 	getMarkdownPages,
 	getMarkdownPagesPaths
 };

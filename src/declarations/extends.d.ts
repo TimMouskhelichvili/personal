@@ -8,7 +8,7 @@ declare global {
 		__REDUX_DEVTOOLS_EXTENSION__: () => never;
 
 		/**
-		 * The getinsights.io global object.
+		 * The getInsights.io global object.
 		 */
 		insights: {
 			init: (id: string) => void;
@@ -32,31 +32,14 @@ declare global {
 			markdown: {
 
 				/**
+				 * The dirname.
+				 */
+				dirName: string;
+
+				/**
 				 * The pages.
 				 */
-				pages: {
-
-					/**
-					 * The articles.
-					 */
-					articles: {
-						[key in string]: {
-							en?: string;
-							fr?: string;
-						}
-					};
-
-					/**
-					 * The pages.
-					 */
-					pages: {
-						[key in string]: {
-							en?: string;
-							fr?: string;
-						}
-					};
-
-				};
+				pages: {};
 
 				/**
 				 * The paths.
