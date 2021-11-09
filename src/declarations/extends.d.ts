@@ -1,3 +1,5 @@
+import { IPages } from 'src/interfaces/IPages';
+
 declare global {
 
 	interface Window {
@@ -39,7 +41,7 @@ declare global {
 				/**
 				 * The pages.
 				 */
-				pages: {};
+				pages: IPages;
 
 				/**
 				 * The paths.

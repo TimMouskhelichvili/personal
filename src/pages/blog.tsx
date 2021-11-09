@@ -5,8 +5,9 @@ import { Container } from 'src/components/global/container';
 import { IStaticProps } from 'src/interfaces/IStaticProps';
 import { Row } from 'src/components/elements/row';
 import { Seo } from 'src/components/global/seo';
-import { useLocale } from 'src/localizations';
 import { IPages } from 'src/interfaces/IPages';
+import { useLocale } from 'src/localizations';
+import { isProduction } from 'src/utils';
 
 interface IBlogParams {
 	articles: IMarkdownArticleProps[];
@@ -33,8 +34,11 @@ const Blog = (props: IBlogParams): ReactElement => {
  * @param {IStaticProps} context - The context. 
  */
 export const getStaticProps = async (context: IStaticProps): Promise<{}> => {
-    const { getPages } = require('../../config/utils/markdown');
-    const articles = (getPages() as IPages).articles;
+    let articles = process.env.markdown.pages.articles;
+    if (!isProduction()) {
+        const { getPages } = require('config/utils/markdown');
+        articles = (getPages() as IPages).articles;
+    }
 	
     const newArticles = [];
 
