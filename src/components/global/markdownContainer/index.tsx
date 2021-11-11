@@ -30,10 +30,15 @@ const MarkdownContainer = (props: IMarkdownContainerProps): ReactElement => {
 };
 
 const img = (data: {}): ReactElement => {
-    const src = data['src'];
+    const src = data['src'] as string;
     const title = data['alt'];
 
-    return <iframe src={src} title={title} allowFullScreen loading="lazy" />;
+    if (src.startsWith('https://www.youtube.com/embed/')) {
+        return <iframe src={src} title={title} allowFullScreen loading="lazy" />;
+    }
+    
+
+    return <img src={src} alt={title} title={title} loading="lazy" />;
 };
 
 export {

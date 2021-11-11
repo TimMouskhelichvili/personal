@@ -28,16 +28,20 @@ const StyledMarkdownContainer = styled.div`
 	}
 
 	iframe {
-		width: 700px;
+		width: 100%;
 		height: 400px;
 		margin: auto;
 		display: block;
 		border: 0;
 
 		@media screen and (max-width: ${devices.bigMobile}) {
-			width: 100%;
 			height: 300px;
 		}
+	}
+
+	img {
+		max-width: 100%;
+		border: 1px solid ${getThemeVariable('global.borderColor')};
 	}
 `;
 
