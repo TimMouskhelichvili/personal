@@ -5,6 +5,8 @@ import { MarkdownContainer } from 'src/components/global/markdownContainer';
 import { Container } from 'src/components/global/container';
 import { IStaticProps } from 'src/interfaces/IStaticProps';
 import { Row } from 'src/components/elements/row';
+import { IPages } from 'src/interfaces/IPages';
+import { isProduction } from 'src/utils';
 
 interface IArticleProps {
 	articles: {
@@ -24,7 +26,7 @@ const Article = (props: IArticleProps): ReactElement => {
 
     return (
         <Container redirectLanguageToIndex={props.redirectLanguageToIndex}>
-            <Row>
+            <Row maxWidth={'700px'}>
                 <MarkdownContainer {...article} />
             </Row>
         </Container>
@@ -46,8 +48,14 @@ export const getStaticPaths = (): {} => {
  * @param {IStaticProps} context - The context. 
  */
 export const getStaticProps = async (context: IStaticProps): Promise<{}> => {
-    const articles = process.env.markdown.pages.articles[context.params.name];
-	
+    let allArticles = process.env.markdown.pages.articles;
+    if (!isProduction()) {
+        const { getPages } = require('config/utils/markdown');
+        allArticles = (getPages() as IPages).articles;
+    }
+
+    const articles = allArticles[context.params.name];
+
     if (!articles?.[context.locale]) {
         return {
             notFound: true

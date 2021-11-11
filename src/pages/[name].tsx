@@ -5,8 +5,10 @@ import { MarkdownContainer } from 'src/components/global/markdownContainer';
 import { Container } from 'src/components/global/container';
 import { IStaticProps } from 'src/interfaces/IStaticProps';
 import { Row } from 'src/components/elements/row';
+import { IPages } from 'src/interfaces/IPages';
+import { isProduction } from 'src/utils';
 
-interface IArticleProps {
+interface IPageProps {
 	pages: {
 		[key in string]: IMarkdownArticleProps;
 	};
@@ -17,10 +19,10 @@ interface IArticleProps {
 export const config = { amp: 'hybrid' };
 
 /**
- * The Article component.
- * @param {IArticleProps} props - The props.
+ * The Page component.
+ * @param {IPageProps} props - The props.
  */
-const Page = (props: IArticleProps): ReactElement => {
+const Page = (props: IPageProps): ReactElement => {
     const router = useRouter();
     const page = props.pages?.[router.locale as string];
 
@@ -48,8 +50,14 @@ export const getStaticPaths = (): {} => {
  * @param {IStaticProps} context - The context. 
  */
 export const getStaticProps = async (context: IStaticProps): Promise<{}> => {
-    const pages = process.env.markdown.pages.pages[context.params.name];
-	
+    let allPages = process.env.markdown.pages.pages;
+    if (!isProduction()) {
+        const { getPages } = require('config/utils/markdown');
+        allPages = (getPages() as IPages).pages;
+    }
+
+    const pages = allPages[context.params.name];
+
     if (!pages?.[context.locale]) {
         return {
             notFound: true

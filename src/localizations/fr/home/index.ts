@@ -32,8 +32,7 @@ const frHomeLocale = {
         perks: [
             'Développement D\'Applications Très Rapide\u00A0💪',
             'Économisé Beaucoup De Temps Et D\'Argent\u00A0💸',
-            'Satisfaction De 100% Garantie\u00A0😁',
-            'Meilleurs Résultats Avec Délais Respectés\u00A0⌛'
+            'Satisfaction De 100% Garantie\u00A0😁'
         ]
     },
     portfolio: {

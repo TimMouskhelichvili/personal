@@ -24,9 +24,21 @@ const MarkdownContainer = (props: IMarkdownContainerProps): ReactElement => {
             <Title title={props.title} />
             <StyledMetaData>{author} • {date}</StyledMetaData>
             <Seo {...props} />
-            <ReactMarkdown>{props.source || ''}</ReactMarkdown>
+            <ReactMarkdown components={{ img }}>{props.source || ''}</ReactMarkdown>
         </StyledMarkdownContainer>
     );
+};
+
+const img = (data: {}): ReactElement => {
+    const src = data['src'] as string;
+    const title = data['alt'];
+
+    if (src.startsWith('https://www.youtube.com/embed/')) {
+        return <iframe src={src} title={title} allowFullScreen loading="lazy" />;
+    }
+    
+
+    return <img src={src} alt={title} title={title} loading="lazy" />;
 };
 
 export {

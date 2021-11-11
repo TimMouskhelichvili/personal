@@ -1,45 +1,58 @@
 import React, { ReactElement } from 'react';
-import { useRouter } from 'next/router';
 import { IMarkdownArticleProps } from 'src/interfaces/IMarkdownArticleProps';
 import { Articles } from 'src/componentsByPage/blog/articles';
 import { Container } from 'src/components/global/container';
+import { IStaticProps } from 'src/interfaces/IStaticProps';
 import { Row } from 'src/components/elements/row';
 import { Seo } from 'src/components/global/seo';
+import { IPages } from 'src/interfaces/IPages';
 import { useLocale } from 'src/localizations';
+import { isProduction } from 'src/utils';
 
+interface IBlogParams {
+	articles: IMarkdownArticleProps[];
+}
 /**
  * The Blog component. 
+ * @param {IBlogParams} props - The props.
  */
-const Blog = (): ReactElement => {
-    const router = useRouter();
+const Blog = (props: IBlogParams): ReactElement => {
     const locale = useLocale();
-    const articles = getArticles(router.locale as string);
 
     return (
         <Container>
             <Row>
                 <Seo {...locale.sitemap.blog} />
-                <Articles articles={articles} />
+                <Articles articles={props.articles} />
             </Row>
         </Container>
     );
 };
 
 /**
- * Returns the articles.
- * @param {string} language - The language. 
+ * Returns the static props.
+ * @param {IStaticProps} context - The context. 
  */
-const getArticles = (language: string): IMarkdownArticleProps[] => {
-    const articles = process.env.markdown.pages.articles;
+export const getStaticProps = async (context: IStaticProps): Promise<{}> => {
+    let articles = process.env.markdown.pages.articles;
+    if (!isProduction()) {
+        const { getPages } = require('config/utils/markdown');
+        articles = (getPages() as IPages).articles;
+    }
+	
     const newArticles = [];
 
     for (const i in articles) {
-        if (!articles[i][language]) continue;
+        if (!articles[i][context.locale]) continue;
 		
-        newArticles.push(articles[i][language]);
+        newArticles.push(articles[i][context.locale]);
     }
 	
-    return newArticles;
+    return {
+        props: {
+            articles: newArticles
+        }
+    };
 };
 
 export default Blog;
