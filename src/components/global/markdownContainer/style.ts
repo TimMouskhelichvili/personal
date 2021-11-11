@@ -25,6 +25,13 @@ const StyledMarkdownContainer = styled.div`
 	h1 {
 		margin-bottom: 10px;
 	}
+
+	iframe {
+		width: 700px;
+		height: 400px;
+		margin: auto;
+		display: block;
+	}
 `;
 
 const StyledMetaData = styled.div`

@@ -4,6 +4,7 @@ import { StyledRow } from './style';
 interface IRowProps {
 	children?: {};
 	className?: string;
+	maxWidth?: string;
 }
 
 /**
@@ -11,7 +12,7 @@ interface IRowProps {
  * @param {IRowProps} props - The props.
  */
 const Row = (props: IRowProps): ReactElement => (
-    <StyledRow className={props.className}>
+    <StyledRow className={props.className} maxWidth={props.maxWidth}>
         {props.children}
     </StyledRow>
 );

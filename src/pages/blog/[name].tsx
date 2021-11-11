@@ -26,7 +26,7 @@ const Article = (props: IArticleProps): ReactElement => {
 
     return (
         <Container redirectLanguageToIndex={props.redirectLanguageToIndex}>
-            <Row>
+            <Row maxWidth={'700px'}>
                 <MarkdownContainer {...article} />
             </Row>
         </Container>

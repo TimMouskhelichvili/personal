@@ -24,9 +24,16 @@ const MarkdownContainer = (props: IMarkdownContainerProps): ReactElement => {
             <Title title={props.title} />
             <StyledMetaData>{author} • {date}</StyledMetaData>
             <Seo {...props} />
-            <ReactMarkdown>{props.source || ''}</ReactMarkdown>
+            <ReactMarkdown components={{ img }}>{props.source || ''}</ReactMarkdown>
         </StyledMarkdownContainer>
     );
+};
+
+const img = (data: {}): ReactElement => {
+    const src = data['src'];
+    const title = data['alt'];
+
+    return <iframe src={src} title={title} frameBorder="0" allowFullScreen />;
 };
 
 export {
