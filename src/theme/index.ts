@@ -21,6 +21,7 @@ const themesName = [
  * The devices.
  */
 const devices = {
+    bigMobile: '800px',
     mediumMobile: '550px',
     mobile: '700px',
     smallMobile: '485px',

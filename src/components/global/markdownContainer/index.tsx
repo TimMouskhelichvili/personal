@@ -33,7 +33,7 @@ const img = (data: {}): ReactElement => {
     const src = data['src'];
     const title = data['alt'];
 
-    return <iframe src={src} title={title} frameBorder="0" allowFullScreen />;
+    return <iframe src={src} title={title} allowFullScreen loading="lazy" />;
 };
 
 export {

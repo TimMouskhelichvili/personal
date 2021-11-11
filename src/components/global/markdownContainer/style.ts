@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { getThemeVariable } from 'src/theme/utils';
+import { devices } from 'src/theme';
 
 const StyledMarkdownContainer = styled.div`
 	margin-bottom: 40px;
@@ -14,7 +15,7 @@ const StyledMarkdownContainer = styled.div`
 	}
 
 	p {
-		line-height: 24px;
+		line-height: 30px;
 		word-break: break-word;
 	}
 
@@ -31,6 +32,12 @@ const StyledMarkdownContainer = styled.div`
 		height: 400px;
 		margin: auto;
 		display: block;
+		border: 0;
+
+		@media screen and (max-width: ${devices.bigMobile}) {
+			width: 100%;
+			height: 300px;
+		}
 	}
 `;
 
