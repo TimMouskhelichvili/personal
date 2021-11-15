@@ -62,12 +62,28 @@ When it comes to developers, Yarn has more stars on Github than npm.
 
 Npm is directly installed when you install Node.js so if you have Node.js you have npm. If you don't have node.js go [here](https://nodejs.org/) and download the LTS version.
 
+### How to check npm version?
+
+Check npm version by running this command.
+
+```console
+npm --version
+```
+
 ### How to install Yarn?
 
 Yarn can be installed through the command line of your terminal. I like to use the integrated terminal of VSCode for this.
 
 ```console
-npm install yarn --global
+npm install --global yarn
+```
+
+### How to check Yarn version?
+
+Check Yarn version by running this command.
+
+```console
+yarn --version
 ```
 
 ## Yarn vs Npm Lock file
