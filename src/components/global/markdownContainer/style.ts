@@ -43,6 +43,11 @@ const StyledMarkdownContainer = styled.div`
 		max-width: 100%;
 		border: 1px solid ${getThemeVariable('global.borderColor')};
 	}
+
+	& > pre > pre {
+		background: red;
+		padding: 10px;
+	}
 `;
 
 const StyledMetaData = styled.div`

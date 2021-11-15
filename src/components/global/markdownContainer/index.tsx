@@ -1,11 +1,13 @@
 import { useRouter } from 'next/router';
 import React, { ReactElement } from 'react';
 import ReactMarkdown from 'react-markdown';
+import { LightAsync } from 'react-syntax-highlighter';
 import { StyledMarkdownContainer, StyledMetaData } from './style';
 import { IMarkdownArticleProps } from 'src/interfaces/IMarkdownArticleProps';
 import { Title } from 'src/components/global/title';
 import { Seo } from 'src/components/global/seo';
 import { getAuthor, getDate } from 'src/utils';
+import { markDownTheme } from 'src/theme/externals/markdown';
 
 interface IMarkdownContainerProps extends IMarkdownArticleProps {
 	hasAmp?: boolean;
@@ -24,7 +26,7 @@ const MarkdownContainer = (props: IMarkdownContainerProps): ReactElement => {
             <Title title={props.title} />
             <StyledMetaData>{author} • {date}</StyledMetaData>
             <Seo {...props} />
-            <ReactMarkdown components={{ img }}>{props.source || ''}</ReactMarkdown>
+            <ReactMarkdown components={{ code, img }}>{props.source || ''}</ReactMarkdown>
         </StyledMarkdownContainer>
     );
 };
@@ -39,6 +41,19 @@ const img = (data: {}): ReactElement => {
     
 
     return <img src={src} alt={title} title={title} loading="lazy" />;
+};
+
+const code = (data: {}): ReactElement | null => {
+    const language = data['language'] || null;
+    const value = data['children']?.[0]?.trim();
+
+    if (!value) return null;
+
+    return (
+        <LightAsync language={language} style={markDownTheme}>
+            {value}
+        </LightAsync>
+    );
 };
 
 export {

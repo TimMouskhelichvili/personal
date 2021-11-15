@@ -32,9 +32,43 @@ You can follow the updates of this project [here](https://github.com/npm/cli).
 
 ## What is Yarn?
 
+**Yarn** (an acronym for Yet Another Resource Negotiator) is a package manager released by Facebook in 2016.
+
+Yarn is a completely free and open-source tool. You can view the project [here](https://github.com/yarnpkg/berry).
+
+Originally, it was created to address the performance and security issues of npm. Since then, npm has fixed a lot of its issues, but Yarn still has some nice features that npm doesn't have.
+
+Some of Yarn features are:
+
+1. **Plug'n'Play**: Run a JavaScript project without node_modules.
+
+2. **Offline Cache**: Yarn will work fine if your network goes down for some reason.
+
+3. **Workspaces**: Yarn makes it easy for multiple projects to exist in the same repository and to reference each other.
+
+4. **Plugins**: You can add plugins that will add new resolvers, fetchers, linkers, commands...
+
+5. **TypeScript**: Yarn is written with TypeScript and typed.
+
 ## Yarn vs Npm Popularity
 
-## Yarn vs Npm Install
+Since npm is the default package manager for Node.js and that more people are aware of it, it is more popular than Yarn.
+
+![Yarn vs Npm Popularity](/static/images/blog/yarn-vs-npm-the-complete-guide/popularity-yarn-vs-npm.png)
+
+When it comes to developers, Yarn has more stars on Github than npm.
+
+## Yarn vs Npm Installation
+
+Npm is directly installed when you install Node.js so if you have Node.js you have npm. If you don't have node.js go [here](https://nodejs.org/) and download the LTS version.
+
+### How to install Yarn?
+
+Yarn can be installed through the command line of your terminal. I like to use the integrated terminal of VSCode for this.
+
+```console
+npm install yarn --global
+```
 
 ## Yarn vs Npm Lock file
 
