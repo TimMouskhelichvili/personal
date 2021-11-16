@@ -81,8 +81,8 @@ const getPicture = (props: ICustomImageProps): ReactElement => {
  * @param {string} src - The src. 
  */
 const getWebP = (src: string): string => {
-    //return src;
-    return `${src.substr(0, src.lastIndexOf('.')) }.webp`;
+    return src;
+    //return `${src.substr(0, src.lastIndexOf('.')) }.webp`;
 };
 
 /**
