@@ -1,13 +1,14 @@
 import { useRouter } from 'next/router';
 import React, { ReactElement } from 'react';
 import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 import { LightAsync } from 'react-syntax-highlighter';
 import { StyledMarkdownContainer, StyledMetaData } from './style';
 import { IMarkdownArticleProps } from 'src/interfaces/IMarkdownArticleProps';
+import { markDownTheme } from 'src/theme/externals/markdown';
 import { Title } from 'src/components/global/title';
 import { Seo } from 'src/components/global/seo';
 import { getAuthor, getDate } from 'src/utils';
-import { markDownTheme } from 'src/theme/externals/markdown';
 
 interface IMarkdownContainerProps extends IMarkdownArticleProps {
 	hasAmp?: boolean;
@@ -26,7 +27,7 @@ const MarkdownContainer = (props: IMarkdownContainerProps): ReactElement => {
             <Title title={props.title} />
             <StyledMetaData>{author} • {date}</StyledMetaData>
             <Seo {...props} />
-            <ReactMarkdown components={{ code, img }}>{props.source || ''}</ReactMarkdown>
+            <ReactMarkdown components={{ code, img }} remarkPlugins={[ remarkGfm ]}>{props.source || ''}</ReactMarkdown>
         </StyledMarkdownContainer>
     );
 };

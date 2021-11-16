@@ -48,6 +48,16 @@ const StyledMarkdownContainer = styled.div`
 		background: red;
 		padding: 10px;
 	}
+
+	table {
+		width: 100%;
+		text-align: left;
+
+		td, th {
+			border: 1px solid ${getThemeVariable('global.borderColor')};
+			padding: 10px;
+		}
+	}
 `;
 
 const StyledMetaData = styled.div`
