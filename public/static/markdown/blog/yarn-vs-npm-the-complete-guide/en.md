@@ -146,11 +146,43 @@ As you can see, both yarn and npm have a lot of the same commands. The two big d
 
 * Remove a package: ***yarn remove <package>*** vs ***npm uninstall <package>***.
 
-Also, Yarn supports some commands that npm doesn't like, ***yarn why***, and ***yarn licenses ls***.
+Also, Yarn supports some commands that npm doesn't like: ***yarn why***, and ***yarn licenses ls***.
 
 ## Yarn vs Npm Adding a package
 
-## Yarn vs Npm Dev Dependencies
+### How do you add a package in Yarn?
+
+Add a package with yarn by running this command.
+
+```console
+yarn add <package>
+```
+
+### How do you add a package in npm?
+
+Add a package with npm by running this command.
+
+```console
+npm install <package>
+```
+
+## Yarn vs Npm Dev Dependencies Packages
+
+### How do you add a dev dependency package in Yarn?
+
+Add a package as a dev dependency with yarn by running this command.
+
+```console
+yarn add <package> --dev
+```
+
+### How do you add a dev dependency package in npm?
+
+Add a package as a dev dependency with npm by running this command.
+
+```console
+npm install <package> --save-dev
+```
 
 ## Yarn vs Npm Removing a package
 
