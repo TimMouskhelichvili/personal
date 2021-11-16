@@ -33,7 +33,10 @@ const configuration = {
             openGraphImage: '/static/images/openGraphImage.png'
         },
         linkedIn: 'https://www.linkedin.com/in/tim-mouskhelichvili/',
-        phone: '+1 (438) 994-2296'
+        phone: '+1 (438) 994-2296',
+        youtube: {
+            embed: 'https://www.youtube.com/embed/'
+        }
     },
     localStorage: {
         primary: 'primary',

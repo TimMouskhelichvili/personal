@@ -40,13 +40,17 @@ export const getStaticProps = async (context: IStaticProps): Promise<{}> => {
         articles = (getPages() as IPages).articles;
     }
 	
-    const newArticles = [];
+    let newArticles = [];
 
     for (const i in articles) {
         if (!articles[i][context.locale]) continue;
 		
         newArticles.push(articles[i][context.locale]);
     }
+
+    newArticles = newArticles.sort((a, b) => {
+        return Date.parse(b['date']) - Date.parse(a['date']);
+    });
 	
     return {
         props: {

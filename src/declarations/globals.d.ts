@@ -24,5 +24,10 @@ declare namespace JSX {
 			type: string;
 			'data-credentials': string;
 		};
+		'amp-youtube': {
+			layout: string;
+			width: string;
+			height: string;
+		}
 	}
 }
