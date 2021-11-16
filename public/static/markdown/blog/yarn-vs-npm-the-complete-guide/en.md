@@ -64,7 +64,7 @@ When it comes to developers, Yarn has more stars on Github than npm.
 
 Npm is directly installed when you install Node.js so if you have Node.js you have npm. If you don't have node.js go [here](https://nodejs.org/) and download the LTS version.
 
-### How to check npm version?
+#### How to check npm version?
 
 Check npm version by running this command.
 
@@ -72,7 +72,7 @@ Check npm version by running this command.
 npm --version
 ```
 
-### How to install Yarn?
+#### How to install Yarn?
 
 Yarn can be installed through the command line of your terminal. I like to use the integrated terminal of VSCode for this.
 
@@ -80,7 +80,7 @@ Yarn can be installed through the command line of your terminal. I like to use t
 npm install --global yarn
 ```
 
-### How to check Yarn version?
+#### How to check Yarn version?
 
 Check Yarn version by running this command.
 
@@ -150,7 +150,7 @@ Also, Yarn supports some commands that npm doesn't like: ***yarn why***, and ***
 
 ## Yarn vs Npm Adding a package
 
-### How do you add a package in Yarn?
+#### How do you add a package in Yarn?
 
 Add a package with yarn by running this command.
 
@@ -158,7 +158,7 @@ Add a package with yarn by running this command.
 yarn add <package>
 ```
 
-### How do you add a package in npm?
+#### How do you add a package in npm?
 
 Add a package with npm by running this command.
 
@@ -168,7 +168,7 @@ npm install <package>
 
 ## Yarn vs Npm Dev Dependencies Packages
 
-### How do you add a dev dependency package in Yarn?
+#### How do you add a dev dependency package in Yarn?
 
 Add a package as a dev dependency with yarn by running this command.
 
@@ -176,7 +176,7 @@ Add a package as a dev dependency with yarn by running this command.
 yarn add <package> --dev
 ```
 
-### How do you add a dev dependency package in npm?
+#### How do you add a dev dependency package in npm?
 
 Add a package as a dev dependency with npm by running this command.
 
@@ -184,11 +184,114 @@ Add a package as a dev dependency with npm by running this command.
 npm install <package> --save-dev
 ```
 
+You will notice very soon, that node_modules is very large in file size. This is completely normal.
+
+![Node Modules](/static/images/blog/yarn-vs-npm-the-complete-guide/nodemodules.png)
+
+## Yarn vs Npm Global Packages
+
+To run those commands you may need to have administrator rights.
+
+#### How do you add a global package in Yarn?
+
+Add a global package with yarn by running this command.
+
+```console
+yarn global add <package>
+```
+
+#### How do you add a global package in npm?
+
+Add a global package with npm by running this command.
+
+```console
+npm install -g <package>
+```
+
 ## Yarn vs Npm Removing a package
+
+Be careful not removing something you need.
+
+#### How do you remove a package in Yarn?
+
+Remove a package with yarn by running this command.
+
+```console
+yarn remove <package>
+```
+
+#### How do you remove a package in npm?
+
+Remove a package with npm by running this command.
+
+```console
+npm uninstall <package>
+```
+
+## Yarn vs Npm Outdated Packages
+
+#### How do you search for outdated packages in Yarn?
+
+Search for outdated packages with yarn by running this command.
+
+```console
+yarn outdated
+```
+
+#### How do you search for outdated packages in npm?
+
+Search for outdated packages with npm by running this command.
+
+```console
+npm outdated
+```
+
+Here is the output of this command when I ran it on this website:
+
+```console
+$ yarn outdated
+
+info Color legend : 
+ "<red>"    : Major Update backward-incompatible updates 
+ "<yellow>" : Minor Update backward-compatible features 
+ "<green>"  : Patch Update backward-compatible bug fixes
+Package            Current Wanted  Latest  Package Type    URL                                                                       
+@types/react       17.0.34 17.0.35 17.0.35 devDependencies https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/react
+eslint-config-next 12.0.3  12.0.3  12.0.4  devDependencies https://github.com/vercel/next.js#readme                                  
+next               12.0.3  12.0.3  12.0.4  dependencies    https://nextjs.org 
+```
+
+If a package is red, this means the dependency had a breaking change so you will need to update it manually.
 
 ## Yarn vs Npm Updating a package
 
-## Yarn vs Npm Search for Outdated Packages
+#### How do you update an outdated package in Yarn?
+
+Update all outdated packages with yarn by running this command.
+
+```console
+yarn upgrade
+```
+
+Update a specific package with yarn by running this command.
+
+```console
+yarn upgrade <package>@latest
+```
+
+#### How do you update an outdated package in npm?
+
+Update an outdated package with npm by running this command.
+
+```console
+npm update
+```
+
+Update a specific package with npm by running this command.
+
+```console
+npm update <package>@latest
+```
 
 ## Yarn vs Npm Benchmarks (Speed Test)
 
