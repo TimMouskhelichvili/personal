@@ -1,5 +1,6 @@
 import React, { ReactElement } from 'react';
 import { useRouter } from 'next/router';
+import { serialize } from 'next-mdx-remote/serialize';
 import { IMarkdownArticleProps } from 'src/interfaces/IMarkdownArticleProps';
 import { MarkdownContainer } from 'src/components/global/markdownContainer';
 import { Container } from 'src/components/global/container';
@@ -62,6 +63,10 @@ export const getStaticProps = async (context: IStaticProps): Promise<{}> => {
         return {
             notFound: true
         };
+    }
+
+    for (const i in pages) {
+        pages[i].source = await serialize(pages[i].source);
     }
 
     return {

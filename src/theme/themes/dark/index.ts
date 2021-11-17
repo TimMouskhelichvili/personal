@@ -51,6 +51,7 @@ const darkTheme = {
             }
         },
         markdown: {
+            background: lighten(.1, colors.background),
             metaDataColor: lighten(.5, colors.background)
         },
         primaryColors: {

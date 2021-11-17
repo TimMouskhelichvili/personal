@@ -1,5 +1,8 @@
 interface IMarkdownArticleProps {
-	source: string;
+	source: {
+		compiledSource: string;
+		source: string;
+	};
 	title: string;
 	href: string;
 	description?: string;

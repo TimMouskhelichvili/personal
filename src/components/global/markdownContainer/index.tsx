@@ -1,18 +1,18 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { useRouter } from 'next/router';
 import React, { ReactElement } from 'react';
-import ReactMarkdown from 'react-markdown';
-import remarkGfm from 'remark-gfm';
-import { LightAsync } from 'react-syntax-highlighter';
+import { MDXRemote } from 'next-mdx-remote';
+// import Refractor from 'react-refractor';
 import { StyledMarkdownContainer, StyledMetaData } from './style';
 import { IMarkdownArticleProps } from 'src/interfaces/IMarkdownArticleProps';
 import { CustomImage } from 'src/components/elements/customImage';
-import { markDownTheme } from 'src/theme/externals/markdown';
 import { Youtube } from 'src/components/elements/youtube';
 import { Title } from 'src/components/global/title';
 import { configuration } from 'src/configuration';
 import { Seo } from 'src/components/global/seo';
 import { getAuthor, getDate } from 'src/utils';
+
+const LANGUAGES: string[] = [];
 
 interface IMarkdownContainerProps extends IMarkdownArticleProps {
 	hasAmp?: boolean;
@@ -31,9 +31,7 @@ const MarkdownContainer = (props: IMarkdownContainerProps): ReactElement => {
             <Title title={props.title} />
             <StyledMetaData>{author} • {date}</StyledMetaData>
             <Seo {...props} />
-            <ReactMarkdown components={{ a, code, img }} remarkPlugins={[ remarkGfm ]}>
-                {props.source || ''}
-            </ReactMarkdown>
+            <MDXRemote components={{ a, code, img }} {...props.source} />
         </StyledMarkdownContainer>
     );
 };
@@ -65,15 +63,18 @@ const img = (data: any): ReactElement => {
  * @param {any} data - The data. 
  */
 const code = (data: any): ReactElement | null => {
-    const language = data.language || null;
-    const value = data.children?.[0]?.trim();
+    const language = (data.className || '').replace('language-', '');
+    const value = data.children?.trim();
 
     if (!value) return null;
 
+    if (LANGUAGES.includes(language)) {
+        return null;
+        //return <Refractor language={language} value={value} />;
+    }
+
     return (
-        <LightAsync language={language} style={markDownTheme}>
-            {value}
-        </LightAsync>
+        <code>{value}</code>
     );
 };
 

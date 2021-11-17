@@ -52,6 +52,7 @@ const lightTheme: typeof darkTheme = {
             }
         },
         markdown: {
+            background: darken(.05, colors.background),
             metaDataColor: lighten(.5, colors.color)
         },
         primaryColors: {

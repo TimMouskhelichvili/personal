@@ -121,10 +121,10 @@ Both Yarn and Npm provide a rich CLI that will help you manage your dependencies
 | --- | ----------- |
 | yarn init | Initializes the development of your package. |
 | yarn install | Installs all the dependencies defined in your package.json file. |
-| yarn add <package> | Adds a package to use in your current package. |
-| yarn remove <package> | Removes a package from your current package. |
+| yarn add <package\> | Adds a package to use in your current package. |
+| yarn remove <package\> | Removes a package from your current package. |
 | yarn publish | Publishes your package to a registry. |
-| yarn why <package> | Display the reason why a package is needed. |
+| yarn why <package\> | Display the reason why a package is needed. |
 | yarn licenses ls | Allows you to inspect the licenses of your dependencies |
 | yarn outdated | Checks for outdated package dependencies. |
 
@@ -136,8 +136,8 @@ You can view the full list of all commands of Yarn [here](https://yarnpkg.com/cl
 | --- | ----------- |
 | npm init | Initializes the development of your package. |
 | npm install | Installs all the dependencies defined in your package.json file. |
-| npm install <package> | Adds a package to use in your current package. |
-| npm uninstall <package> | Removes a package from your current package. |
+| npm install <package\> | Adds a package to use in your current package. |
+| npm uninstall <package\> | Removes a package from your current package. |
 | npm publish | Publishes your package to a registry. |
 | npm outdated | Checks for outdated package dependencies. |
 
@@ -147,9 +147,9 @@ You can view the full list of all commands of npm [here](https://docs.npmjs.com/
 
 As you can see, both yarn and npm have a lot of the same commands. The two big differences are the commands to add and to remove a package.
 
-* Add a package: ***yarn add <package>*** vs ***npm install <package>***.
+* Add a package: ***yarn add <package\>*** vs ***npm install <package\>***.
 
-* Remove a package: ***yarn remove <package>*** vs ***npm uninstall <package>***.
+* Remove a package: ***yarn remove <package\>*** vs ***npm uninstall <package\>***.
 
 Also, Yarn supports some commands that npm doesn't: 
 

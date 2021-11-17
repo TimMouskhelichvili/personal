@@ -45,9 +45,11 @@ const StyledMarkdownContainer = styled.div`
 		border: 1px solid ${getThemeVariable('global.borderColor')};
 	}
 
-	& > pre > pre {
-		background: red;
+	& > pre {
+		border-radius: ${getThemeVariable('global.borderRadius')};
+		background: ${getThemeVariable('global.markdown.background')};
 		padding: 10px;
+		overflow: auto;
 	}
 
 	table {
