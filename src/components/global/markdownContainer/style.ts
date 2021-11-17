@@ -41,7 +41,23 @@ const StyledMarkdownContainer = styled.div`
 
 	img {
 		max-width: 100%;
+		height: auto;
 		border: 1px solid ${getThemeVariable('global.borderColor')};
+	}
+
+	& > pre > pre {
+		background: red;
+		padding: 10px;
+	}
+
+	table {
+		width: 100%;
+		text-align: left;
+
+		td, th {
+			border: 1px solid ${getThemeVariable('global.borderColor')};
+			padding: 10px;
+		}
 	}
 `;
 

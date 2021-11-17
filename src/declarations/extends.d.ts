@@ -67,6 +67,14 @@ declare global {
 			 */
 			sitemapLocales: {};
 
+			/**
+			 * The images sizes.
+			 */
+			images: { [key in string]: { 
+				height: string;
+				width: string;
+			}}
+
 		}
 
 	}

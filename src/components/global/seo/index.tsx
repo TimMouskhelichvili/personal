@@ -23,7 +23,7 @@ const Seo = (props: ISeoProps): ReactElement => {
     const amp = useAmp();
     const router = useRouter();
 	
-    const image = props.openGraphImage || `${configuration.general.baseUrl}${configuration.general.imgs.openGraphImage}`;
+    const image = `${configuration.general.baseUrl}${props.openGraphImage || configuration.general.imgs.openGraphImage}`;
     const additionalLinkTags = getAdditionalLinkTags(router, amp, props.hasAmp);
     const title = replaceSEOTags(props.seoTitle || props.title);
     const description = props.description?.replace(/\s+/g, ' ') || '';

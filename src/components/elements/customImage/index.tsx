@@ -29,8 +29,8 @@ const CustomImage = (props: ICustomImageProps): ReactElement => {
             <amp-img 
                 src={getWebP(props.src)}
                 layout={props.layout}
-                height={props.height} 
-                width={props.width} 
+                height={getHeight(props)}
+                width={getWidth(props)} 
                 alt={props.alt}
                 title={props.title}
                 heights={props.heights}>
@@ -38,8 +38,8 @@ const CustomImage = (props: ICustomImageProps): ReactElement => {
                     fallback={''}
                     src={props.src}
                     layout={props.layout}
-                    height={props.height} 
-                    width={props.width} 
+                    height={getHeight(props)}
+                    width={getWidth(props)} 
                     alt={props.alt}
                     title={props.title}
                     heights={props.heights} />
@@ -67,8 +67,8 @@ const getPicture = (props: ICustomImageProps): ReactElement => {
             )}
             <img 
                 src={props.src}
-                height={props.height} 
-                width={props.width} 
+                height={getHeight(props)} 
+                width={getWidth(props)}
                 alt={props.alt}
                 title={props.title}
                 loading={props.loading} />
@@ -81,8 +81,24 @@ const getPicture = (props: ICustomImageProps): ReactElement => {
  * @param {string} src - The src. 
  */
 const getWebP = (src: string): string => {
-    //return src;
-    return `${src.substr(0, src.lastIndexOf('.')) }.webp`;
+    return src;
+    //return `${src.substr(0, src.lastIndexOf('.')) }.webp`;
+};
+
+/**
+ * Returns the height of the the picture.
+ * @param {ICustomImageProps} props - The props.
+ */
+const getHeight = (props: ICustomImageProps): string => {
+    return props.height || process.env.images[props.src]?.height;
+};
+
+/**
+ * Returns the width of the picture.
+ * @param {ICustomImageProps} props - The props.
+ */
+const getWidth = (props: ICustomImageProps): string => {
+    return props.width || process.env.images[props.src]?.width;
 };
 
 export {
