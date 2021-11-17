@@ -3,7 +3,7 @@ title: Yarn vs npm - The Complete Guide
 seoTitle: Yarn vs npm - The Complete Guide
 openGraphImage: /static/images/blog/yarn-vs-npm-the-complete-guide/cover.png
 date: 2021-11-17
-description: My top 5 features of TypeScript in 2021 and why should you choose TypeScript over JavaScript for your next web application.
+description: A Complete Guide on Yarn vs npm. Comparison, Differences, Benchmark Tests and Commands.
 author: Tim Mouskhelichvili
 ---
 
