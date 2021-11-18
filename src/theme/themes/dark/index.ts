@@ -61,7 +61,7 @@ const darkTheme = {
     pages: {
         blog: {
             item: {
-                background: lighten(.02, colors.background)
+                background: lighten(.01, colors.background)
             }
         },
         home: {

@@ -62,7 +62,7 @@ const lightTheme: typeof darkTheme = {
     pages: {
         blog: {
             item: {
-                background: darken(.02, colors.background)
+                background: darken(.01, colors.background)
             }
         },
         home: {
