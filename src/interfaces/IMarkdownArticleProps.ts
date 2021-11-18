@@ -8,6 +8,7 @@ interface IMarkdownArticleProps {
 	description?: string;
 	date?: string;
 	author?: string;
+	openGraphImage?: string;
 }
 
 export type {

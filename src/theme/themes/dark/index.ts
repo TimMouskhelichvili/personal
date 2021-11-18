@@ -59,6 +59,11 @@ const darkTheme = {
         }
     },
     pages: {
+        blog: {
+            item: {
+                background: lighten(.02, colors.background)
+            }
+        },
         home: {
             description: {
                 background: lighten(.05, colors.background)

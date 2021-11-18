@@ -1,10 +1,13 @@
 import React, { ReactElement } from 'react';
 import { useRouter } from 'next/router';
-import { StyledMetaData, StyledTitle, StyledEmpty } from './style';
+import Masonry from 'react-masonry-css';
+import { StyledMetaData, StyledTitle, StyledEmpty, StyledContainer, StyledArticleContainer } from './style';
 import { IMarkdownArticleProps } from 'src/interfaces/IMarkdownArticleProps';
 import { MyLink } from 'src/components/elements/link';
 import { getAuthor, getDate } from 'src/utils';
 import { useLocale } from 'src/localizations';
+import { CustomImage } from 'src/components/elements/customImage';
+import { devices } from 'src/theme';
 
 interface IArticlesProps {
 	articles: IMarkdownArticleProps[];
@@ -23,13 +26,21 @@ const Articles = (props: IArticlesProps): ReactElement => {
     }
 
     return (
-        <>
-            {props.articles.map((x, key) => (
-                <div key={key}>
-                    {getArticleElement(x, router.locale as string)}
-                </div>
-            ))}	
-        </>
+        <StyledContainer>
+            <Masonry 
+                breakpointCols={{
+                    [devices.smallTablet]: 1,
+                    default: 2
+                }}
+                className={'masonry-grid'}
+                columnClassName={'masonry-grid-column'}>
+                {props.articles.map((x, key) => (
+                    <div key={key}>
+                        {getArticleElement(x, router.locale as string)}
+                    </div>
+                ))}
+            </Masonry>
+        </StyledContainer>
     );
 };
 
@@ -41,14 +52,21 @@ const Articles = (props: IArticlesProps): ReactElement => {
 const getArticleElement = (article: IMarkdownArticleProps, locale: string): ReactElement => {
     const author = getAuthor(article.author);
     const date = getDate(article.date, locale);
-	
+
     return (
-        <>
+        <StyledArticleContainer>
+            {article.openGraphImage 
+				&& <CustomImage 
+				    src={article.openGraphImage} 
+				    width={'100%'} 
+				    height={'220px'} 
+				    title={article.title} 
+				    alt={article.title} />}
             <StyledTitle>
                 <MyLink href={article.href}>{article.title}</MyLink>
             </StyledTitle>
             <StyledMetaData>{author} • {date}</StyledMetaData>
-        </>
+        </StyledArticleContainer>
     );
 };
 

@@ -20,7 +20,7 @@ const Blog = (props: IBlogParams): ReactElement => {
     const locale = useLocale();
     const router = useRouter();
 
-    const currentArticles = [];
+    let currentArticles = [];
 
     for (const i in props.articles) {
         const article = props.articles[i][router.locale as string];
@@ -28,6 +28,10 @@ const Blog = (props: IBlogParams): ReactElement => {
 
         currentArticles.push(article); 
     }
+
+    currentArticles = currentArticles.sort((a, b) => {
+        return Date.parse(b['date']) - Date.parse(a['date']);
+    });
 
     return (
         <Container>

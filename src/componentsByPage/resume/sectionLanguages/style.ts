@@ -2,9 +2,14 @@ import styled from 'styled-components';
 import { Section } from 'src/components/elements/section';
 import { getThemeVariable } from 'src/theme/utils';
 import { devices } from 'src/theme';
+import { SideBySide } from 'src/components/landing/sideBySide';
 
 const StyledSection = styled(Section)`
 	border-top: 1px solid ${getThemeVariable('global.borderColor')};
+`;
+
+const StyledSideBySide = styled(SideBySide)`
+	padding: 0px;
 `;
 
 const StyleImgContainer = styled.div`
@@ -50,6 +55,7 @@ const StyledLanguagesContainer = styled.div`
 `;
 
 export {
+    StyledSideBySide,
   	StyledSection,
     StyleImgContainer,
     StyledLanguagesContainer,

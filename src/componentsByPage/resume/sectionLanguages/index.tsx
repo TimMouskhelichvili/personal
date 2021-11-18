@@ -1,10 +1,8 @@
 import React, { ReactElement } from 'react';
-import { StyledH3, StyledSection, StyleImgContainer, StyledLanguagesContainer } from './style';
+import { StyledH3, StyledSection, StyleImgContainer, StyledLanguagesContainer, StyledSideBySide } from './style';
 import { CustomImage } from 'src/components/elements/customImage';
-import { SideBySide } from 'src/components/landing/sideBySide';
 import { SubTitle } from 'src/components/landing/subTitle';
 import { Title } from 'src/components/landing/title';
-import { Row } from 'src/components/elements/row';
 import { useLocale } from 'src/localizations';
 
 /**
@@ -16,11 +14,9 @@ const SectionLanguages = (): ReactElement => {
 	
     return (
         <StyledSection>
-            <Row>
-                <SubTitle>{subTitle}</SubTitle>
-                <Title>{title}</Title>
-            </Row>
-            <SideBySide>
+            <SubTitle>{subTitle}</SubTitle>
+            <Title>{title}</Title>
+            <StyledSideBySide>
                 <div>
                     {list.map((x, key) => (
                         <div key={key}>
@@ -44,7 +40,7 @@ const SectionLanguages = (): ReactElement => {
                             src={'/static/images/home/timMouskhelichvili2.jpg'} />
                     </StyleImgContainer>
                 </div>
-            </SideBySide>
+            </StyledSideBySide>
         </StyledSection>
     );
 };

@@ -60,6 +60,11 @@ const lightTheme: typeof darkTheme = {
         }
     },
     pages: {
+        blog: {
+            item: {
+                background: darken(.02, colors.background)
+            }
+        },
         home: {
             description: {
                 background: darken(.05, colors.background)
