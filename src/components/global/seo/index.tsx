@@ -1,4 +1,5 @@
 /* eslint-disable sort-keys */
+import { useAmp } from 'next/amp';
 import React, { ReactElement } from 'react';
 import { NextRouter, useRouter } from 'next/router';
 import { IAlternateLinkProps } from 'src/components/global/seo/interfaces/IAlternateLinkProps';
@@ -19,10 +20,11 @@ interface ISeoProps {
  * @param {ISeoProps} props - The props.
  */
 const Seo = (props: ISeoProps): ReactElement => {
+    const amp = useAmp();
     const router = useRouter();
 	
     const image = `${configuration.general.baseUrl}${props.openGraphImage || configuration.general.imgs.openGraphImage}`;
-    const additionalLinkTags = getAdditionalLinkTags(router);
+    const additionalLinkTags = getAdditionalLinkTags(router, amp, props.hasAmp);
     const title = replaceSEOTags(props.seoTitle || props.title);
     const description = props.description?.replace(/\s+/g, ' ') || '';
 	
@@ -56,13 +58,22 @@ const Seo = (props: ISeoProps): ReactElement => {
 
 /**
  * Returns the additional link tags.
- * @param {NextRouter} router - The router.
+ * @param {NextRouter} router - The router. 
+ * @param {boolean} amp - The amp. 
+ * @param {boolean} hasAmp - If has amp. 
  */
-const getAdditionalLinkTags = (router: NextRouter): IAlternateLinkProps[] => {
+const getAdditionalLinkTags = (router: NextRouter, amp: boolean, hasAmp?: boolean): IAlternateLinkProps[] => {
     const additionalLinkTags = getAlternateLanguages(router);
     const path = getPath(router.asPath);
     const locale = router.locale === 'en' ? 
         '' : `/${router.locale}`;
+	
+    if (hasAmp && !amp) {
+        additionalLinkTags.push({
+            rel: 'amphtml',
+            href: getLinkHref(locale, path, true)
+        });
+    }
 	
     additionalLinkTags.push({
         rel: 'canonical',
