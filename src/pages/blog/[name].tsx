@@ -9,8 +9,6 @@ import { Row } from 'src/components/elements/row';
 import { IPages } from 'src/interfaces/IPages';
 import { isProduction } from 'src/utils';
 
-export const config = { amp: 'hybrid' };
-
 interface IArticleProps {
 	articles: {
 		[key in string]: IMarkdownArticleProps;
@@ -41,8 +39,8 @@ const Article = (props: IArticleProps): ReactElement => {
  */
 export const getStaticPaths = (): {} => {
     return {
-        fallback: 'blocking',  
-        paths: []
+        fallback: false,  
+        paths: process.env.markdown.paths.articles
     };
 };
 

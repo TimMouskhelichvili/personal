@@ -17,8 +17,6 @@ interface IPageProps {
 	redirectLanguageToIndex: boolean;
 }
 
-export const config = { amp: 'hybrid' };
-
 /**
  * The Page component.
  * @param {IPageProps} props - The props.
@@ -41,8 +39,8 @@ const Page = (props: IPageProps): ReactElement => {
  */
 export const getStaticPaths = (): {} => {
     return {
-        fallback: 'blocking',  
-        paths: []
+        fallback: false,  
+        paths: process.env.markdown.paths.pages
     };
 };
 
