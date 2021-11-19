@@ -41,8 +41,8 @@ const Page = (props: IPageProps): ReactElement => {
  */
 export const getStaticPaths = (): {} => {
     return {
-        fallback: false,  
-        paths: process.env.markdown.paths.pages
+        fallback: 'blocking',  
+        paths: []
     };
 };
 

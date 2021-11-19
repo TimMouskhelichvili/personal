@@ -41,8 +41,8 @@ const Article = (props: IArticleProps): ReactElement => {
  */
 export const getStaticPaths = (): {} => {
     return {
-        fallback: false,  
-        paths: process.env.markdown.paths.articles
+        fallback: 'blocking',  
+        paths: []
     };
 };
 
