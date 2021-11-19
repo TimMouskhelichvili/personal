@@ -3,11 +3,11 @@ import { useRouter } from 'next/router';
 import { serialize } from 'next-mdx-remote/serialize';
 import { IMarkdownArticleProps } from 'src/interfaces/IMarkdownArticleProps';
 import { MarkdownContainer } from 'src/components/global/markdownContainer';
+import { getMarkdownHeadings, isProduction } from 'src/utils';
 import { Container } from 'src/components/global/container';
 import { IStaticProps } from 'src/interfaces/IStaticProps';
 import { Row } from 'src/components/elements/row';
 import { IPages } from 'src/interfaces/IPages';
-import { isProduction } from 'src/utils';
 
 interface IArticleProps {
 	articles: {
@@ -27,7 +27,7 @@ const Article = (props: IArticleProps): ReactElement => {
 
     return (
         <Container redirectLanguageToIndex={props.redirectLanguageToIndex}>
-            <Row maxWidth={'700px'}>
+            <Row>
                 <MarkdownContainer {...article} />
             </Row>
         </Container>
@@ -64,6 +64,7 @@ export const getStaticProps = async (context: IStaticProps): Promise<{}> => {
     }
 
     for (const i in articles) {
+        articles[i].headings = getMarkdownHeadings(articles[i].source);
         articles[i].source = await serialize(articles[i].source);
     }
 

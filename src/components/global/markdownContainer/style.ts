@@ -1,66 +1,10 @@
 import styled from 'styled-components';
 import { getThemeVariable } from 'src/theme/utils';
-import { devices } from 'src/theme';
+import { Title } from 'src/components/global/title';
 
-const StyledMarkdownContainer = styled.div`
-	margin-bottom: 40px;
-
-	a {
-		color: ${getThemeVariable('colors.primary')};
-		text-decoration: none;
-
-		&:hover {
-			text-decoration: underline;
-		}
-	}
-
-	p {
-		line-height: 30px;
-		word-break: break-word;
-	}
-
-	h3 {
-		margin: 25px 0px 10px;
-	}
-
-	h1 {
-		margin-bottom: 10px;
-	}
-
-	iframe {
-		width: 100%;
-		height: 400px;
-		margin: auto;
-		display: block;
-		border: 0;
-
-		@media screen and (max-width: ${devices.bigMobile}) {
-			height: 300px;
-		}
-	}
-
-	img {
-		max-width: 100%;
-		height: auto;
-		border: 1px solid ${getThemeVariable('global.borderColor')};
-	}
-
-	& > pre {
-		border-radius: ${getThemeVariable('global.borderRadius')};
-		background: ${getThemeVariable('global.markdown.background')};
-		padding: 10px;
-		overflow: auto;
-	}
-
-	table {
-		width: 100%;
-		text-align: left;
-
-		td, th {
-			border: 1px solid ${getThemeVariable('global.borderColor')};
-			padding: 10px;
-		}
-	}
+const StyledContainer = styled.div`
+	display: flex;
+	align-items: top;
 `;
 
 const StyledMetaData = styled.div`
@@ -69,7 +13,27 @@ const StyledMetaData = styled.div`
 	color: ${getThemeVariable('global.markdown.metaDataColor')};
 `;
 
+const StyledTitle = styled(Title)`
+	margin-bottom: 10px;
+`;
+
+const StyledSocialMediaContainer = styled.div`
+
+`;
+
+const StyledMarkdownContainer = styled.div`
+	max-width: 600px;
+`;
+
+const StyledSummaryContainer = styled.div`
+
+`;
+
 export {
+    StyledSummaryContainer,
     StyledMarkdownContainer,
+    StyledSocialMediaContainer,
+    StyledTitle,
+    StyledContainer,
     StyledMetaData
 };

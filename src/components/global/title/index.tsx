@@ -3,6 +3,7 @@ import { StyledTitle } from './style';
 
 interface ITitleProps {
 	title: string;
+	className?: string;
 }
 
 /**
@@ -10,7 +11,7 @@ interface ITitleProps {
  * @param {ITitleProps} props - The props.
  */
 const Title = (props: ITitleProps): ReactElement => (
-    <StyledTitle>{props.title}</StyledTitle>
+    <StyledTitle className={props.className}>{props.title}</StyledTitle>
 );
 
 export {
