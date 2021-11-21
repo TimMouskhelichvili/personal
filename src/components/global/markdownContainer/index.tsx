@@ -5,6 +5,7 @@ import {
 } from './style';
 import { SocialMedias } from 'src/components/global/markdownContainer/components/socialMedias';
 import { CustomMDX } from 'src/components/global/markdownContainer/components/mdxRemote';
+import { Summary } from 'src/components/global/markdownContainer/components/summary';
 import { IMarkdownArticleProps } from 'src/interfaces/IMarkdownArticleProps';
 import { Seo } from 'src/components/global/seo';
 import { getAuthor, getDate } from 'src/utils';
@@ -36,7 +37,7 @@ const MarkdownContainer = (props: IMarkdownContainerProps): ReactElement => {
                     <CustomMDX source={props.source} />
                 </StyledMarkdownContainer>
                 <StyledSummaryContainer>
-				asd
+                    <Summary headings={props.headings} />
                 </StyledSummaryContainer>
             </StyledContainer>
         </>
