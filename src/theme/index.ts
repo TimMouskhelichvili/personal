@@ -40,8 +40,14 @@ const primaryColors = [
     '#5089C6'
 ];
 
+const myColors = {
+    facebook: '#3B5998',
+    linkedIn: '#0077B5',
+    twitter: '#1DA1F2'
+};
 
 export {
+    myColors,
     themes,
     devices,
     primaryColors,

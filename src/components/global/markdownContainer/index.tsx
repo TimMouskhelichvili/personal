@@ -23,9 +23,11 @@ const MarkdownContainer = (props: IMarkdownContainerProps): ReactElement => {
 
     return (
         <>
-            <StyledTitle title={props.title} />
-            <StyledMetaData>{author} • {date}</StyledMetaData>
-            <Seo {...props} />
+            <StyledMarkdownContainer>
+                <StyledTitle title={props.title} />
+                <StyledMetaData>{author} • {date}</StyledMetaData>
+                <Seo {...props} />
+            </StyledMarkdownContainer>
             <StyledContainer>
                 <StyledSocialMediaContainer>
                     <SocialMedias />
