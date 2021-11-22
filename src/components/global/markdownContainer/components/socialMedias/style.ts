@@ -4,12 +4,7 @@ import { getThemeVariable } from 'src/theme/utils';
 
 const StyledContainer = styled.div`
 	width: 90px;
-`;
-
-const StyledFixedContainer = styled.div`
-	position: fixed;
 	margin-top: 5px;
-
 `;
 
 const StyledButton = styled.button<{ backgroundColor: string; }>`
@@ -30,6 +25,5 @@ const StyledButton = styled.button<{ backgroundColor: string; }>`
 
 export {
     StyledButton,
-    StyledFixedContainer,
     StyledContainer
 };

@@ -61,6 +61,14 @@ const StyledCustomMDXContainer = styled.div`
 			padding: 10px;
 		}
 	}
+
+	[id]::before {
+		content: '';
+		display: block;
+		height:      75px;
+		margin-top: -75px;
+		visibility: hidden;
+	}
 `;
 
 export {

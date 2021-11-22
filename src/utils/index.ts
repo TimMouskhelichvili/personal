@@ -4,7 +4,6 @@ import localizedFormat from 'dayjs/plugin/localizedFormat';
 import { getAlternateLanguages } from "src/components/global/seo";
 import { configuration } from "src/configuration";
 import { NextRouter } from 'next/router';
-import { IMarkdownHeading } from 'src/interfaces/IMarkdownHeading';
 
 /**
  * Returns if is production.
@@ -92,34 +91,6 @@ const getDate = (date?: string, language?: string): string => {
 const getAuthor = (author?: string) => author || configuration.general.author;
 
 /**
- * Returns the markdown headings.
- * @param {string} source - The source.
- */
-const getMarkdownHeadings = (source: string): IMarkdownHeading[] => {
-	let lines = source.split('\n');
-	const headings: IMarkdownHeading[] = [];
-
-	for (const i in lines) {
-		if (!lines[i].startsWith('#')) continue;
-
-		if (lines[i].startsWith('## ')) {
-			headings.push({ 
-				title: lines[i].replace('## ', ''), 
-				subHeadings: []
-			});
-		} else if (lines[i].startsWith('### ')) {
-			headings[headings.length - 1].subHeadings.push(lines[i].replace('### ', ''));
-		} else if (lines[i].startsWith('#### ')) {
-			headings[headings.length - 1].subHeadings.push(lines[i].replace('#### ', ''));
-		} else if (lines[i].startsWith('##### ')) {
-			headings[headings.length - 1].subHeadings.push(lines[i].replace('##### ', ''));
-		}
-	}
-
-	return headings;
-}
-
-/**
  * Returns the popup.
  * From: https://stackoverflow.com/questions/4068373/center-a-popup-window-on-screen.
  * @param {string} url - The url.
@@ -128,7 +99,7 @@ const getMarkdownHeadings = (source: string): IMarkdownHeading[] => {
  * @param {number} h - The height.
  */
 // eslint-disable-next-line complexity
-const getPopUp = (url: string, title = '', w = 700, h = 500): Window | null => {
+const createPopUp = (url: string, title = '', w = 700, h = 500): Window | null => {
     const dualScreenLeft = window.screenLeft !== undefined ? window.screenLeft : window.screenX;
     const dualScreenTop = window.screenTop !== undefined ? window.screenTop : window.screenY;
 
@@ -154,8 +125,7 @@ const getPopUp = (url: string, title = '', w = 700, h = 500): Window | null => {
 };
 
 export {
-	getPopUp,
-	getMarkdownHeadings,
+	createPopUp,
 	getStructuredData,
 	isProduction,
 	isLandingPage,

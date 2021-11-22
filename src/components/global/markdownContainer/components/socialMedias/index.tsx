@@ -1,9 +1,9 @@
 import React, { ReactElement } from 'react';
 import { faFacebookSquare, faLinkedinIn, faTwitter } from '@fortawesome/free-brands-svg-icons';
-import { StyledFixedContainer, StyledContainer, StyledButton } from './style';
+import { StyledContainer, StyledButton } from './style';
 import { Icon } from 'src/components/elements/icon';
+import { createPopUp } from 'src/utils';
 import { myColors } from 'src/theme';
-import { getPopUp } from 'src/utils';
 
 /**
  * The SocialMedias component.
@@ -11,17 +11,15 @@ import { getPopUp } from 'src/utils';
 const SocialMedias = (): ReactElement => {
     return (
         <StyledContainer>
-            <StyledFixedContainer>
-                <StyledButton backgroundColor={myColors.facebook} onClick={onClick('facebook')}>
-                    <Icon icon={faFacebookSquare} />
-                </StyledButton>
-                <StyledButton backgroundColor={myColors.twitter} onClick={onClick('twitter')}>
-                    <Icon icon={faTwitter} />
-                </StyledButton>
-                <StyledButton backgroundColor={myColors.linkedIn} onClick={onClick('linkedIn')}>
-                    <Icon icon={faLinkedinIn} />
-                </StyledButton>
-            </StyledFixedContainer>
+            <StyledButton backgroundColor={myColors.facebook} onClick={onClick('facebook')}>
+                <Icon icon={faFacebookSquare} />
+            </StyledButton>
+            <StyledButton backgroundColor={myColors.twitter} onClick={onClick('twitter')}>
+                <Icon icon={faTwitter} />
+            </StyledButton>
+            <StyledButton backgroundColor={myColors.linkedIn} onClick={onClick('linkedIn')}>
+                <Icon icon={faLinkedinIn} />
+            </StyledButton>
         </StyledContainer>
     );
 };
@@ -46,7 +44,7 @@ const onClick = (website: 'facebook' | 'twitter' | 'linkedIn') => (): void => {
             break;
     }
 
-    getPopUp(url);
+    createPopUp(url);
 };
 
 export {

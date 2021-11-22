@@ -1,6 +1,7 @@
 import React, { ReactElement } from 'react';
 import { StyledContainer, StyledTitle, StyledItem } from './style';
 import { IMarkdownHeading } from 'src/interfaces/IMarkdownHeading';
+import { getIdFromText } from 'src/utils/markdown';
 
 interface ISummaryProps {
 	headings: IMarkdownHeading[];
@@ -31,7 +32,10 @@ const Summary = (props: ISummaryProps): ReactElement | null => {
  */
 const onClick = (e: React.MouseEvent): void => {
     const content = (e.target as HTMLDivElement).innerHTML;
-    console.log(content);
+    const id = getIdFromText(content);
+
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'end' });
+    location.href = `#${id}`;
 };
 
 export {

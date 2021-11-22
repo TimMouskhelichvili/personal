@@ -5,6 +5,7 @@ import { StyledCustomMDXContainer } from './style';
 import { CustomImage } from 'src/components/elements/customImage';
 import { Youtube } from 'src/components/elements/youtube';
 import { configuration } from 'src/configuration';
+import { getIdFromText } from 'src/utils/markdown';
 
 const LANGUAGES: string[] = [];
 
@@ -22,7 +23,7 @@ interface ICustomMDXProps {
 const CustomMDX = (props: ICustomMDXProps): ReactElement => {
     return (
         <StyledCustomMDXContainer>
-            <MDXRemote components={{ a, code, img }} {...props.source} />
+            <MDXRemote components={{ a, code, h2, h3, h4, h5, img }} {...props.source} />
         </StyledCustomMDXContainer>
     );
 };
@@ -89,6 +90,38 @@ const a = (data: any): ReactElement | null => {
             {data.children}
         </a>
     );
+};
+
+/**
+ * The h2 component.
+ * @param {any} data - The data. 
+ */
+const h2 = (data: any): ReactElement => {
+    return <h2 id={getIdFromText(data.children)}>{data.children}</h2>;	
+};
+
+/**
+ * The h3 component.
+ * @param {any} data - The data. 
+ */
+const h3 = (data: any): ReactElement => {
+    return <h3 id={getIdFromText(data.children)}>{data.children}</h3>;	
+};
+
+/**
+ * The h4 component.
+ * @param {any} data - The data. 
+ */
+const h4 = (data: any): ReactElement => {
+    return <h4 id={getIdFromText(data.children)}>{data.children}</h4>;	
+};
+
+/**
+ * The h5 component.
+ * @param {any} data - The data. 
+ */
+const h5 = (data: any): ReactElement => {
+    return <h5 id={getIdFromText(data.children)}>{data.children}</h5>;
 };
 
 export {

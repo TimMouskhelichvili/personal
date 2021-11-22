@@ -3,11 +3,12 @@ import { useRouter } from 'next/router';
 import { serialize } from 'next-mdx-remote/serialize';
 import { IMarkdownArticleProps } from 'src/interfaces/IMarkdownArticleProps';
 import { MarkdownContainer } from 'src/components/global/markdownContainer';
-import { getMarkdownHeadings, isProduction } from 'src/utils';
 import { Container } from 'src/components/global/container';
 import { IStaticProps } from 'src/interfaces/IStaticProps';
+import { getMarkdownHeadings } from 'src/utils/markdown';
 import { Row } from 'src/components/elements/row';
 import { IPages } from 'src/interfaces/IPages';
+import { isProduction } from 'src/utils';
 
 interface IArticleProps {
 	articles: {

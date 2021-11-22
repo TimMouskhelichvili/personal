@@ -5,6 +5,7 @@ import { Title } from 'src/components/global/title';
 const StyledContainer = styled.div`
 	display: flex;
 	align-items: top;
+	position: relative;
 `;
 
 const StyledMetaData = styled.div`
@@ -19,22 +20,20 @@ const StyledTitle = styled(Title)`
 	margin-left: 90px;
 `;
 
-const StyledSocialMediaContainer = styled.div`
-
+const StyledStickyContainer = styled.div`
+	position: sticky;
+	top: 80px;
+	align-self: flex-start;
+	margin-bottom: 20px;
 `;
 
 const StyledMarkdownContainer = styled.div`
 	max-width: 600px;
 `;
 
-const StyledSummaryContainer = styled.div`
-
-`;
-
 export {
-    StyledSummaryContainer,
+    StyledStickyContainer,
     StyledMarkdownContainer,
-    StyledSocialMediaContainer,
     StyledTitle,
     StyledContainer,
     StyledMetaData
