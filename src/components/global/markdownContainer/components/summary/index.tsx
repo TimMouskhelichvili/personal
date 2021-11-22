@@ -2,6 +2,7 @@ import React, { ReactElement } from 'react';
 import { StyledContainer, StyledTitle, StyledItem } from './style';
 import { IMarkdownHeading } from 'src/interfaces/IMarkdownHeading';
 import { getIdFromText } from 'src/utils/markdown';
+import { useLocale } from 'src/localizations';
 
 interface ISummaryProps {
 	headings: IMarkdownHeading[];
@@ -12,30 +13,22 @@ interface ISummaryProps {
  * @param {ISummaryProps} props - The props.
  */
 const Summary = (props: ISummaryProps): ReactElement | null => {
+    const locale = useLocale();
+
     if (!props.headings?.length) return null;
     
     return (
         <StyledContainer>
-            <StyledTitle>Summary</StyledTitle>
+            <StyledTitle>
+                {locale.pages.blog.summary}
+            </StyledTitle>
             {props.headings.map((heading): ReactElement => (
-                <StyledItem key={heading.title} onClick={onClick}>
+                <StyledItem key={heading.title} href={`#${getIdFromText(heading.title)}`}>
                     {heading.title}
                 </StyledItem>
             ))}
         </StyledContainer>
     );
-};
-
-/**
- * The onClick handler.
- * @param {React.MouseEvent} e - The event.
- */
-const onClick = (e: React.MouseEvent): void => {
-    const content = (e.target as HTMLDivElement).innerHTML;
-    const id = getIdFromText(content);
-
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'end' });
-    location.href = `#${id}`;
 };
 
 export {

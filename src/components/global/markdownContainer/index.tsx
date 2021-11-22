@@ -1,6 +1,8 @@
 import { useRouter } from 'next/router';
 import React, { ReactElement } from 'react';
-import { StyledContainer, StyledMetaData, StyledTitle, StyledStickyContainer, StyledMarkdownContainer } from './style';
+import { 
+    StyledContainer, StyledMetaData, StyledTitle, StyledSocialContainer, StyledMarkdownContainer, StyledSummaryContainer 
+} from './style';
 import { SocialMedias } from 'src/components/global/markdownContainer/components/socialMedias';
 import { CustomMDX } from 'src/components/global/markdownContainer/components/mdxRemote';
 import { Summary } from 'src/components/global/markdownContainer/components/summary';
@@ -28,15 +30,15 @@ const MarkdownContainer = (props: IMarkdownContainerProps): ReactElement => {
                 <Seo {...props} />
             </StyledMarkdownContainer>
             <StyledContainer>
-                <StyledStickyContainer>
+                <StyledSocialContainer>
                     <SocialMedias />
-                </StyledStickyContainer>
+                </StyledSocialContainer>
                 <StyledMarkdownContainer>
                     <CustomMDX source={props.source} />
                 </StyledMarkdownContainer>
-                <StyledStickyContainer>
+                <StyledSummaryContainer>
                     <Summary headings={props.headings} />
-                </StyledStickyContainer>
+                </StyledSummaryContainer>
             </StyledContainer>
         </>
     );

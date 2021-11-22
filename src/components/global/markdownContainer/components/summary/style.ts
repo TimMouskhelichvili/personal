@@ -7,6 +7,7 @@ const StyledContainer = styled.div`
 	border: 1px solid ${getThemeVariable('global.borderColor')};
 	border-radius: ${getThemeVariable('global.borderRadius')};
 	padding: 20px;
+	max-width: 450px;
 `;
 
 const StyledTitle = styled.div`
@@ -17,8 +18,11 @@ const StyledTitle = styled.div`
 	margin-bottom: 15px;
 `;
 
-const StyledItem = styled.div`
+const StyledItem = styled.a`
+	display: block;
 	cursor: pointer; 
+	color: ${getThemeVariable('global.color')};
+	text-decoration: none;
 
 	&:not(:last-of-type) {
 		margin-bottom: 10px;
