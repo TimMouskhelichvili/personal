@@ -1,6 +1,6 @@
 import React, { ReactElement } from 'react';
 import { faFacebookSquare, faLinkedinIn, faTwitter } from '@fortawesome/free-brands-svg-icons';
-import { StyledContainer, StyledButton } from './style';
+import { StyledButton } from './style';
 import { Icon } from 'src/components/elements/icon';
 import { createPopUp } from 'src/utils';
 import { myColors } from 'src/theme';
@@ -10,7 +10,7 @@ import { myColors } from 'src/theme';
  */
 const SocialMedias = (): ReactElement => {
     return (
-        <StyledContainer>
+        <>
             <StyledButton backgroundColor={myColors.facebook} onClick={onClick('facebook')}>
                 <Icon icon={faFacebookSquare} />
             </StyledButton>
@@ -20,7 +20,7 @@ const SocialMedias = (): ReactElement => {
             <StyledButton backgroundColor={myColors.linkedIn} onClick={onClick('linkedIn')}>
                 <Icon icon={faLinkedinIn} />
             </StyledButton>
-        </StyledContainer>
+        </>
     );
 };
 

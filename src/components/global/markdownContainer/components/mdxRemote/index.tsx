@@ -1,7 +1,8 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import React, { ReactElement } from 'react';
 import { MDXRemote } from 'next-mdx-remote';
-import { StyledCustomMDXContainer } from './style';
+import { StyledCustomMDXContainer, StyledSocialTabContainer } from './style';
+import { SocialMedias } from 'src/components/global/markdownContainer/components/socialMedias';
 import { CustomImage } from 'src/components/elements/customImage';
 import { Youtube } from 'src/components/elements/youtube';
 import { configuration } from 'src/configuration';
@@ -24,6 +25,9 @@ const CustomMDX = (props: ICustomMDXProps): ReactElement => {
     return (
         <StyledCustomMDXContainer>
             <MDXRemote components={{ a, code, h2, h3, h4, h5, img }} {...props.source} />
+            <StyledSocialTabContainer>
+                <SocialMedias />
+            </StyledSocialTabContainer>
         </StyledCustomMDXContainer>
     );
 };

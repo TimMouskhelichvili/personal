@@ -71,6 +71,19 @@ const StyledCustomMDXContainer = styled.div`
 	}
 `;
 
+const StyledSocialTabContainer = styled.div`
+	display: none;
+	
+	& > button {
+		margin-right: 10px;
+	}
+
+	@media screen and (max-width: ${devices.bigMobile}) {
+		display: flex;
+	}
+`;
+
 export {
+    StyledSocialTabContainer,
     StyledCustomMDXContainer
 };

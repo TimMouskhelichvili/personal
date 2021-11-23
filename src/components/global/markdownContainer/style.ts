@@ -8,8 +8,8 @@ const StyledContainer = styled.div`
 	align-items: top;
 	position: relative;
 
-	@media screen and (max-width: ${devices.bigMobile}) {
-		display: block;
+	@media screen and (max-width: ${devices.tablet}) {
+		justify-content: center;
 	}
 `;
 
@@ -17,20 +17,10 @@ const StyledMetaData = styled.div`
 	font-size: .9em;
 	margin-bottom: 20px;
 	color: ${getThemeVariable('global.markdown.metaDataColor')};
-	margin-left: 90px;
-
-	@media screen and (max-width: ${devices.bigMobile}) {
-		margin-left: 0px;
-	}
 `;
 
 const StyledTitle = styled(Title)`
 	margin-bottom: 10px;
-	margin-left: 90px;
-
-	@media screen and (max-width: ${devices.bigMobile}) {
-		margin-left: 0px;
-	}
 `;
 
 const StyledSocialContainer = styled.div`
@@ -38,6 +28,11 @@ const StyledSocialContainer = styled.div`
 	top: 80px;
 	align-self: flex-start;
 	margin-bottom: 20px;
+	width: 90px;
+
+	@media screen and (max-width: ${devices.tablet}) {
+		margin-left: -90px;
+	}
 
 	@media screen and (max-width: ${devices.bigMobile}) {
 		display: none;
@@ -61,9 +56,27 @@ const StyledMarkdownContainer = styled.div`
 	@media screen and (max-width: ${devices.bigMobile}) {
 		margin: 0 auto;
 	}
+
+	@media screen and (max-width: ${devices.markdownMobile}) {
+		max-width: 100%;
+	}
+`;
+
+const StyledTitleContainer = styled.div`
+	max-width: 600px;
+	margin-left: 90px;
+
+	@media screen and (max-width: ${devices.tablet}) {
+		margin: 0 auto;
+	}
+
+	@media screen and (max-width: ${devices.markdownMobile}) {
+		max-width: 100%;
+	}
 `;
 
 export {
+    StyledTitleContainer,
     StyledSummaryContainer,
     StyledSocialContainer,
     StyledMarkdownContainer,

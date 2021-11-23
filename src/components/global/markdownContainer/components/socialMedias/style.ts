@@ -2,11 +2,6 @@ import styled from 'styled-components';
 import { darken } from 'polished';
 import { getThemeVariable } from 'src/theme/utils';
 
-const StyledContainer = styled.div`
-	width: 90px;
-	margin-top: 5px;
-`;
-
 const StyledButton = styled.button<{ backgroundColor: string; }>`
 	width: 60px;
 	height: 50px;
@@ -24,6 +19,5 @@ const StyledButton = styled.button<{ backgroundColor: string; }>`
 `;
 
 export {
-    StyledButton,
-    StyledContainer
+    StyledButton 
 };

@@ -1,7 +1,8 @@
 import { useRouter } from 'next/router';
 import React, { ReactElement } from 'react';
 import { 
-    StyledContainer, StyledMetaData, StyledTitle, StyledSocialContainer, StyledMarkdownContainer, StyledSummaryContainer 
+    StyledContainer, StyledMetaData, StyledTitle, StyledSocialContainer, 
+    StyledMarkdownContainer, StyledSummaryContainer, StyledTitleContainer
 } from './style';
 import { SocialMedias } from 'src/components/global/markdownContainer/components/socialMedias';
 import { CustomMDX } from 'src/components/global/markdownContainer/components/mdxRemote';
@@ -24,11 +25,11 @@ const MarkdownContainer = (props: IMarkdownContainerProps): ReactElement => {
 
     return (
         <>
-            <StyledMarkdownContainer>
+            <StyledTitleContainer>
                 <StyledTitle title={props.title} />
                 <StyledMetaData>{author} • {date}</StyledMetaData>
                 <Seo {...props} />
-            </StyledMarkdownContainer>
+            </StyledTitleContainer>
             <StyledContainer>
                 <StyledSocialContainer>
                     <SocialMedias />
