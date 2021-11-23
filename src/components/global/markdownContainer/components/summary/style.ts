@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import { getThemeVariable } from 'src/theme/utils';
 
 const StyledContainer = styled.div`
-	margin-left: 30px;
 	margin-top: 5px;
 	border: 1px solid ${getThemeVariable('global.borderColor')};
 	border-radius: ${getThemeVariable('global.borderRadius')};
@@ -14,26 +13,32 @@ const StyledTitle = styled.div`
 	text-transform: uppercase;
 	font-size: 1.2em;
 	font-weight: 700;
-	text-decoration: underline;
 	margin-bottom: 15px;
+	text-decoration: underline;
 `;
 
 const StyledItem = styled.a`
 	display: block;
 	cursor: pointer; 
-	color: ${getThemeVariable('global.color')};
+	color: ${getThemeVariable('colors.primary')};
 	text-decoration: none;
-
-	&:not(:last-of-type) {
-		margin-bottom: 10px;
-	}
 
 	&:hover {
 		text-decoration: underline;
 	}
 `;
 
+const StyledList = styled.ol`
+	margin: 0px;
+	padding-left: 25px;
+
+	& > li:not(:last-of-type) > a {
+		margin-bottom: 8px;
+	}
+`;
+
 export {
+    StyledList,
     StyledItem,
     StyledTitle,
     StyledContainer

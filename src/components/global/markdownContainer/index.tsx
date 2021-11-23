@@ -35,7 +35,7 @@ const MarkdownContainer = (props: IMarkdownContainerProps): ReactElement => {
                     <SocialMedias />
                 </StyledSocialContainer>
                 <StyledMarkdownContainer>
-                    <CustomMDX source={props.source} />
+                    <CustomMDX source={props.source} headings={props.headings} />
                 </StyledMarkdownContainer>
                 <StyledSummaryContainer>
                     <Summary headings={props.headings} />

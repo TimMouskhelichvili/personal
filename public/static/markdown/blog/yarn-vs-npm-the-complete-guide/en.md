@@ -15,6 +15,8 @@ The two biggest package managers for JavaScript developers are **Yarn** and **np
 
 It can be quite a dilemma when choosing between them, so this article will compare them to each other and help you decide which one to use in your next JavaScript project.
 
+<Summary />
+
 ## What is npm?
 
 Npm (an acronym for Node Package Manager) is a package manager and was released in 2010. 

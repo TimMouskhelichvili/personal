@@ -73,7 +73,7 @@ const StyledCustomMDXContainer = styled.div`
 
 const StyledSocialTabContainer = styled.div`
 	display: none;
-	
+
 	& > button {
 		margin-right: 10px;
 	}
@@ -83,7 +83,16 @@ const StyledSocialTabContainer = styled.div`
 	}
 `;
 
+const StyledSummary = styled.div`
+	display: none;
+
+	@media screen and (max-width: ${devices.tablet}) {
+		display: block;
+	}
+`;
+
 export {
+    StyledSummary,
     StyledSocialTabContainer,
     StyledCustomMDXContainer
 };

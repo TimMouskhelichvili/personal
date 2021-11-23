@@ -41,7 +41,16 @@ const getIdFromText = (text: string): string => {
 	return newText;
 }
 
+/**
+ * Returns the title for summary.
+ * @param {string} text - The text.
+ */
+const getTitleForSummary = (text: string): string => {
+	return text.replace(/^\d+\.\s*/, '');
+}
+
 export {
+	getTitleForSummary,
 	getIdFromText,
 	getMarkdownHeadings
 }

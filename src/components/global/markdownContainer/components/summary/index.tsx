@@ -1,7 +1,7 @@
 import React, { ReactElement } from 'react';
-import { StyledContainer, StyledTitle, StyledItem } from './style';
+import { StyledContainer, StyledTitle, StyledItem, StyledList } from './style';
+import { getIdFromText, getTitleForSummary } from 'src/utils/markdown';
 import { IMarkdownHeading } from 'src/interfaces/IMarkdownHeading';
-import { getIdFromText } from 'src/utils/markdown';
 import { useLocale } from 'src/localizations';
 
 interface ISummaryProps {
@@ -22,11 +22,15 @@ const Summary = (props: ISummaryProps): ReactElement | null => {
             <StyledTitle>
                 {locale.pages.blog.summary}
             </StyledTitle>
-            {props.headings.map((heading): ReactElement => (
-                <StyledItem key={heading.title} href={`#${getIdFromText(heading.title)}`}>
-                    {heading.title}
-                </StyledItem>
-            ))}
+            <StyledList>
+                {props.headings.map((heading): ReactElement => (
+                    <li key={heading.title}>
+                        <StyledItem href={`#${getIdFromText(heading.title)}`}>
+                            {getTitleForSummary(heading.title)}
+                        </StyledItem>
+                    </li>
+                ))}
+            </StyledList>
         </StyledContainer>
     );
 };

@@ -1,8 +1,10 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import React, { ReactElement } from 'react';
 import { MDXRemote } from 'next-mdx-remote';
-import { StyledCustomMDXContainer, StyledSocialTabContainer } from './style';
+import { StyledCustomMDXContainer, StyledSocialTabContainer, StyledSummary } from './style';
 import { SocialMedias } from 'src/components/global/markdownContainer/components/socialMedias';
+import { Summary } from 'src/components/global/markdownContainer/components/summary';
+import { IMarkdownHeading } from 'src/interfaces/IMarkdownHeading';
 import { CustomImage } from 'src/components/elements/customImage';
 import { Youtube } from 'src/components/elements/youtube';
 import { configuration } from 'src/configuration';
@@ -11,6 +13,7 @@ import { getIdFromText } from 'src/utils/markdown';
 const LANGUAGES: string[] = [];
 
 interface ICustomMDXProps {
+	headings: IMarkdownHeading[];
 	source: {
 		compiledSource: string;
 		source: string;
@@ -21,15 +24,21 @@ interface ICustomMDXProps {
  * The CustomMDX component. 
  * @param {ICustomMDXProps} props - The props.
  */
-const CustomMDX = (props: ICustomMDXProps): ReactElement => {
-    return (
-        <StyledCustomMDXContainer>
-            <MDXRemote components={{ a, code, h2, h3, h4, h5, img }} {...props.source} />
-            <StyledSocialTabContainer>
-                <SocialMedias />
-            </StyledSocialTabContainer>
-        </StyledCustomMDXContainer>
-    );
+const CustomMDX = (props: ICustomMDXProps): ReactElement => (
+    <StyledCustomMDXContainer>
+        <MDXRemote components={{ Summary: SummaryComponent(props.headings), a, code, h2, h3, h4, h5, img }} {...props.source} />
+        <StyledSocialTabContainer>
+            <SocialMedias />
+        </StyledSocialTabContainer>
+    </StyledCustomMDXContainer>
+);
+
+/**
+ * The Summary component.
+ * @param {IMarkdownHeading[]} headings - The headings.
+ */
+const SummaryComponent = (headings: IMarkdownHeading[]) => (): ReactElement => {
+    return <StyledSummary><Summary headings={headings} /></StyledSummary>;
 };
 
 /**

@@ -20,6 +20,8 @@ More and more companies are migrating to TypeScript and I will explain to you wh
 
 Here are my 5 favorite features of TypeScript:
 
+<Summary />
+
 ## 1. TypeScript is more explicit than JavaScript
 
 Perhaps its biggest advantage compared to JavaScript is its addition of typings, which ensures a more robust and explicit code. With TypeScript, *you can enforce those typings which will make your code more maintainable and more reliable*. Also, adding new programmers to the project is much quicker since they spend less time understanding your code and more time writing it.

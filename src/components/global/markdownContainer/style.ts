@@ -44,6 +44,7 @@ const StyledSummaryContainer = styled.div`
 	top: 80px;
 	align-self: flex-start;
 	margin-bottom: 20px;
+	margin-left: 30px;
 
 	@media screen and (max-width: ${devices.tablet}) {
 		display: none;
