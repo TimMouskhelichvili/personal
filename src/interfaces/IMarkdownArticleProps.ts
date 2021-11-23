@@ -1,3 +1,5 @@
+import { IMarkdownHeading } from 'src/interfaces/IMarkdownHeading';
+
 interface IMarkdownArticleProps {
 	source: {
 		compiledSource: string;
@@ -9,6 +11,7 @@ interface IMarkdownArticleProps {
 	date?: string;
 	author?: string;
 	openGraphImage?: string;
+	headings: IMarkdownHeading[];
 }
 
 export type {

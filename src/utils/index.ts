@@ -90,7 +90,42 @@ const getDate = (date?: string, language?: string): string => {
  */
 const getAuthor = (author?: string) => author || configuration.general.author;
 
+/**
+ * Returns the popup.
+ * From: https://stackoverflow.com/questions/4068373/center-a-popup-window-on-screen.
+ * @param {string} url - The url.
+ * @param {string} title - The title.
+ * @param {number} w - The width.
+ * @param {number} h - The height.
+ */
+// eslint-disable-next-line complexity
+const createPopUp = (url: string, title = '', w = 700, h = 500): Window | null => {
+    const dualScreenLeft = window.screenLeft !== undefined ? window.screenLeft : window.screenX;
+    const dualScreenTop = window.screenTop !== undefined ? window.screenTop : window.screenY;
+
+    const width = window.innerWidth ? 
+        window.innerWidth : document.documentElement.clientWidth ? 
+            document.documentElement.clientWidth : screen.width;
+    const height = window.innerHeight ? 
+        window.innerHeight : document.documentElement.clientHeight ? 
+            document.documentElement.clientHeight : screen.height;
+
+    const systemZoom = width / window.screen.availWidth;
+    const left = (width - w) / 2 / systemZoom + dualScreenLeft;
+    const top = (height - h) / 2 / systemZoom + dualScreenTop;
+    const newWindow = window.open(url, title, `
+		scrollbars=yes,
+		width=${w / systemZoom}, 
+		height=${h / systemZoom}, 
+		top=${top}, 
+		left=${left}
+	`);
+
+    return newWindow;
+};
+
 export {
+	createPopUp,
 	getStructuredData,
 	isProduction,
 	isLandingPage,
@@ -99,4 +134,4 @@ export {
 	hasOnlyOneLanguage,
 	getDate,
 	getAuthor
-}
+};

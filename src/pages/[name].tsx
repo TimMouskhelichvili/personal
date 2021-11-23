@@ -27,7 +27,7 @@ const Page = (props: IPageProps): ReactElement => {
 
     return (
         <Container redirectLanguageToIndex={props.redirectLanguageToIndex}>
-            <Row>
+            <Row maxWidth={'700px'}>
                 <MarkdownContainer {...page} hasAmp={true} />
             </Row>
         </Container>

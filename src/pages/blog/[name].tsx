@@ -5,6 +5,7 @@ import { IMarkdownArticleProps } from 'src/interfaces/IMarkdownArticleProps';
 import { MarkdownContainer } from 'src/components/global/markdownContainer';
 import { Container } from 'src/components/global/container';
 import { IStaticProps } from 'src/interfaces/IStaticProps';
+import { getMarkdownHeadings } from 'src/utils/markdown';
 import { Row } from 'src/components/elements/row';
 import { IPages } from 'src/interfaces/IPages';
 import { isProduction } from 'src/utils';
@@ -27,7 +28,7 @@ const Article = (props: IArticleProps): ReactElement => {
 
     return (
         <Container redirectLanguageToIndex={props.redirectLanguageToIndex}>
-            <Row maxWidth={'700px'}>
+            <Row>
                 <MarkdownContainer {...article} />
             </Row>
         </Container>
@@ -64,6 +65,7 @@ export const getStaticProps = async (context: IStaticProps): Promise<{}> => {
     }
 
     for (const i in articles) {
+        articles[i].headings = getMarkdownHeadings(articles[i].source);
         articles[i].source = await serialize(articles[i].source);
     }
 

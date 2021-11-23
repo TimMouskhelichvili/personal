@@ -1,5 +1,6 @@
 const frBlogLocale = {
-    empty: 'Aucun article pour l\'instant... :('
+    empty: 'Aucun article pour l\'instant... :(',
+    summary: 'sommaire'
 };
 
 export {
