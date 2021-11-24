@@ -25,7 +25,9 @@ Example:
 
 _____________________________
 
-Here are three methods that will help you implement it yourself.
+Here are three methods that will help you implement it yourself:
+
+<Summary />
 
 ## 1. How To Wait 5 Seconds With A Helper Function
 
