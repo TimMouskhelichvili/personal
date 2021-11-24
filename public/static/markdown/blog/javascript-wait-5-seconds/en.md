@@ -9,23 +9,25 @@ author: Tim Mouskhelichvili
 
 There is a lot of use cases where you would want to pause your JavaScript's execution before running the next line. 
 
-Sadly, this function is absent from JavaScript default functionality.
+Sadly, a function like that is absent from JavaScript's default functionality.
 
-Luckily for us, JavaScript provides a few ways for a developer to wait 5 seconds before executing the next line of the code.
+Luckily for us, JavaScript provides a few ways for a developer to wait X seconds before executing the next line of the code.
 
 ![JavaScript Wait 5 Seconds](/static/images/blog/javascript-wait-5-seconds/cover.png)
 
-First, you will need to transform seconds into milliseconds.
+To complete this task, first of all, you will need to transform seconds into milliseconds.
 
-To transform seconds into milliseconds you will need to multiply by 1000.
+To transform seconds into milliseconds you will need to multiply your seconds by 1000.
 
 Example:
 * 5 seconds = 5000 milliseconds
 * 1 second = 1000 milliseconds
 
-Here are three methods on how you can do implement it yourself.
+_____________________________
 
-## 1. JavaScript Wait 5 Second
+Here are three methods that will help you implement it yourself.
+
+## 1. How To Wait 5 Seconds With A Helper Function
 
 *This method will not work if you need to support legacy browsers.*
 
@@ -45,9 +47,9 @@ const testSleep = async () => {
 testSleep();
 ```
 
-## 2. JavaScript Wait 5 Second In Loop
+## 2. How To Wait 5 Seconds In A Loop
 
-We are reusing the helper function sleep function that we made earlier.
+Here, we are reusing the sleep helper function that we made earlier.
 
 ```javascript
 const sleep = async (milliseconds) => {
@@ -68,9 +70,9 @@ const testSleep = async () => {
 testSleep();
 ```
 
-## 3. JavaScript Wait 5 Seconds (in ES5)
+## 3. How To Wait 5 Seconds In ES5
 
-If you need to support old browsers 😞, you will not be able to use [Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise). 
+If you need to support old browsers 😞, you will not be able to use [Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) or async & await. 
 
 In that case you will need to use callbacks.
 
@@ -85,9 +87,9 @@ var testSleep = function () {
 testSleep();
 ```
 
-## 4. JavaScript Wait 5 Seconds in ES5 (DO NOT USE). 
+## 4. Wait 5 Seconds in ES5 (DO NOT USE). 
 
-Another way to sleep for 5 seconds is to use the Date object with a while.
+Another way to pause your code for 5 seconds is to use the Date object with a while statement.
 
 This is very inefficient (because it runs on the main thread).
 
@@ -111,7 +113,7 @@ console.log('Step 2 - Called');
 
 Now you know how to wait 5 seconds before executing your next line. 
 
-Of course, you can wait for however long you want 😉.
+Of course, you can wait for however long you want 😉 it was just an example.
 
 ![JavaScript Wait 5 Seconds](/static/images/blog/javascript-wait-5-seconds/ofcourse.jpg)
 
