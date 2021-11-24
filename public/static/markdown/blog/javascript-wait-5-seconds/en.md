@@ -113,6 +113,6 @@ Now you know how to wait 5 seconds before executing your next line.
 
 Of course, you can wait for however long you want 😉.
 
-![JavaScript Wait 5 Seconds](/static/images/blog/javascript-wait-5-seconds/thor.gif)
+![JavaScript Wait 5 Seconds](/static/images/blog/javascript-wait-5-seconds/ofcourse.jpg)
 
 Thanks for reading this article. If you liked it please share it.

@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { getThemeVariable } from 'src/theme/utils';
+import { devices } from 'src/theme';
 
 const StyledTitle = styled.h2`
 	margin-bottom: .3em;
@@ -16,15 +17,13 @@ const StyledTitle = styled.h2`
 `;
 
 const StyledContainer = styled.div`
-	margin-top: 20px;
+	margin: 20px 0px;
+	display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
 
-	.masonry-grid {
-		display: flex;
-		margin-left: -20px;
-	}
-
-	.masonry-grid-column {
-		padding-left: 20px;
+	@media screen and (max-width: ${devices.smallTablet}) {
+		display: block;
 	}
 `;
 
@@ -33,11 +32,14 @@ const StyledArticleContainer = styled.div`
 	background: ${getThemeVariable('pages.blog.item.background')};
 	border-radius: ${getThemeVariable('global.borderRadius')};
 	padding: 20px;
-	margin-bottom: 1em;
 
 	img {
 		border: 1px solid ${getThemeVariable('global.borderColor')};
 		object-fit: cover;
+		margin-bottom: 20px;
+	}
+
+	@media screen and (max-width: ${devices.smallTablet}) {
 		margin-bottom: 20px;
 	}
 `;
