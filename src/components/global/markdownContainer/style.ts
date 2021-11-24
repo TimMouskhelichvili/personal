@@ -51,9 +51,11 @@ const StyledSummaryContainer = styled.div`
 	}
 `;
 
-const StyledMarkdownContainer = styled.div`
+const StyledMarkdownContainer = styled.div<{ clear?: boolean }>`
 	max-width: 600px;
 
+	${(p): string => p.clear ? 'margin: 0 auto;' : ''}
+	
 	@media screen and (max-width: ${devices.bigMobile}) {
 		margin: 0 auto;
 	}
@@ -63,9 +65,11 @@ const StyledMarkdownContainer = styled.div`
 	}
 `;
 
-const StyledTitleContainer = styled.div`
+const StyledTitleContainer = styled.div<{ clear?: boolean; }>`
 	max-width: 600px;
 	margin-left: 90px;
+
+	${(p): string => p.clear ? 'margin-left: 0px;margin: 0 auto;' : ''}
 
 	@media screen and (max-width: ${devices.tablet}) {
 		margin: 0 auto;

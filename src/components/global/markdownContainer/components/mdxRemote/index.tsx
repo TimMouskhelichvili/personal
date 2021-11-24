@@ -1,6 +1,8 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import React, { ReactElement } from 'react';
 import { MDXRemote } from 'next-mdx-remote';
+import Refractor from 'react-refractor';
+import js from 'refractor/lang/javascript';
 import { StyledCustomMDXContainer, StyledSocialTabContainer, StyledSummary } from './style';
 import { SocialMedias } from 'src/components/global/markdownContainer/components/socialMedias';
 import { Summary } from 'src/components/global/markdownContainer/components/summary';
@@ -10,7 +12,9 @@ import { Youtube } from 'src/components/elements/youtube';
 import { configuration } from 'src/configuration';
 import { getIdFromText } from 'src/utils/markdown';
 
-const LANGUAGES: string[] = [];
+Refractor.registerLanguage(js);
+
+const LANGUAGES: string[] = [ 'javascript' ];
 
 interface ICustomMDXProps {
 	headings: IMarkdownHeading[];
@@ -74,8 +78,7 @@ const code = (data: any): ReactElement | null => {
     if (!value) return null;
 
     if (LANGUAGES.includes(language)) {
-        return null;
-        //return <Refractor language={language} value={value} />;
+        return <Refractor language={language} value={value} />;
     }
 
     return (

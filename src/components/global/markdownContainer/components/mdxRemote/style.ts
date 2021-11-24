@@ -50,6 +50,10 @@ const StyledCustomMDXContainer = styled.div`
 		background: ${getThemeVariable('global.markdown.background')};
 		padding: 10px;
 		overflow: auto;
+
+		pre {
+			margin: 0px;
+		}
 	}
 
 	table {

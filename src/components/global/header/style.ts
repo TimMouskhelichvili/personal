@@ -9,7 +9,7 @@ const StyledHeader = styled.div`
 	width: 100%;
 	height: 61px;
 	position: fixed;
-	z-index: 1;
+	z-index: 2;
 	user-select: none;
 
 	@media screen and (max-width: ${devices.mobile}) {

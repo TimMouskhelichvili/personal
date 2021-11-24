@@ -1,5 +1,6 @@
 import React, { ReactElement } from 'react';
 import { useAmp } from 'next/amp';
+import { isProduction } from 'src/utils';
 
 interface ICustomImageProps {
 	src: string;
@@ -81,7 +82,10 @@ const getPicture = (props: ICustomImageProps): ReactElement => {
  * @param {string} src - The src. 
  */
 const getWebP = (src: string): string => {
-    //return src;
+    if (!isProduction()) {
+        return src;
+    }
+	
     return `${src.substr(0, src.lastIndexOf('.')) }.webp`;
 };
 

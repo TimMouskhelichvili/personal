@@ -13,7 +13,9 @@ import { getAuthor, getDate } from 'src/utils';
 
 interface IMarkdownContainerProps extends IMarkdownArticleProps {
 	hasAmp?: boolean;
+	clear?: boolean;
 }
+
 /**
  * The MarkdownContainer component. 
  * @param {IMarkdownContainerProps} props - The props.
@@ -25,21 +27,23 @@ const MarkdownContainer = (props: IMarkdownContainerProps): ReactElement => {
 
     return (
         <>
-            <StyledTitleContainer>
+            <StyledTitleContainer clear={props.clear}>
                 <StyledTitle title={props.title} />
                 <StyledMetaData>{author} • {date}</StyledMetaData>
                 <Seo {...props} />
             </StyledTitleContainer>
             <StyledContainer>
-                <StyledSocialContainer>
-                    <SocialMedias />
-                </StyledSocialContainer>
-                <StyledMarkdownContainer>
+                {!props.clear && 
+					<StyledSocialContainer>
+					    <SocialMedias />
+					</StyledSocialContainer>}
+                <StyledMarkdownContainer clear={props.clear}>
                     <CustomMDX source={props.source} headings={props.headings} />
                 </StyledMarkdownContainer>
-                <StyledSummaryContainer>
-                    <Summary headings={props.headings} />
-                </StyledSummaryContainer>
+                {!props.clear &&
+					<StyledSummaryContainer>
+					    <Summary headings={props.headings} />
+					</StyledSummaryContainer>}
             </StyledContainer>
         </>
     );

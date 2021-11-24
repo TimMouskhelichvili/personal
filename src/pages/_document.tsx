@@ -3,6 +3,7 @@ import Document, { Html, Head, Main, NextScript, DocumentContext, DocumentInitia
 import { ServerStyleSheet } from 'styled-components';
 import { AMPAnalyticsScript } from 'src/componentsByPage/document/ampAnalyticsScript';
 import { AdditionalScripts } from 'src/componentsByPage/document/additionalScripts';
+import { markdownTheme } from 'src/theme/external/markdown';
 import { configuration } from 'src/configuration';
 import { globalStyles } from 'src/theme/global';
 import { getStructuredData } from 'src/utils';
@@ -26,7 +27,7 @@ class MyDocument extends Document<IMyDocumentProps> {
 
         const styleTag = sheet.getStyleElement();
         // @ts-ignore
-        const styleHTML = `${styleTag[0].props.dangerouslySetInnerHTML.__html} ${globalStyles}`;
+        const styleHTML = `${styleTag[0].props.dangerouslySetInnerHTML.__html} ${globalStyles} ${markdownTheme}`;
 
         return { 
             ...page,
