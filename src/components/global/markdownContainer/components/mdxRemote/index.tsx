@@ -3,6 +3,7 @@ import React, { ReactElement } from 'react';
 import { MDXRemote } from 'next-mdx-remote';
 import Refractor from 'react-refractor';
 import js from 'refractor/lang/javascript';
+import bash from 'refractor/lang/bash';
 import { StyledCustomMDXContainer, StyledSocialTabContainer, StyledSummary } from './style';
 import { SocialMedias } from 'src/components/global/markdownContainer/components/socialMedias';
 import { Summary } from 'src/components/global/markdownContainer/components/summary';
@@ -13,8 +14,10 @@ import { configuration } from 'src/configuration';
 import { getIdFromText } from 'src/utils/markdown';
 
 Refractor.registerLanguage(js);
+Refractor.registerLanguage(bash);
 
-const LANGUAGES: string[] = [ 'javascript' ];
+
+const LANGUAGES: string[] = [ 'javascript', 'bash' ];
 
 interface ICustomMDXProps {
 	headings: IMarkdownHeading[];

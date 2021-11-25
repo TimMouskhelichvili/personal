@@ -1,7 +1,7 @@
 ---
 title: How Does The StartsWith() Function Work In JavaScript? 
 seoTitle: How Does The StartsWith() Function Work In JavaScript? 
-openGraphImage: /static/images/blog/javascript-wait-5-seconds/cover.png
+openGraphImage: /static/images/blog/javascript-startswith-function/cover.png
 date: 2021-11-23
 description: A guide on how does the startsWith() function work in JavaScript? Case Sensitivity, Multiple Values, Alternatives.
 author: Tim Mouskhelichvili
@@ -14,6 +14,8 @@ By the end of this guide, you will become a pro of this function and you will kn
 1. How to use it?
 2. When to use it?
 3. And, will be able to explain it to others.
+
+![JavaScript StartsWith](/static/images/blog/javascript-startswith-function/cover.png)
 
 <Summary />
 
@@ -82,6 +84,8 @@ This method only works on browsers that support ES2015.
 *To support legacy browsers like Internet Explorer you will need to add a polyfill.* 
 
 [[Get the polyfill here]](#how-to-fix-startswith-is-not-a-function)
+
+![JavaScript StartsWith Internet Explorer](/static/images/blog/javascript-startswith-function/internet.jpg)
 
 ## How to make the startsWith() function case insensitive?
 
@@ -198,4 +202,8 @@ console.log(str.startsWith('This'));
 
 ## Conclusion
 
-Now that you are a pro of the startsWith() function in JavaScript, please share this article with others so they too can become a pro just like you. Thanks for reading.
+Now that you are a pro of the startsWith() function in JavaScript, please share this article with others so they too can become a pro just like you. 
+
+![JavaScript StartsWith Pro](/static/images/blog/javascript-startswith-function/pro.jpg)
+
+Thanks for reading.
