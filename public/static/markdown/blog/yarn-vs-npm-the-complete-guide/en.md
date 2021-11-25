@@ -75,7 +75,7 @@ Npm is directly installed when you install Node.js so if you have Node.js you ha
 
 Check your npm version by running this command.
 
-```console
+```bash
 npm --version
 ```
 
@@ -83,7 +83,7 @@ npm --version
 
 Yarn can be installed through the command line of your terminal. I like to use the integrated terminal of VSCode for this.
 
-```console
+```bash
 npm install --global yarn
 ```
 
@@ -91,7 +91,7 @@ npm install --global yarn
 
 Check Yarn version by running this command.
 
-```console
+```bash
 yarn --version
 ```
 
@@ -165,7 +165,7 @@ Also, Yarn supports some commands that npm doesn't:
 
 Add a package with yarn by running this command.
 
-```console
+```bash
 yarn add <package>
 ```
 
@@ -173,7 +173,7 @@ yarn add <package>
 
 Add a package with npm by running this command.
 
-```console
+```bash
 npm install <package>
 ```
 
@@ -183,7 +183,7 @@ npm install <package>
 
 Add a package as a dev dependency with yarn by running this command.
 
-```console
+```bash
 yarn add <package> --dev
 ```
 
@@ -191,7 +191,7 @@ yarn add <package> --dev
 
 Add a package as a dev dependency with npm by running this command.
 
-```console
+```bash
 npm install <package> --save-dev
 ```
 
@@ -207,7 +207,7 @@ You will notice very soon, that node_modules is a very heavy folder. This is com
 
 Add a global package with yarn by running this command.
 
-```console
+```bash
 yarn global add <package>
 ```
 
@@ -215,7 +215,7 @@ yarn global add <package>
 
 Add a global package with npm by running this command.
 
-```console
+```bash
 npm install -g <package>
 ```
 
@@ -227,7 +227,7 @@ npm install -g <package>
 
 Remove a package with yarn by running this command.
 
-```console
+```bash
 yarn remove <package>
 ```
 
@@ -235,7 +235,7 @@ yarn remove <package>
 
 Remove a package with npm by running this command.
 
-```console
+```bash
 npm uninstall <package>
 ```
 
@@ -247,7 +247,7 @@ npm uninstall <package>
 
 Search for outdated packages with yarn by running this command.
 
-```console
+```bash
 yarn outdated
 ```
 
@@ -255,13 +255,13 @@ yarn outdated
 
 Search for outdated packages with npm by running this command.
 
-```console
+```bash
 npm outdated
 ```
 
 Here is the output of this command when I ran it on this website:
 
-```console
+```bash
 $ yarn outdated
 
 info Color legend : 
@@ -282,13 +282,13 @@ If a package is red, this means the dependency had a breaking change so you will
 
 Update all outdated packages with yarn by running this command.
 
-```console
+```bash
 yarn upgrade
 ```
 
 Update a specific package with yarn by running this command.
 
-```console
+```bash
 yarn upgrade <package>@latest
 ```
 
@@ -296,13 +296,13 @@ yarn upgrade <package>@latest
 
 Update all outdated packages with npm by running this command.
 
-```console
+```bash
 npm update
 ```
 
 Update a specific package with npm by running this command.
 
-```console
+```bash
 npm update <package>@latest
 ```
 
@@ -324,7 +324,7 @@ One big problem with npm is a lot of times it is unable to resolve the dependenc
 
 For example for this project, I have an ESLint conflict and npm cannot resolve it.
 
-```console
+```bash
 $ npm i
 npm ERR! code ERESOLVE
 npm ERR! ERESOLVE unable to resolve dependency tree

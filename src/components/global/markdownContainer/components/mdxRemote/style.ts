@@ -46,12 +46,11 @@ const StyledCustomMDXContainer = styled.div`
 	}
 
 	& > pre {
-		border-radius: ${getThemeVariable('global.borderRadius')};
-		background: ${getThemeVariable('global.markdown.background')};
-		padding: 10px;
+		padding: 0px;
 		overflow: auto;
 
 		pre {
+			border-radius: ${getThemeVariable('global.borderRadius')};
 			margin: 0px;
 		}
 	}
