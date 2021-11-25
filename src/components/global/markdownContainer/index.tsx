@@ -30,7 +30,7 @@ const MarkdownContainer = (props: IMarkdownContainerProps): ReactElement => {
             <StyledTitleContainer clear={props.clear}>
                 <StyledTitle title={props.title} />
                 <StyledMetaData>{author} • {date}</StyledMetaData>
-                <Seo {...props} />
+                <Seo {...props} hasAmp />
             </StyledTitleContainer>
             <StyledContainer>
                 {!props.clear && 
