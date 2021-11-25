@@ -50,7 +50,7 @@ str.startsWith(searchValue[, startPosition])
 
 Here are some things that you need to take into considerations:
 
-1. This function is **case sensitive**.
+1. This function is [**case sensitive**](https://en.wikipedia.org/wiki/Case_sensitivity).
 2. You can specify a start position (completely optional).
 
 ### Parameters
@@ -70,7 +70,7 @@ This method will return a *boolean*.
 
 ## Browser Support
 
-This method only works on browsers that support ES2015.
+This method only works on browsers that support [ES2015](https://caniuse.com/?search=es6).
 
 | Browser | Support |
 | ------- | ------- |
