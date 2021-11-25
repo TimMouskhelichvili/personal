@@ -1,21 +1,25 @@
 ---
-title: How Does StartsWith Function Work In JavaScript? 
-seoTitle: How Does StartsWith Function Work In JavaScript? 
+title: How Does The StartsWith() Function Work In JavaScript? 
+seoTitle: How Does The StartsWith() Function Work In JavaScript? 
 openGraphImage: /static/images/blog/javascript-wait-5-seconds/cover.png
 date: 2021-11-23
-description: A guide on how to wait for X seconds before executing the next line in JavaScript.
+description: A guide on how does the startsWith() function work in JavaScript? Case Sensitivity, Multiple Values, Alternatives.
 author: Tim Mouskhelichvili
 ---
 
-When you will finish reading this guide you will become a pro of JavaScript's startsWith function.
+This article will tell you everything that you need to know about the startsWith() function in JavaScript.
 
-You will know how to use it and when to use it.
+By the end of this guide, you will become a pro of this function and you will know:
+
+1. How to use it?
+2. When to use it?
+3. And, will be able to explain it to others.
 
 <Summary />
 
 ## Definition
 
-The startsWith function is used to determine if a string begins by the search value.
+The startsWith function is used to determine if a string begins by a search value.
 
 If the string begins by the search value, it returns *true*, otherwise, it returns *false*.
 
@@ -32,11 +36,11 @@ console.log(str.startsWith('This is a'));
 // startsWith() is case sensitive.
 console.log(str.startsWith('this'));
 
-// This will return false. ❌
+// This will also return false. ❌
 console.log(str.startsWith('string'));
 ```
 
-This is startsWith() syntax: 
+This is the startsWith() function syntax: 
 
 ```javascript
 str.startsWith(searchValue[, startPosition])
@@ -58,11 +62,11 @@ Here are some things that you need to take into considerations:
 
 This method will return a *boolean*.
 
-**true** => if startsWith the search value.
+**true** => if the string starts with the search value.
 
-**false** => if does not startsWith the search value. 
+**false** => if the string doesn't start with the search value. 
 
-### Browser Support
+## Browser Support
 
 This method only works on browsers that support ES2015.
 
@@ -79,7 +83,7 @@ This method only works on browsers that support ES2015.
 
 [[Get the polyfill here]](#how-to-fix-startswith-is-not-a-function)
 
-## How to make startsWith() function case insensitive?
+## How to make the startsWith() function case insensitive?
 
 To make the startsWith function case insensitive you will need to make both the value and the searchValue lowercase.
 
@@ -91,24 +95,41 @@ const searchValue = "THis".toLowerCase();
 console.log(str.startsWith(searchValue));
 ```
 
-Alternatively you can use [the regex method](#how-to-check-if-a-string-starts-with-another-using-a-regex) with the "i" modifier.
+Alternatively, you can use [the regex method](#how-to-check-if-a-string-starts-with-another-using-a-regex) with the "i" modifier.
 
-## How to use startsWith() function with multiple values?
+## How to use the startsWith() function with multiple values?
 
-## How to fix "startsWith() is not a function"?
+When you need to check if a string starts with either of multiple values, you can check it in two ways.
 
-There is two main methods to fix this error. 
-
-1. You need to make sure that you are calling this function on a String. This method will only work on a String, so you will need to cast the value into a String.
+1. The Conditional Way
 
 ```javascript
 const str = "This is a very long string!";
 
 // This will return true. ✅
-console.log(str.indexOf("This") === 0);
+console.log(str.startsWith('This') || str.startsWith('String'));
 ```
 
-2. You need to make sure your browser or nodeJS version support ES2015. If your environment doesn't support new EcmaScript you will need to use add this polyfill before calling this function.
+2. The Array Way, by using the some() function to iterate thought the array.
+
+```javascript
+const str = "This is a very long string!";
+
+// This will return true. ✅
+console.log(['This', 'String'].some(word => str.startsWith(word)));
+```
+
+## How to fix "startsWith() is not a function"?
+
+There are two main methods to fix this error. 
+
+1. You need to make sure that you are calling this function on a String. This method will only work on a String, so you will need to cast the value into a String.
+
+```javascript
+console.log(String(unknownValue).startsWith("This"));
+```
+
+2. You need to make sure your browser (or nodeJS) supports ES2015. If your environment doesn't support the new EcmaScript you will need to use add this polyfill before calling the startsWith() function.
 
 ```javascript
 if (!String.prototype.startsWith) {
@@ -130,7 +151,7 @@ Of course. There are a lot of alternatives to the startsWith function.
 
 You can get the same behavior as the startsWith() function by using the indexOf() function. 
 
-To replicate the startsWith() function, you will need to check if indexOf's return position is 0.
+To replicate the startsWith() function, you will need to check if indexOf() return position is 0.
 
 ```javascript
 const str = "This is a very long string!";
@@ -162,7 +183,7 @@ console.log(str.startsWith('This'));
 
 You can check if a string starts with your search value by using a regex.
 
-This is pretty simple to do and you can specify if the case sensitivity. To make the search case insensitive add the "i" modifier at the end of the regex.
+This is pretty simple to do and you can specify the case sensitivity. To make the search case insensitive add the "i" modifier at the end of the regex.
 
 ```javascript
 const str = "This is a very long string!";
