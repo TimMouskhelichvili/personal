@@ -32,6 +32,7 @@ const StyledArticleContainer = styled.div`
 	background: ${getThemeVariable('pages.blog.item.background')};
 	border-radius: ${getThemeVariable('global.borderRadius')};
 	padding: 20px;
+	height: 100%;
 
 	img {
 		border: 1px solid ${getThemeVariable('global.borderColor')};
