@@ -17,10 +17,9 @@ const StyledImageContainer = styled.div`
 	@media screen and (max-width: ${devices.smallTablet}) {
 		display: block;
 
-		img {
-			margin-left: auto;
-			margin-right: auto;
-			margin-bottom: 20px;
+		img, amp-img {
+			margin: 0 auto;
+			display: block;
 		}
 	}
 
@@ -31,6 +30,10 @@ const StyledImageContainer = styled.div`
 `;
 
 const StyledDetailsContainer = styled.div`
+	@media screen and (max-width: ${devices.smallTablet}) {
+		margin-top: 20px;
+	}
+
 	margin-left: 20px;
 
 	.img-group {
