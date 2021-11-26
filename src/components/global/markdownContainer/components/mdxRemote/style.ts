@@ -43,6 +43,7 @@ const StyledCustomMDXContainer = styled.div`
 		max-width: 100%;
 		height: auto;
 		border: 1px solid ${getThemeVariable('global.borderColor')};
+		border-radius: ${getThemeVariable('global.borderRadius')};
 	}
 
 	& > pre {

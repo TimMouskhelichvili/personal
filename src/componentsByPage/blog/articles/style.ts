@@ -31,13 +31,13 @@ const StyledArticleContainer = styled.div`
 	border: 1px solid ${getThemeVariable('global.borderColor')};
 	background: ${getThemeVariable('pages.blog.item.background')};
 	border-radius: ${getThemeVariable('global.borderRadius')};
-	padding: 20px;
 	height: 100%;
 
 	img {
-		border: 1px solid ${getThemeVariable('global.borderColor')};
+		border-top-left-radius: ${getThemeVariable('global.borderRadius')};
+		border-top-right-radius: ${getThemeVariable('global.borderRadius')};
+		border-bottom: 1px solid ${getThemeVariable('global.borderColor')};
 		object-fit: cover;
-		margin-bottom: 20px;
 	}
 
 	@media screen and (max-width: ${devices.smallTablet}) {
@@ -54,7 +54,12 @@ const StyledEmpty = styled.div`
 	margin: 20px 0px;
 `;
 
+const StyledTitleContainer = styled.div`
+	padding: 20px;
+`;
+
 export {
+    StyledTitleContainer,
     StyledArticleContainer,
     StyledContainer,
     StyledMetaData,

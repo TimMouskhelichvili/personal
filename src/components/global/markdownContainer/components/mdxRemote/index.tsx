@@ -25,20 +25,29 @@ interface ICustomMDXProps {
 		compiledSource: string;
 		source: string;
 	};
+	clear?: boolean;
 }
 
 /**
  * The CustomMDX component. 
  * @param {ICustomMDXProps} props - The props.
  */
-const CustomMDX = (props: ICustomMDXProps): ReactElement => (
-    <StyledCustomMDXContainer>
-        <MDXRemote components={{ Summary: SummaryComponent(props.headings), a, code, h2, h3, h4, h5, img }} {...props.source} />
-        <StyledSocialTabContainer>
-            <SocialMedias />
-        </StyledSocialTabContainer>
-    </StyledCustomMDXContainer>
-);
+const CustomMDX = (props: ICustomMDXProps): ReactElement => {
+    const components = { 
+        Summary: SummaryComponent(props.headings), 
+        a, code, h2, h3, h4, h5, img
+    };
+
+    return (
+        <StyledCustomMDXContainer>
+            <MDXRemote components={components} {...props.source} />
+            {!props.clear &&
+				<StyledSocialTabContainer>
+				    <SocialMedias />
+				</StyledSocialTabContainer>}
+        </StyledCustomMDXContainer>
+    );
+};
 
 /**
  * The Summary component.

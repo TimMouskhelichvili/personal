@@ -38,7 +38,7 @@ const MarkdownContainer = (props: IMarkdownContainerProps): ReactElement => {
 					    <SocialMedias />
 					</StyledSocialContainer>}
                 <StyledMarkdownContainer clear={props.clear}>
-                    <CustomMDX source={props.source} headings={props.headings} />
+                    <CustomMDX source={props.source} headings={props.headings} clear={props.clear} />
                 </StyledMarkdownContainer>
                 {!props.clear &&
 					<StyledSummaryContainer>

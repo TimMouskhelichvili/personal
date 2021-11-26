@@ -1,6 +1,6 @@
 import React, { ReactElement } from 'react';
 import { useRouter } from 'next/router';
-import { StyledMetaData, StyledTitle, StyledEmpty, StyledContainer, StyledArticleContainer } from './style';
+import { StyledMetaData, StyledTitle, StyledEmpty, StyledContainer, StyledArticleContainer, StyledTitleContainer } from './style';
 import { IMarkdownArticleProps } from 'src/interfaces/IMarkdownArticleProps';
 import { CustomImage } from 'src/components/elements/customImage';
 import { MyLink } from 'src/components/elements/link';
@@ -46,16 +46,22 @@ const getArticleElement = (article: IMarkdownArticleProps, locale: string): Reac
     return (
         <StyledArticleContainer>
             {article.openGraphImage 
-				&& <CustomImage 
-				    src={article.openGraphImage} 
-				    width={'100%'} 
-				    height={'220px'} 
-				    title={article.title} 
-				    alt={article.title} />}
-            <StyledTitle>
-                <MyLink href={article.href}>{article.title}</MyLink>
-            </StyledTitle>
-            <StyledMetaData>{author} • {date}</StyledMetaData>
+				&& (<a href={article.href}>
+				        <CustomImage 
+				            src={article.openGraphImage} 
+				            width={'100%'} 
+				            height={'220px'} 
+				            title={article.title} 
+				            alt={article.title} />
+				    </a>)}
+            <StyledTitleContainer>
+                <StyledTitle>
+                    <MyLink href={article.href} title={article.title}>
+                        {article.title}
+                    </MyLink>
+                </StyledTitle>
+                <StyledMetaData>{author} • {date}</StyledMetaData>
+            </StyledTitleContainer>
         </StyledArticleContainer>
     );
 };
