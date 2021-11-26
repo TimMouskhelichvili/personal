@@ -1,6 +1,7 @@
-import React, { ReactElement } from 'react';
+import React, { ReactElement, useEffect } from 'react';
 import { useAmp } from 'next/amp';
 import { useLocale } from 'src/localizations';
+import { useIsBlogPage } from 'src/utils/hooks';
 
 /**
  * The Chat component.
@@ -8,6 +9,24 @@ import { useLocale } from 'src/localizations';
 const Chat = (): ReactElement | null => {
     const locale = useLocale();
     const amp = useAmp();
+    const isBlogPage = useIsBlogPage();
+
+    useEffect(() => {
+        if (amp) return;
+
+        if (isBlogPage) {
+            window.Tawk_API.onLoad = (): void => {
+                window.Tawk_API?.hideWidget();
+            };
+            window.Tawk_API?.hideWidget?.();
+        } else {
+            window.Tawk_API.onLoad = (): void => {
+                window.Tawk_API?.showWidget();
+            };
+            window.Tawk_API?.showWidget?.();
+        }
+    }, [ isBlogPage ]);
+
     if (amp) return null;
 	
     return (

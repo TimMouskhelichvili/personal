@@ -20,7 +20,11 @@ declare global {
 		/**
 		 * The tawk.to api object.
 		 */
-		Tawk_API: {};
+		Tawk_API: {
+			onLoad: () => void;
+			hideWidget: () => void;
+			showWidget: () => void;
+		};
 
 	}
 

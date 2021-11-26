@@ -10,6 +10,7 @@ import { Icon } from 'src/components/elements/icon';
 import { configuration } from 'src/configuration';
 import { CTA } from 'src/components/special/cta';
 import { useLocale } from 'src/localizations';
+import { useIsBlogPage } from 'src/utils/hooks';
 
 /**
  * The SubHeader Component.
@@ -17,17 +18,18 @@ import { useLocale } from 'src/localizations';
 const SubHeader = (): ReactElement => {
     const router = useRouter();
     const isLanding = isLandingPage(router);
+    const isBlogPage = useIsBlogPage();
     const amp = useAmp() || isLanding;
     const locale = useLocale();
 
     return (
         <>
             <Logo hideLanguage={amp} isLanding={isLanding} />
-            {!amp && <StyledSubHeaderContainer>
-                {locale.global.header.menu.map((x, key) => (
+            <StyledSubHeaderContainer>
+                {(!amp && !isBlogPage) && locale.global.header.menu.map((x, key) => (
                     <SubHeaderItem key={key} element={x} />
                 ))}
-            </StyledSubHeaderContainer>}
+            </StyledSubHeaderContainer>
             <StyledButtonContainer amp={amp}>
                 {isLanding && <StyledTelephone>
                     <a href={`tel:${getPhoneLink()}`}>
