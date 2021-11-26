@@ -15,8 +15,11 @@ const StyledContainer = styled.div`
 
 const StyledMetaData = styled.div`
 	font-size: .9em;
-	margin-bottom: 20px;
 	color: ${getThemeVariable('global.markdown.metaDataColor')};
+`;
+
+const StyledTitleData = styled.div`
+	margin-bottom: 3px;
 `;
 
 const StyledTitle = styled(Title)`
@@ -29,6 +32,7 @@ const StyledSocialContainer = styled.div`
 	align-self: flex-start;
 	margin-bottom: 20px;
 	width: 90px;
+	margin-top: 5px;
 
 	@media screen and (max-width: ${devices.tablet}) {
 		margin-left: -90px;
@@ -45,6 +49,7 @@ const StyledSummaryContainer = styled.div`
 	align-self: flex-start;
 	margin-bottom: 20px;
 	margin-left: 30px;
+	margin-top: 5px;
 
 	@media screen and (max-width: ${devices.tablet}) {
 		display: none;
@@ -80,12 +85,32 @@ const StyledTitleContainer = styled.div<{ clear?: boolean; }>`
 	}
 `;
 
+const StyledAuthorContainer = styled.div`
+	display: flex;
+	margin-bottom: 10px;
+
+	img {
+		border-radius: 50%;
+	}
+
+	svg {
+		margin-right: 4px;
+	}
+`;
+
+const StyledAuthorTitleContainer = styled.div`
+	margin-left: 12px;
+`;
+
 export {
+    StyledAuthorTitleContainer,
+    StyledAuthorContainer,
     StyledTitleContainer,
     StyledSummaryContainer,
     StyledSocialContainer,
     StyledMarkdownContainer,
     StyledTitle,
     StyledContainer,
-    StyledMetaData
+    StyledMetaData,
+    StyledTitleData
 };

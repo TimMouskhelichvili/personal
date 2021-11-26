@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import { getThemeVariable } from 'src/theme/utils';
 
 const StyledContainer = styled.div`
-	margin-top: 5px;
 	border: 1px solid ${getThemeVariable('global.borderColor')};
 	border-radius: ${getThemeVariable('global.borderRadius')};
 	padding: 20px;
