@@ -1,0 +1,91 @@
+import styled from 'styled-components';
+import { getThemeVariable } from 'src/theme/utils';
+import { devices } from 'src/theme';
+
+const StyledContainer = styled.div`
+	border: 1px solid ${getThemeVariable('global.borderColor')};
+	border-radius: ${getThemeVariable('global.borderRadius')};
+	padding: 20px;
+	display: flex;
+
+	@media screen and (max-width: ${devices.smallTablet}) {
+		display: block;
+	}
+`;
+
+const StyledImageContainer = styled.div`
+	@media screen and (max-width: ${devices.smallTablet}) {
+		display: block;
+
+		img {
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 20px;
+		}
+	}
+
+	img {
+		border: 0px;
+		border-radius: 50%;
+	}
+`;
+
+const StyledDetailsContainer = styled.div`
+	margin-left: 20px;
+
+	.img-group {
+		margin-top: 5px;
+		display: flex;
+	}
+
+	.img-group img {
+		height: 20px;
+		margin-right: 5px;
+		border-radius: 0px;
+	}
+`;
+
+const StyledAuthorName = styled.div`
+	font-size: 1.2em;
+	font-weight: bold;
+	margin-bottom: 10px;
+`;
+
+const StyledSubTitle = styled.div`
+	text-transform: uppercase;
+	font-weight: 300;
+`;
+
+const StyledButton = styled.button`
+	margin-top: 20px;
+	background: transparent;
+	border: 3px solid ${getThemeVariable('colors.primary')};
+	border-radius: ${getThemeVariable('global.borderRadius')};
+	color: ${getThemeVariable('colors.primary')};
+	font-size: 1.4em;
+	padding: 10px 25px;
+	cursor: pointer;
+
+	&:hover {
+		text-decoration: underline;
+	}
+
+	svg {
+		margin-left: 10px;
+	}
+
+	@media screen and (max-width: ${devices.smallTablet}) {
+		border-width: 3px;
+		font-size: 1.2em;
+		padding: 10px 15px;
+	}
+`;
+
+export {
+    StyledImageContainer,
+    StyledAuthorName,
+    StyledDetailsContainer,
+    StyledContainer,
+    StyledSubTitle,
+    StyledButton
+};

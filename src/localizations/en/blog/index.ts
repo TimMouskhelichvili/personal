@@ -1,6 +1,5 @@
 const enBlogLocale = {
-    empty: 'Sorry, no articles yet... :(',
-    summary: 'summary'
+    empty: 'Sorry, no articles yet... :('
 };
 
 export {

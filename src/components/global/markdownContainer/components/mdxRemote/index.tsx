@@ -7,6 +7,7 @@ import bash from 'refractor/lang/bash';
 import { StyledCustomMDXContainer, StyledSocialTabContainer, StyledSummary } from './style';
 import { SocialMedias } from 'src/components/global/markdownContainer/components/socialMedias';
 import { Summary } from 'src/components/global/markdownContainer/components/summary';
+import { Author } from 'src/components/global/markdownContainer/components/author';
 import { IMarkdownHeading } from 'src/interfaces/IMarkdownHeading';
 import { CustomImage } from 'src/components/elements/customImage';
 import { Youtube } from 'src/components/elements/youtube';
@@ -45,6 +46,7 @@ const CustomMDX = (props: ICustomMDXProps): ReactElement => {
 				<StyledSocialTabContainer>
 				    <SocialMedias />
 				</StyledSocialTabContainer>}
+            {!props.clear && <Author />}
         </StyledCustomMDXContainer>
     );
 };
@@ -69,13 +71,18 @@ const img = (data: any): ReactElement => {
         return <Youtube videoId={src.replace(configuration.general.youtube.embed, '')} />;
     }
     
+    const props = {};
+    if (src.indexOf('/cover.') === -1) {
+        props['loading'] = 'lazy';
+    }
+
     return (
         <CustomImage 
             src={src} 
             alt={title} 
             title={title} 
-            loading="lazy" 
-            layout={'intrinsic'} />
+            layout={'intrinsic'}
+            {...props} />
     );
 };
 

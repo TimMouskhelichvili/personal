@@ -20,7 +20,7 @@ const Summary = (props: ISummaryProps): ReactElement | null => {
     return (
         <StyledContainer>
             <StyledTitle>
-                {locale.pages.blog.summary}
+                {locale.pages.article.summary}
             </StyledTitle>
             <StyledList>
                 {props.headings.map((heading): ReactElement => (

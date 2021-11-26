@@ -28,6 +28,7 @@ const getAdditionalScriptsHTML = (): string => `
 		for (var i = 0; i < elements.length; i++) {
 			elements[i].addEventListener('click', function() {
 				if (window.Tawk_API) {
+					window.Tawk_API.showWidget();
 					window.Tawk_API.maximize();
 				}
 			});
