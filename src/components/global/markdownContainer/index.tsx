@@ -65,7 +65,7 @@ const getAuthorElement = (author: string, date: string): ReactElement => {
             <CustomImage 
                 height={'45px'} 
                 width={'45px'} 
-                src={'/static/images/blog/author.jpg'} />
+                src={'/static/images/blog/author_tim.jpg'} />
             <StyledAuthorTitleContainer>
                 <StyledTitleData>{author}</StyledTitleData>
                 <StyledMetaData>

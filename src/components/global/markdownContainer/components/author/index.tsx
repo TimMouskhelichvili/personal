@@ -19,7 +19,7 @@ const Author = (): ReactElement => {
                 <CustomImage 
                     height={'150px'} 
                     width={'150px'}
-                    src={'/static/images/blog/author.jpg'} 
+                    src={'/static/images/blog/author_tim.jpg'} 
                     loading={'lazy'} />
             </StyledImageContainer>
             <StyledDetailsContainer>
