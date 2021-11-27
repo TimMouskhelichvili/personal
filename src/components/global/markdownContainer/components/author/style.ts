@@ -10,6 +10,7 @@ const StyledContainer = styled.div`
 
 	@media screen and (max-width: ${devices.smallTablet}) {
 		display: block;
+		margin-top: 20px;
 	}
 `;
 
@@ -32,6 +33,7 @@ const StyledImageContainer = styled.div`
 const StyledDetailsContainer = styled.div`
 	@media screen and (max-width: ${devices.smallTablet}) {
 		margin-top: 20px;
+		margin-left: 0px;
 	}
 
 	margin-left: 20px;
@@ -62,10 +64,9 @@ const StyledSubTitle = styled.div`
 const StyledButton = styled.button`
 	margin-top: 20px;
 	background: transparent;
-	border: 3px solid ${getThemeVariable('colors.primary')};
+	border: 2px solid ${getThemeVariable('colors.primary')};
 	border-radius: ${getThemeVariable('global.borderRadius')};
 	color: ${getThemeVariable('colors.primary')};
-	font-size: 1.4em;
 	padding: 10px 25px;
 	cursor: pointer;
 

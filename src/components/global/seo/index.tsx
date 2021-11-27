@@ -13,6 +13,7 @@ interface ISeoProps {
 	description?: string;
 	hasAmp?: boolean;
 	openGraphImage?: string;
+	date?: string;
 }
 
 /**
@@ -23,6 +24,7 @@ const Seo = (props: ISeoProps): ReactElement => {
     const amp = useAmp();
     const router = useRouter();
 	
+    const isBlogPage = router.pathname === '/blog/[name]';
     const image = `${configuration.general.baseUrl}${props.openGraphImage || configuration.general.imgs.openGraphImage}`;
     const additionalLinkTags = getAdditionalLinkTags(router, amp, props.hasAmp);
     const title = replaceSEOTags(props.seoTitle || props.title);
@@ -31,13 +33,16 @@ const Seo = (props: ISeoProps): ReactElement => {
     const path = getPath(router.asPath);
     const locale = router.locale === 'en' ? '' : `/${router.locale}`;
 
+    const schema = getBlogSchema({ ...props, title }, isBlogPage);
+
     return (
         <SeoHead
             title={title}
             description={description}
+            schema={schema}
             additionalLinkTags={additionalLinkTags}
             additionalMetaTags={[
-                { property: 'og:type', content: 'website' },
+                { property: 'og:type', content: isBlogPage ? 'article' : 'website' },
                 { property: 'og:title', content: title },
                 { property: 'og:url', content: getLinkHref(locale, path) },
                 { property: 'og:description', content: description },
@@ -54,6 +59,33 @@ const Seo = (props: ISeoProps): ReactElement => {
             ]}
         />
     );
+};
+
+/**
+ * Returns the blog schema.
+ * @param {ISeoProps} props - The props.
+ * @param {boolean} isBlogPage - Is Blog page.
+ */
+const getBlogSchema = (props: ISeoProps, isBlogPage: boolean): {} | null => {
+    if (!isBlogPage) return null;
+
+    const image = props.openGraphImage ? 
+        `${configuration.general.baseUrl}${props.openGraphImage}` : undefined;
+
+    return {
+        '@context': 'https://schema.org',
+        '@type': 'BlogPosting',
+        'headline': props.title,
+        'datePublished': props.date,
+        'image': image,
+        'author': [ 
+            {
+                '@type': 'Person',
+                'name': configuration.general.author,
+                'url': configuration.general.baseUrl
+		  	}
+        ]
+    };
 };
 
 /**

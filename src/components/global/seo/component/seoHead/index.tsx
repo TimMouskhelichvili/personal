@@ -6,6 +6,7 @@ interface ISeoHeadProps {
 	description: string;
 	additionalLinkTags: {}[];
 	additionalMetaTags: {}[];
+	schema: {} | null;
 }
 
 /**
@@ -27,6 +28,9 @@ const SeoHead = (props: ISeoHeadProps): ReactElement => {
             {props.additionalLinkTags.map((x) => (
                 <link key={JSON.stringify(x)} {...x} />
             ))}
+            {props.schema && 
+				<script type={'application/ld+json'} dangerouslySetInnerHTML={{ __html: JSON.stringify(props.schema) }} /> }
+
         </Head>
     );
 };
