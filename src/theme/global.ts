@@ -1,5 +1,5 @@
 import { getGlobalThemes, getThemeVariable, getGlobalColors } from 'src/theme/utils';
-import { primaryColors, themes } from 'src/theme';
+import { devices, primaryColors, themes } from 'src/theme';
 
 /**
  * The global styles.
@@ -21,6 +21,13 @@ const globalStyles = `
 		color: ${getThemeVariable('colors.color')};
 		background: ${getThemeVariable('colors.background')};
 		letter-spacing: 0px;
+		scroll-padding-top: 75px;
+	}
+
+	@media screen and (max-width: ${devices.mobile}) {
+		html {
+			scroll-padding-top: 60px;
+		}
 	}
 
 	* {

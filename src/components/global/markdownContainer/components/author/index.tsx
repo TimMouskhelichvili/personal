@@ -4,9 +4,9 @@ import { useAmp } from 'next/amp';
 import { StyledContainer, StyledDetailsContainer, StyledAuthorName, StyledSubTitle, StyledButton, StyledImageContainer } from './style';
 import { CustomImage } from 'src/components/elements/customImage';
 import { SpanText } from 'src/components/elements/spanText';
-import { useLocale } from 'src/localizations';
-import { configuration } from 'src/configuration';
 import { Icon } from 'src/components/elements/icon';
+import { configuration } from 'src/configuration';
+import { useLocale } from 'src/localizations';
 
 /**
  * The Author Component.

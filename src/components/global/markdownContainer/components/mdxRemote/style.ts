@@ -46,16 +46,6 @@ const StyledCustomMDXContainer = styled.div`
 		border-radius: ${getThemeVariable('global.borderRadius')};
 	}
 
-	& > pre {
-		padding: 0px;
-		overflow: auto;
-
-		pre {
-			border-radius: ${getThemeVariable('global.borderRadius')};
-			margin: 0px;
-		}
-	}
-
 	table {
 		width: 100%;
 		text-align: left;
@@ -64,14 +54,6 @@ const StyledCustomMDXContainer = styled.div`
 			border: 1px solid ${getThemeVariable('global.borderColor')};
 			padding: 10px;
 		}
-	}
-
-	[id]::before {
-		content: '';
-		display: block;
-		height:      75px;
-		margin-top: -75px;
-		visibility: hidden;
 	}
 `;
 

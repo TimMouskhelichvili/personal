@@ -1,24 +1,16 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import React, { ReactElement } from 'react';
 import { MDXRemote } from 'next-mdx-remote';
-import Refractor from 'react-refractor';
-import js from 'refractor/lang/javascript';
-import bash from 'refractor/lang/bash';
 import { StyledCustomMDXContainer, StyledSocialTabContainer, StyledSummary } from './style';
 import { SocialMedias } from 'src/components/global/markdownContainer/components/socialMedias';
 import { Summary } from 'src/components/global/markdownContainer/components/summary';
 import { Author } from 'src/components/global/markdownContainer/components/author';
+import { Code } from 'src/components/global/markdownContainer/components/code';
 import { IMarkdownHeading } from 'src/interfaces/IMarkdownHeading';
 import { CustomImage } from 'src/components/elements/customImage';
 import { Youtube } from 'src/components/elements/youtube';
 import { configuration } from 'src/configuration';
 import { getIdFromText } from 'src/utils/markdown';
-
-Refractor.registerLanguage(js);
-Refractor.registerLanguage(bash);
-
-
-const LANGUAGES: string[] = [ 'javascript', 'bash' ];
 
 interface ICustomMDXProps {
 	headings: IMarkdownHeading[];
@@ -93,16 +85,9 @@ const img = (data: any): ReactElement => {
 const code = (data: any): ReactElement | null => {
     const language = (data.className || '').replace('language-', '');
     const value = data.children?.trim();
-
     if (!value) return null;
-
-    if (LANGUAGES.includes(language)) {
-        return <Refractor language={language} value={value} />;
-    }
-
-    return (
-        <code>{value}</code>
-    );
+	
+    return <Code value={value} language={language} />;
 };
 
 /**
