@@ -29,6 +29,7 @@ const enGlobalLocale = {
         title: 'Options'
     },
     tawkTo: 'https://embed.tawk.to/61087bf0649e0a0a5ccf30c9/1fc4i8980',
+    tawkToDirect: 'https://tawk.to/chat/61087bf0649e0a0a5ccf30c9/1fc4i8980',
     underConstruction: 'This page is under construction.'
 };
 

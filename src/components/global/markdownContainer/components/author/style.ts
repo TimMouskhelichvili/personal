@@ -61,7 +61,8 @@ const StyledSubTitle = styled.div`
 	font-weight: 300;
 `;
 
-const StyledButton = styled.button`
+const StyledButton = styled.a`
+	display: inline-block;
 	margin-top: 20px;
 	background: transparent;
 	border: 2px solid ${getThemeVariable('colors.primary')};
