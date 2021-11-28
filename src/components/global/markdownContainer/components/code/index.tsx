@@ -30,7 +30,7 @@ const Code = (props: ICodeProps): ReactElement | null => {
     const handleLeave = (): void => setShowIcon(false);
     const onClick = (): void => {
         navigator.clipboard.writeText(props.value);
-
+        setShowIcon(false);
         window.clearTimeout(TIMEOUT);
         setClicked(true);
         TIMEOUT = window.setTimeout(() => {
