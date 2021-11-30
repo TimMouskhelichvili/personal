@@ -56,15 +56,14 @@ const StyledCustomMDXContainer = styled.div`
 		}
 	}
 
-	p > code, li > code {
-		font-weight: 200;
+	.inlineCode {
 		color: ${getThemeVariable('colors.primary')};
 		background-color: ${getThemeVariable('global.markdown.code.background')};
 		padding: 3px 7px;
 		border-radius: ${getThemeVariable('global.borderRadius')};
 	}
 
-	li > code {
+	li > .inlineCode {
 		padding: 0px 7px;
 	}
 

@@ -28,7 +28,7 @@ interface ICustomMDXProps {
 const CustomMDX = (props: ICustomMDXProps): ReactElement => {
     const components = { 
         Summary: SummaryComponent(props.headings), 
-        a, code, h2, h3, h4, h5, img
+        a, code, h2, h3, h4, h5, img, inlineCode
     };
 
     return (
@@ -76,6 +76,17 @@ const img = (data: any): ReactElement => {
             layout={'intrinsic'}
             {...props} />
     );
+};
+
+/**
+ * The inline code component.
+ * @param {any} data - The data. 
+ */
+const inlineCode = (data: any): ReactElement | null => {
+    const value = data.children?.trim();
+    if (!value) return null;
+
+    return <code className='inlineCode'>{value}</code>;
 };
 
 /**

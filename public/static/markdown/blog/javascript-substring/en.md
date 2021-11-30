@@ -152,7 +152,7 @@ console.log(str.substring(str.length - 1));
 
 In this case, it will return: "!".
 
-## The difference between substring() and substr()
+## The difference between `substring()` and `substr()`
 
 Those two methods are nearly identical (even their names are very similar), so a lot of people (including me), get confused between them.
 
@@ -188,7 +188,7 @@ console.log(str.substr(-2, 4));
 
 > The `substr()` function is considered deprecated, so if you see it in your code replace it.
 
-## The difference between substring() and slice()
+## The difference between `substring()` and `slice()`
 
 The biggest differences between those function are:
 
@@ -222,7 +222,7 @@ console.log(str.substring(6, 0));
 console.log(str.slice(6, 0));
 ```
 
-## Substring() vs Substr() vs Slice()
+## `substring()` vs `substr()` vs `slice()`
 
 Here is a table with all the differences.
 
