@@ -91,20 +91,73 @@ The substring() function works on all browsers. 🥳
 | Edge | YES ✅ |
 | Internet Explorer | YES ✅ |
 
-## substr deprecated
+## Examples
+
+Here, I've compiled a list of some common use cases for the substring() method.
+
+## 1. How to get the substring before a specified character?
+
+You can get a substring before a specified character using the substring() and indexOf() functions.
+
+```javascript
+const str = "This is a, very long string!";
+
+// This will return => "This is a"
+console.log(str.substring(0, str.indexOf(',')));
+```
+
+In this case, it will return: "This is a".
+
+## 2. How to get a substring between two characters?
+
+You can get a substring between two characters by using the substring(), indexOf() and lastIndexOf() functions.
+
+```javascript
+const str = "This is a, very long string!";
+
+// This will return => " very long string"
+console.log(str.substring(
+	str.indexOf(",") + 1, 
+	str.lastIndexOf("!")
+));
+```
+
+In this case, it will return: " very long string".
+
+## 3. How to get the first character?
+
+You can get the first character of a string by using the substring() function with 0 as start position and 1 as end position.
+
+```javascript
+const str = "This is a, very long string!";
+
+// This will return => "T"
+console.log(str.substring(0, 1));
+```
+
+In this case, it will return: "T".
+
+## 4. How to get the last character of a string?
+
+You can get the last character of a string by using the substring() function with the length of the string minus 1 as the end position.
+
+```javascript
+const str = "This is a, very long string!";
+
+// This will return => "!"
+console.log(str.substring(str.length - 1));
+```
+
+In this case, it will return: "!".
 
 ## The difference between substring() and substr()
 
-## Differences between substring() and slice()
-
-## Browser compatibility
-
-## Examples
+## The difference between substring() and slice()
 
 ## Substring() vs Substr() vs Slice()
 
+## substr deprecated
+
 ## Polyfills
 
-## javascript string contains substring
-
-## javascript remove substring 
+## Final Thoughts
