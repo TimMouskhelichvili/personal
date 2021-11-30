@@ -54,7 +54,7 @@ const lightTheme: typeof darkTheme = {
         markdown: {
             background: darken(.05, colors.background),
             blockquote: {
-                background: darken(.05, colors.background)
+                background: darken(.03, colors.background)
             },
             code: {
                 background: darken(.07, colors.background)

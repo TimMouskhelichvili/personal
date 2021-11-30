@@ -9,7 +9,7 @@ author: Tim Mouskhelichvili
 
 You may know the `substring()` function, but do you know everything about it? 
 
-In this article, you will find all the information needed, from the definition to the difference between `substring()`, `slice()` and `substr()`.
+In this article, you will find all the information needed, from the definition to the difference between `substring()`, `slice()`, and `substr()`.
 
 Also, I will provide valuable examples for some of the most common use cases that you may encounter while developing your next hit application.
 
@@ -48,7 +48,7 @@ const str = "This is a very long string!";
 console.log(str.substring(6));
 ```
 
-It will return the new substring from position 6.
+It will return a new substring from index 6, in this case: "s a very long string!".
 
 #### 3. When you specify a negative start position.
 
@@ -59,9 +59,9 @@ const str = "This is a very long string!";
 console.log(str.substring(-2, 6));
 ```
 
-This will give the same result as for 0.
+This will give the same result as when the start parameter is ZERO.
 
-> If the start or the end parameter is lower than ZERO, it will be treated as ZERO.
+> If the start or the end parameter is negative, it will be treated as ZERO.
 
 ### 1. Parameters
 
@@ -73,8 +73,8 @@ This will give the same result as for 0.
 
 > 1. The start index is 0.
 > 2. If no end parameter is provided => the end parameter will default to the rest of the string.
-> 3. If the start parameter is greater than the end parameter, then function will swap both arguments.
-> 4. If any argument is negative or is `NaN`, it is treated as 0.
+> 3. If the start parameter is greater than the end parameter, the function will swap both arguments.
+> 4. If any argument is negative or is `NaN`, it will be treated as ZERO.
 
 ### 2. Return Value
 
@@ -128,7 +128,7 @@ In this case, it will return: " very long string".
 
 ## 3. How to get the first character?
 
-You can get the first character of a string by using the `substring()` function with 0 as start position and 1 as end position.
+You can get the first character of a string by using the `substring()` function with 0 as the start position and 1 as the end position.
 
 ```javascript
 const str = "This is a, very long string!";
@@ -141,7 +141,7 @@ In this case, it will return: "T".
 
 ## 4. How to get the last character of a string?
 
-You can get the last character of a string by using the `substring()` function with the length of the string minus 1 as the end position.
+You can get the last character of a string by using the `substring()` function with the length of the string minus 1 as the start position.
 
 ```javascript
 const str = "This is a, very long string!";
@@ -156,7 +156,7 @@ In this case, it will return: "!".
 
 Those two methods are nearly identical (even their names are very similar), so a lot of people (including me), get confused between them.
 
-The biggest differences between those function are:
+The biggest differences between those functions are:
 
 #### 1. The second parameter
 
@@ -175,7 +175,7 @@ console.log(str.substr(2, 4));
 
 #### 2. Negative values
 
-Another difference to know, is when the first argument is negative, `substr()` will read from the end of the string.
+Another difference to know is when the first argument is negative, `substr()` will read from the end of the string. The `substring()` function will treat the negative value as ZERO.
 
 ```javascript
 const str = "This is a, very long string!";
@@ -190,11 +190,11 @@ console.log(str.substr(-2, 4));
 
 ## The difference between `substring()` and `slice()`
 
-The biggest differences between those function are:
+The biggest differences between those functions are:
 
 #### 1. Negative Values
 
-The `slice()` function will read from the end of the string, when the first parameter is negative.
+The `slice()` function will read from the end of the string when the first parameter is negative.
 
 The `substring()` function will transform the negative value into a ZERO.
 
@@ -230,7 +230,7 @@ Here is a table with all the differences.
 | ------- | ------- | ------- | ------- |
 | Parameters | StartPosition, EndPosition | StartPosition, Length | StartPosition, EndPosition |
 | Negative Values | Transforms to ZERO | Reads from the end | Reads from the end |
-| 1st parameter greater than 2st | Will swap parameters | Will return empty string | Will return empty string |
+| 1st parameter greater than 2nd | Will swap parameters | Will return an empty string | Will return an empty string |
 | Deprecated | NO | YES | NO |
 
 ## Final Thoughts

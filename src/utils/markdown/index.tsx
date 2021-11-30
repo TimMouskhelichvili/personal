@@ -47,8 +47,6 @@ const getIdFromText = (text: string): string => {
 		newText = newText.substring(1, newText.length);
 	}
 
-	console.log(newText);
-
 	return newText;
 }
 
