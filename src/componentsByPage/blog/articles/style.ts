@@ -20,23 +20,23 @@ const StyledContainer = styled.div`
 	margin: 20px 0px;
 	display: grid;
     grid-gap: 20px;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 
 	@media screen and (max-width: ${devices.smallTablet}) {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	@media screen and (max-width: ${devices.bigMobile}) {
 		display: block;
 	}
 `;
 
 const StyledArticleContainer = styled.div`
-	border: 1px solid ${getThemeVariable('global.borderColor')};
-	background: ${getThemeVariable('pages.blog.item.background')};
-	border-radius: ${getThemeVariable('global.borderRadius')};
 	height: 100%;
 
 	img {
-		border-top-left-radius: ${getThemeVariable('global.borderRadius')};
-		border-top-right-radius: ${getThemeVariable('global.borderRadius')};
-		border-bottom: 1px solid ${getThemeVariable('global.borderColor')};
+		border: 1px solid ${getThemeVariable('global.borderColor')};
+		border-radius: ${getThemeVariable('global.borderRadius')};
 		object-fit: cover;
 	}
 
@@ -55,7 +55,7 @@ const StyledEmpty = styled.div`
 `;
 
 const StyledTitleContainer = styled.div`
-	padding: 20px;
+	margin-top: 10px;
 `;
 
 export {

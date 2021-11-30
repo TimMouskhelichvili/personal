@@ -33,7 +33,16 @@ import { IMarkdownHeading } from "src/interfaces/IMarkdownHeading";
  * @param {string} text - The text. 
  */
 const getIdFromText = (text: string): string => {
-	let newText = text.replace(/[^A-Za-z\s]/gi, '').replace(/\s/g, "-").toLowerCase();
+	let newText = text;
+
+	if (Array.isArray(text)) {
+		newText = '';
+		text.forEach(x => {
+			newText += x?.props?.children || x;
+		});
+	};
+
+	newText = newText.replace(/[^A-Za-z\s]/gi, '').replace(/\s/g, "-").toLowerCase();
 	if (newText[0] === '-') {
 		newText = newText.substring(1, newText.length);
 	}
@@ -46,7 +55,7 @@ const getIdFromText = (text: string): string => {
  * @param {string} text - The text.
  */
 const getTitleForSummary = (text: string): string => {
-	return text.replace(/^\d+\.\s*/, '');
+	return text.replace(/^\d+\.\s*/, '').replace(/`/g, '');
 }
 
 export {
