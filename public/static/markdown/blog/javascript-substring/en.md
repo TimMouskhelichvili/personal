@@ -7,11 +7,11 @@ description: A guide on how does the substring() function work in JavaScript?
 author: Tim Mouskhelichvili
 ---
 
-You may know the substring() function, but do you know everything about it? 
+You may know the `substring()` function, but do you know everything about it? 
 
-In this article, you will find all the information needed, from *the definition* to the *difference between substring() slice() and substr()*.
+In this article, you will find all the information needed, from the definition to the difference between `substring()`, `slice()` and `substr()`.
 
-I will also provide valuable examples for some of the most common use cases that you may encounter.
+Also, I will provide valuable examples for some of the most common use cases that you may encounter while developing your next hit application.
 
 ![JavaScript Substring](/static/images/blog/javascript-substring/cover.png)
 
@@ -19,14 +19,14 @@ I will also provide valuable examples for some of the most common use cases that
 
 ## Definition
 
-The substring() function is used to extract a substring between the start & end position.
+The `substring()` function is used to extract a substring between the start and the end positions.
 
-Here is the substring() function syntax.
+Here is the `substring()` function syntax.
 ```javascript
 str.substring(start[, end]);
 ```
 
-There are 3 different ways to call the substring() function:
+There are 3 different ways to call the `substring()` function:
 
 #### 1. When you specify both the start and end parameters.
 
@@ -61,7 +61,7 @@ console.log(str.substring(-2, 6));
 
 This will give the same result as for 0.
 
-Note: the start or end lower than ZERO will be treated as ZERO.
+> If the start or the end parameter is lower than ZERO, it will be treated as ZERO.
 
 ### 1. Parameters
 
@@ -70,19 +70,19 @@ Note: the start or end lower than ZERO will be treated as ZERO.
 | start | Required | The start position. |
 | end | Optional | The end position. |
 
-*Notes:* 
-1. The start index is 0.
-2. If no end parameter is provided => the rest of the string.
-3. If start > stop, then function swaps both arguments.
-4. If any argument is negative or is NaN, it is treated as 0.
+
+> 1. The start index is 0.
+> 2. If no end parameter is provided => the end parameter will default to the rest of the string.
+> 3. If the start parameter is greater than the end parameter, then function will swap both arguments.
+> 4. If any argument is negative or is `NaN`, it is treated as 0.
 
 ### 2. Return Value
 
-The substring method will return a new *string* containing part of the given string.
+The substring method will return a new `string` containing part of the given string.
 
 ## Browser Support
 
-The substring() function works on all browsers. 🥳
+The `substring()` function works on all browsers. 🥳
 
 | Browser | Support |
 | ------- | ------- |
@@ -95,11 +95,11 @@ The substring() function works on all browsers. 🥳
 
 ## Examples
 
-Here, I've compiled a list of some common use cases for the substring() method.
+Here, I've compiled a list of some common use cases for the `substring()` method.
 
-## 1. How to get the substring before a specified character?
+## 1. How to get a substring before a specified character?
 
-You can get a substring before a specified character using the substring() and indexOf() functions.
+You can get a substring before a specified character using the `substring()` and `indexOf()` functions.
 
 ```javascript
 const str = "This is a, very long string!";
@@ -112,7 +112,7 @@ In this case, it will return: "This is a".
 
 ## 2. How to get a substring between two characters?
 
-You can get a substring between two characters by using the substring(), indexOf() and lastIndexOf() functions.
+You can get a substring between two characters by using the `substring()`, `indexOf()` and `lastIndexOf()` functions.
 
 ```javascript
 const str = "This is a, very long string!";
@@ -128,7 +128,7 @@ In this case, it will return: " very long string".
 
 ## 3. How to get the first character?
 
-You can get the first character of a string by using the substring() function with 0 as start position and 1 as end position.
+You can get the first character of a string by using the `substring()` function with 0 as start position and 1 as end position.
 
 ```javascript
 const str = "This is a, very long string!";
@@ -141,7 +141,7 @@ In this case, it will return: "T".
 
 ## 4. How to get the last character of a string?
 
-You can get the last character of a string by using the substring() function with the length of the string minus 1 as the end position.
+You can get the last character of a string by using the `substring()` function with the length of the string minus 1 as the end position.
 
 ```javascript
 const str = "This is a, very long string!";
@@ -160,9 +160,9 @@ The biggest differences between those function are:
 
 #### 1. The second parameter
 
-For the substring() method the parameters are: *start position* AND *end position*.
+For the `substring()` method the parameters are: *start position* AND *end position*.
 
-For the substr() method the parameters are: *start position* AND *length*.
+For the `substr()` method the parameters are: *start position* AND *length*.
 
 ```javascript
 const str = "This is a, very long string!";
@@ -175,7 +175,7 @@ console.log(str.substr(2, 4));
 
 #### 2. Negative values
 
-Another difference to know, is when the first argument is negative, substr() will read from the end of the string.
+Another difference to know, is when the first argument is negative, `substr()` will read from the end of the string.
 
 ```javascript
 const str = "This is a, very long string!";
@@ -186,7 +186,7 @@ console.log(str.substring(-2, 4));
 console.log(str.substr(-2, 4));
 ```
 
-**Note:** The substr() function is considered deprecated, so if you see it in your code replace it.
+> The `substr()` function is considered deprecated, so if you see it in your code replace it.
 
 ## The difference between substring() and slice()
 
@@ -194,9 +194,9 @@ The biggest differences between those function are:
 
 #### 1. Negative Values
 
-The slice() function will read from the end of the string, when the first parameter is negative.
+The `slice()` function will read from the end of the string, when the first parameter is negative.
 
-The substring() function will transform the negative value into a ZERO.
+The `substring()` function will transform the negative value into a ZERO.
 
 ```javascript
 const str = "This is a, very long string!";
@@ -209,9 +209,9 @@ console.log(str.slice(-2));
 
 #### 2. Parameter Consistency
 
-When the first parameter is greater than the second parameter, the slice() function will return an empty string.
+When the first parameter is greater than the second parameter, the `slice()` function will return an empty string.
 
-When the first parameter is greater than the second parameter, the substring() function will swap those two parameters.
+When the first parameter is greater than the second parameter, the `substring()` function will swap those two parameters.
 
 ```javascript
 const str = "This is a, very long string!";
@@ -226,7 +226,7 @@ console.log(str.slice(6, 0));
 
 Here is a table with all the differences.
 
-| | substring() | substr() | slice() |
+| | `substring()` | `substr()` | `slice()` |
 | ------- | ------- | ------- | ------- |
 | Parameters | StartPosition, EndPosition | StartPosition, Length | StartPosition, EndPosition |
 | Negative Values | Transforms to ZERO | Reads from the end | Reads from the end |

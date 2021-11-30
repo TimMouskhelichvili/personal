@@ -55,6 +55,36 @@ const StyledCustomMDXContainer = styled.div`
 			padding: 10px;
 		}
 	}
+
+	p > code, li > code {
+		font-weight: 200;
+		color: ${getThemeVariable('colors.primary')};
+		background-color: ${getThemeVariable('global.markdown.code.background')};
+		padding: 3px 7px;
+		border-radius: ${getThemeVariable('global.borderRadius')};
+	}
+
+	li > code {
+		padding: 0px 7px;
+	}
+
+	blockquote {
+		border-left: 10px solid ${getThemeVariable('colors.primary')};
+		background-color: ${getThemeVariable('global.markdown.blockquote.background')};
+		margin: 1em 0px;
+		padding: 20px;
+		border-radius: ${getThemeVariable('global.borderRadius')};
+
+		p {
+			margin-bottom: 0px;
+		}
+
+		ol {
+			margin: 0px;
+			padding: 0px;
+			padding-left: 15px;
+		}
+	}
 `;
 
 const StyledSocialTabContainer = styled.div`

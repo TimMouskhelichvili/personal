@@ -46,14 +46,14 @@ const getArticleElement = (article: IMarkdownArticleProps, locale: string): Reac
     return (
         <StyledArticleContainer>
             {article.openGraphImage 
-				&& (<a href={article.href}>
+				&& (<MyLink href={article.href}>
 				        <CustomImage 
 				            src={article.openGraphImage} 
 				            width={'100%'} 
 				            height={'220px'} 
 				            title={article.title} 
 				            alt={article.title} />
-				    </a>)}
+				    </MyLink>)}
             <StyledTitleContainer>
                 <StyledTitle>
                     <MyLink href={article.href} title={article.title}>

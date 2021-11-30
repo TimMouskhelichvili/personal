@@ -52,6 +52,12 @@ const darkTheme = {
         },
         markdown: {
             background: lighten(.1, colors.background),
+            blockquote: {
+                background: lighten(.01, colors.background)
+            },
+            code: {
+                background: lighten(.05, colors.background)
+            },
             metaDataColor: lighten(.5, colors.background)
         },
         primaryColors: {
@@ -59,11 +65,6 @@ const darkTheme = {
         }
     },
     pages: {
-        blog: {
-            item: {
-                background: lighten(.01, colors.background)
-            }
-        },
         home: {
             description: {
                 background: lighten(.05, colors.background)
