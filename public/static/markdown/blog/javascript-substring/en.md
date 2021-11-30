@@ -3,7 +3,7 @@ title: Substring() In JavaScript - How does it work?
 seoTitle: Substring() In JavaScript - How does it work? 
 openGraphImage: /static/images/blog/javascript-substring/cover.png
 date: 2021-11-29
-description: A guide on how does the substring() function work in JavaScript?
+description: A guide on how does the substring() function work in JavaScript? Definition. Substring vs slice vs substr.
 author: Tim Mouskhelichvili
 ---
 
@@ -63,6 +63,8 @@ This will give the same result as when the start parameter is ZERO.
 
 > If the start or the end parameter is negative, it will be treated as ZERO.
 
+![JavaScript Substring](/static/images/blog/javascript-substring/1.jpeg)
+
 ### 1. Parameters
 
 | Parameters | Necessity | Description |
@@ -82,7 +84,7 @@ The substring method will return a new `string` containing part of the given str
 
 ## Browser Support
 
-The `substring()` function works on all browsers. 🥳
+The `substring()` function works on [all browsers](https://caniuse.com/?search=substring). 🥳
 
 | Browser | Support |
 | ------- | ------- |
@@ -125,6 +127,8 @@ console.log(str.substring(
 ```
 
 In this case, it will return: " very long string".
+
+![JavaScript Substring](/static/images/blog/javascript-substring/2.jpg)
 
 ## 3. How to get the first character?
 
@@ -186,7 +190,9 @@ console.log(str.substring(-2, 4));
 console.log(str.substr(-2, 4));
 ```
 
-> The `substr()` function is considered deprecated, so if you see it in your code replace it.
+> The `substr()` function [is considered deprecated](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substr), so if you see it in your code replace it.
+
+![JavaScript Substring](/static/images/blog/javascript-substring/3.jpeg)
 
 ## The difference between `substring()` and `slice()`
 
@@ -235,3 +241,6 @@ Here is a table with all the differences.
 
 ## Final Thoughts
 
+The `substring()` and `slice()` functions offer the developer two different methods of getting part of a string, and now you know which to use and when.
+
+As for `substr()`, it's deprecated don't use it.
