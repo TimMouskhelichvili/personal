@@ -224,4 +224,14 @@ console.log(str.slice(6, 0));
 
 ## Substring() vs Substr() vs Slice()
 
+Here is a table with all the differences.
+
+| | substring() | substr() | slice() |
+| ------- | ------- | ------- | ------- |
+| Parameters | StartPosition, EndPosition | StartPosition, Length | StartPosition, EndPosition |
+| Negative Values | Transforms to ZERO | Reads from the end | Reads from the end |
+| 1st parameter greater than 2st | Will swap parameters | Will return empty string | Will return empty string |
+| Deprecated | NO | YES | NO |
+
 ## Final Thoughts
+
