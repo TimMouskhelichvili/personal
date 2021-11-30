@@ -73,6 +73,8 @@ Note: the start or end lower than ZERO will be treated as ZERO.
 *Notes:* 
 1. The start index is 0.
 2. If no end parameter is provided => the rest of the string.
+3. If start > stop, then function swaps both arguments.
+4. If any argument is negative or is NaN, it is treated as 0.
 
 ### 2. Return Value
 
@@ -152,12 +154,74 @@ In this case, it will return: "!".
 
 ## The difference between substring() and substr()
 
+Those two methods are nearly identical (even their names are very similar), so a lot of people (including me), get confused between them.
+
+The biggest differences between those function are:
+
+#### 1. The second parameter
+
+For the substring() method the parameters are: *start position* AND *end position*.
+
+For the substr() method the parameters are: *start position* AND *length*.
+
+```javascript
+const str = "This is a, very long string!";
+
+// This will return => "is"
+console.log(str.substring(2, 4));
+// This will return => "is i"
+console.log(str.substr(2, 4));
+```
+
+#### 2. Negative values
+
+Another difference to know, is when the first argument is negative, substr() will read from the end of the string.
+
+```javascript
+const str = "This is a, very long string!";
+
+// This will return => "This"
+console.log(str.substring(-2, 4));
+// This will return => "g!"
+console.log(str.substr(-2, 4));
+```
+
+**Note:** The substr() function is considered deprecated, so if you see it in your code replace it.
+
 ## The difference between substring() and slice()
 
+The biggest differences between those function are:
+
+#### 1. Negative Values
+
+The slice() function will read from the end of the string, when the first parameter is negative.
+
+The substring() function will transform the negative value into a ZERO.
+
+```javascript
+const str = "This is a, very long string!";
+
+// This will return => "This"
+console.log(str.substring(-2, 4));
+// This will return => "g!"
+console.log(str.slice(-2));
+```
+
+#### 2. Parameter Consistency
+
+When the first parameter is greater than the second parameter, the slice() function will return an empty string.
+
+When the first parameter is greater than the second parameter, the substring() function will swap those two parameters.
+
+```javascript
+const str = "This is a, very long string!";
+
+// This will return => "This i"
+console.log(str.substring(6, 0));
+// This will return => ""
+console.log(str.slice(6, 0));
+```
+
 ## Substring() vs Substr() vs Slice()
-
-## substr deprecated
-
-## Polyfills
 
 ## Final Thoughts
