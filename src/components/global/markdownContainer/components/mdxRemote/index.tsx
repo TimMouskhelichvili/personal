@@ -28,7 +28,7 @@ interface ICustomMDXProps {
 const CustomMDX = (props: ICustomMDXProps): ReactElement => {
     const components = { 
         Summary: SummaryComponent(props.headings), 
-        a, code, h2, h3, h4, h5, img, inlineCode
+        a, code, h2, h3, h4, h5, img, inlineCode, table
     };
 
     return (
@@ -51,6 +51,17 @@ const SummaryComponent = (headings: IMarkdownHeading[]) => (): ReactElement => {
     return <StyledSummary><Summary headings={headings} /></StyledSummary>;
 };
 
+/**
+ * The Table component.
+ * @param {any} data - The data. 
+ */
+const table = (data: any): ReactElement => {
+    return (
+        <div className={'overflowAuto'}>
+            <table>{data['children']}</table>
+        </div>
+    );
+};
 /**
  * The images component.
  * @param {any} data - The data. 

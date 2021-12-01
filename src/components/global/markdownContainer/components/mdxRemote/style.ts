@@ -63,6 +63,10 @@ const StyledCustomMDXContainer = styled.div`
 		border-radius: ${getThemeVariable('global.borderRadius')};
 	}
 
+	.overflowAuto {
+		overflow-x: auto;
+	}
+
 	li > .inlineCode {
 		padding: 0px 7px;
 	}
