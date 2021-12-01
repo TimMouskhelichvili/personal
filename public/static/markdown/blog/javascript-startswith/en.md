@@ -1,13 +1,15 @@
 ---
-title: How Does The StartsWith() Function Work In JavaScript? 
-seoTitle: How Does The StartsWith() Function Work In JavaScript? 
-openGraphImage: /static/images/blog/javascript-startswith-function/cover.png
+title: StartsWith() In JavaScript - How To Check If A String Starts With Something?
+seoTitle: StartsWith() In JavaScript - How To Check If A String Starts With Something?
+openGraphImage: /static/images/blog/javascript-startswith/cover.png
 date: 2021-11-23
 description: A guide on how does the startsWith() function work in JavaScript? Case Sensitivity, Multiple Values, Alternatives.
 author: Tim Mouskhelichvili
 ---
 
-This article will tell you everything that you need to know about the startsWith() function in JavaScript.
+In JavaScript, the easiest way to check if a string starts with something is to use the `startsWith()` function.
+
+This article will tell you everything that you need to know about this function.
 
 By the end of this guide, you will become a pro of this function and you will know:
 
@@ -15,15 +17,15 @@ By the end of this guide, you will become a pro of this function and you will kn
 2. When to use it?
 3. And, will be able to explain it to others.
 
-![JavaScript StartsWith](/static/images/blog/javascript-startswith-function/cover.png)
+![JavaScript StartsWith](/static/images/blog/javascript-startswith/cover.png)
 
 <Summary />
 
 ## Definition
 
-The startsWith function is used to determine if a string begins by a search value.
+The `startsWith()` function is used to determine if a string begins by a search value.
 
-If the string begins by the search value, it returns *true*, otherwise, it returns *false*.
+If the string begins by the search value, it returns `true`, otherwise, it returns `false`.
 
 ```javascript
 const str = "This is a very long string!";
@@ -42,7 +44,7 @@ console.log(str.startsWith('this'));
 console.log(str.startsWith('string'));
 ```
 
-This is the startsWith() function syntax: 
+This is the `startsWith()` function syntax: 
 
 ```javascript
 str.startsWith(searchValue[, startPosition])
@@ -62,11 +64,11 @@ Here are some things that you need to take into considerations:
 
 ### Return Value
 
-This method will return a *boolean*.
+This method will return a `boolean`.
 
-**true** => if the string starts with the search value.
+`true` => if the string starts with the search value.
 
-**false** => if the string doesn't start with the search value. 
+`false` => if the string doesn't start with the search value. 
 
 ## Browser Support
 
@@ -85,11 +87,11 @@ This method only works on browsers that support [ES2015](https://caniuse.com/?se
 
 [[Get the polyfill here]](#how-to-fix-startswith-is-not-a-function)
 
-![JavaScript StartsWith Internet Explorer](/static/images/blog/javascript-startswith-function/internet.jpg)
+![JavaScript StartsWith Internet Explorer](/static/images/blog/javascript-startswith/internet.jpg)
 
-## How to make the startsWith() function case insensitive?
+## How to make the `startsWith()` function case insensitive?
 
-To make the startsWith function case insensitive you will need to make both the value and the searchValue lowercase.
+To make the `startsWith()` function case insensitive you will need to make both the value and the searchValue lowercase.
 
 ```javascript
 const str = "This is a very long string!".toLowerCase();
@@ -101,7 +103,7 @@ console.log(str.startsWith(searchValue));
 
 Alternatively, you can use [the regex method](#how-to-check-if-a-string-starts-with-another-using-a-regex) with the "i" modifier.
 
-## How to use the startsWith() function with multiple values?
+## How to use the `startsWith()` function with multiple values?
 
 When you need to check if a string starts with either of multiple values, you can check it in two ways.
 
@@ -114,7 +116,7 @@ const str = "This is a very long string!";
 console.log(str.startsWith('This') || str.startsWith('String'));
 ```
 
-2. The Array Way, by using the some() function to iterate thought the array.
+2. The Array Way, by using the `some()` function to iterate thought the array.
 
 ```javascript
 const str = "This is a very long string!";
@@ -123,7 +125,7 @@ const str = "This is a very long string!";
 console.log(['This', 'String'].some(word => str.startsWith(word)));
 ```
 
-## How to fix "startsWith() is not a function"?
+## How to fix "`startsWith()` is not a function"?
 
 There are two main methods to fix this error. 
 
@@ -133,7 +135,7 @@ There are two main methods to fix this error.
 console.log(String(unknownValue).startsWith("This"));
 ```
 
-2. You need to make sure your browser (or nodeJS) supports ES2015. If your environment doesn't support the new EcmaScript you will need to use add this polyfill before calling the startsWith() function.
+2. You need to make sure your browser (or nodeJS) supports ES2015. If your environment doesn't support the new EcmaScript you will need to use add this polyfill before calling the `startsWith()` function.
 
 ```javascript
 if (!String.prototype.startsWith) {
@@ -145,17 +147,17 @@ if (!String.prototype.startsWith) {
 }
 ```
 
-## Are there alternatives to the startsWith() function?
+## Are there alternatives to the `startsWith()` function?
 
-Of course. There are a lot of alternatives to the startsWith function. 
+Of course. There are a lot of alternatives to the `startsWith()` function. 
 
-<u>You can use the indexOf() function, the substring() function or a regex.</u>
+You can use the `indexOf()` function, the `substring()` function or a regex.
 
-#### 1. How to check if a string starts with another using indexOf()?
+#### 1. How to check if a string starts with another using `indexOf()`?
 
-You can get the same behavior as the startsWith() function by using the indexOf() function. 
+You can get the same behavior as the `startsWith()` function by using the `indexOf()` function. 
 
-To replicate the startsWith() function, you will need to check if indexOf() return position is 0.
+To replicate the `startsWith()` function, you will need to check if `indexOf()` return position is 0.
 
 ```javascript
 const str = "This is a very long string!";
@@ -167,9 +169,9 @@ console.log(str.indexOf("This") === 0);
 console.log(str.startsWith('This'));
 ```
 
-#### 2. How to check if a string starts with another using substring()?
+#### 2. How to check if a string starts with another using `substring()`?
 
-You can check if a string starts with your search value by using the function substring with the length of the search value.
+You can check if a string starts with your search value by using the function `substring()` with the length of the search value.
 
 This method is a little more complicated.
 
@@ -202,8 +204,8 @@ console.log(str.startsWith('This'));
 
 ## Conclusion
 
-Now that you are a pro of the startsWith() function in JavaScript, please share this article with others so they too can become a pro just like you. 
+Now that you are a pro of the `startsWith()` function in JavaScript, please share this article with others so they too can become a pro just like you. 
 
-![JavaScript StartsWith Pro](/static/images/blog/javascript-startswith-function/pro.jpg)
+![JavaScript StartsWith Pro](/static/images/blog/javascript-startswith/pro.jpg)
 
 Thanks for reading.
