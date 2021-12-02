@@ -135,7 +135,7 @@ console.log(['This is', 'a', 'very long', 'string!'].join(' '));
 
 ## Final Thoughts
 
-As you can see in you have a lot of options to concatenate a string.
+As you can see you have a lot of options to concatenate a string.
 
 For my part, I mostly use the template literal for normal cases, and the `join()` function when I have an array.
 
