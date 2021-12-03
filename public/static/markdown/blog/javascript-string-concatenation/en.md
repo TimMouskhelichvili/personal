@@ -3,7 +3,7 @@ title: How To Concatenate Strings In JavaScript?
 seoTitle: How To Concatenate Strings In JavaScript?
 openGraphImage: /static/images/blog/javascript-string-concatenation/cover.png
 date: 2021-12-02
-description: A guide on how does the startsWith() function work in JavaScript? Case Sensitivity, Multiple Values, Alternatives.
+description: 4 Different Ways On How To Concatenate Strings In JavaScript? + operator, template literals, concat, join.
 author: Tim Mouskhelichvili
 ---
 
