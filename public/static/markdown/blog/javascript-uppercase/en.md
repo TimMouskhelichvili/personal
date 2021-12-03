@@ -1,10 +1,10 @@
 ---
-title: How to uppercase a string in JavaScript?
-seoTitle: How to uppercase a string in JavaScript?
+title: How To Uppercase A String In JavaScript?
 openGraphImage: /static/images/blog/javascript-uppercase/cover.png
 date: 2021-12-01
 description: A guide on how does the toUpperCase() function work in JavaScript? Definition + Examples.
 author: Tim Mouskhelichvili
+tags: javascript
 ---
 
 In JavaScript, to make a string uppercase, the easiest way to do it is by using the `toUpperCase()` built-in function.

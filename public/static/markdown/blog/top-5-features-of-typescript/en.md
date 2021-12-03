@@ -1,10 +1,10 @@
 ---
 title: Top 5 Features of TypeScript - TypeScript vs JavaScript
-seoTitle: Top 5 Features of TypeScript - TypeScript vs JavaScript
 openGraphImage: /static/images/blog/top-5-features-of-typescript/cover.png
 date: 2021-11-11
 description: My top 5 features of TypeScript and why should you choose TypeScript over JavaScript for your next web application.
 author: Tim Mouskhelichvili
+tags: typescript
 ---
 
 TypeScript is a programming language developed in 2012 by Microsoft. Since its inception, it has exponentially grown in popularity.

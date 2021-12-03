@@ -1,10 +1,10 @@
 ---
 title: How To Wait 5 Seconds In JavaScript?
-seoTitle: How To Wait 5 Seconds In JavaScript?
 openGraphImage: /static/images/blog/javascript-wait-5-seconds/cover.png
 date: 2021-11-23
 description: A guide on how to wait for X seconds before executing the next line in JavaScript.
 author: Tim Mouskhelichvili
+tags: javascript
 ---
 
 There is a lot of use cases where you would want to pause your JavaScript's execution before running the next line. 

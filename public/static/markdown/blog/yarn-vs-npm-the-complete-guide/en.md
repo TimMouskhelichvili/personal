@@ -1,10 +1,10 @@
 ---
 title: Yarn vs npm - The Complete Guide
-seoTitle: Yarn vs npm - The Complete Guide
 openGraphImage: /static/images/blog/yarn-vs-npm-the-complete-guide/cover.png
 date: 2021-11-17
 description: A Complete Guide on Yarn vs npm. Comparison, Differences, Benchmark Tests and Commands.
 author: Tim Mouskhelichvili
+tags: tools
 ---
 
 Some time ago, when package managers didn't exist, it was very hard to manage all of your project's dependencies. This task was also growing in complexity when your project grew in size. Nowadays, luckily for us, we have package managers that help us add, remove and update dependencies on our projects.

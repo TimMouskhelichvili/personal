@@ -1,10 +1,10 @@
 ---
-title: Substring() In JavaScript - How to extract part of a string?
-seoTitle: Substring() In JavaScript - How to extract part of a string?
+title: Substring() In JavaScript - How To Extract Part Of A String?
 openGraphImage: /static/images/blog/javascript-substring/cover.png
 date: 2021-11-29
 description: A guide on how does the substring() function work in JavaScript? Definition. Substring vs slice vs substr.
 author: Tim Mouskhelichvili
+tags: javascript
 ---
 
 In JavaScript, to extract part of a string, you need to use the `substring()` function, or one of its alternatives.

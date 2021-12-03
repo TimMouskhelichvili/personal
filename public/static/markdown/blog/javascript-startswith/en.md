@@ -1,10 +1,10 @@
 ---
 title: StartsWith() In JavaScript - How To Check If A String Starts With Something?
-seoTitle: StartsWith() In JavaScript - How To Check If A String Starts With Something?
 openGraphImage: /static/images/blog/javascript-startswith/cover.png
 date: 2021-11-23
 description: A guide on how does the startsWith() function work in JavaScript? Case Sensitivity, Multiple Values, Alternatives.
 author: Tim Mouskhelichvili
+tags: javascript
 ---
 
 In JavaScript, the easiest way to check if a string starts with something is to use the `startsWith()` function.

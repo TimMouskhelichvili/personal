@@ -1,10 +1,10 @@
 ---
 title: How To Concatenate Strings In JavaScript?
-seoTitle: How To Concatenate Strings In JavaScript?
 openGraphImage: /static/images/blog/javascript-string-concatenation/cover.png
 date: 2021-12-02
 description: 4 Different Ways On How To Concatenate Strings In JavaScript? + operator, template literals, concat, join.
 author: Tim Mouskhelichvili
+tags: javascript
 ---
 
 In JavaScript, you have a lot of options when it comes to the concatenation of strings. 
