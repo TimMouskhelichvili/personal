@@ -39,21 +39,6 @@ const StyledMailLink = styled.a`
 	}
 `;
 
-const StyledPhoneLink = styled.a`
-	color: ${getThemeVariable('colors.primary')};
-	text-decoration: none;
-	margin-top: 10px;
-	display: inline-block;
-
-	&:hover {
-		text-decoration: underline;
-	}
-
-	svg {
-		margin-right: 5px;
-	}
-`;
-
 const StyledMenu = styled.div`
 	margin-bottom: 20px;
 	user-select: none;
@@ -81,6 +66,5 @@ export {
     StyledName,
     StyledMailLink,
     StyledMenu,
-    StyledQuote,
-    StyledPhoneLink
+    StyledQuote
 };

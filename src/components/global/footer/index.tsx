@@ -1,11 +1,11 @@
 import React, { ReactElement } from 'react';
 import { useAmp } from 'next/amp';
 import { useRouter } from 'next/router';
-import { faEnvelope, faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
-import { StyledSection, StyledCopyright, StyledName, StyledMailLink, StyledMenu, StyledQuote, StyledPhoneLink } from './style';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { StyledSection, StyledCopyright, StyledName, StyledMailLink, StyledMenu, StyledQuote } from './style';
 import { CustomImage } from 'src/components/elements/customImage';
 import { IMenuLinkItem } from 'src/interfaces/IMenuLinkItem';
-import { getPhoneLink, isLandingPage } from 'src/utils';
+import { isLandingPage } from 'src/utils';
 import { MyLink } from 'src/components/elements/link';
 import { Icons } from 'src/components/global/icons';
 import { Icon } from 'src/components/elements/icon';
@@ -67,12 +67,6 @@ const getContactInfo = (locale: Locale): ReactElement => (
             <Icon icon={faEnvelope} />
             {configuration.general.email}
         </StyledMailLink>
-        <div>
-            <StyledPhoneLink href={`tel:${getPhoneLink()}`} title={locale.global.hrefs.phone}>
-                <Icon icon={faPhoneAlt} />
-                {configuration.general.phone}
-            </StyledPhoneLink>
-        </div>
     </div>
 );
 
