@@ -88,6 +88,12 @@ const StyledCustomMDXContainer = styled.div`
 			padding-left: 15px;
 		}
 	}
+
+	a {
+		svg {
+			margin-left: 5px;
+		}
+	}
 `;
 
 const StyledSocialTabContainer = styled.div`
