@@ -1,6 +1,8 @@
 import React, { ReactElement } from 'react';
 import { faFacebookSquare, faLinkedinIn, faTwitter } from '@fortawesome/free-brands-svg-icons';
-import { StyledButton } from './style';
+import { useAmp } from 'next/amp';
+import Script from 'next/script';
+import { StyledButton, StyledAmpContainer } from './style';
 import { Icon } from 'src/components/elements/icon';
 import { createPopUp } from 'src/utils';
 import { myColors } from 'src/theme';
@@ -9,6 +11,21 @@ import { myColors } from 'src/theme';
  * The SocialMedias component.
  */
 const SocialMedias = (): ReactElement => {
+    const amp = useAmp();
+
+    if (amp) {
+        return (
+            <>
+                <Script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js" />
+                <StyledAmpContainer>
+                    <amp-social-share type="facebook" data-param-app_id="" />
+                    <amp-social-share type="twitter" />
+                    <amp-social-share type="linkedin" />
+                </StyledAmpContainer>
+            </>
+        );
+    }
+	
     return (
         <>
             <StyledButton backgroundColor={myColors.facebook} onClick={onClick('facebook')}>

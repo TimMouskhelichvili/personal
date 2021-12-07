@@ -18,6 +18,14 @@ const StyledButton = styled.button<{ backgroundColor: string; }>`
 	}
 `;
 
+const StyledAmpContainer = styled.div`
+	amp-social-share {
+		border-radius: ${getThemeVariable('global.borderRadius')};
+		margin-bottom: 8px;
+	}
+`;
+
 export {
+    StyledAmpContainer,
     StyledButton 
 };

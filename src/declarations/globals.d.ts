@@ -28,6 +28,9 @@ declare namespace JSX {
 			layout: string;
 			width: string;
 			height: string;
+		},
+		'amp-social-share': {
+			type: string;
 		}
 	}
 }

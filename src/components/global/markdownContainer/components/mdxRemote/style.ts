@@ -99,7 +99,7 @@ const StyledCustomMDXContainer = styled.div`
 const StyledSocialTabContainer = styled.div`
 	display: none;
 
-	& > button {
+	& > button, & > div > amp-social-share {
 		margin-right: 10px;
 	}
 
