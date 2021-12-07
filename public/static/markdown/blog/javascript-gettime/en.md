@@ -2,7 +2,7 @@
 title: How To Get The Time In JavaScript?
 openGraphImage: /static/images/blog/javascript-gettime/cover.png
 date: 2021-12-06
-description: 4 different ways of rounding a number to 2 decimal places in javascript.
+description: A guide on how to get the time in JavaScript? Seconds. Milliseconds. Differences.
 author: Tim Mouskhelichvili
 tags: javascript
 ---
@@ -117,6 +117,8 @@ Here is an example of how to format a date in day-js.
 dayjs('2021-12-25').format('DD/MM/YYYY');
 ```
 
+![JavaScript GetTime](/static/images/blog/javascript-gettime/2.jpg)
+
 Day.js is: 
 
 1. Very small (2kB)
@@ -130,6 +132,8 @@ Day.js supports a lot of different date formats and a lot of different locales, 
 Working with dates can be challenging especially when you need to support different locales. 
 
 That's why I always prefer to use a library like day-js when I need to work with dates.
+
+![JavaScript GetTime](/static/images/blog/javascript-gettime/1.jpg)
 
 But, if you don't need locale support, the `Date` object is just fine.
 
