@@ -120,7 +120,7 @@ const code = (data: any): ReactElement | null => {
  */
 const a = (data: any): ReactElement | null => {
     const href = data.href as string;
-	const external = href.startsWith('https://');
+    const external = href.startsWith('https://');
 
     const props = {
         href
@@ -134,7 +134,7 @@ const a = (data: any): ReactElement | null => {
     return (
         <a {...props}>
             {data.children}
-			{external && <Icon icon={faExternalLinkAlt} />}
+            {external && <Icon icon={faExternalLinkAlt} />}
         </a>
     );
 };
