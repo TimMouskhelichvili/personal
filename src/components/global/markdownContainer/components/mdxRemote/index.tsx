@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import React, { ReactElement } from 'react';
 import { MDXRemote } from 'next-mdx-remote';
+import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 import { StyledCustomMDXContainer, StyledSocialTabContainer, StyledSummary } from './style';
 import { SocialMedias } from 'src/components/global/markdownContainer/components/socialMedias';
 import { Summary } from 'src/components/global/markdownContainer/components/summary';
@@ -9,8 +10,9 @@ import { Code } from 'src/components/global/markdownContainer/components/code';
 import { IMarkdownHeading } from 'src/interfaces/IMarkdownHeading';
 import { CustomImage } from 'src/components/elements/customImage';
 import { Youtube } from 'src/components/elements/youtube';
-import { configuration } from 'src/configuration';
+import { Icon } from 'src/components/elements/icon';
 import { getIdFromText } from 'src/utils/markdown';
+import { configuration } from 'src/configuration';
 
 interface ICustomMDXProps {
 	headings: IMarkdownHeading[];
@@ -118,18 +120,21 @@ const code = (data: any): ReactElement | null => {
  */
 const a = (data: any): ReactElement | null => {
     const href = data.href as string;
+	const external = href.startsWith('https://');
 
     const props = {
         href
     };
 
-    if (href.startsWith('https://')) {
+    if (external) {
         props['rel'] = 'noreferrer';
         props['target'] = '_blank';
     }
+
     return (
         <a {...props}>
             {data.children}
+			{external && <Icon icon={faExternalLinkAlt} />}
         </a>
     );
 };
