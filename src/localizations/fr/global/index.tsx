@@ -14,10 +14,10 @@ const frGlobalLocale = {
         sideMenu: frSideMenu
     },
     hrefs: {
-        email: 'Envoyez-nous un e-mail',
         github: 'Aller à Github',
         linkedIn: 'Aller à LinkedIn',
         logo: 'Aller à la page principale',
+        message: 'Envoyez-moi un message',
         options: 'Ouvrir le menu d\'options',
         phone: 'Nous appeler',
         sideMenu: 'Ouvrir le menu'

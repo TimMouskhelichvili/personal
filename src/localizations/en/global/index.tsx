@@ -14,10 +14,10 @@ const enGlobalLocale = {
         sideMenu: enSideMenu
     },
     hrefs: {
-        email: 'Send us an email',
         github: 'Go to Github',
         linkedIn: 'Go to LinkedIn',
         logo: 'Go to main page',
+        message: 'Send me a message',
         options: 'Open options menu',
         phone: 'Call us',
         sideMenu: 'Open side menu'

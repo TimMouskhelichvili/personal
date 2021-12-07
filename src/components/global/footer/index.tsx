@@ -33,7 +33,7 @@ const Footer = (): ReactElement => {
                     <StyledQuote>{locale.global.footer.quote}</StyledQuote>
                     <>
                         {!amp && getMenu(locale.global.footer.menu)}
-                        {getContactInfo(locale)}
+                        {getContactInfo(locale, amp)}
                         {!amp && <Icons />}
                     </>
                 </Row>
@@ -60,15 +60,23 @@ const getCopyright = (locale: Locale): ReactElement => {
 /**
  * Returns the contact info.
  * @param {Locale} locale - The locale. 
+ * @param {boolean} amp - The amp.
  */
-const getContactInfo = (locale: Locale): ReactElement => (
-    <div>
-        <StyledMailLink href={`mailto:${configuration.general.email}`} title={locale.global.hrefs.email}>
-            <Icon icon={faEnvelope} />
-            {configuration.general.email}
-        </StyledMailLink>
-    </div>
-);
+const getContactInfo = (locale: Locale, amp: boolean): ReactElement => {
+    const aProps = amp ? {
+        href: locale.global.tawkToDirect,
+        target: '_blank'
+    } : {};
+
+    return (
+        <div>
+            <StyledMailLink className={configuration.classes.triggerTAWK} title={locale.global.hrefs.message} {...aProps}>
+                <Icon icon={faEnvelope} />
+                {locale.global.hrefs.message}
+            </StyledMailLink>
+        </div>
+    );
+};
 
 /**
  * Returns the menu.

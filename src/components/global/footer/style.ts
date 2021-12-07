@@ -29,6 +29,7 @@ const StyledName = styled.div`
 const StyledMailLink = styled.a`
 	color: ${getThemeVariable('colors.primary')};
 	text-decoration: none;
+	cursor: pointer;
 
 	&:hover {
 		text-decoration: underline;
