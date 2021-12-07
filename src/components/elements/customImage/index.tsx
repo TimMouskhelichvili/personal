@@ -94,7 +94,7 @@ const getWebP = (src: string): string => {
  * @param {ICustomImageProps} props - The props.
  */
 const getHeight = (props: ICustomImageProps): string => {
-    return props.height || process.env.images[props.src]?.height;
+    return props.height || process.env.images[props.src]?.h;
 };
 
 /**
@@ -102,7 +102,7 @@ const getHeight = (props: ICustomImageProps): string => {
  * @param {ICustomImageProps} props - The props.
  */
 const getWidth = (props: ICustomImageProps): string => {
-    return props.width || process.env.images[props.src]?.width;
+    return props.width || process.env.images[props.src]?.w;
 };
 
 export {

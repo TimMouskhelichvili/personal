@@ -2,21 +2,10 @@ const { readdirSync, readFileSync } = require('fs');
 const path = require('path');
 
 /**
- * Returns the pages.
- */
- const getPages = () => {
-	if (process.env.NODE_ENV === 'production') {
-		return process.env.markdown.pages.articles;
-	}
-
-	return getMarkdownPages();
-}
-
-/**
  * Returns the Markdown pages.
  */
 const getMarkdownPages = () => {
-	let dirName = process.env.markdown?.dirName;
+	let dirName = process.env.dirName;
 	if (!dirName) {
 		dirName = path.join(__dirname, '../../');
 	}
@@ -79,18 +68,7 @@ const getPaths = (pages) => {
 const getFiles = (directory, files = {}, part = '') => {
 	readdirSync(directory).forEach((file) => {
         const absolute = path.join(directory, file);
-		const languages = {};
-
-		readdirSync(absolute).forEach((language) => {
-			const languagePath = path.join(absolute, language);
-			const obj = getSourceAndAttributes(languagePath);
-
-			const completeLanguage = language.replace('.md', '');
-
-			obj.href = `/${part}${file}`;
-
-			languages[completeLanguage] = obj;
-		});
+		const languages = getLanguagesMarkdown(absolute, { part, file });
 
 		if (Object.keys(languages).length) {
 			files[file] = languages;
@@ -101,10 +79,33 @@ const getFiles = (directory, files = {}, part = '') => {
 };
 
 /**
- * Returns the source and attributes.
+ * Returns the languages markdown.
+ * @param {string} absolute - The path.
+ */
+const getLanguagesMarkdown = (absolute, { part = '', file = '', withSource = false }) => {
+	const languages = {};
+
+	readdirSync(absolute).forEach((language) => {
+		if (language.indexOf('.md') === -1) return;
+
+		const languagePath = path.join(absolute, language);
+		const obj = getMarkdownObject(languagePath, withSource);
+
+		const completeLanguage = language.replace('.md', '');
+
+		obj.href = `/${part}${file}`;
+
+		languages[completeLanguage] = obj;
+	});
+
+	return languages;
+};
+
+/**
+ * Returns the object.
  * @param {string} languagePath - The language path. 
  */
-const getSourceAndAttributes = (languagePath) => {
+const getMarkdownObject = (languagePath, withSource = false) => {
 	let source = readFileSync(languagePath, 'utf8').trim();
 	let attributes = {};
 
@@ -114,10 +115,11 @@ const getSourceAndAttributes = (languagePath) => {
 		source = source.substr(lastIndex).trim();
 	}
 
-	return {
-		...attributes,
-		source
-	};
+	if (withSource) {
+		attributes.source = source;
+	}
+
+	return attributes;
 };
 
 /**
@@ -146,7 +148,8 @@ const getAttributes = (source) => {
 
 
 module.exports = {
-	getPages,
+	getLanguagesMarkdown,
+	getMarkdownObject,
 	getMarkdownPages,
 	getMarkdownPagesPaths
 };

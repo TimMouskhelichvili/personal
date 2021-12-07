@@ -1,5 +1,3 @@
-import { IPages } from 'src/interfaces/IPages';
-
 declare global {
 
 	interface Window {
@@ -33,37 +31,25 @@ declare global {
 		interface ProcessEnv {
 
 			/**
-			 * The markdown articles.
+			 * The dirname.
 			 */
-			markdown: {
+			dirName: string;
+
+			/**
+			 * The paths.
+			 */
+			 paths: {
 
 				/**
-				 * The dirname.
+				 * The articles.
 				 */
-				dirName: string;
+				articles: string[];
 
 				/**
 				 * The pages.
 				 */
-				pages: IPages;
-
-				/**
-				 * The paths.
-				 */
-				paths: {
-
-					/**
-					 * The articles.
-					 */
-					articles: string[];
-
-					/**
-					 * The pages.
-					 */
-					pages: string[];
-				
-				};
-
+				pages: string[];
+			
 			};
 
 			/**
@@ -75,8 +61,8 @@ declare global {
 			 * The images sizes.
 			 */
 			images: { [key in string]: { 
-				height: string;
-				width: string;
+				h: string;
+				w: string;
 			}}
 
 		}

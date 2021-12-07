@@ -7,7 +7,6 @@ import { Row } from 'src/components/elements/row';
 import { Seo } from 'src/components/global/seo';
 import { IPages } from 'src/interfaces/IPages';
 import { useLocale } from 'src/localizations';
-import { isProduction } from 'src/utils';
 
 interface IBlogParams {
 	articles: IMarkdownArticleProps[];
@@ -47,12 +46,9 @@ const Blog = (props: IBlogParams): ReactElement => {
  * Returns the static props.
  */
 export const getStaticProps = async (): Promise<{}> => {
-    let articles = process.env.markdown.pages.articles;
-    if (!isProduction()) {
-        const { getPages } = require('config/utils/markdown');
-        articles = (getPages() as IPages).articles;
-    }
-	
+    const { getMarkdownPages } = require('config/utils/markdown');
+    const articles = (getMarkdownPages() as IPages).articles;
+
     return {
         props: {
             articles

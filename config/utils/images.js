@@ -6,7 +6,7 @@ const sizeOf = require('image-size');
  * Returns the images.
  */
 const getImages = () => {
-	let dirName = process.env.markdown?.dirName;
+	let dirName = process.env.dirName;
 	if (!dirName) {
 		dirName = path.join(__dirname, '../../');
 	}
@@ -30,11 +30,16 @@ const getSizesRecursively = (directory, files) => {
 			getSizesRecursively(absolute, files);
 		} else if (!absolute.endsWith('.webp') && !absolute.endsWith('.svg')) {
 			const url = absolute.substr(absolute.indexOf('/static/images'));
-			files[url] = sizeOf(absolute);
+			const imageProps = sizeOf(absolute);
+			
+			files[url] = {
+				h: imageProps['height'],
+				w: imageProps['width'],
+			};
 		}
 	}
 };
 
 module.exports = {
-	getImages,
+	getImages
 }

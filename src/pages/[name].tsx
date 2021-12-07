@@ -6,8 +6,6 @@ import { MarkdownContainer } from 'src/components/global/markdownContainer';
 import { Container } from 'src/components/global/container';
 import { IStaticProps } from 'src/interfaces/IStaticProps';
 import { Row } from 'src/components/elements/row';
-import { IPages } from 'src/interfaces/IPages';
-import { isProduction } from 'src/utils';
 
 interface IPageProps {
 	pages: {
@@ -40,7 +38,7 @@ const Page = (props: IPageProps): ReactElement => {
 export const getStaticPaths = (): {} => {
     return {
         fallback: false,  
-        paths: process.env.markdown.paths.pages
+        paths: process.env.paths.pages
     };
 };
 
@@ -49,14 +47,10 @@ export const getStaticPaths = (): {} => {
  * @param {IStaticProps} context - The context. 
  */
 export const getStaticProps = async (context: IStaticProps): Promise<{}> => {
-    let allPages = process.env.markdown.pages.pages;
-    if (!isProduction()) {
-        const { getPages } = require('config/utils/markdown');
-        allPages = (getPages() as IPages).pages;
-    }
-
-    const pages = allPages[context.params.name];
-
+    const path = `public/static/markdown/pages/${context.params.name}/`;
+    const { getLanguagesMarkdown } = require('config/utils/markdown');
+    const pages = getLanguagesMarkdown(path, { withSource: true });
+	
     if (!pages?.[context.locale]) {
         return {
             notFound: true

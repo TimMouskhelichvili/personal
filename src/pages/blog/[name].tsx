@@ -7,8 +7,6 @@ import { Container } from 'src/components/global/container';
 import { IStaticProps } from 'src/interfaces/IStaticProps';
 import { getMarkdownHeadings } from 'src/utils/markdown';
 import { Row } from 'src/components/elements/row';
-import { IPages } from 'src/interfaces/IPages';
-import { isProduction } from 'src/utils';
 
 export const config = { amp: 'hybrid' };
 
@@ -43,7 +41,7 @@ const Article = (props: IArticleProps): ReactElement => {
 export const getStaticPaths = (): {} => {
     return {
         fallback: false,  
-        paths: process.env.markdown.paths.articles
+        paths: process.env.paths.articles
     };
 };
 
@@ -52,13 +50,9 @@ export const getStaticPaths = (): {} => {
  * @param {IStaticProps} context - The context. 
  */
 export const getStaticProps = async (context: IStaticProps): Promise<{}> => {
-    let allArticles = process.env.markdown.pages.articles;
-    if (!isProduction()) {
-        const { getPages } = require('config/utils/markdown');
-        allArticles = (getPages() as IPages).articles;
-    }
-
-    const articles = allArticles[context.params.name];
+    const path = `public/static/markdown/blog/${context.params.name}/`;
+    const { getLanguagesMarkdown } = require('config/utils/markdown');
+    const articles = getLanguagesMarkdown(path, { withSource: true });
 
     if (!articles?.[context.locale]) {
         return {

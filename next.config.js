@@ -6,11 +6,8 @@ const { headers } = require('./config/headers/index');
 
 module.exports = {
 	env: {
-		markdown: {
-			dirName: __dirname,
-			pages: markdownPages,
-			paths: getMarkdownPagesPaths(markdownPages)
-		},
+		dirName: __dirname,
+		paths: getMarkdownPagesPaths(markdownPages),
 		images: getImages(),
 		sitemapLocales
 	},
