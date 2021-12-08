@@ -4,6 +4,7 @@ import { useAmp } from 'next/amp';
 import Script from 'next/script';
 import { StyledButton, StyledAmpContainer } from './style';
 import { Icon } from 'src/components/elements/icon';
+import { configuration } from 'src/configuration';
 import { createPopUp } from 'src/utils';
 import { myColors } from 'src/theme';
 
@@ -18,7 +19,7 @@ const SocialMedias = (): ReactElement => {
             <>
                 <Script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js" />
                 <StyledAmpContainer>
-                    <amp-social-share type="facebook" data-param-app_id="" />
+                    <amp-social-share type="facebook" data-param-app_id={configuration.general.facebook.appId} />
                     <amp-social-share type="twitter" />
                     <amp-social-share type="linkedin" />
                 </StyledAmpContainer>
