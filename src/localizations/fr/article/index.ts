@@ -1,4 +1,5 @@
 const frArticleLocale = {
+    author: 'Auteur',
     contactMe: 'Contactez moi',
     description: `
 		Bonjour 👋! Je suis Tim Mouskhelichvili, Développeur Web et Consultant de Montréal, Canada\u00A0🇨🇦.
