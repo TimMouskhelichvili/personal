@@ -110,6 +110,8 @@ This method [works on all browsers](https://caniuse.com/?search=slice) since it 
 | Edge | YES ✅ |
 | Internet Explorer | YES ✅ |
 
+![JavaScript Slice](/static/images/blog/javascript-slice/1.jpg)
+
 ## Examples of the `slice()` function on an array
 
 Here, I've compiled a list of some common use cases for the `slice()` method on an array.
@@ -199,6 +201,8 @@ The `splice()` function is used to change the content of an array by:
 2. Replacing existing items/Adding new items in place
 
 The `slice()` function is used to select *items* from an array (based on the provided indices).
+
+![JavaScript Slice](/static/images/blog/javascript-slice/2.jpg)
 
 Here is a table with all the differences:
 
