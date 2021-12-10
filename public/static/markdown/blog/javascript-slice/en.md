@@ -25,8 +25,6 @@ For an array, the `slice()` built-in function is used to select *items* based on
 
 For a string, the `slice()` built-in function is used to select *characters* based on the provided indices.
 
-The `slice()` function will NOT modify the original array or string.
-
 By using the `start` and the `end` parameters you can specify what portion of the array or string you want to select.
 
 Here is the `slice()` function in action with an array:
@@ -71,7 +69,9 @@ This is the syntax of the `slice()` function.
 arr.slice([ start[, end ]])
 ```
 
-*P.S. If you don't specify any parameters, the `slice()` function will return a copy of the entire array or string.*
+> `Notes`
+> 1. The `slice()` function will NOT modify the original array or string.
+> 2. If you don't specify any parameters, the `slice()` function will return a copy of the entire array or string.
 
 ### Parameters
 
@@ -86,15 +86,16 @@ arr.slice([ start[, end ]])
 > 3. For a string, if the start parameter is greater than the length of the string, an empty string will be returned.
 
 > **End Parameter**
-> 1. If the end parameter is omitted, the extraction will end at the length of the array or the string.
-> 2. For an array, if the end parameter is greater than the length of the array, the end index will be the length of the array.
-> 3. For a string, if the end parameter is greater than the length of the string, the end index will be the length of the string.
+> 1. For an array, if the end parameter is omitted, the extraction end index will be `the length of the array`.
+> 1. For a string, if the end parameter is omitted, the extraction end index will be `the length of the string`.
+> 2. For an array, if the end parameter is greater than the length of the array, the end index will be `the length of the array`.
+> 3. For a string, if the end parameter is greater than the length of the string, the end index will be the `length of the string`.
 
 ### Return Value
 
-For the array, the `slice()` function will return **a new array containing part of the original array**.
+On an array, the `slice()` function will return **a new array containing part of the original array**.
 
-For the string, the `slice()` function will return **a new string containing part of the original string**.
+On a string, the `slice()` function will return **a new string containing part of the original string**.
 
 ## Browser Support
 
@@ -109,7 +110,7 @@ This method [works on all browsers](https://caniuse.com/?search=slice) since it 
 | Edge | YES ✅ |
 | Internet Explorer | YES ✅ |
 
-## Examples of `slice()` on an array
+## Examples of the `slice()` function on an array
 
 Here, I've compiled a list of some common use cases for the `slice()` method on an array.
 
@@ -155,7 +156,7 @@ console.log(newLanguages);
 
 *In this example, we clone the original array and get a new array.*
 
-## Examples of `slice()` on a string
+## Examples of the `slice()` function on a string
 
 I've also compiled a list of some common use cases for the `slice()` method on a string.
 
@@ -190,4 +191,30 @@ console.log(str.slice(-7));
 
 ## `slice` vs `splice`
 
+Even tho those two function sounds very alike, they are very different.
+
+The `splice()` function is used to change the content of an array by: 
+
+1. Removing items
+2. Replacing existing items/Adding new items in place
+
+The `slice()` function is used to select *items* from an array (based on the provided indices).
+
+Here is a table with all the differences:
+
+| | `splice()` | `slice()` |
+| - | - | - |
+| Return Value | Returns the removed items in an array | Returns the selected items in an array, as a new array |
+| Mutates the original array | YES | NO |
+| Parameters | can take N number of parameters | can take 2 parameters |
+| Parameter 1 | Index (required) | The start index of the selection (optional) |
+| Parameter 2 | The number of items to be removed (optional) | The end index of the selection (optional) |
+| Parameter 3 | The new items to be added (optional) | - | 
+
 ## Final thoughts
+
+As you can see the `slice()` function is an indispensable method when it comes to working with an array or a string in JavaScript. 
+
+I am sure you will use it very frequently while developing the next billion-dollar startup.
+
+Thank you for reading!
