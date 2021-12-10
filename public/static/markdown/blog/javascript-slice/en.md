@@ -2,7 +2,7 @@
 title: How to use slice() in JavaScript on an Array or a String?
 openGraphImage: /static/images/blog/javascript-slice/cover.png
 date: 2021-12-08
-description: A guide on how to get the time in JavaScript? Seconds. Milliseconds. Differences.
+description: A guide on how to the slice() function work in Javascript on an Array or a String.
 author: Tim Mouskhelichvili
 tags: javascript
 ---
