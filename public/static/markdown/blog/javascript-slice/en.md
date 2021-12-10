@@ -92,9 +92,9 @@ arr.slice([ start[, end ]])
 
 ### Return Value
 
-For the array, a new array containing part of the original array.
+For the array, the `slice()` function will return **a new array containing part of the original array**.
 
-For the string, a new string containing part of the original string.
+For the string, the `slice()` function will return **a new string containing part of the original string**.
 
 ## Browser Support
 
@@ -109,13 +109,16 @@ This method [works on all browsers](https://caniuse.com/?search=slice) since it 
 | Edge | YES ✅ |
 | Internet Explorer | YES ✅ |
 
-## Examples
+## Examples of `slice()` on an array
 
-Here, I've compiled a list of some common use cases for the `slice()` method.
+Here, I've compiled a list of some common use cases for the `slice()` method on an array.
 
-## How to select the first X elements from an array?
+## How to select the first X elements of an array?
 
-To select the first X elements you need to the `start` parameter to be `0` and the specify an `end` parameter.
+To select the first X elements of an array you need to call the `slice()` function with:
+
+1. A `start` parameter of ZERO
+2. An `end` parameter
 
 ```javascript
 const languages = ['english', 'french', 'german', 'spanish', 'russian', 'japanese'];
@@ -124,11 +127,11 @@ const languages = ['english', 'french', 'german', 'spanish', 'russian', 'japanes
 console.log(languages.slice(0, 2));
 ```
 
-*In this example, we select the first 2 elements.*
+*In this example, we select the first 2 elements from the original array*
 
-## How to select the last X elements from an array?
+## How to select the last X elements of an array?
 
-To select the last X elements you only need to specify the `start` parameter.
+To select the last X elements of an array you need to call the `slice()` function with a positive `start` parameter.
 
 ```javascript
 const languages = ['english', 'french', 'german', 'spanish', 'russian', 'japanese'];
@@ -139,4 +142,52 @@ console.log(languages.slice(3));
 
 *In this example, we select the last 3 elements.*
 
+## How to clone an array with the `slice()` function?
+
+To clone an array you need to call the `slice()` function without any parameters.
+
+```javascript
+const languages = ['english', 'french', 'german', 'spanish', 'russian', 'japanese'];
+const newLanguages = languages.slice();
+// This will return: ['english', 'french', 'german', 'spanish', 'russian', 'japanese']
+console.log(newLanguages);
+```
+
+*In this example, we clone the original array and get a new array.*
+
+## Examples of `slice()` on a string
+
+I've also compiled a list of some common use cases for the `slice()` method on a string.
+
+## How to get the first X characters of a string?
+
+To get the first X characters of a string you need to call the `slice()` function with:
+
+1. A `start` parameter of ZERO
+2. An `end` parameter
+
+```javascript
+const str = 'This is a very long string!';
+
+// This will return: "This"
+console.log(str.slice(0, 4));
+```
+
+*In this example, we get the first 4 characters.*
+
+## How to get the last X characters of a string?
+
+To get the last X characters of a string you need to call the `slice()` with a negative `start` parameter.
+
+```javascript
+const str = 'This is a very long string!';
+
+// This will return: "string!"
+console.log(str.slice(-7));
+```
+
+*In this example, we get the last 7 characters.*
+
 ## `slice` vs `splice`
+
+## Final thoughts
