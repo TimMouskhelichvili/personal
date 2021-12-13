@@ -23,7 +23,8 @@ Read this article to find out your favorite new way. 😎
 
 To capitalize the first letter of a string you need to follow these steps:
 
-1. Get the first character with the `charAt()` function and uppercase it.
+1. Get the first character with the `charAt()` function
+3. Uppercase it with the `toUpperCase()` function.
 2. Concatenate the rest of the string to the uppercased character.
 
 ```javascript
@@ -37,7 +38,7 @@ console.log(str.charAt(0).toUpperCase() + str.slice(1));
 
 You can also capitalize the first letter of a string by using the `replace()` function and a regex.
 
-1. You create the regex that matches the first character (this is the regex: `/./`).
+1. You create a regex that will only match the first character (this is the regex: `/./`).
 2. With the `replace()` function, you uppercase the first character by matching the regex.
 
 ```javascript
@@ -49,7 +50,7 @@ console.log(str.replace(/./, c => c.toUpperCase()));
 
 ### 3. Using CSS
 
-You can also capitalize the first letter using the css `text-transform` property and the `:first-letter` selector.
+You can also capitalize the first letter using the CSS `text-transform` property and the `::first-letter` selector.
 
 ![JavaScript Capitalize First Letter](/static/images/blog/javascript-capitalize-first-letter/1.jpg)
 
@@ -91,7 +92,7 @@ Here is a table explaining this regex:
 Also, you can capitalize the first letter of each word by following these steps:
 
 1. Make all the text lowercase.
-2. Split all the words inside the array.
+2. Split all the words inside an array.
 3. Iterate through each word inside the array using the `map()` function and uppercase the first letter.
 4. Transform the array into a string using the `join()` function.
 
@@ -109,7 +110,7 @@ console.log(str);
 
 ### 3. Using a `for` loop
 
-You can also capitalize the first letter of each word by looping through the words with a `for` loop.
+You can also capitalize the first letter of each word by looping through each word with a `for` loop.
 
 ```javascript
 const words = 'this is a very long string!'.split(" ");
@@ -126,7 +127,9 @@ console.log(str);
 
 ### 4. Using CSS
 
-You can also capitalize the first letter of each word using the css `text-transform` property.
+If you don't want to use JavaScript, we have good news for you!
+
+You can use the CSS `text-transform` property to archive the same result.
 
 ![JavaScript Capitalize First Letter](/static/images/blog/javascript-capitalize-first-letter/2.jpg)
 
@@ -143,6 +146,6 @@ You can also capitalize the first letter of each word using the css `text-transf
 
 As you can see, there is a lot of different ways to choose from when you want to capitalize the first letter of a string.
 
-In my case, when I develop a new application, I create a helper function `capitalize()` in my utils file and import it whenever I need to use it.
+In my case, when I develop a new application, I create a helper function called `capitalize(str: string)` in my utils file and import it whenever I need to use it.
 
 I hope you liked this article, please share it!
