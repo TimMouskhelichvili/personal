@@ -8,7 +8,7 @@ const enArticleLocale = {
 		<br /><div class="space"></div>
 		If you need help on a project, please reach out and let's work together.
 	`,
-    summary: 'summary',
+    summary: 'page content',
     writtenBy: 'Written By:'
 };
 
