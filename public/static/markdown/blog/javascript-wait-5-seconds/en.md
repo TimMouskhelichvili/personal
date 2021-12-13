@@ -1,6 +1,6 @@
 ---
 title: How To Wait 5 Seconds In JavaScript?
-openGraphImage: /static/images/blog/javascript-wait-5-seconds/cover.png
+openGraphImage: ./images/cover.png
 date: 2021-11-23
 description: A guide on how to wait for X seconds before executing the next line in JavaScript.
 author: Tim Mouskhelichvili
@@ -13,7 +13,7 @@ Sadly, a function like that is absent from JavaScript's default functionality.
 
 Luckily for us, JavaScript provides a few ways for a developer to wait X seconds before executing the next line of the code.
 
-![JavaScript Wait 5 Seconds](/static/images/blog/javascript-wait-5-seconds/cover.png)
+![JavaScript Wait 5 Seconds](./images/cover.png)
 
 To complete this task, first of all, you will need to transform seconds into milliseconds.
 
@@ -117,6 +117,6 @@ Now you know how to wait 5 seconds before executing your next line.
 
 Of course, you can wait for however long you want 😉 it was just an example.
 
-![JavaScript Wait 5 Seconds](/static/images/blog/javascript-wait-5-seconds/ofcourse.jpg)
+![JavaScript Wait 5 Seconds](./images/ofcourse.jpg)
 
 Thanks for reading this article. If you liked it please share it.

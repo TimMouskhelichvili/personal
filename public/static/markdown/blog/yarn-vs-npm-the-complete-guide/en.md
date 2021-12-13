@@ -1,6 +1,6 @@
 ---
 title: Yarn vs npm - The Complete Guide
-openGraphImage: /static/images/blog/yarn-vs-npm-the-complete-guide/cover.png
+openGraphImage: ./images/cover.png
 date: 2021-11-17
 description: A Complete Guide on Yarn vs npm. Comparison, Differences, Benchmark Tests and Commands.
 author: Tim Mouskhelichvili
@@ -9,7 +9,7 @@ tags: tools
 
 Some time ago, when package managers didn't exist, it was very hard to manage all of your project's dependencies. This task was also growing in complexity when your project grew in size. Nowadays, luckily for us, we have package managers that help us add, remove and update dependencies on our projects.
 
-![Yarn vs npm](/static/images/blog/yarn-vs-npm-the-complete-guide/cover.png)
+![Yarn vs npm](./images/cover.png)
 
 The two biggest package managers for JavaScript developers are **Yarn** and **npm**. 
 
@@ -39,7 +39,7 @@ You can follow the updates of this project [here](https://github.com/npm/cli).
 
 **Yarn** (an acronym for Yet Another Resource Negotiator) is a package manager released by Facebook in 2016.
 
-![Yarn](/static/images/blog/yarn-vs-npm-the-complete-guide/yarn.jpeg)
+![Yarn](./images/yarn.jpeg)
 
 Yarn is a completely free and open-source tool. You can view the project [here](https://github.com/yarnpkg/berry).
 
@@ -61,7 +61,7 @@ Some of Yarn's features are:
 
 Since npm is the default package manager for Node.js and that more people are aware of it, it is more popular than Yarn.
 
-![Yarn vs Npm Popularity](/static/images/blog/yarn-vs-npm-the-complete-guide/popularity-yarn-vs-npm.png)
+![Yarn vs Npm Popularity](./images/popularity-yarn-vs-npm.png)
 
 However, when it comes to developers, Yarn has more stars on Github than npm.
 
@@ -107,7 +107,7 @@ This file is intended to be committed inside the repository of your project.
 
 DO NOT DELETE IT.
 
-![Yarn vs Npm Popularity](/static/images/blog/yarn-vs-npm-the-complete-guide/lockfile.jpeg)
+![Yarn vs Npm Popularity](./images/lockfile.jpeg)
 
 It is advised not to use both yarn and npm because this can create dependency conflicts. 
 
@@ -197,7 +197,7 @@ npm install <package> --save-dev
 
 You will notice very soon, that node_modules is a very heavy folder. This is completely normal.
 
-![Node Modules](/static/images/blog/yarn-vs-npm-the-complete-guide/nodemodules.png)
+![Node Modules](./images/nodemodules.png)
 
 ## Yarn vs Npm Global Packages
 
@@ -239,7 +239,7 @@ Remove a package with npm by running this command.
 npm uninstall <package>
 ```
 
-![Deleted](/static/images/blog/yarn-vs-npm-the-complete-guide/deleted.jpg)
+![Deleted](./images/deleted.jpg)
 
 ## Yarn vs Npm Outdated Packages
 
@@ -316,7 +316,7 @@ Even, with the latest version of npm, npm cannot beat the speeds of Yarn.
 
 I ran a few tests on my website's project. Those are the results:
 
-![Npm Vs Yarn Benchmarks](/static/images/blog/yarn-vs-npm-the-complete-guide/benchmarks-yarn-vs-npm.png)
+![Npm Vs Yarn Benchmarks](./images/benchmarks-yarn-vs-npm.png)
 
 ## Npm Dependency Tree Problem
 

@@ -1,6 +1,6 @@
 ---
 title: How To Get The Time In JavaScript?
-openGraphImage: /static/images/blog/javascript-gettime/cover.png
+openGraphImage: ./images/cover.png
 date: 2021-12-06
 description: A guide on how to get the time in JavaScript? Seconds. Milliseconds. Differences.
 author: Tim Mouskhelichvili
@@ -19,7 +19,7 @@ By the end of this article, you will know:
 
 Let's get to it 🙃!
 
-![JavaScript GetTime](/static/images/blog/javascript-gettime/cover.png)
+![JavaScript GetTime](./images/cover.png)
 
 <Summary />
 
@@ -117,7 +117,7 @@ Here is an example of how to format a date in day-js.
 dayjs('2021-12-25').format('DD/MM/YYYY');
 ```
 
-![JavaScript GetTime](/static/images/blog/javascript-gettime/2.jpg)
+![JavaScript GetTime](./images/2.jpg)
 
 Day.js is: 
 
@@ -133,7 +133,7 @@ Working with dates can be challenging especially when you need to support differ
 
 That's why I always prefer to use a library like day-js when I need to work with dates.
 
-![JavaScript GetTime](/static/images/blog/javascript-gettime/1.jpg)
+![JavaScript GetTime](./images/1.jpg)
 
 But, if you don't need locale support, the `Date` object is just fine.
 

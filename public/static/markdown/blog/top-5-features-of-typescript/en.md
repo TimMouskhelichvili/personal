@@ -1,6 +1,6 @@
 ---
 title: Top 5 Features of TypeScript - TypeScript vs JavaScript
-openGraphImage: /static/images/blog/top-5-features-of-typescript/cover.png
+openGraphImage: ./images/cover.png
 date: 2021-11-11
 description: My top 5 features of TypeScript and why should you choose TypeScript over JavaScript for your next web application.
 author: Tim Mouskhelichvili
@@ -11,7 +11,7 @@ TypeScript is a programming language developed in 2012 by Microsoft. Since its i
 
 TypeScript offers a lot of advantages compared to JavaScript, most importantly typings which help prevent a lot of bugs, help with the refactoring of your code, and ensure a more explicit code that is easier to understand. 
 
-![TypeScript vs JavaScript](/static/images/blog/top-5-features-of-typescript/cover.png)
+![TypeScript vs JavaScript](./images/cover.png)
 
 **TypeScript is a superset of JavaScript** which means that JavaScript code is valid 🥳 in TypeScript.
 
@@ -31,7 +31,7 @@ Perhaps its biggest advantage compared to JavaScript is its addition of typings,
 
 TypeScript can help you prevent a lot of bugs compared to JavaScript because *TypeScript provides a transpiler with an error-checking feature*. TypeScript will show you syntax errors in real-time. TypeScript will also show you compilation errors when you build your project.
 
-![TypeScript Errors](/static/images/blog/top-5-features-of-typescript/errors.png)
+![TypeScript Errors](./images/errors.png)
 
 ## 3. TypeScript has great Intellisense
 
@@ -52,7 +52,7 @@ TypeScript adds a lot of new tools that you can use to write more explicit code.
 * Namespaces
 * And much more!
 
-![Top 5 Features of TypeScript](/static/images/blog/top-5-features-of-typescript/typescript.png)
+![Top 5 Features of TypeScript](./images/typescript.png)
 
 ## Conclusion
 

@@ -106,7 +106,7 @@ const getLanguagesMarkdown = (absolute, { part = '', file = '', withSource = fal
  * @param {string} languagePath - The language path. 
  */
 const getMarkdownObject = (languagePath, withSource = false) => {
-	let source = readFileSync(languagePath, 'utf8').trim();
+	let source = getSource(languagePath);
 	let attributes = {};
 
 	if (source.startsWith('---')) {
@@ -146,10 +146,26 @@ const getAttributes = (source) => {
 	return obj;
 };
 
+/**
+ * Returns the source.
+ * @param {string} languagePath - The languagePath.
+ */
+const getSource = (languagePath) => {
+	let source = readFileSync(languagePath, 'utf8').trim();
+
+	let name = languagePath.substring(0, languagePath.lastIndexOf('/'));
+	name = name.substring(name.lastIndexOf('/') + 1);
+
+	const path = `/static/markdown/blog/${name}/images`;
+	source = source.replace(/\(\.\/images/g, '(' + path);
+	source = source.replace(/openGraphImage: \.\/images/g, 'openGraphImage: ' + path);
+	source = source.replace(/openGraphImage:\.\/images/g, 'openGraphImage: ' + path);
+
+	return source;
+}
 
 module.exports = {
 	getLanguagesMarkdown,
-	getMarkdownObject,
 	getMarkdownPages,
 	getMarkdownPagesPaths
 };

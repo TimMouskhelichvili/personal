@@ -1,6 +1,6 @@
 ---
 title: StartsWith() In JavaScript - How To Check If A String Starts With Something?
-openGraphImage: /static/images/blog/javascript-startswith/cover.png
+openGraphImage: ./images/cover.png
 date: 2021-11-23
 description: A guide on how does the startsWith() function work in JavaScript? Case Sensitivity, Multiple Values, Alternatives.
 author: Tim Mouskhelichvili
@@ -17,7 +17,7 @@ By the end of this guide, you will become a pro of this function and you will kn
 2. When to use it?
 3. And, will be able to explain it to others.
 
-![JavaScript StartsWith](/static/images/blog/javascript-startswith/cover.png)
+![JavaScript StartsWith](./images/cover.png)
 
 <Summary />
 
@@ -87,7 +87,7 @@ This method only works on browsers that support [ES2015](https://caniuse.com/?se
 
 [[Get the polyfill here]](#how-to-fix-startswith-is-not-a-function)
 
-![JavaScript StartsWith Internet Explorer](/static/images/blog/javascript-startswith/internet.jpg)
+![JavaScript StartsWith Internet Explorer](./images/internet.jpg)
 
 ## How to make the `startsWith()` function case insensitive?
 
@@ -206,6 +206,6 @@ console.log(str.startsWith('This'));
 
 Now that you are a pro of the `startsWith()` function in JavaScript, please share this article with others so they too can become a pro just like you. 
 
-![JavaScript StartsWith Pro](/static/images/blog/javascript-startswith/pro.jpg)
+![JavaScript StartsWith Pro](./images/pro.jpg)
 
 Thanks for reading.

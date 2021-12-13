@@ -1,13 +1,13 @@
 ---
 title: How to capitalize the first letter in Javascript?
-openGraphImage: /static/images/blog/javascript-capitalize-first-letter/cover.png
+openGraphImage: ./images/cover.png
 date: 2021-12-13
-description: 7 different ways of capitalizing the first letter of a string in javascript.
+description: 8 different ways of capitalizing the first letter of a string in JavaScript.
 author: Tim Mouskhelichvili
 tags: javascript
 ---
 
-![JavaScript Capitalize First Letter](/static/images/blog/javascript-capitalize-first-letter/cover.png)
+![JavaScript Capitalize First Letter](./images/cover.png)
 
 In JavaScript, there is a lot of different ways to capitalize the first letter of a string.
 
@@ -52,7 +52,7 @@ console.log(str.replace(/./, c => c.toUpperCase()));
 
 You can also capitalize the first letter using the CSS `text-transform` property and the `::first-letter` selector.
 
-![JavaScript Capitalize First Letter](/static/images/blog/javascript-capitalize-first-letter/1.jpg)
+![JavaScript Capitalize First Letter](./images/1.jpg)
 
 
 ```javascript
@@ -62,6 +62,18 @@ You can also capitalize the first letter using the CSS `text-transform` property
 		text-transform: capitalize;
 	}
 </style>
+```
+
+### 4. Using Lodash
+
+Alternatively, you can use [lodash](https://lodash.com/docs/#capitalize) to do this for you.
+
+Lodash has a special `capitalize()` function.
+
+```javascript
+const str = "this is a very long string!";
+
+_.capitalize(str);
 ```
 
 ## How to capitalize the first letter of each word?
@@ -131,7 +143,7 @@ If you don't want to use JavaScript, we have good news for you!
 
 You can use the CSS `text-transform` property to archive the same result.
 
-![JavaScript Capitalize First Letter](/static/images/blog/javascript-capitalize-first-letter/2.jpg)
+![JavaScript Capitalize First Letter](./images/2.jpg)
 
 ```javascript
 <div id="my_title">this is a very long string!</div>

@@ -1,6 +1,6 @@
 ---
 title: Substring() In JavaScript - How To Extract Part Of A String?
-openGraphImage: /static/images/blog/javascript-substring/cover.png
+openGraphImage: ./images/cover.png
 date: 2021-11-29
 description: A guide on how does the substring() function work in JavaScript? Definition. Substring vs slice vs substr.
 author: Tim Mouskhelichvili
@@ -15,7 +15,7 @@ In this article, you will find all the information needed, from the definition t
 
 Also, I will provide valuable examples for some of the most common use cases that you may encounter while developing your next hit application.
 
-![JavaScript Substring](/static/images/blog/javascript-substring/cover.png)
+![JavaScript Substring](./images/cover.png)
 
 <Summary />
 
@@ -65,7 +65,7 @@ This will give the same result as when the start parameter is ZERO.
 
 > If the start or the end parameter is negative, it will be treated as ZERO.
 
-![JavaScript Substring](/static/images/blog/javascript-substring/1.jpeg)
+![JavaScript Substring](./images/1.jpeg)
 
 ### 1. Parameters
 
@@ -130,7 +130,7 @@ console.log(str.substring(
 
 In this case, it will return: " very long string".
 
-![JavaScript Substring](/static/images/blog/javascript-substring/2.jpg)
+![JavaScript Substring](./images/2.jpg)
 
 ## 3. How to get the first character?
 
@@ -194,7 +194,7 @@ console.log(str.substr(-2, 4));
 
 > The `substr()` function [is considered deprecated](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substr), so if you see it in your code replace it.
 
-![JavaScript Substring](/static/images/blog/javascript-substring/3.jpeg)
+![JavaScript Substring](./images/3.jpeg)
 
 ## The difference between `substring()` and `slice()`
 
@@ -243,7 +243,7 @@ Here is a table with all the differences.
 
 Do not forget that the `substr()` function is *deprecated*.
 
-![JavaScript Substr](/static/images/blog/javascript-substring/4.jpg)
+![JavaScript Substr](./images/4.jpg)
 
 ## Final Thoughts
 

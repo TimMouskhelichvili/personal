@@ -1,6 +1,6 @@
 ---
 title: How To Concatenate Strings In JavaScript?
-openGraphImage: /static/images/blog/javascript-string-concatenation/cover.png
+openGraphImage: ./images/cover.png
 date: 2021-12-02
 description: 4 Different Ways On How To Concatenate Strings In JavaScript? + operator, template literals, concat, join.
 author: Tim Mouskhelichvili
@@ -21,7 +21,7 @@ You can use:
 
 In this article, I will show you how to use each one of them, as well as the positives and the negatives of each one.
 
-![JavaScript String Concatenation](/static/images/blog/javascript-string-concatenation/cover.png)
+![JavaScript String Concatenation](./images/cover.png)
 
 <Summary />
 
@@ -61,7 +61,7 @@ This is hard ❌ to read.
 
 Since, the release of ES6, I prefer to use [templates strings](#string-concatenation-using-templates-literals) because they make my code more readable.
 
-![JavaScript String Concatenation](/static/images/blog/javascript-string-concatenation/1.jpg)
+![JavaScript String Concatenation](./images/1.jpg)
 
 ## String concatenation using templates literals
 
@@ -109,7 +109,7 @@ console.log('This is'.concat(' a ', 'very long', ' string!'));
 
 In my experience, this function is very rarely used. Developers end up using either the `+` operator or template strings.
 
-![JavaScript String Concat Function](/static/images/blog/javascript-string-concatenation/2.jpg)
+![JavaScript String Concat Function](./images/2.jpg)
 
 ## String concatenation using the `join()` function
 
@@ -131,7 +131,7 @@ To insert spaces between those strings, just specify the separator.
 console.log(['This is', 'a', 'very long', 'string!'].join(' '));
 ```
 
-![JavaScript String Join Function](/static/images/blog/javascript-string-concatenation/3.jpg)
+![JavaScript String Join Function](./images/3.jpg)
 
 ## Final Thoughts
 

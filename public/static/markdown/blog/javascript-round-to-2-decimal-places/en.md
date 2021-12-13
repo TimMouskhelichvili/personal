@@ -1,6 +1,6 @@
 ---
 title: How To Round To 2 Decimal Places In JavaScript?
-openGraphImage: /static/images/blog/javascript-round-to-2-decimal-places/cover.png
+openGraphImage: ./images/cover.png
 date: 2021-12-03
 description: 4 different ways of rounding a number to 2 decimal places in javascript.
 author: Tim Mouskhelichvili
@@ -21,7 +21,7 @@ You can use:
 
 In this article, I will show you how to use each one of them.
 
-![JavaScript Round To 2 Decimal Places](/static/images/blog/javascript-round-to-2-decimal-places/cover.png)
+![JavaScript Round To 2 Decimal Places](./images/cover.png)
 
 <Summary />
 
@@ -42,7 +42,7 @@ The output of this is: **18.15**
 >
 > For example: for `4.005` it will give `4`.
 
-![JavaScript Round To 2 Decimal Places](/static/images/blog/javascript-round-to-2-decimal-places/1.jpg)
+![JavaScript Round To 2 Decimal Places](./images/1.jpg)
 
 ## How to round a number using the `Math.round()` function?
 
@@ -77,7 +77,7 @@ The output of this is: **18.15**
 
 Rounding a number can be hard to do by yourself because you need to think about a lot of use cases.
 
-![JavaScript Round To 2 Decimal Places](/static/images/blog/javascript-round-to-2-decimal-places/2.jpg)
+![JavaScript Round To 2 Decimal Places](./images/2.jpg)
 
 That's why you can install a library that will do it for you.
 

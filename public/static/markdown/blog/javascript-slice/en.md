@@ -1,6 +1,6 @@
 ---
 title: How to use slice() in JavaScript on an Array or a String?
-openGraphImage: /static/images/blog/javascript-slice/cover.png
+openGraphImage: ./images/cover.png
 date: 2021-12-08
 description: A guide on how to the slice() function work in Javascript on an Array or a String.
 author: Tim Mouskhelichvili
@@ -15,7 +15,7 @@ In this article, you will find all the information needed, for you to become a p
 
 I will also provide a lot of common use examples that will help you better understand this function.
 
-![JavaScript Slice](/static/images/blog/javascript-slice/cover.png)
+![JavaScript Slice](./images/cover.png)
 
 <Summary />
 
@@ -110,7 +110,7 @@ This method [works on all browsers](https://caniuse.com/?search=slice) since it 
 | Edge | YES ✅ |
 | Internet Explorer | YES ✅ |
 
-![JavaScript Slice](/static/images/blog/javascript-slice/1.jpg)
+![JavaScript Slice](./images/1.jpg)
 
 ## Examples of the `slice()` function on an array
 
@@ -202,7 +202,7 @@ The `splice()` function is used to change the content of an array by:
 
 The `slice()` function is used to select *items* from an array (based on the provided indices).
 
-![JavaScript Slice](/static/images/blog/javascript-slice/2.jpg)
+![JavaScript Slice](./images/2.jpg)
 
 Here is a table with all the differences:
 

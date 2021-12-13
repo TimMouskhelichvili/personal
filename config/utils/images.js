@@ -13,6 +13,7 @@ const getImages = () => {
 	
 	const files = {};
 	getSizesRecursively(path.join(dirName, 'public/static/images'), files);
+	getSizesRecursively(path.join(dirName, 'public/static/markdown/blog'), files);
 	return files;
 }
 
@@ -26,10 +27,12 @@ const getSizesRecursively = (directory, files) => {
 
 	for (const file of filesInDirectory) {
 		const absolute = path.join(directory, file);
+		const extName = path.extname(absolute);
+	
 		if (statSync(absolute).isDirectory()) {
 			getSizesRecursively(absolute, files);
-		} else if (!absolute.endsWith('.webp') && !absolute.endsWith('.svg')) {
-			const url = absolute.substr(absolute.indexOf('/static/images'));
+		} else if (['.jpg', '.png', '.jpeg', '.gif' ].includes(extName)) {
+			const url = absolute.substr(absolute.indexOf('/static/'));
 			const imageProps = sizeOf(absolute);
 			
 			files[url] = {

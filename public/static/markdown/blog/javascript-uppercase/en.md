@@ -1,6 +1,6 @@
 ---
 title: How To Uppercase A String In JavaScript?
-openGraphImage: /static/images/blog/javascript-uppercase/cover.png
+openGraphImage: ./images/cover.png
 date: 2021-12-01
 description: A guide on how does the toUpperCase() function work in JavaScript? Definition + Examples.
 author: Tim Mouskhelichvili
@@ -13,7 +13,7 @@ This function is easy to master (even for a beginner), and you will become a pro
 
 I will also be providing some valuables use cases that you may encounter while developing in JavaScript.
 
-![JavaScript Substring](/static/images/blog/javascript-uppercase/cover.png)
+![JavaScript Substring](./images/cover.png)
 
 <Summary />
 
@@ -110,6 +110,6 @@ As you can see the `toUpperCase()` is pretty straight and forward and not diffic
 
 Now that you are a pro of this function please share this article with your fellow coders.
 
-![JavaScript toUpperCase](/static/images/blog/javascript-uppercase/1.jpg)
+![JavaScript toUpperCase](./images/1.jpg)
 
 Thank you for reading.
