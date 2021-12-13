@@ -102,6 +102,8 @@ console.log(str.replace(/(^|\s)\S/g, (letter) => letter.toUpperCase()));
 
 In that case, it will return: "This Is A Very Long String!".
 
+Read more here: ["How to capitalize the first letter in Javascript?"](/blog/javascript-capitalize-first-letter)
+
 ## Final Thoughts
 
 As you can see the `toUpperCase()` is pretty straight and forward and not difficult to master.
