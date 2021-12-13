@@ -1,7 +1,7 @@
 #!/bin/bash
 ## sudo apt install webp
 
-cd public/static/images
+cd public/static
 
 for file in $(find -name "*.jpg" -o -name "*.png" -o -name "*.jpeg")
 do
