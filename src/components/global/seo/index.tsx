@@ -14,6 +14,7 @@ interface ISeoProps {
 	hasAmp?: boolean;
 	openGraphImage?: string;
 	date?: string;
+	dateModified?: string;
 }
 
 /**
@@ -77,6 +78,7 @@ const getBlogSchema = (props: ISeoProps, isBlogPage: boolean): {} | null => {
         '@type': 'BlogPosting',
         'headline': props.title,
         'datePublished': props.date,
+        'dateModified': props.dateModified,
         'image': image,
         'author': [ 
             {
@@ -92,6 +94,9 @@ const getBlogSchema = (props: ISeoProps, isBlogPage: boolean): {} | null => {
 			  '@type': 'ImageObject',
 			  'url': `${configuration.general.baseUrl}${configuration.general.imgs.logo}`
             }
+        },
+        'mainEntityOfPage': {
+            '@type': 'WebPage'
         }
     };
 };

@@ -1,4 +1,4 @@
-const { readdirSync, readFileSync } = require('fs');
+const { readdirSync, readFileSync, statSync } = require('fs');
 const path = require('path');
 
 /**
@@ -118,6 +118,8 @@ const getMarkdownObject = (languagePath, withSource = false) => {
 	if (withSource) {
 		attributes.source = source;
 	}
+
+	attributes.dateModified = statSync(languagePath).mtime.toISOString();
 
 	return attributes;
 };
