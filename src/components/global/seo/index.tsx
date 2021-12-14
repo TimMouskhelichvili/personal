@@ -84,7 +84,15 @@ const getBlogSchema = (props: ISeoProps, isBlogPage: boolean): {} | null => {
                 'name': configuration.general.author,
                 'url': configuration.general.baseUrl
 		  	}
-        ]
+        ],
+		"publisher": {
+			"@type": "Organization",
+			"name": "Tim Mouskhelichvili",
+			"logo": {
+			  "@type": "ImageObject",
+			  "url": `${configuration.general.baseUrl}${configuration.general.imgs.logo}`
+			}
+		},
     };
 };
 
