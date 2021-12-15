@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { getThemeVariable } from 'src/theme/utils';
 import { devices } from 'src/theme';
 
-const StyledTitle = styled.h2`
+const StyledTitle = styled.h3`
 	margin-bottom: .3em;
 	margin-top: 0px;
 
