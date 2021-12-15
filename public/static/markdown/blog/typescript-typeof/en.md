@@ -9,47 +9,46 @@ tags: typescript
 
 ![TypeScript typeof](./images/cover.png)
 
+<Summary />
+
 TypeScript just like JavaScript has a special `typeof` operator, but it has a different meaning.
 
 In TypeScript, `typeof` is used to refer to *a type of a variable in a type context*.
 
 ```typescript
-let v = 'This is a string';
-type Date: typeof v;
+const v = 'This is a string';
+const data: typeof v;
 ```
-In that case, the `Data` type will have this structure:
 
-```typescript
-type Data = string;
-```
+In that case, the type of `data` is `string`.
 
 Maybe you have noticed, but, in this particular example, this is not very useful, since the type is a basic type... You are right! But, the `typeof` operator becomes very handy with complex types.
 
 ```typescript
-let person = {
-	name: 'Tim',
+const person = {
 	age: 26,
-	list: {
+	name: 'Tim',
+	subList: {
 		element1: true
 	}
 };
 
-type Data: typeof person;
+type Data = typeof person;
 ```
 
 In that case, the `Data` type will have this structure:
 
 ```typescript
 type Data = {
-	name: string;
 	age: number;
-	list: {
+    name: string;
+	subList: {
 		element1: boolean;
 	};
 };
 ```
 
-In that example, we create a type based on the `person` variable, that we can latter use to match other variables.
+In that example, we create a type based on the `person` variable, that we can later use to match other variables.
 
 ## How to get the type from array elements?
 
@@ -86,6 +85,23 @@ type Data = {
 
 ## How does `keyof typeof` work in TypeScript?
 
+In TypeScript, `keyof typeof` is used to get a union type of an object's keys.
+
+```typescript
+const person = {
+	age: 26,
+	name: 'Tim'
+};
+
+type Data = keyof typeof person;
+```
+
+In that case, the `Data` type will have this structure:
+
+```typescript
+type Data = 'name' | 'age';
+```
+
 ## How to get the return type of a function?
 
 In TypeScript, you can get the return type of a function using the `ReturnType`, introduced in TypeScript v2.8. `ReturnType` will take a function type and return its return type.
@@ -109,4 +125,3 @@ type Data = {
 ```
 
 ## Final Thoughts
-<Summary />

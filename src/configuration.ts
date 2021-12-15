@@ -46,7 +46,7 @@ const configuration = {
         theme: 'theme'
     }
 };
-  
+
 export {
     configuration
 };
