@@ -20,9 +20,9 @@ const configuration = {
         clutch: '',
         company: 'Tim Mouskhelichvili',
         email: 't.mouskhelichvili@protonmail.com',
-		facebook: {
-			appId: '1008280046391107'
-		},
+        facebook: {
+            appId: '1008280046391107'
+        },
         github: 'https://github.com/TimMouskhelichvili',
         google: {
             // eslint-disable-next-line max-len
@@ -46,7 +46,7 @@ const configuration = {
         theme: 'theme'
     }
 };
-
+  
 export {
     configuration
 };

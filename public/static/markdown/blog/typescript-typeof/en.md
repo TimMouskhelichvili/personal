@@ -34,7 +34,7 @@ let person = {
 	}
 };
 
-type Data: typeof p;
+type Data: typeof person;
 ```
 
 In that case, the `Data` type will have this structure:
@@ -86,4 +86,27 @@ type Data = {
 
 ## How does `keyof typeof` work in TypeScript?
 
+## How to get the return type of a function?
+
+In TypeScript, you can get the return type of a function using the `ReturnType`, introduced in TypeScript v2.8. `ReturnType` will take a function type and return its return type.
+
+```typescript
+const createPerson = () => ({
+	age: 26,
+	firstName: 'Tim'
+});
+  
+type Data = ReturnType<typeof createPerson>
+```
+
+In this example, the `Data` type will have this structure:
+
+```typescript
+type Data = {
+	age: number;
+	firstName: string;
+};
+```
+
+## Final Thoughts
 <Summary />
