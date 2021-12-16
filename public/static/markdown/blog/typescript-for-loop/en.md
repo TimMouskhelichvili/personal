@@ -54,6 +54,8 @@ Those are the steps when a `for` loop executes:
 4. Statement 3 is executed.
 5. Go back to step 2.
 
+![TypeScript for loop](./images/2.jpg)
+
 ## How to loop through an array with the `for` loop.
 
 When you need to loop through an array with the `for` loop, you need to:
@@ -121,6 +123,8 @@ In this example, we skip the code block's execution when the index reaches `2`.
 
 ## How does the `for..in` statement work?
 
+![TypeScript for in loop](./images/1.jpg)
+
 The `for..in` statement loops through the **enumerable properties** of an object.
 
 ```typescript
@@ -162,5 +166,7 @@ Output:
 ## Final Thoughts
 
 Understanding the for loop is detrimental in your path of becoming a developer.
+
+![TypeScript for loop](./images/3.jpg)
 
 Thank you for reading this article, please share it!
