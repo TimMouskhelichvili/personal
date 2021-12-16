@@ -11,9 +11,9 @@ tags: typescript
 
 <Summary />
 
-TypeScript just like JavaScript has a special `typeof` operator, but it has a different meaning.
+TypeScript just like JavaScript has a special `typeof` operator.
 
-In TypeScript, `typeof` is used to refer to *a type of a variable in a type context*.
+In TypeScript, the `typeof` operator is used to refer to *the type of a variable* in a type context.
 
 ```typescript
 const v = 'This is a string';
@@ -22,7 +22,7 @@ const data: typeof v;
 
 In that case, the type of `data` is `string`.
 
-Maybe you have noticed, but, in this particular example, this is not very useful, since the type is a basic type... You are right! But, the `typeof` operator becomes very handy with complex types.
+Maybe you have noticed, but, in this particular example, this is not very useful, since the type is a basic type... You are right. But, the `typeof` operator becomes very handy with complex objects.
 
 ```typescript
 const person = {
@@ -48,11 +48,13 @@ type Data = {
 };
 ```
 
-In that example, we create a type based on the `person` variable, that we can later use to match other variables.
+In that example, we create a type based on the structure of the `person` variable, that we can later use to match other variables.
+
+> P.S. You can only use the `typeof` on variable names or their properties.
 
 ## How to get the type from array elements?
 
-In TypeScript, you can transform elements from an array into a type using the `const` keyword.
+In TypeScript, you can transform elements from an array into a union type using the `const` keyword.
 
 ```typescript
 const animals = [ 'dog', 'cat', 'elephant' ] as const;
@@ -102,6 +104,23 @@ In that case, the `Data` type will have this structure:
 type Data = 'name' | 'age';
 ```
 
+This also works on an `enum`!
+
+```typescript
+enum Animal {
+	cat,
+	dog,
+	cow
+}
+type Data = keyof typeof Animal;
+```
+
+In that case, the `Data` type will have this structure:
+
+```typescript
+type Data = 'cat' | 'dog' | 'cow';
+```
+
 ## How to get the return type of a function?
 
 In TypeScript, you can get the return type of a function using the `ReturnType`, introduced in TypeScript v2.8. `ReturnType` will take a function type and return its return type.
@@ -125,3 +144,7 @@ type Data = {
 ```
 
 ## Final Thoughts
+
+As a TypeScript developer, I use the `typeof` operator a lot. It is particularly useful when you need to type-check a parameter based on an object's structure or when you need to extract keys from an object as a type.
+
+I hope you liked this article, please share it!
