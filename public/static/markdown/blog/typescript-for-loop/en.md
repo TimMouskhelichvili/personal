@@ -2,7 +2,7 @@
 title: How does the for loop work in TypeScript?
 openGraphImage: ./images/cover.png
 date: 2021-12-16
-description: A guide on how does the for loop work in TypeScript? The syntax, as well as for in and for of.
+description: A guide on how does the for loop works in TypeScript? The syntax, as well as for in and for of.
 author: Tim Mouskhelichvili
 tags: typescript
 ---
