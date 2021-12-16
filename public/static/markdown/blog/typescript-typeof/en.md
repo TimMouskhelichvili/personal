@@ -52,6 +52,8 @@ In that example, we create a type based on the structure of the `person` variabl
 
 > P.S. You can only use the `typeof` operator on variable names or their properties.
 
+![TypeScript typeof](./images/1.jpg)
+
 ## How to get the type from elements of an array?
 
 In TypeScript, you can transform elements from an array into a union type using the `const` keyword.
@@ -86,6 +88,8 @@ type Data = {
 ```
 
 ## How does `keyof typeof` work in TypeScript?
+
+![TypeScript keyof typeof](./images/2.jpg)
 
 In TypeScript, `keyof typeof` is used to get a union type of an object's keys.
 
