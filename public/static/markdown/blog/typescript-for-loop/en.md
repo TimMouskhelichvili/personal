@@ -30,7 +30,7 @@ Output:
 // Iteration 4
 ```
 
-## Syntax of the `for` loop.
+## Syntax of the `for` loop
 
 The default `for` loop is composed of 3 statements.
 
@@ -54,9 +54,13 @@ Those are the steps when a `for` loop executes:
 4. Statement 3 is executed.
 5. Go back to step 2.
 
-## How to loop though an array with the `for` loop.
+## How to loop through an array with the `for` loop.
 
-When you need to loop though an array with the `for` loop, you need to use the array length in the condition.
+When you need to loop through an array with the `for` loop, you need to:
+
+1. Initialize the looping variable with `0`.
+2. In the condition, ensure the looping variable is less than the array length.
+3. Increment the looping variable by `1`.
 
 ```typescript
 let arr = [ 1, 2, 3, 4, 5 ];
@@ -91,7 +95,7 @@ Output:
 // Iteration 1
 ```
 
-In this example, we terminate the `for` loop's execution after the index reaches `2`.
+In this example, we terminate the `for` loop's execution after the index reaches `2`, so that iterations 2-5 are not executed.
 
 ## How does the `continue` statement work?
 
@@ -117,7 +121,7 @@ In this example, we skip the code block's execution when the index reaches `2`.
 
 ## How does the `for..in` statement work?
 
-The `for..in` statement loops thought the **properties** of an object.
+The `for..in` statement loops through the **enumerable properties** of an object.
 
 ```typescript
 const person = {
@@ -137,7 +141,7 @@ Output:
 
 ## How does the `for..of` statement work?
 
-The `for..of` statement loops thought the **values** of an [iterable object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols).
+The `for..of` statement loops through the **values** of an [iterable object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols).
 
 ```typescript
 const animals = ["cat", "dog", "cow"];
@@ -153,4 +157,10 @@ Output:
 // cow
 ```
 
-> P.S. The object must be iterable for this to work. (Array, Map, Set, etc...)
+> P.S. The object must be iterable for this to work. (Array, Map, Set, String, etc...)
+
+## Final Thoughts
+
+Understanding the for loop is detrimental in your path of becoming a developer.
+
+Thank you for reading this article, please share it!
