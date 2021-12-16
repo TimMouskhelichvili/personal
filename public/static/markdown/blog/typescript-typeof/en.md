@@ -127,7 +127,7 @@ type Data = 'cat' | 'dog' | 'cow';
 
 ## How to get the return type of a function?
 
-In TypeScript, you can get the return type of a function using the `ReturnType` predefined type, introduced in TypeScript v2.8. `ReturnType` will take a function type and return its return type.
+In TypeScript, you can get the return type of a function using the `ReturnType` [predefined type](https://www.typescriptlang.org/docs/handbook/utility-types.html#returntypetype), introduced in TypeScript v2.8. `ReturnType` will take a function type and return its return type.
 
 ```typescript
 const createPerson = () => ({
