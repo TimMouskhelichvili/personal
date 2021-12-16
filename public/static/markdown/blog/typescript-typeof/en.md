@@ -2,7 +2,7 @@
 title: How does typeof work in TypeScript?
 openGraphImage: ./images/cover.png
 date: 2021-12-14
-description: A guide on how does typeof work in TypeScript?
+description: A guide on how does the typeof operator work in TypeScript?
 author: Tim Mouskhelichvili
 tags: typescript
 ---
@@ -50,9 +50,9 @@ type Data = {
 
 In that example, we create a type based on the structure of the `person` variable, that we can later use to match other variables.
 
-> P.S. You can only use the `typeof` on variable names or their properties.
+> P.S. You can only use the `typeof` operator on variable names or their properties.
 
-## How to get the type from array elements?
+## How to get the type from elements of an array?
 
 In TypeScript, you can transform elements from an array into a union type using the `const` keyword.
 
@@ -101,7 +101,7 @@ type Data = keyof typeof person;
 In that case, the `Data` type will have this structure:
 
 ```typescript
-type Data = 'name' | 'age';
+type Data = 'age' | 'name';
 ```
 
 This also works on an `enum`!
@@ -123,7 +123,7 @@ type Data = 'cat' | 'dog' | 'cow';
 
 ## How to get the return type of a function?
 
-In TypeScript, you can get the return type of a function using the `ReturnType`, introduced in TypeScript v2.8. `ReturnType` will take a function type and return its return type.
+In TypeScript, you can get the return type of a function using the `ReturnType` predefined type, introduced in TypeScript v2.8. `ReturnType` will take a function type and return its return type.
 
 ```typescript
 const createPerson = () => ({
