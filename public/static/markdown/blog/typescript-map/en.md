@@ -7,15 +7,15 @@ author: Tim Mouskhelichvili
 tags: typescript
 ---
 
-In web development, you often need a data structure to hold a mapping of key/value pairs. This data structure has many names: a map, a dictionary, an associative array... Its functionality, however, always remains the same. The data structure holds key/value pairs and one particular key cannot appear more than one time.
+In web development, you often need a data structure to hold a mapping of key/value pairs. This data structure has many names: a map, a dictionary, an associative array... Its functionality, however, always remains the same. The data structure holds key/value pairs and <span className='underline'>one particular key cannot appear more than one time</span>.
 
 ![TypeScript map](./images/cover.png)
 
 **In TypeScript, you have a few easy ways to choose from when you want to create a map.**
 
-1. You can use a simple JavaScript indexed object with a mapped Typescript type (easiest solution).
+1. You can use a simple JavaScript indexed object with a mapped Typescript type (**easiest solution**).
 2. You can use an indexed object with the Record utility type.
-3. You can use the built-in Map structure introduced in the ES6 version of JavaScript.
+3. You can use the built-in `Map` structure introduced in the ES6 version of JavaScript.
 4. You can use an external library (if you need some special behaviors).
 
 In this article, I will explain all of those solutions, so you will have the knowledge to choose the one that will work the best for you.
@@ -69,7 +69,7 @@ console.log(map['c']);
 
 ### How to iterate through a map?
 
-You can iterate through a map using the `for` loop and get the key/value pair.
+You can iterate through a map using the `for` loop and get each key/value pair.
 
 ```typescript
 for (let i in map) {
