@@ -44,6 +44,8 @@ Congrats 🎉, we have successfully created a map constant that can be reused in
 
 ### What is a mapped type in TypeScript?
 
+![TypeScript mapped type](./images/3.jpg)
+
 A mapped type is a type built on the syntax of the index signature. It is very useful when you don’t know the keys of an object ahead of time, and particularly useful in our case since we are working on an indexed object.
 
 ```typescript
@@ -137,6 +139,9 @@ The `Record` is a type definition for the map and is only accessible while using
 
 ## Create a TypeScript map using the ES6 Map Object
 
+![TypeScript map es6](./images/2.jpg)
+
+
 If you are only using browsers with ES6 capabilities you can use the built-in `Map` object. The advantage of using this structure is:
 
 1. You don’t need to declare a new type.
@@ -176,6 +181,8 @@ Here are my favorite polyfills:
 2. The [es6-map library](https://www.npmjs.com/package/es6-map), if you only need the Map polyfill.
 
 ## Create a TypeScript map using an external library
+
+![TypeScript map](./images/1.jpg)
 
 You can also use an existing map from an external library (if you need some special behavior). I recommend using either the [immutable](https://www.npmjs.com/package/immutable) library or the [mnemonist](https://www.npmjs.com/package/mnemonist) library.
 
