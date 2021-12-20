@@ -171,6 +171,8 @@ While using the `Map` object you have access to methods with explicit names that
 | map.values() | Returns an iterator object with the values. |
 | map.forEach(callback(value, key)) | Invokes a callback on each key/value pair. |
 
+[[Learn more about the foreach loop]](/blog/typescript-foreach)
+
 ### Map Polyfill
 
 If you plan on supporting old browsers, like Internet Explorer, the `Map` object will not exist and you will need to add a polyfill to your code.
