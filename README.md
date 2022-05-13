@@ -1,6 +1,6 @@
 # Tim Mouskhelichvili's Personal Website
 
-Here is the full source code of the [Tim Mouskhelichvili](https://timmouskhelichvili.com) website.
+Here is the full source code of the [Tim Mouskhelichvili](https://timmousk.com) website.
 
 
 ## Technologies
